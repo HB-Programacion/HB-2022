@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import gif from "../../assets/home/gif.png";
 import divider from "../../assets/home/Divider.svg";
-import tabs from "../../assets/home/Filtro.png";
-import img1 from "../../assets/home/project 1.png";
-import img2 from "../../assets/home/project 2.png";
-import img3 from "../../assets/home/project 3.png";
-import img4 from "../../assets/home/project 4.png";
-import img5 from "../../assets/home/project 5.png";
-import img6 from "../../assets/home/project 6.png";
 import load from "../../assets/home/load-more.png";
-
+import { buttons } from "../data/imagesHome"
+import { getImagesHome, filterPokemon } from "../services/servicesFilter"
 import "./Home.css";
+import { type } from "@testing-library/user-event/dist/type";
 
 const Home = () => {
+  const [filteredImages, setFilteredImages] = useState(null);
+
+  useEffect(() => {
+    setFilteredImages(getImagesHome());
+  }, []);
+
+  const handleImagesHome = (e) => {
+    e.preventDefault()
+    let typeImagesHome = e.target.value;
+    typeImagesHome !== "all" ? setFilteredImages(filterPokemon(typeImagesHome))
+    : setFilteredImages(getImagesHome());
+
+  }
+
+
   return (
     <div>
       <img src={gif} className="gif" />
@@ -25,7 +35,28 @@ const Home = () => {
           somos analíticos y pensamos siempre en la mejor solución de acuerdo al
           problema.
         </h1>
-        <div className='container__filter'>
+
+        <div className="container__buttons">
+          {buttons &&
+            buttons.map((type, index) => (
+              <div className="buttons__style">
+                <button key={index} value={type.value} onClick={handleImagesHome}>
+                  {type.name}
+                </button>
+              </div>
+            ))
+          }
+        </div>
+
+        {filteredImages &&
+          filteredImages.map(type => (
+            <div className='container__filter' key={type.id}>
+                  <img src={type.url} width={"100%"}/>
+            </div>
+          ))
+      }
+
+        {/* <div className='container__filter'>
           <img src={tabs} width={"90%"} />
         </div>
 
@@ -48,7 +79,7 @@ const Home = () => {
             <div>
                 <img src={img6} width={"100%"}/>
             </div>
-        </div>
+        </div> */}
         <img src={load} width={"23%"} />
       </div>
     </div>
