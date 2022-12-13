@@ -1,0 +1,22 @@
+.header__container{
+    background-color: #FF0000;
+    padding: .7rem 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 19rem;
+    height: auto;
+}
+
+.header__container-item{
+    text-transform: uppercase;
+    font-size: 1.9rem;
+}
+
+.container__social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

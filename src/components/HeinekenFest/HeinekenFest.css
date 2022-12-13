@@ -1,0 +1,15 @@
+.Container__title{
+    width: 990px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.Container__title h2{
+    font-size: 3.3rem;
+}
+
+.Container__title p{
+    font-size: 1.68rem;
+    line-height: 2.5rem;
+}
