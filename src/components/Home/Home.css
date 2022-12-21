@@ -15,9 +15,11 @@
 
 
 .container__filter{
+    position: relative;
     padding-top: 5rem ;
     padding-bottom: 3rem;
     margin: 0 auto;
+    z-index: 99;
 }
 
 .container__buttons{
@@ -37,4 +39,17 @@
 .container__projects div{
     width: 100%;
     margin-bottom: 4.5rem;
+}
+
+.container__images{
+ position: relative;
+ margin: 3rem;
+}
+
+.bg-text{
+    position: absolute;
+    font-size: 400px;
+    bottom: 32%;
+    z-index: 1;
+    left: -100px;
 }

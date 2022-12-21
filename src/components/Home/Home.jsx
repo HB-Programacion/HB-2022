@@ -5,9 +5,10 @@ import load from "../../assets/home/load-more.png";
 import { buttons } from "../data/imagesHome"
 import { getImagesHome, filterPokemon } from "../services/servicesFilter"
 import "./Home.css";
-import { type } from "@testing-library/user-event/dist/type";
+import { useParallax } from "react-scroll-parallax";
 
 const Home = () => {
+  const { ref } = useParallax({ speed: 100 })
   const [filteredImages, setFilteredImages] = useState(null);
 
   useEffect(() => {
@@ -48,13 +49,18 @@ const Home = () => {
           }
         </div>
 
-        {filteredImages &&
-          filteredImages.map(type => (
-            <div className='container__filter' key={type.id}>
-                  <img src={type.url} width={"100%"}/>
-            </div>
-          ))
-      }
+        <div className="container__images">
+          {filteredImages &&
+            filteredImages.map(type => (
+              <div className='container__filter' key={type.id}>
+                    <img src={type.url} width={"100%"}/>
+              </div>
+            ))
+          }
+          <div ref={ref} className="bg-text">
+            WORK
+          </div>
+        </div>
 
         {/* <div className='container__filter'>
           <img src={tabs} width={"90%"} />

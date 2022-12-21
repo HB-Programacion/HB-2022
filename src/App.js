@@ -4,16 +4,21 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import HeinekenFest from "./components/HeinekenFest/HeinekenFest";
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+
 import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <ParallaxProvider>
+      <Router>
         <Routes>
           <Route  exact path="/" element={<Home/>}/>
           <Route  exact path="/heinekenFest" element={<HeinekenFest/>}/>
         </Routes>
-    </Router>
+      </Router>
+    </ParallaxProvider>
   );
 }
 
