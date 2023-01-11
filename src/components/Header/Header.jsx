@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/header/logo-hb.svg";
+import logo from "../../assets/header/Logo-hb.svg";
 import logoGift from "../../assets/header/logo-gift.gif";
 import behance from "../../assets/header/Behance.png";
 import ig from "../../assets/header/Instagram.png";
