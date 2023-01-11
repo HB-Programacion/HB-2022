@@ -12,12 +12,14 @@ import "./App.css";
 function App() {
   return (
     <ParallaxProvider>
+    <Header/>
       <Router>
         <Routes>
           <Route  exact path="/" element={<Home/>}/>
           <Route  exact path="/heinekenFest" element={<HeinekenFest/>}/>
         </Routes>
       </Router>
+    <Footer/>
     </ParallaxProvider>
   );
 }

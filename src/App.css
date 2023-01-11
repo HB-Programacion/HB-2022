@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "nehue-has45";
+    src: url(./assets/fonts/NHaasGroteskDSPro-45Lt.otf);
+  }
+  
+  @font-face {
+      font-family: "nehue-has55";
+      src: url(./assets/fonts/NHaasGroteskDSPro-55Rg.otf);
+    }
+  
+  .container__hb{
+    width: 100%;
+  }
+  .Container__title {
+    width: 990px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .Container__title h2 {
+    font-size: 3.3rem;
+  }
+  
+  .Container__title p {
+    font-size: 1.68rem;
+    line-height: 2.5rem;
+  }

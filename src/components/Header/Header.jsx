@@ -1,13 +1,21 @@
 import React from "react";
-import logo from "../../assets/header/Logo-hb.svg";
+import logo from "../../assets/header/logo-hb.svg";
+import logoGift from "../../assets/header/logo-gift.gif";
+import behance from "../../assets/header/Behance.png";
+import ig from "../../assets/header/Instagram.png";
 
 import "./Header.css";
 
 const Header = () => {
   return (
     <div className="header__container">
-      <img src={logo} className="logo" />
-      <div className="header__container-item">
+      <a href="/">
+        <div className="container__gifLogo">
+          <img src={logoGift} className="logoGift" />
+          <img src={logo} className="logo" />
+        </div>
+      </a>
+      {/* <div className="header__container-item">
         <h6>studio</h6>
       </div>
       <div className="header__container-item">
@@ -18,10 +26,21 @@ const Header = () => {
       </div>
       <div className="header__container-item">
         <h6>work with us</h6>
-      </div>
+      </div> */}
       <div className="header__container-item container__social">
-        <div>be-</div>
-        <div>ig</div>
+        <div className="container-social-img">
+          <a href="https://www.behance.net/henribarrettstudio" target="blank">
+            <img src={behance} />
+          </a>
+        </div>
+        <div className="container-social-img">
+          <a
+            href="https://www.instagram.com/henribarrettstudio/?hl=es"
+            target="blank"
+          >
+            <img src={ig} />
+          </a>
+        </div>
       </div>
     </div>
   );

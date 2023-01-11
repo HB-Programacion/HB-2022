@@ -1,5 +1,4 @@
 import React from "react";
-import banner from "../../assets/heinekenFest/hnk-video.png";
 import section from "../../assets/heinekenFest/divider-hnk.png";
 import img1 from "../../assets/heinekenFest/img-hnk1.png";
 import img2 from "../../assets/heinekenFest/img-hnk2.png";

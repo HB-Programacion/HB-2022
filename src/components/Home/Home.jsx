@@ -7,10 +7,10 @@ import load from "../../assets/home/load-more.png";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
-import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
+// import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 
 const Home = () => {
-  const { ref } = useParallax({ speed: 100 });
+  // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
 
   useEffect(() => {
@@ -49,10 +49,10 @@ const Home = () => {
         <img src={logoGift} className="logo-gift" />
       </div>
       <div className="container__parallax">
-        <ParallaxBanner
+        {/* <ParallaxBanner
           layers={[{ image: "../../assets/header/Logo-hb.svg", speed: -15 }]}
           className="aspect-[2/1]"
-        />
+        /> */}
 
         <div className="container__buttons">
           {buttons &&
