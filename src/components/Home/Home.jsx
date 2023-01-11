@@ -55,6 +55,9 @@ const Home = () => {
         /> */}
 
         <div className="container__buttons">
+          <div className="filter__style">
+            FILTER
+          </div>
           {buttons &&
             buttons.map((type, index) => (
               <div className="buttons__style">
