@@ -15,18 +15,6 @@ const Header = () => {
           <img src={logo} className="logo" />
         </div>
       </a>
-      {/* <div className="header__container-item">
-        <h6>studio</h6>
-      </div>
-      <div className="header__container-item">
-        <h6>WORK</h6>
-      </div>
-      <div className="header__container-item">
-        <h6>weeCKLY</h6>
-      </div>
-      <div className="header__container-item">
-        <h6>work with us</h6>
-      </div> */}
       <div className="header__container-item container__social">
         <div className="container-social-img">
           <a href="https://www.behance.net/henribarrettstudio" target="blank">

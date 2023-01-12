@@ -4,6 +4,7 @@ import gif from "../../assets/home/gif.png";
 import logoGift from "../../assets/home/HB gift.png";
 import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
+import arrowRightWhite from "../../assets/home/arrow-right-white.svg"
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
@@ -81,32 +82,15 @@ const Home = () => {
             ))}
         </div>
       </div>
-
-      {/* <div className='container__filter'>
-          <img src={tabs} width={"90%"} />
-        </div>
-
-        <div className="container__projects">
-            <div>
-                <img src={img1} width={"100%"}/>
-            </div>
-            <div>
-                <img src={img2} width={"100%"}/>
-            </div>
-            <div>
-                <img src={img3} width={"100%"}/>
-            </div>
-            <div>
-                <img src={img4} width={"100%"}/>
-            </div>
-            <div>
-                <img src={img5} width={"100%"}/>
-            </div>
-            <div>
-                <img src={img6} width={"100%"}/>
-            </div>
-        </div> */}
-      <img src={load} width={"23%"} />
+      {/* <img src={load} width={"23%"} /> */}
+      <div className="button__load">
+        <button
+          onClick={ () => console.log("click load more")}
+        >
+          LOAD MORE
+        <img src={arrowRightWhite} alt="arrow-right"/>
+        </button>
+      </div>
     </div>
   );
 };
