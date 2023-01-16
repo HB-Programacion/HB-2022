@@ -25,3 +25,34 @@
     font-size: 1.68rem;
     line-height: 2.5rem;
   }
+
+  /* parallax */
+  .box-video-background {
+    height: 100vh;
+    width: 100vw;
+  }
+  .video-mp4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+  }
+
+  .box-test{
+    background-color: aqua;
+  }
+/* 
+  .box-test .container__parallax{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-width: 100%;
+    position: fixed;
+
+    background-color: aqua;
+  } */

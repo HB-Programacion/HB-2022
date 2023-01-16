@@ -26,59 +26,82 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <Marquee gradient={false} loop={0} speed={50}>
-        <p class="marquee">
-          {" "}
-          always watching. the curiosity is sexy. always watching. the curiosity
-          is sexy.
-        </p>
-      </Marquee>
+    <>
+      <div className="box-marquee">
+        <Marquee gradient={false} loop={0} speed={50}>
+          <p class="marquee">
+            {" "}
+            always watching. the curiosity is sexy. always watching. the
+            curiosity is sexy.
+          </p>
+        </Marquee>
+      </div>
       {/* <div class="wrapper">
         <p class="target">always watching. the curiosity is sexy</p>
       </div> */}
-      <img src="https://via.placeholder.com/1420x616" width={"100%"} />
-      <img src={divider} className="gif" />
-      <div className="container__text">
-        <h1>
-          Nos adelantamos al futuro, nos anticipamos a las posibilidades,
-          proponemos soluciones que van más alla de lo evidente y del brief,
-          somos analíticos y pensamos siempre en la mejor solución de acuerdo al
-          problema.
-        </h1>
-        <img src={logoGift} className="logo-gift" />
+      {/* <img src="https://via.placeholder.com/1420x616" width={"100%"} />*/}
+
+     <div>
+     <div className="box-video-background">
+        <video
+          width="100%"
+          height="100%"
+          autoPlay
+          muted
+          loop
+          className="video-mp4"
+        >
+          <source
+            src="https://res.cloudinary.com/henribarrett/video/upload/v1673456899/hb-2023/video-hnk_wczrbk.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
       </div>
-      <div className="container__parallax">
-        {/* <ParallaxBanner
+
+      <div className="box-text-home">
+        <img src={divider} className="gif" />
+        <div className="container__text">
+          <h1>
+            Nos adelantamos al futuro, nos anticipamos a las posibilidades,
+            proponemos soluciones que van más alla de lo evidente y del brief,
+            somos analíticos y pensamos siempre en la mejor solución de acuerdo
+            al problema.
+          </h1>
+          <img src={logoGift} className="logo-gift" />
+        </div>
+      </div>
+     </div>
+      <div className="box-test">
+        <div className="container__parallax">
+          {/* <ParallaxBanner
           layers={[{ image: "../../assets/header/Logo-hb.svg", speed: -15 }]}
           className="aspect-[2/1]"
         /> */}
 
-        <div className="container__buttons">
-          <div className="filter__style">
-            FILTER
+          <div className="container__buttons">
+            <div className="filter__style">FILTER</div>
+            {buttons &&
+              buttons.map((type, index) => (
+                <div className="buttons__style">
+                  <button
+                    key={index}
+                    value={type.value}
+                    onClick={handleImagesHome}
+                  >
+                    {type.name}
+                  </button>
+                </div>
+              ))}
           </div>
-          {buttons &&
-            buttons.map((type, index) => (
-              <div className="buttons__style">
-                <button
-                  key={index}
-                  value={type.value}
-                  onClick={handleImagesHome}
-                >
-                  {type.name}
-                </button>
-              </div>
-            ))}
-        </div>
 
-        <div className="container__images">
-          {filteredImages &&
-            filteredImages.map((type) => (
-              <div className="container__filter" key={type.id}>
-                <img src={type.url} width={"100%"} />
-              </div>
-            ))}
+          <div className="container__images">
+            {filteredImages &&
+              filteredImages.map((type) => (
+                <div className="container__filter" key={type.id}>
+                  <img src={type.url} width={"100%"} />
+                </div>
+              ))}
+          </div>
         </div>
       </div>
 
@@ -107,7 +130,7 @@ const Home = () => {
             </div>
         </div> */}
       <img src={load} width={"23%"} />
-    </div>
+    </>
   );
 };
 

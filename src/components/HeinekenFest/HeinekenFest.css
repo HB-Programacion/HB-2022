@@ -47,20 +47,7 @@
     width: 70%;
   }
   
-  .box-video-background {
-    height: 100vh;
-    width: 100vw;
-  }
-  .video-mp4 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    min-width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: -999;
-  }
+  
   .container-main{
       background-color: #ffff;
   }
