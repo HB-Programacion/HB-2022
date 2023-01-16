@@ -29,10 +29,38 @@
     display: flex;
     justify-content: center;
     margin-top: 7rem;
+    place-items: center;
+  }
+
+  .button__load {
+    text-align: center;
+  }
+
+  .button__load button{
+    font-size: 33px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    margin: auto 5px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .button__load img{
+    margin-bottom: 4px;
+    margin-left: 10px;
+  }
+
+  .filter__style{
+    margin: 0px 15px;
+    font-weight: 900;
+    font-size: 22px;
   }
   
   .buttons__style button {
-    padding: 3px 5px;
+    font-size: 22px;
+    padding: 3px 10px;
     border-radius: 20px;
     border: 1px solid #000000;
     margin: auto 5px;
@@ -101,6 +129,6 @@
   }
   
   .container__parallax{
-    height: 500px;
+    height: 100%;
     position: relative;
   }
