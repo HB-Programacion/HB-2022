@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Marquee from "react-fast-marquee";
 import gif from "../../assets/home/gif.png";
 import logoGift from "../../assets/home/HB gift.png";
@@ -13,6 +13,7 @@ import "./Home.css";
 const Home = () => {
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
+  const ref = useRef(null);
 
   useEffect(() => {
     setFilteredImages(getImagesHome());
@@ -26,22 +27,34 @@ const Home = () => {
       : setFilteredImages(getImagesHome());
   };
 
+  const isInViewport = (elem) => {
+    let distance = elem.getBoundingClientRect();
+    console.log("distance", distance)
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
+  }
+
+  let elem = document.querySelector("#box-filter-parallax")
+  // console.log("elem", elem)
+
+  if(isInViewport(elem)){
+    console.log("esta en el view")
+  }else{
+    console.log("salio del view")
+  }
+
   return (
     <>
       <div className="box-marquee">
         <Marquee gradient={false} loop={0} speed={50}>
-          <p class="marquee">
+          <p className="marquee">
             {" "}
             always watching. the curiosity is sexy. always watching. the
             curiosity is sexy.
           </p>
         </Marquee>
       </div>
-      {/* <div class="wrapper">
-        <p class="target">always watching. the curiosity is sexy</p>
-      </div> */}
-      {/* <img src="https://via.placeholder.com/1420x616" width={"100%"} />*/}
-
       <div>
         <div className="box-video-background">
           <video
@@ -72,7 +85,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id="box-filter-parallax"className="box-test">
+      <div id="box-filter-parallax" className="box-test">
         <div className="container__parallax">
           {/* <ParallaxBanner
           layers={[{ image: "../../assets/header/Logo-hb.svg", speed: -15 }]}
@@ -83,7 +96,7 @@ const Home = () => {
             <div className="filter__style">FILTER</div>
             {buttons &&
               buttons.map((type, index) => (
-                <div className="buttons__style">
+                <div className="buttons__style" key={index}>
                   <button
                     key={index}
                     value={type.value}
