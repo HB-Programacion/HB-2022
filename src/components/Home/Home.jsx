@@ -27,23 +27,6 @@ const Home = () => {
       : setFilteredImages(getImagesHome());
   };
 
-  const isInViewport = (elem) => {
-    let distance = elem.getBoundingClientRect();
-    console.log("distance", distance)
-    return (
-        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
-    );
-  }
-
-  let elem = document.querySelector("#box-filter-parallax")
-  // console.log("elem", elem)
-
-  if(isInViewport(elem)){
-    console.log("esta en el view")
-  }else{
-    console.log("salio del view")
-  }
-
   return (
     <>
       <div className="box-marquee">

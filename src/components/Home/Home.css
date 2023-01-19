@@ -25,6 +25,11 @@
     z-index: 99;
   }
   
+  .container__filter img{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
   .container__buttons {
     display: flex;
     justify-content: center;
@@ -34,6 +39,9 @@
 
   .button__load {
     text-align: center;
+    background-color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .button__load button{
@@ -115,11 +123,7 @@
       transform: translateX(-100%);
     }
   }
-  .container__images {
-    position: relative;
-    margin: 3rem;
-  }
-  
+
   .bg-text {
     position: absolute;
     font-size: 400px;
@@ -128,7 +132,3 @@
     left: -100px;
   }
   
-  .container__parallax{
-    height: 100%;
-    position: relative;
-  }
