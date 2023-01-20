@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import Marquee from "react-fast-marquee";
 import gif from "../../assets/home/gif.png";
 import logoGift from "../../assets/home/HB gift.png";
 import divider from "../../assets/home/Divider.svg";
@@ -8,6 +7,7 @@ import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
+import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 
 const Home = () => {
@@ -29,13 +29,23 @@ const Home = () => {
 
   return (
     <>
-      <div className="box-marquee">
-        <Marquee gradient={false} loop={0} speed={50}>
-          <p className="marquee">
-            {" "}
-            always watching. the curiosity is sexy. always watching. the
-            curiosity is sexy.
-          </p>
+      <div
+        className="box-marquee"
+        style={{
+        width: '100%',
+        whiteSpace: 'nowrap',
+        }}
+      >
+        <Marquee
+          speed={0.25}
+          scrollWhen="overflow"
+          direction="left"
+          delay="0"
+        >
+          <span className="marquee">
+            {/* always watching. the curiosity is sexy. always watching. always watching. the curiosity is sexy. always watching. */}
+            always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy.
+          </span>
         </Marquee>
       </div>
       <div>

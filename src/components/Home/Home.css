@@ -93,7 +93,7 @@
     color: #000000;
     font-size: 3rem;
     text-transform: uppercase;
-    margin: 0.5rem auto;
+    /* margin: 1.5rem auto; */
   }
   .wrapper {
     width: 100%;
