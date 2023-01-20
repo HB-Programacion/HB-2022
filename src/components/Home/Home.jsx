@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import gif from "../../assets/home/gif.png";
-import logoGift from "../../assets/home/HB gift.png";
+import logoGift from "../../assets/header/logo-gift.gif";
 import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
 import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
@@ -9,6 +9,7 @@ import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
 import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
+import word from "../../assets/home/work.svg";
 
 const Home = () => {
   // const { ref } = useParallax({ speed: 100 });
@@ -79,12 +80,8 @@ const Home = () => {
         </div>
       </div>
       <div id="box-filter-parallax" className="box-test">
+        <h1 className="word">work</h1>
         <div className="container__parallax">
-          {/* <ParallaxBanner
-          layers={[{ image: "../../assets/header/Logo-hb.svg", speed: -15 }]}
-          className="aspect-[2/1]"
-        /> */}
-
           <div className="container__buttons">
             <div className="filter__style">FILTER</div>
             {buttons &&
@@ -100,24 +97,25 @@ const Home = () => {
                 </div>
               ))}
           </div>
-
           <div className="container__images">
             {filteredImages &&
               filteredImages.map((type) => (
                 <div className="container__filter" key={type.id}>
-                  <img src={type.url} width={"100%"} />
+                  <a href={type.href}>
+                    <img src={type.url} alt={type.name} />
+                  </a>
                 </div>
               ))}
           </div>
         </div>
       </div>
-      {/* <img src={load} width={"23%"} /> */}
       <div className="button__load">
         <button onClick={() => console.log("click load more")}>
           LOAD MORE
           <img src={arrowRightWhite} alt="arrow-right" />
         </button>
       </div>
+     
     </>
   );
 };

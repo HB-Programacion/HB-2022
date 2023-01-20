@@ -3,7 +3,8 @@ export const imagesHome = [
         id: 1,
         type: "point-of-sale",
         url: "https://res.cloudinary.com/henribarrett/image/upload/v1670953559/hb-2022/heineken_ovh4ov.png",
-        name: "Heineken"
+        name: "Heineken",
+        href: "./heinekenFest"
     },
     {
         id: 2,
