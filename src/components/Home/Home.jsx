@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import gif from "../../assets/home/gif.png";
-import logoGift from "../../assets/home/HB gift.png";
+import logoGift from "../../assets/header/logo-gift.gif";
 import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
 import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
@@ -30,11 +30,10 @@ const Home = () => {
   return (
     <>
       <div className="box-marquee">
-        <Marquee gradient={false} loop={0} speed={50}>
+        <Marquee gradient={false} loop={0} speed={50} whiteSpace={'nowrap'}>
           <p class="marquee">
             {" "}
-            always watching. the curiosity is sexy. always watching. the
-            curiosity is sexy.
+            always watching. the curiosity is sexy. 
           </p>
         </Marquee>
       </div>
