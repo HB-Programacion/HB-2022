@@ -2,10 +2,33 @@
   font-family: "nehue-has45";
   src: url(./assets/fonts/NHaasGroteskDSPro-45Lt.otf);
 }
-
 @font-face {
   font-family: "nehue-has55";
   src: url(./assets/fonts/NHaasGroteskDSPro-55Rg.otf);
+}
+@font-face {
+  font-family: "nehue-has65";
+  src: url(./assets/fonts/NHaasGroteskDSPro-65Md.otf);
+}
+@font-face {
+  font-family: "nehue-has66";
+  src: url(./assets/fonts/NHaasGroteskDSPro-66MdIt.otf);
+}
+@font-face {
+  font-family: "nehue-bold";
+  src: url(./assets/fonts/NeueHaasDisplayBold.ttf);
+}
+@font-face {
+  font-family: "nehue-bold-italic";
+  src: url(./assets/fonts/NeueHaasDisplayBoldItalic.ttf);
+}
+@font-face {
+  font-family: "nehue-roman";
+  src: url(./assets/fonts/NeueHaasDisplayRoman.ttf);
+}
+@font-face {
+  font-family: "nehue-roman-italic";
+  src: url(./assets/fonts/NeueHaasDisplayRomanItalic.ttf);
 }
 
 .container__hb {
@@ -19,11 +42,17 @@
 }
 .Container__title h2 {
   font-size: 3.3rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .Container__title p {
   font-size: 1.68rem;
   line-height: 2.5rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* parallax */
@@ -53,12 +82,12 @@
 
     background-color: aqua;
   } */
-.box-test{
+.box-test {
   background-color: #fff;
 }
-  .container__parallax{
-    position: relative;
-  }
+.container__parallax {
+  position: relative;
+}
 
 .word {
   position: -webkit-sticky;

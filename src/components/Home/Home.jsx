@@ -38,7 +38,7 @@ const Home = () => {
         }}
       >
         <Marquee
-          speed={0.25}
+          speed={0.15}
           scrollWhen="overflow"
           direction="left"
           delay="0"
@@ -60,10 +60,11 @@ const Home = () => {
             className="video-mp4"
           >
             <source
-              src="https://res.cloudinary.com/henribarrett/video/upload/v1673456899/hb-2023/video-hnk_wczrbk.mp4"
+              src="https://res.cloudinary.com/henribarrett/video/upload/v1674493533/hb-2023/video-hnk-sin-graf_wgyup8.mp4"
               type="video/mp4"
             ></source>
           </video>
+          
         </div>
 
         <div className="box-text-home">
