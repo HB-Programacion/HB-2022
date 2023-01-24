@@ -160,9 +160,16 @@
 }
 
 .container__gift-next {
-  position: relative;
-  top: -25rem;
+padding-top: 15rem;
+width: 100%;
 }
-.container__gift-next img {
+.nextBack{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.container__gift-next .img-next{
   width: 60%;
+  top: -7rem;
+  position: relative;
 }

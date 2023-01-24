@@ -3,7 +3,8 @@ import banner from "../../assets/rappi/rappi-banner.png";
 import section from "../../assets/rappi/divider-rappi.png";
 import rappi from "../../assets/rappi/img-rappi.png";
 import imgNext from "../../assets/rappi/next-img-gif.png";
-import next from "../../assets/heinekenFest/next.png";
+import next from "../../assets/heinekenFest/next-divider.svg";
+import backNext from "../../assets/heinekenFest/next-background.png";
 
 
 import "./Rappi.css";
@@ -48,11 +49,17 @@ const Rappi = () => {
           </div>
     
           <div className="container__gif3">
-            <img src={next} width={"80%"} className="next" />
+            <a href="/umana">
+              <img src={next} width={"80%"} className="next" />
+            </a>
           </div>
+
           <div className="container__gift-next">
             {/* <h2>NEXT</h2> */}
-            <img src={imgNext} />
+            <img src={backNext} className="nextBack" />
+            <a href="/umana">
+              <img src={imgNext} className="img-next" />
+            </a>
           </div>
         </div>
       </div>

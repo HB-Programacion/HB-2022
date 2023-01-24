@@ -3,6 +3,8 @@ import banner from "../../assets/umana/umana-banner.png";
 import section from "../../assets/umana/divider-umana.png";
 import umana from "../../assets/umana/img-umana.png";
 import imgNext from "../../assets/rappi/next-img-gif.png";
+import next from "../../assets/heinekenFest/next-divider.svg";
+import backNext from "../../assets/heinekenFest/next-background.png";
 
 
 import "./Umana.css";
@@ -42,13 +44,18 @@ const Umana = () => {
         <img src={section} width={"100%"} />
         <div className="container__mosaico">
 
-        <div className="">
-            <img src={umana} width={"80%"} className="" />
+        <div className="container__gif3">
+            <a href="/rappi">
+              <img src={next} width={"80%"} className="next" />
+            </a>
           </div>
-    
+
           <div className="container__gift-next">
             {/* <h2>NEXT</h2> */}
-            <img src={imgNext} />
+            <img src={backNext} className="nextBack" />
+            <a href="/rappi">
+              <img src={imgNext} className="img-next" />
+            </a>
           </div>
         </div>
       </div>
