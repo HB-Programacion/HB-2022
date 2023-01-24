@@ -1,5 +1,5 @@
 .main{
-  width: 1920px;
+
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -51,6 +51,7 @@
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 900;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 .Container__title p {
@@ -67,6 +68,21 @@
   width: 100vw;
 }
 .video-mp4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+.container__banner-parallax {
+  height: 80vh;
+  width: 100vw;
+}
+.container__banner-parallax img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -110,4 +126,11 @@
   justify-content: center;
   align-items: center;
   font-family: "nehue-has45";
+}
+
+@media (min-width: 1920px) {
+  .word{
+    font-size: 35rem;
+  }
+
 }

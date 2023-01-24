@@ -13,8 +13,8 @@
   margin: 0 auto;
 }
 .container__text h1 {
-  font-size: 2.5rem;
-  line-height: 2.8rem;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -49,8 +49,8 @@
 
 .button__load button {
   font-size: 33px;
-  padding: 6px 16px;
-  border-radius: 20px;
+  padding: 6px 20px;
+  border-radius: 50px;
   border: 1px solid #000000;
   margin: auto 5px;
   background-color: #000000;
@@ -61,6 +61,7 @@
 .button__load img {
   margin-bottom: 4px;
   margin-left: 10px;
+  padding: auto;
 }
 
 .filter__style {
@@ -139,4 +140,12 @@ border-bottom: 1px solid #000000;
   bottom: 32%;
   z-index: 1;
   left: -100px;
+}
+
+
+@media (min-width: 1920px) {
+  .container__filter img{
+    width: 60%s;
+  }
+
 }

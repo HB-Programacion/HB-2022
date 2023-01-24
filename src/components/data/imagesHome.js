@@ -28,13 +28,15 @@ export const imagesHome = [
         id: 5,
         type: "media-content",
         url: "https://res.cloudinary.com/henribarrett/image/upload/v1670953558/hb-2022/rappi_kp71ua.png",
-        name: "Rappi"
+        name: "Rappi",
+        href: "./rappi"
     },
     {
         id: 6,
         type: "media-content",
         url: "https://res.cloudinary.com/henribarrett/image/upload/v1670953558/hb-2022/rappi2_dyypsl.png",
         name: "Rappi2"
+       
     }
 ]
 

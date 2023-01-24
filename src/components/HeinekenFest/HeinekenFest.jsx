@@ -8,6 +8,7 @@ import img4 from "../../assets/heinekenFest/img-hnk-4.png";
 import img5 from "../../assets/heinekenFest/img-hnk-5.png";
 import img6 from "../../assets/heinekenFest/img-hnk-6.png";
 import next from "../../assets/heinekenFest/next.png";
+import imgNext from "../../assets/heinekenFest/img-next.png";
 // import video from "https://res.cloudinary.com/henribarrett/video/upload/v1673456899/hb-2023/video-hnk_wczrbk.mp4";
 
 import gif1 from "../../assets/heinekenFest/gif01.gif";
@@ -128,7 +129,11 @@ const HeinekenFest = () => {
           <div className="container__gif3">
             <img src={next} width={"80%"} className="next" />
           </div>
-          {/* <img src={img} width={"100%"} /> */}
+    
+          <div className="container__gift-next">
+            {/* <h2>NEXT</h2> */}
+            <img src={imgNext} />
+          </div>
         </div>
       </div>
     </>

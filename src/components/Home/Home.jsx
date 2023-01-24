@@ -60,12 +60,13 @@ const Home = () => {
             className="video-mp4"
           >
             <source
-              src="https://res.cloudinary.com/henribarrett/video/upload/v1674493533/hb-2023/video-hnk-sin-graf_wgyup8.mp4"
+              src="https://res.cloudinary.com/henribarrett/video/upload/v1674596182/hb-2023/video-hb_kk3rgg.mp4"
               type="video/mp4"
             ></source>
           </video>
           
         </div>
+  
 
         <div className="box-text-home">
           <img src={divider} className="gif" />
