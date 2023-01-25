@@ -42,6 +42,7 @@
 .next {
   top: 4rem;
   position: relative;
+  width: 100%;
 }
 .video-umana1 iframe {
   width: 70%;
@@ -156,4 +157,19 @@
   font-weight: 500;
   font-style: normal;
   text-align: justify;
+}
+
+.container__gift-next {
+padding-top: 15rem;
+width: 100%;
+}
+.nextBack{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.container__gift-next .img-next{
+  width: 60%;
+  top: -7rem;
+  position: relative;
 }

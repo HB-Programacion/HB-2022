@@ -7,6 +7,8 @@ import HeinekenFest from "./components/HeinekenFest/HeinekenFest";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 import "./App.css";
+import Rappi from "./components/Rappi/Rappi";
+import Umana from "./components/Umana/Umana";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/heinekenFest" element={<HeinekenFest />} />
+          <Route exact path="/rappi" element={<Rappi />} />
+          <Route exact path="/umana" element={<Umana />} />
         </Routes>
       </Router>
       <Footer />
