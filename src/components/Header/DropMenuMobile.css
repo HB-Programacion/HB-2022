@@ -1,0 +1,89 @@
+a {
+    text-decoration: none;
+    margin: 2rem 0rem 2rem 10rem;
+}
+
+:global(.list-group-flush > .list-group-item) {
+    padding: 1.5rem;
+}
+
+.drop-menu {
+    padding: 0.5rem 0;
+    position: fixed;
+    z-index: 999999;
+    width:87%;
+    height: 100%;
+    left: 0;
+    background: #000000;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.drop-menu-off {
+    opacity: 0;
+    left: -100%;
+}
+
+.container-close {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-logo{
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.container-logo img{
+    width: 20%;
+}
+
+.container-title {
+    margin-top: 2rem;
+}
+
+.container-image-icon img{
+    margin: 14px -20px 0px 0px;
+}
+
+.text-navbar {
+    margin: 0;
+    font-family: "'neue-haas-grotesk-display'";
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 85px;
+}
+
+.contenedor-items {
+    margin-top: 2rem;
+}
+
+.container-options ul, li{
+    /* list-style-type: none; */
+    list-style-type: none;
+        list-style-position:inside;
+        margin:0;
+        padding:0;
+}
+@media (min-width : 480px){
+    .drop-menu{
+        width: 70%;
+    }
+}
+@media (min-width : 768px){
+    .drop-menu{
+        width: 50%;
+    }
+}
+@media (min-width: 993px) {
+    .drop-menu {
+        display: none;
+        /* visibility: hidden; */
+    }
+}

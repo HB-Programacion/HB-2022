@@ -28,8 +28,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    
 }
 
 .container-social-img{
@@ -46,4 +44,40 @@
 }
 .container-social-img img{
     width: 1.5rem;
+}
+
+.burger-hb{
+    display: none;
+}
+
+@media (max-width : 680px){
+    .main{
+        width: 805px;
+    }
+    .container__social{
+        display: none;
+    }
+    .container__gifLogo{
+        display: grid;
+        place-items: center;
+    }
+    .container__gifLogo .logoGift{
+        width: 3.5rem;
+    }
+    .container__gifLogo .logo{
+        width: 13.5rem;
+    }
+    .header__container {
+        padding: 0rem;
+    }
+    .navbar-hb{
+        display: flex;
+        width: 100%;
+        place-content: space-between;
+    }
+    .burger-hb{
+        display: block;
+        align-self: center;
+        margin-right: 1rem;
+    }
 }

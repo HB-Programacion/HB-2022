@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/header/Logo-hb.svg";
 import logoGift from "../../assets/header/logo-gift.gif";
 import behance from "../../assets/header/Behance.png";
 import ig from "../../assets/header/Instagram.png";
+import burger from '../../assets/header/burguer.svg'
 
 import "./Header.css";
+import DropMenuMobile from "./DropMenuMobile";
 
 const Header = () => {
+
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    console.log("hi")
+    setActive(!active);
+  };
+
   return (
     <div className="header__container">
-      <a href="/">
-        <div className="container__gifLogo">
-          <img src={logoGift} className="logoGift" />
-          <img src={logo} className="logo" />
+      <nav className="navbar-hb">
+        <a href="/">
+          <div className="container__gifLogo">
+            <img src={logoGift} className="logoGift" />
+            <img src={logo} className="logo" />
+          </div>
+        </a>
+        <div className="burger-hb" onClick={handleClick}>
+          <img className="img-burger" src={burger} alt="burger hb" />
         </div>
-      </a>
+      </nav>
       <div className="header__container-item container__social">
         <div className="container-social-img">
           <a href="https://www.behance.net/henribarrettstudio" target="blank">
@@ -30,6 +44,10 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <DropMenuMobile
+        active={active}
+        setActive={handleClick}
+      />
     </div>
   );
 };

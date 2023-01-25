@@ -105,9 +105,18 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
-  font-size: 28rem;
+  font-size: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "nehue-has45";
+}
+
+@media (max-width : 680px){
+  .main{
+      width: 532px;
+  }
+  .word{
+    font-size: 12rem;
+  }
 }
