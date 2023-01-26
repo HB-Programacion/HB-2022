@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import HeinekenFest from "./components/HeinekenFest/HeinekenFest";
-import { ParallaxProvider } from "react-scroll-parallax";
 import logoGift from "../src/assets/header/logo-gift.gif"
 
 import "./App.css";
