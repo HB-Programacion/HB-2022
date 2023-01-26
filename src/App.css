@@ -128,6 +128,14 @@
   font-family: "nehue-has45";
 }
 
+.logo-gift {
+  width: 5%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999999;
+}
+
 @media (max-width : 680px){
   .main{
       width: 532px;

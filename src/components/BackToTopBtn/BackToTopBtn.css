@@ -1,0 +1,23 @@
+.back-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    font-size: 82px;
+    background: transparent;
+    /* color: white; */
+    cursor: pointer;
+    /* border-radius: 20%; */
+    border: none;
+    /* border: 1px solid #ffffff; */
+    /* box-shadow: 0 5px 10px #ccc; */
+}
+
+.back-to-top:hover {
+    /* background: red; */
+    border: 1px solid #000000;
+}
+
+.back-to-top img{
+    width: 60px;
+    height: 260px;
+}

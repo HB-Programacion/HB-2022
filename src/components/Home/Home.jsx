@@ -12,6 +12,7 @@ import Marquee from "react-double-marquee";
 import word from "../../assets/home/work.svg";
 
 const Home = () => {
+
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
@@ -77,7 +78,7 @@ const Home = () => {
               somos analíticos y pensamos siempre en la mejor solución de
               acuerdo al problema.
             </h1>
-            <img src={logoGift} className="logo-gift" />
+            {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
         </div>
       </div>
@@ -117,7 +118,6 @@ const Home = () => {
           <img src={arrowRightWhite} alt="arrow-right" />
         </button>
       </div>
-     
     </>
   );
 };
