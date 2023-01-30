@@ -25,9 +25,9 @@ const Header = () => {
             <img src={logo} className="logo" />
           </div>
         </a>
-        <div className="burger-hb" onClick={handleClick}>
+        {/* <div className="burger-hb" onClick={handleClick}>
           <img className="img-burger" src={burger} alt="burger hb" />
-        </div>
+        </div> */}
       </nav>
       <div className="header__container-item container__social">
         <div className="container-social-img">

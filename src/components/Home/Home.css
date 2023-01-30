@@ -142,3 +142,9 @@ border-bottom: 1px solid #000000;
   }
 
 }
+
+@media (max-width : 680px){
+  .container__buttons{
+    flex-wrap: wrap;
+  }
+}

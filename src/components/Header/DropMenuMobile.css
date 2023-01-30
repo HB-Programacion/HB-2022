@@ -50,11 +50,12 @@
 
 .text-navbar {
     margin: 0;
-    font-family: "'neue-haas-grotesk-display'";
+    font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
     font-size: 50px;
     color: #ffffff;
     text-align: center;
-    text-decoration: underline;
     font-weight: normal;
     text-transform: uppercase;
     height: 85px;

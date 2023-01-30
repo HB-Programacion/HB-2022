@@ -55,7 +55,9 @@
         width: 805px;
     }
     .container__social{
-        display: none;
+        position: absolute;
+        right: -8rem;
+        top: 1rem;
     }
     .container__gifLogo{
         display: grid;
@@ -65,15 +67,16 @@
         width: 3.5rem;
     }
     .container__gifLogo .logo{
-        width: 13.5rem;
+        width: 15.5rem;
     }
     .header__container {
-        padding: 0rem;
+        padding-top: 4rem
     }
     .navbar-hb{
         display: flex;
         width: 100%;
         place-content: space-between;
+        justify-content: center;
     }
     .burger-hb{
         display: block;
