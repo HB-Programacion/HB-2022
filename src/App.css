@@ -1,6 +1,6 @@
 .main{
 
-  max-width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -135,10 +135,21 @@
   right: 4px;
   z-index: 999999;
 }
-
+@media (max-width : 768px){
+  .main{
+    width: 100%;
+  }
+.word{
+  font-size: 15rem;
+}
+.container__buttons{
+  flex-wrap: wrap;
+  padding: 0rem 2rem;
+}
+}
 @media (max-width : 680px){
   .main{
-      width: 532px;
+    width: 100%;
   }
   .word{
     font-size: 12rem;
