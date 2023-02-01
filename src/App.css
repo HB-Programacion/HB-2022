@@ -1,6 +1,6 @@
 .main{
 
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@
 /* parallax */
 .box-video-background {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 .video-mp4 {
   width: 100%;
@@ -116,7 +116,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -131,8 +131,8 @@
 .logo-gift {
   width: 4%;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 4rem;
+  right: 4px;
   z-index: 999999;
 }
 

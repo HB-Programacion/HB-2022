@@ -1,13 +1,14 @@
 .back-to-top {
     position: fixed;
-    bottom: 25px;
-    right: 30px;
+    bottom: 4px;
+    right: 12px;
     font-size: 50px;
     background: transparent;
     /* color: white; */
     cursor: pointer;
     /* border-radius: 20%; */
     border: none;
+    z-index: 999;
     /* border: 1px solid #ffffff; */
     /* box-shadow: 0 5px 10px #ccc; */
 }
@@ -15,6 +16,6 @@
 
 
 .back-to-top img{
-    width: 60px;
-    height: 260px;
+    width: 25px;
+    height: 160px;
 }
