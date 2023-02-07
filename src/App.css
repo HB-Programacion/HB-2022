@@ -129,13 +129,22 @@
 }
 
 .logo-gift {
-  width: 4%;
+  width: 3%;
   position: fixed;
-  bottom: 4rem;
-  right: 4px;
+  bottom: 4.5%;
+  right: 2%;
   z-index: 999999;
 }
+.mobile{
+  display: none;
+}
 @media (max-width : 768px){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
   .main{
     width: 100%;
   }
