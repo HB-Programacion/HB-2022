@@ -1,6 +1,7 @@
 import React from "react";
 
 import section from "../../assets/heinekenFest/divider-hnk.png";
+import sectionMobile from "../../assets/heinekenFest/divider-mobile.svg";
 import img1 from "../../assets/heinekenFest/img-hnk-1.png";
 import img2 from "../../assets/heinekenFest/img-hnk-2.png";
 import img3 from "../../assets/heinekenFest/img-hnk3.png";
@@ -34,7 +35,7 @@ const HeinekenFest = () => {
           className="video-mp4"
         >
           <source
-            src="https://res.cloudinary.com/henribarrett/video/upload/v1674493533/hb-2023/video-hnk-sin-graf_wgyup8.mp4"
+            src="https://res.cloudinary.com/henribarrett/video/upload/v1674493533/hb-2023/video-hnk-sin-graf_wgyup8.mp44"
             type="video/mp4"
           ></source>
         </video>
@@ -51,7 +52,8 @@ const HeinekenFest = () => {
             consequa.
           </p>
         </div>
-        <img src={section} width={"100%"} />
+        <img src={section} width={"100%"} className="desktop"/>
+        <img src={sectionMobile} width={"100%"} className="mobile"/>
         <div className="container__mosaico">
           <div className="container__gif1">
             <div>

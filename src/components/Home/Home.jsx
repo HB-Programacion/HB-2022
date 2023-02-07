@@ -61,7 +61,7 @@ const Home = () => {
             className="video-mp4"
           >
             <source
-              src="https://res.cloudinary.com/henribarrett/video/upload/v1674596182/hb-2023/video-hb_kk3rgg.mp4"
+              src="https://res.cloudinary.com/henribarrett/video/upload/v1674596182/hb-2023/video-hb_kk3rgg.mp44"
               type="video/mp4"
             ></source>
           </video>

@@ -180,6 +180,10 @@ width: 100%;
     width: 100%;
     align-items:center
   }
+  .container__gif1 div{
+    width: 90%;
+    margin: 0 auto;
+  }
   .container__gif2 h2{
     font-size: 1.2rem;
     width: 100%;
@@ -189,10 +193,18 @@ width: 100%;
     width: 100%;
     align-items:center
   }
+  .container__gif2 div{
+    width: 90%;
+    margin: 0 auto;
+  }
   .container__gif4-5{
     flex-direction: column;
     width: 100%;
     align-items:center
+  }
+  .container__gif4-5 div{
+    width: 90%;
+    margin: 0 auto;
   }
   .container__gif4-5 h2{
     font-size: 1.2rem;
@@ -203,5 +215,11 @@ width: 100%;
   }
   .container__p-hnk p {
     font-size: 1.2rem;
+  }
+  .container__gift-next{
+    padding-top: 7rem;
+  }
+  .container__gift-next .img-next{
+    top: -2rem;
   }
 }
