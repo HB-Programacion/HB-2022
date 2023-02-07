@@ -1,17 +1,18 @@
 import React from "react";
 import "./Footer.css";
-import credits from "../../assets/footer/credits.svg";
+import hbCredits from "../../assets/footer/hb-creditos.svg";
+import derechosCredits from "../../assets/footer/derechos-creditos.svg";
 
 const Footer = () => {
   return (
     <>
       <div className="container__footer">
-        <div className="container__footer-boxItem">
+        {/* <div className="container__footer-boxItem">
           <div className="container__footer-item">HOME</div>
           <div className="container__footer-item">WORK</div>
           <div className="container__footer-item">MANIFIESTO</div>
           <div className="container__footer-item">CONTACT</div>
-        </div>
+        </div> */}
         <div className="container__footer-boxItem">
           <div className="container__footer-item">info@henribarrett.com</div>
           <div className="container__footer-item">+51 (1) 965 087 557</div>
@@ -24,7 +25,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="box-credits">
-        <img src={credits} />
+        <img src={hbCredits} />
+        <img src={derechosCredits} />
       </div>
     </>
   );

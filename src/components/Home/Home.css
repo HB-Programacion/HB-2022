@@ -147,4 +147,7 @@ border-bottom: 1px solid #000000;
   .container__buttons{
     flex-wrap: wrap;
   }
+  .container__filter img{
+    width: 90%;
+  }
 }
