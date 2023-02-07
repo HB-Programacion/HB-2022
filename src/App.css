@@ -159,6 +159,28 @@
     line-height: 3.5rem;
   }
 }
+@media (max-width : 400px){
+  .word{
+    font-size: 6rem;
+  }
+  .container__social{
+    right: 0rem
+  }
+  .container__text h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .Container__title{
+    width: 90%;
+  }
+  .Container__title h2{
+    font-size: 2.7rem;
+  }
+  .Container__title p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}
 @media (min-width: 1920px) {
   .word{
     font-size: 35rem;

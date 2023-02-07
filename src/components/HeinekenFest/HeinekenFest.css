@@ -173,3 +173,35 @@ width: 100%;
   top: -7rem;
   position: relative;
 }
+
+@media (max-width : 680px){
+  .container__gif1{
+    flex-direction: column;
+    width: 100%;
+    align-items:center
+  }
+  .container__gif2 h2{
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .container__gif2{
+    flex-direction: column;
+    width: 100%;
+    align-items:center
+  }
+  .container__gif4-5{
+    flex-direction: column;
+    width: 100%;
+    align-items:center
+  }
+  .container__gif4-5 h2{
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .container__p-hnk {
+    width: 90%;
+  }
+  .container__p-hnk p {
+    font-size: 1.2rem;
+  }
+}

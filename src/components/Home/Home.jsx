@@ -42,7 +42,7 @@ const Home = () => {
           speed={0.15}
           scrollWhen="overflow"
           direction="left"
-          delay="0"
+          delay={0}
         >
           <span className="marquee">
             {/* always watching. the curiosity is sexy. always watching. always watching. the curiosity is sexy. always watching. */}
