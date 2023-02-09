@@ -35,7 +35,7 @@ const HeinekenFest = () => {
           className="video-mp4"
         >
           <source
-            src="https://res.cloudinary.com/henribarrett/video/upload/v1674493533/hb-2023/video-hnk-sin-graf_wgyup8.mp44"
+            src="https://webhb.s3.us-east-2.amazonaws.com/video-hnk-sin-graf.mp4"
             type="video/mp4"
           ></source>
         </video>
