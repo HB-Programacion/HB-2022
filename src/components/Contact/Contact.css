@@ -1,0 +1,153 @@
+.gif {
+   width: 100%;
+   height: 50%;
+ }
+ .box-text-home {
+   background-color: #ffffff;
+ }
+ .container__text {
+   text-align: center;
+   padding: 2rem 0rem;
+   /* width: 985px; */
+   width: 70%;
+   margin: 0 auto;
+ }
+ .container__text h1 {
+   font-size: 2.8rem;
+   line-height: 3.5rem;
+   font-family: neue-haas-grotesk-display, sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   letter-spacing: -1.5px;
+ }
+ 
+ .container__filter {
+   position: relative;
+   padding-top: 5rem;
+   padding-bottom: 3rem;
+   margin: 0 auto;
+   z-index: 99;
+ }
+ 
+ .container__filter img {
+   width: 70%;
+   margin: 0 auto;
+   display: flex;
+ }
+ .container__buttons {
+   display: flex;
+   justify-content: center;
+   margin-top: 7rem;
+   place-items: center;
+ }
+ 
+ .button__load {
+   text-align: center;
+   background-color: #ffffff;
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+ }
+ 
+ .button__load button {
+   font-size: 33px;
+   padding: 6px 20px;
+   border-radius: 50px;
+   border: 1px solid #000000;
+   margin: auto 5px;
+   background-color: #000000;
+   color: #ffffff;
+   cursor: pointer;
+ }
+ 
+ .button__load img {
+   margin-bottom: 4px;
+   margin-left: 10px;
+   padding: auto;
+ }
+ 
+ .filter__style {
+   margin: 0px 15px;
+   font-weight: 900;
+   font-size: 22px;
+ }
+ 
+ .buttons__style button {
+   font-size: 22px;
+   padding: 3px 10px;
+   border-radius: 20px;
+   border: 1px solid #000000;
+   margin: auto 5px;
+   background-color: #ffffff;
+   cursor: pointer;
+ }
+ 
+ .container__projects div {
+   width: 100%;
+   margin-bottom: 4.5rem;
+ }
+ 
+ .box-marquee {
+   background-color: #ffffff;
+ padding: .3rem 0;
+ border-top: 1px solid #000000;
+ border-bottom: 1px solid #000000;
+ }
+ .marquee {
+   font-weight: bold;
+   color: #000000;
+   font-size: 2.8rem;
+   text-transform: uppercase;
+ }
+ .wrapper {
+   width: 100%;
+   margin: auto;
+   border: 1px solid #000000;
+   overflow-x: hidden;
+ }
+ 
+ .target {
+   font-weight: bold;
+   color: #000000;
+   animation-name: rightToLeft;
+   animation-duration: 15.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation: rightToLeft 15.5s linear infinite;
+   text-transform: uppercase;
+   font-size: 4rem;
+   margin: 0.5rem auto;
+ }
+ 
+ @keyframes rightToLeft {
+   0% {
+     transform: translateX(100%);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+ 
+ .bg-text {
+   position: absolute;
+   font-size: 400px;
+   bottom: 32%;
+   z-index: 1;
+   left: -100px;
+ }
+ 
+ 
+ @media (min-width: 1920px) {
+   .container__filter img{
+     width: 60%;
+   }
+ 
+ }
+ 
+ @media (max-width : 680px){
+   .container__buttons{
+     flex-wrap: wrap;
+   }
+   .container__filter img{
+     width: 90%;
+   }
+ }

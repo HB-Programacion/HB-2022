@@ -10,6 +10,7 @@ import "./App.css";
 import Rappi from "./components/Rappi/Rappi";
 import Umana from "./components/Umana/Umana";
 import BackToTopBtn from "./components/BackToTopBtn/BackToTopBtn";
+import Contact from "./components/Contact/Contact";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/heinekenFest" element={<HeinekenFest />} />
             <Route exact path="/rappi" element={<Rappi />} />
             <Route exact path="/umana" element={<Umana />} />
+            <Route exact path="/contact" element={<Contact />} />
           </Routes>
         </Router>
       <Footer />
