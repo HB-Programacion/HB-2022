@@ -1,9 +1,5 @@
-.gif {
-   width: 100%;
-   height: 50%;
- }
  .box-text-home {
-   background-color: #ffffff;
+   background-color: #000000;
  }
  .container__text {
    text-align: center;
@@ -12,14 +8,32 @@
    width: 70%;
    margin: 0 auto;
  }
- .container__text h1 {
-   font-size: 2.8rem;
-   line-height: 3.5rem;
-   font-family: neue-haas-grotesk-display, sans-serif;
-   font-weight: 500;
-   font-style: normal;
-   letter-spacing: -1.5px;
+ .container__text .title__contact{
+   display: flex;
  }
+
+ .title__contact img{
+   width: 10%;
+   height: 10%;
+   margin-right: -70px;
+ }
+
+ .container__text .text__title {
+   color: #ffffff;
+   font-size: 70px;
+   text-transform: uppercase;
+ }
+
+.container__subtitle{
+   color: #ffffff;
+}
+
+
+
+
+
+
+
  
  .container__filter {
    position: relative;
@@ -41,14 +55,14 @@
    place-items: center;
  }
  
- .button__load {
+ .button__send {
    text-align: center;
    background-color: #ffffff;
    padding-top: 4rem;
    padding-bottom: 4rem;
  }
  
- .button__load button {
+ .button__send button {
    font-size: 33px;
    padding: 6px 20px;
    border-radius: 50px;
@@ -59,7 +73,7 @@
    cursor: pointer;
  }
  
- .button__load img {
+ .button__send img {
    margin-bottom: 4px;
    margin-left: 10px;
    padding: auto;
@@ -134,14 +148,15 @@
    z-index: 1;
    left: -100px;
  }
- 
- 
+ /* 
+
  @media (min-width: 1920px) {
    .container__filter img{
      width: 60%;
    }
  
  }
+ */
  
  @media (max-width : 680px){
    .container__buttons{
