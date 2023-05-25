@@ -12,6 +12,7 @@ import "./Contact.css";
 import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
+import FormContact from "../FormContact/FormContact";
 
 const Contact = () => {
 
@@ -50,6 +51,7 @@ return (
                   — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon
                </h1>
             </div>
+            <FormContact/>
          </div>
       </div>
    </>
