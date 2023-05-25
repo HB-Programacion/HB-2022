@@ -40,23 +40,17 @@ return (
                <h1 className="title__contact">
                   <img src={arrow} className="arrowContact" />
                   <div className="text__title">
-                     Let's create <br/> something sexy
+                     Let's create <br/> <span>something</span> <br/> sexy
                   </div>
                </h1>
                <img src={homeContact} className="homeContact" />
             </div>
             <div className="container__subtitle">
                <h1>
-                  — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon v 
+                  — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon
                </h1>
             </div>
          </div>
-      </div>
-
-      <div className="button__send">
-         <button onClick={() => console.log("click load more")}>
-            SEND
-         </button>
       </div>
    </>
 );
