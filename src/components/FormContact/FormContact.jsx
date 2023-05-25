@@ -3,7 +3,35 @@ import "./FormContact.css";
 
 const FormContact = () => {
 
-   const [contacto, setContacto] = useState('');
+   const servicesData = [
+      {
+         "nombre" : "Content",
+         "id" : 1
+      },
+      {
+         "nombre" : "Design",
+         "id" : 2
+      },
+      {
+         "nombre" : "Strategy",
+         "id" : 3
+      },
+      {
+         "nombre" : "Web Design",
+         "id" : 4
+      },
+      {
+         "nombre" : "Events",
+         "id" : 5
+      },
+      {
+         "nombre" : "Productions",
+         "id" : 6
+      }
+   ]
+
+   const [services, setServices] = useState(servicesData);
+   const [serviceSelected, setServiceSelected] = useState('');
    const [nombre, setNombre] = useState('');
    const [compania, setCompania] = useState('');
    const [email, setEmail] = useState('');
@@ -12,7 +40,7 @@ const FormContact = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault();
-      console.log('Contacto:', contacto);
+      console.log('serviceSelected:', serviceSelected);
       console.log('Nombre:', nombre);
       console.log('Compañía:', compania);
       console.log('Email:', email);
@@ -21,42 +49,60 @@ const FormContact = () => {
    }
 
   return (
-   <form onSubmit={handleSubmit}>
-      <label>
-         <select value={contacto} onChange={(e) => setContacto(e.target.value)}>
-            <option value="">Seleccionar</option>
-            <option value="Teléfono">Teléfono</option>
-            <option value="Email">Email</option>
+   <form onSubmit={handleSubmit} className="container-form">
+      <div className='selectContainer'>
+         <select value={serviceSelected} onChange={(e) => setServiceSelected(e.target.value)}>
+               <option value="" disabled selected>Contact me for...</option>
+            {services.map((op) => (
+               <option key={op.value} value={op.value}>{op.nombre}</option>
+            ))}
          </select>
-      </label>
+      </div>
       <br />
 
-      <label>
-         <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Full name" />
-      </label>
-      <br />
-
-      <label>
-         <input type="text" value={compania} onChange={(e) => setCompania(e.target.value)} placeholder="Company name"/>
-      </label>
-      <br />
-
-      <label>
-         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
-      </label>
-      <br />
-
-      <label>
-         <input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} placeholder="Phone"/>
-      </label>
-      <br />
-
-      <label>
-         <input type="checkbox" checked={politicas} onChange={(e) => setPoliticas(e.target.checked)}/>
+      <div>
+         <input 
+            className='inputContainer name'
+            type="text"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+            placeholder="Full name"
+         />
+      </div>
+      <div>
+         <input
+            className='inputContainer compania'
+            type="text"
+            value={compania}
+            onChange={(e) => setCompania(e.target.value)}
+            placeholder="Company name"
+         />
+      </div>
+      <div className='container-two'>
+         <input
+            className='inputContainer email'
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+         />
+         <input
+            className='inputContainer telefono'
+            type="tel"
+            value={telefono}
+            onChange={(e) => setTelefono(e.target.value)}
+            placeholder="Phone"
+         />
+      </div>
+      <div>
+         <input
+            className='inputContainer politicas'
+            type="checkbox"
+            checked={politicas}
+            onChange={(e) => setPoliticas(e.target.checked)}
+         />
          He leído las políticas de datos
-      </label>
-      <br />
-
+      </div>
       <div className="button__send">
          <button type='submit'>
             SEND

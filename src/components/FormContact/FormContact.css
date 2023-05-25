@@ -1,3 +1,32 @@
+.container-form{
+   text-align: center;
+}
+
+.container-form .container-two{
+   display: flex;
+   min-width: 60%;
+}
+
+.inputContainer{
+   font-size: 32px;
+   min-width: 60%;
+   background-color: transparent;
+   color: #ffffff;
+   border: none;
+   border-bottom: 1px solid #ffffff;
+   padding: 15px 0px;
+}
+
+.selectContainer select{
+   font-size: 32px;
+   min-width: 60%;
+   background-color: transparent;
+   color: #ffffff;
+   border: none;
+   border-bottom: 1px solid #ffffff;
+   padding: 15px 0px;
+}
+
 .button__send {
    text-align: center;
    background-color: #000000;
