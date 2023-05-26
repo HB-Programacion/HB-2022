@@ -17,6 +17,10 @@
    padding: 15px 0px;
 }
 
+.inputContainer input:focus-visible{
+   outline: none;
+}
+
 .checkContainer{
    display: flex;
    color: #ffffff;
