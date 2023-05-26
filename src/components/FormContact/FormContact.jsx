@@ -36,7 +36,7 @@ const FormContact = () => {
    const [compania, setCompania] = useState('');
    const [email, setEmail] = useState('');
    const [telefono, setTelefono] = useState('');
-   const [politicas, setPoliticas] = useState(false);
+   const [privacy, setPrivacy] = useState(false);
 
    const handleSubmit = (e) => {
       e.preventDefault();
@@ -45,7 +45,7 @@ const FormContact = () => {
       console.log('Compañía:', compania);
       console.log('Email:', email);
       console.log('Teléfono:', telefono);
-      console.log('Políticas:', politicas);
+      console.log('privacy:', privacy);
    }
 
   return (
@@ -58,20 +58,18 @@ const FormContact = () => {
             ))}
          </select>
       </div>
-      <br />
-
-      <div>
+      <div className='inputContainer'>
          <input 
-            className='inputContainer name'
+            className='name'
             type="text"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             placeholder="Full name"
          />
       </div>
-      <div>
+      <div className='inputContainer'>
          <input
-            className='inputContainer compania'
+            className='compania'
             type="text"
             value={compania}
             onChange={(e) => setCompania(e.target.value)}
@@ -79,29 +77,35 @@ const FormContact = () => {
          />
       </div>
       <div className='container-two'>
-         <input
-            className='inputContainer email'
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-         />
-         <input
-            className='inputContainer telefono'
-            type="tel"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-            placeholder="Phone"
-         />
+         <div className='inputContainer'>
+            <input
+               className='email'
+               type="email"
+               value={email}
+               onChange={(e) => setEmail(e.target.value)}
+               placeholder="Email"
+            />
+         </div>
+         <div className='inputContainer'>
+            <input
+               className='telefono'
+               type="tel"
+               value={telefono}
+               onChange={(e) => setTelefono(e.target.value)}
+               placeholder="Phone"
+            />
+         </div>
       </div>
-      <div>
+      <div className='checkContainer'>
          <input
-            className='inputContainer politicas'
+            className='privacy'
             type="checkbox"
-            checked={politicas}
-            onChange={(e) => setPoliticas(e.target.checked)}
+            checked={privacy}
+            onChange={(e) => setPrivacy(e.target.checked)}
          />
-         He leído las políticas de datos
+         <div className='privacy-text'>
+            Yes, Henri Barrett can process my personal data in accordance with the privacy policy
+         </div>
       </div>
       <div className="button__send">
          <button type='submit'>

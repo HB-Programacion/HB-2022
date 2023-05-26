@@ -3,13 +3,13 @@
 }
 
 .container-form .container-two{
-   display: flex;
-   min-width: 60%;
+   /*display: flex;
+   justify-content: center; */
 }
 
-.inputContainer{
-   font-size: 32px;
-   min-width: 60%;
+.inputContainer input{
+   min-width: 40%;
+   font-size: 22px;
    background-color: transparent;
    color: #ffffff;
    border: none;
@@ -17,9 +17,26 @@
    padding: 15px 0px;
 }
 
+.checkContainer{
+   display: flex;
+   color: #ffffff;
+   padding: 47px 0px 0px;
+   font-size: 70%;
+   place-content: center;
+   margin-left: -6%;
+}
+
+.checkContainer input{
+   transform: scale(3.5);
+}
+
+.checkContainer .privacy-text{
+   margin-left: 20px;
+}
+
 .selectContainer select{
-   font-size: 32px;
-   min-width: 60%;
+   min-width: 40%;
+   font-size: 22px;
    background-color: transparent;
    color: #ffffff;
    border: none;
@@ -35,7 +52,7 @@
  }
  
  .button__send button {
-   font-size: 33px;
+   font-size: 25px;
    padding: 6px 20px;
    border-radius: 50px;
    border: 1px solid #ffffff;
