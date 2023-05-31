@@ -4,6 +4,9 @@ import logoGift from "../../assets/header/logo-gift.gif";
 import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
 import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
+import wwd from "../../assets/home/wwd.svg";
+import icontent from "../../assets/home/icontent.svg";
+import union from "../../assets/home/union.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
@@ -12,7 +15,6 @@ import Marquee from "react-double-marquee";
 import word from "../../assets/home/work.svg";
 
 const Home = () => {
-
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
@@ -31,7 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <div
+      {/* <div
         className="box-marquee"
         style={{
         width: '100%',
@@ -45,11 +47,10 @@ const Home = () => {
           delay={0}
         >
           <span className="marquee">
-            {/* always watching. the curiosity is sexy. always watching. always watching. the curiosity is sexy. always watching. */}
             always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy.
           </span>
         </Marquee>
-      </div>
+      </div> */}
       <div>
         <div className="box-video-background">
           <video
@@ -65,18 +66,16 @@ const Home = () => {
               type="video/mp4"
             ></source>
           </video>
-          
         </div>
-  
 
         <div className="box-text-home">
-          <img src={divider} className="gif" />
+          {/* <img src={divider} className="gif" /> */}
           <div className="container__text">
             <h1>
-              Nos adelantamos al futuro, nos anticipamos a las posibilidades,
-              proponemos soluciones que van más alla de lo evidente y del brief,
-              somos analíticos y pensamos siempre en la mejor solución de
-              acuerdo al problema.
+              We anticipate the future, we anticipate the possibilities, we
+              propose solutions that go beyond the obvious and the brief, we are
+              analytical and we always think of the best solution according to
+              the problem
             </h1>
             {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
@@ -85,7 +84,7 @@ const Home = () => {
       <div id="box-filter-parallax" className="box-test">
         <h1 className="word">work</h1>
         <div className="container__parallax">
-          <div className="container__buttons">
+          {/* <div className="container__buttons">
             <div className="filter__style">FILTER</div>
             {buttons &&
               buttons.map((type, index) => (
@@ -99,7 +98,7 @@ const Home = () => {
                   </button>
                 </div>
               ))}
-          </div>
+          </div> */}
           <div className="container__images">
             {filteredImages &&
               filteredImages.map((type) => (
@@ -114,9 +113,29 @@ const Home = () => {
       </div>
       <div className="button__load">
         <button onClick={() => console.log("click load more")}>
-          LOAD MORE
+          SEE OUR WORK
           <img src={arrowRightWhite} alt="arrow-right" />
         </button>
+      </div>
+      <div className="box-bg-gray">
+        <div className="box-wwd">
+          <img src={wwd} className="wwd" />
+        </div>
+        <div className="container__text">
+          <h1>
+            The world and the market are changing. Audiences evolve. Brands
+            grow. And you need to navigate in this constant flux of change
+          </h1>
+        </div>
+
+        <div className="group-btns">
+          <div className="btn-services">
+            <img src={icontent}/>
+            content
+            <img src={union}/>
+          </div>
+
+        </div>
       </div>
     </>
   );

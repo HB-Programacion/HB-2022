@@ -4,13 +4,16 @@
 }
 .box-text-home {
   background-color: #ffffff;
+  height: 100vh;
 }
 .container__text {
   text-align: center;
-  padding: 2rem 0rem;
+  /* padding: 2rem 0rem; */
   /* width: 985px; */
   width: 70%;
   margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50% );
 }
 .container__text h1 {
   font-size: 2.8rem;
@@ -150,4 +153,24 @@ border-bottom: 1px solid #000000;
   .container__filter img{
     width: 90%;
   }
+}
+
+
+.box-bg-gray{
+  background-color: #CCCCCB;
+
+  padding-top: 6rem;
+}
+.box-wwd{
+  position: relative;
+
+  padding-bottom: 8rem;
+}
+.wwd{
+  width: 100%;
+}
+
+.btn-services{
+  display: flex;
+  align-items: center;
 }

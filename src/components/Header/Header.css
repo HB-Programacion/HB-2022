@@ -1,5 +1,5 @@
 .header__container{
-    background-color: #FF0000;
+    background-color: transparent;
     padding: 1.2rem 8rem;
     display: flex;
     justify-content: space-between;
@@ -67,16 +67,15 @@
         width: 3.5rem;
     }
     .container__gifLogo .logo{
-        width: 15.5rem;
+        width: 7rem;
     }
     .header__container {
-        padding-top: 4rem
+        padding:3rem 1rem
     }
     .navbar-hb{
         display: flex;
         width: 100%;
         place-content: space-between;
-        justify-content: center;
     }
     .burger-hb{
         display: block;
