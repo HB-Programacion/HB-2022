@@ -1,33 +1,10 @@
-<<<<<<< HEAD
- .box-text-home {
- }
- .container__text {
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   display: flex;
-   text-align: center;
-   padding: 2rem 0rem;
-   /* width: 985px; */
-   width: 70%;
-   margin: 0 auto;
- }
- .container__text .homeContact{
-   position: absolute;
-   right: 20%;
-   width: 15%;
-   top: 36%;
-   z-index: 10;
- }
- .container__text .hireusContact{
-=======
   .box-text-home {
     background-color: #000000;
   }
   .container__text {
     justify-content: center;
     align-items: center;
-    position: relative;
+    /*position: relative;*/
     display: flex;
     text-align: center;
     padding: 2rem 0rem;
@@ -36,7 +13,6 @@
     margin: 0 auto;
   }
   .container__text .homeContact{
->>>>>>> b6c1db6f78ecc1242f530855ece3df7c9ec57edf
     position: absolute;
     right: 20%;
     width: 15%;

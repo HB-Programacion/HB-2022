@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { uploadDocToFirebase } from "../../firebase"
 import "./FormContact.css";
 
 const FormContact = () => {
@@ -38,7 +39,7 @@ const FormContact = () => {
    const [telefono, setTelefono] = useState('');
    const [privacy, setPrivacy] = useState(false);
 
-   const handleSubmit = (e) => {
+   const handleSubmit = async (e) => {
       e.preventDefault();
       console.log('serviceSelected:', serviceSelected);
       console.log('Nombre:', nombre);
@@ -46,6 +47,16 @@ const FormContact = () => {
       console.log('Email:', email);
       console.log('Teléfono:', telefono);
       console.log('privacy:', privacy);
+
+      const data = {
+         serviceSelected : serviceSelected,
+         nombre: nombre,
+         email: email,
+         telefono: telefono,
+         privacy: privacy
+      }
+
+      await uploadDocToFirebase( telefono, data )
    }
 
   return (
