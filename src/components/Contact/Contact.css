@@ -4,7 +4,7 @@
   .container__text {
     justify-content: center;
     align-items: center;
-    position: relative;
+    /*position: relative;*/
     display: flex;
     text-align: center;
     padding: 2rem 0rem;
