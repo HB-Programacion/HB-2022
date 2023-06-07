@@ -1,0 +1,5 @@
+{
+   "welcomeMessage": "¡Bienvenido a mi aplicación!",
+   "contentText": "Este es un texto de contenido.",
+   "paragraph": "Este es un <1>párrafo</1> con <3>react-i18next</3>."
+ }

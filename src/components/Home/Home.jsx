@@ -14,7 +14,42 @@ import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
 
+import { useTranslation, Trans } from 'react-i18next';
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+import translationES from '../../locales/es.json';
+import translationEN from '../../locales/en.json';
+
+i18n.use(initReactI18next).init({
+  lng: 'en', // Establece el idioma inicial
+  resources: {
+    en: {
+      translation: translationEN, // Traducciones en inglés
+    },
+    es: {
+      translation: translationES, // Traducciones en español
+    },
+  },
+});
+
+const changeLanguage = (language) => {
+  i18n.changeLanguage(language);
+};
+
+const handleLanguageClick = () => {
+  const currentLanguage = i18n.language;
+
+  if (currentLanguage === 'en') {
+    changeLanguage('es');
+  } else {
+    changeLanguage('en');
+  }
+};
+
 const Home = () => {
+  const { t } = useTranslation();
+
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
@@ -33,6 +68,20 @@ const Home = () => {
 
   return (
     <>
+      <h1>{t('welcomeMessage')}</h1>
+      <p>{t('contentText')}</p>
+      <Trans i18nKey="paragraph">
+        This is a <strong>paragraph</strong>
+      </Trans>
+      <span 
+        onClick={handleLanguageClick}
+        style={{
+          cursor: 'pointer',
+          textDecoration: 'underline',
+        }}
+        >
+        {i18n.language === 'en' ? 'Español' : 'English'}
+      </span>
       {/* <div
         className="box-marquee"
         style={{
