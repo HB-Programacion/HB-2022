@@ -9,8 +9,10 @@ import {
 import Modal from '../Modal/Modal';
 import ModalResponse from '../ModalResponse/ModalResponse';
 import "./FormContact.css";
+import { useTranslation } from 'react-i18next';
 
 const FormContact = () => {
+   const { t } = useTranslation();
 
    const servicesData = [
       {
@@ -137,7 +139,7 @@ return (
          <select 
             value={serviceSelected} 
             onChange={(e) => setServiceSelected(e.target.value)}>
-               <option value="" disabled selected>Contact me for...</option>
+               <option value="" disabled selected>{t('contact-form.for-me')}</option>
             {services.map((op) => (
                <option key={op.value} value={op.value}>{op.nombre}</option>
             ))
@@ -151,7 +153,7 @@ return (
             name='name' 
             type="text"
             value={values.name}
-            placeholder="Full name"
+            placeholder={t('contact-form.name')}
             onChange={handleChangeInput}
          />
       </div>
@@ -162,7 +164,7 @@ return (
             name='company'
             type="text"
             value={values.company}
-            placeholder="Company name"
+            placeholder={t('contact-form.company')}
             onChange={handleChangeInput}
          />
       </div>
@@ -174,7 +176,7 @@ return (
                name='email'
                type="email"
                value={values.email}
-               placeholder="Email"
+               placeholder={t('contact-form.email')}
                onChange={handleChangeInput}
             />
          </div>
@@ -185,7 +187,7 @@ return (
                name='phone'
                type="tel"
                value={values.phone}
-               placeholder="Phone"
+               placeholder={t('contact-form.phone')}
                onChange={handleChangeInput}
             />
          </div>
@@ -202,12 +204,12 @@ return (
             checked={checkPrivacy}
          />
          <div className='privacy-text'>
-            Yes, Henri Barrett can process my personal data in accordance with the privacy policy
+         {t('contact-form.check')}
          </div>
       </div>
       <div className="button__send">
          <button type='submit'>
-            SEND
+            {t('contact-form.send')}
          </button>
       </div>
    </form>

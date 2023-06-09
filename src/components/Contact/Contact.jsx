@@ -14,24 +14,7 @@ import Marquee from "react-double-marquee";
 import word from "../../assets/home/work.svg";
 import FormContact from "../FormContact/FormContact";
 
-import { useTranslation, Trans } from 'react-i18next';
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-
-import translationES from '../../locales/es.json';
-import translationEN from '../../locales/en.json';
-
-i18n.use(initReactI18next).init({
-   lng: 'en', // Establece el idioma inicial
-   resources: {
-      en: {
-         translation: translationEN, // Traducciones en inglés
-      },
-      es: {
-         translation: translationES, // Traducciones en español
-      },
-   },
-});
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
    const { t } = useTranslation();
@@ -67,8 +50,7 @@ return (
             </div>
             <div className="container__subtitle">
                <h1>
-                  <div>{t('welcomeMessage')}</div>
-                  — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon
+                  {t('contact-getting')}
                </h1>
             </div>
             <FormContact/>

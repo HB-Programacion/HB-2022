@@ -1,5 +1,18 @@
+
 {
-   "welcomeMessage": "Welcome to my app!",
-   "contentText": "This is some content text.",
-   "paragraph": "This is a <1>paragraph</1> with <3>react-i18next</3>."
- }
+   "test":"testing text",
+   "home-we-anticipate": "We anticipate the future, we anticipate the possibilities, we propose solutions that go beyond the obvious and the brief, we are analytical and we always think of the best solution according to the problem",
+   "home-see-our-work": "SEE OUR WORK",
+   "home-the-world":"The world and the market are changing. Audiences evolve. Brands grow. And you need to navigate in this constant flux of change",
+   
+   "contact-getting": "Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon",
+   "contact-form": {
+      "for-me": "Contact me for...",
+      "name": "Full name",
+      "company": "Company name",
+      "email": "Email",
+      "phone": "Phone",
+      "check": "Yes, Henri Barrett can process my personal data in accordance with the privacy policy",
+      "send": "SEND"
+   }
+}
