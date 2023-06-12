@@ -19,7 +19,29 @@ import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
 
+import i18n  from "../../i18n/i18n";
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
+
+const changeLanguage = (language) => {
+  i18n.changeLanguage(language);
+};
+
+const handleLanguageClick = () => {
+  console.log('handle leng', i18n.language)
+  const currentLanguage = i18n.language;
+
+  if (currentLanguage === 'en') {
+    changeLanguage('es');
+  } else {
+    changeLanguage('en');
+  }
+};
+
 const Home = () => {
+  const { t } = useTranslation();
+
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
@@ -38,6 +60,22 @@ const Home = () => {
 
   return (
     <>
+      <h1>{t('test')}</h1>
+      <span 
+        onClick={handleLanguageClick}
+        style={{
+          cursor: 'pointer',
+          textDecoration: 'underline',
+        }}
+        >
+        {i18n.language === 'en' ? 'Español' : 'English'}
+      </span>
+      <div>
+        <Link to="/contact">Go to Contact</Link>
+        <Link to="/heinekenFest">Go to heinekenFest</Link>
+        <Link to="/rappi">Go to rappi</Link>
+        <Link to="/umana">Go to umana</Link>
+      </div>
       {/* <div
         className="box-marquee"
         style={{
@@ -77,10 +115,7 @@ const Home = () => {
           {/* <img src={divider} className="gif" /> */}
           <div className="container__text">
             <h1>
-              We anticipate the future, we anticipate the possibilities, we
-              propose solutions that go beyond the obvious and the brief, we are
-              analytical and we always think of the best solution according to
-              the problem
+            {t('home-we-anticipate')}
             </h1>
             {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
@@ -122,15 +157,13 @@ const Home = () => {
           </button>
         </div>
       </div>
-
       <div className="box-bg-gray">
         <div className="box-wwd">
           <img src={wwd} className="wwd" />
         </div>
         <div className="container__text">
           <h1>
-            The world and the market are changing. Audiences evolve. Brands
-            grow. And you need to navigate in this constant flux of change
+            {t('home-the-world')}
           </h1>
         </div>
 

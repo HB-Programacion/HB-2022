@@ -14,8 +14,10 @@ import Marquee from "react-double-marquee";
 import word from "../../assets/home/work.svg";
 import FormContact from "../FormContact/FormContact";
 
-const Contact = () => {
+import { useTranslation } from 'react-i18next';
 
+const Contact = () => {
+   const { t } = useTranslation();
 // const { ref } = useParallax({ speed: 100 });
 const [filteredImages, setFilteredImages] = useState(null);
 const ref = useRef(null);
@@ -48,7 +50,7 @@ return (
             </div>
             <div className="container__subtitle">
                <h1>
-                  — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon
+                  {t('contact-getting')}
                </h1>
             </div>
             <FormContact/>
