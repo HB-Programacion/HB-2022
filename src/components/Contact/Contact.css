@@ -1,7 +1,7 @@
-  .box-text-home {
+  .box-text-homeeeee {
     background-color: #000000;
   }
-  .container__text {
+  .container__texttttttt {
     justify-content: center;
     align-items: center;
     /*position: relative;*/
@@ -74,7 +74,7 @@
 
 
   
-  .container__filter {
+  .container__filterrrrr {
     position: relative;
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -82,7 +82,7 @@
     z-index: 99;
   }
   
-  .container__filter img {
+  .container__filter imggggg {
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -178,7 +178,7 @@
     .container__buttons{
       flex-wrap: wrap;
     }
-    .container__filter img{
+    .container__filter imgggg{
       width: 90%;
     }
   }

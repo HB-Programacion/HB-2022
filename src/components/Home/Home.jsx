@@ -3,13 +3,18 @@ import gif from "../../assets/home/gif.png";
 import logoGift from "../../assets/header/logo-gift.gif";
 import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
-import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
+import img2 from "../../assets/home/img-2.png";
+import arrowbtn from "../../assets/arrow-btn.svg";
 import wwd from "../../assets/home/wwd.svg";
 import icontent from "../../assets/home/icontent.svg";
 import union from "../../assets/home/union.svg";
+import groupwwd from "../../assets/home/wwd-group.png";
+import www from "../../assets/home/www.svg";
+import wwwLogos from "../../assets/home/www-logos.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
+import Contact from "../Contact/Contact.jsx"
 import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
@@ -110,13 +115,14 @@ const Home = () => {
               ))}
           </div>
         </div>
+        <div className="button__load">
+          <button onClick={() => console.log("click load more")}>
+            SEE OUR WORK
+            <img src={arrowbtn} alt="arrow-right" />
+          </button>
+        </div>
       </div>
-      <div className="button__load">
-        <button onClick={() => console.log("click load more")}>
-          SEE OUR WORK
-          <img src={arrowRightWhite} alt="arrow-right" />
-        </button>
-      </div>
+
       <div className="box-bg-gray">
         <div className="box-wwd">
           <img src={wwd} className="wwd" />
@@ -129,14 +135,54 @@ const Home = () => {
         </div>
 
         <div className="group-btns">
-          <div className="btn-services">
-            <img src={icontent}/>
+          <button className="btn-services">
+            <img src={icontent} />
             content
-            <img src={union}/>
-          </div>
-
+            <img src={union} />
+          </button>
+          <button className="btn-services">
+            <img src={icontent} />
+            DESIGN
+            <img src={union} />
+          </button>
+          <button className="btn-services">
+            <img src={icontent} />
+            EVENTS
+            <img src={union} />
+          </button>
+          <button className="btn-services">
+            <img src={icontent} />
+            WEB DESIGN
+            <img src={union} />
+          </button>
+          <button className="btn-services">
+            <img src={icontent} />
+            PRODUCTION
+            <img src={union} />
+          </button>
+          <button className="btn-services">
+            <img src={icontent} />
+            STRATEGY
+            <img src={union} />
+          </button>
+        </div>
+        <div className="container_groupwwd">
+          <img src={groupwwd} alt="" className="" />
+        </div>
+        <div className="button__load">
+          <button onClick={() => console.log("click load more")}>
+            our services
+            <img src={arrowbtn} alt="arrow-right" />
+          </button>
         </div>
       </div>
+      <img src={img2} className="w-100" />
+      <div className="container-www">
+        <img src={www} className="www-title" />
+        <img src={wwwLogos} className="www-logos" />
+        <p className="p-1">We make our clients lives easier and their brands stronger.</p>
+      </div>
+    
     </>
   );
 };
