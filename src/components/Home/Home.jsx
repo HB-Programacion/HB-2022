@@ -10,32 +10,31 @@ import icontent from "../../assets/home/icontent.svg";
 import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/wwd-group.png";
 import www from "../../assets/home/www.svg";
-import wwwLogos from "../../assets/home/www-logos.svg";
+import logoPrueba from "../../assets/Betterfly.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
-import Contact from "../Contact/Contact.jsx"
+import Contact from "../Contact/Contact.jsx";
 import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
 
-import i18n  from "../../i18n/i18n";
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-
+import i18n from "../../i18n/i18n";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
 };
 
 const handleLanguageClick = () => {
-  console.log('handle leng', i18n.language)
+  console.log("handle leng", i18n.language);
   const currentLanguage = i18n.language;
 
-  if (currentLanguage === 'en') {
-    changeLanguage('es');
+  if (currentLanguage === "en") {
+    changeLanguage("es");
   } else {
-    changeLanguage('en');
+    changeLanguage("en");
   }
 };
 
@@ -60,15 +59,15 @@ const Home = () => {
 
   return (
     <>
-      <h1>{t('test')}</h1>
-      <span 
+      <h1>{t("test")}</h1>
+      <span
         onClick={handleLanguageClick}
         style={{
-          cursor: 'pointer',
-          textDecoration: 'underline',
+          cursor: "pointer",
+          textDecoration: "underline",
         }}
-        >
-        {i18n.language === 'en' ? 'Español' : 'English'}
+      >
+        {i18n.language === "en" ? "Español" : "English"}
       </span>
       <div>
         <Link to="/contact">Go to Contact</Link>
@@ -114,9 +113,7 @@ const Home = () => {
         <div className="box-text-home">
           {/* <img src={divider} className="gif" /> */}
           <div className="container__text">
-            <h1>
-            {t('home-we-anticipate')}
-            </h1>
+            <h1>{t("home-we-anticipate")}</h1>
             {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
         </div>
@@ -162,9 +159,7 @@ const Home = () => {
           <img src={wwd} className="wwd" />
         </div>
         <div className="container__text">
-          <h1>
-            {t('home-the-world')}
-          </h1>
+          <h1>{t("home-the-world")}</h1>
         </div>
 
         <div className="group-btns">
@@ -212,10 +207,37 @@ const Home = () => {
       <img src={img2} className="w-100" />
       <div className="container-www">
         <img src={www} className="www-title" />
-        <img src={wwwLogos} className="www-logos" />
-        <p className="p-1">We make our clients lives easier and their brands stronger.</p>
+        <div className="container-www_logos">
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+          <div className="www_logo">
+            <img src={logoPrueba} className="" />
+          </div>
+
+        </div>
+        <p className="p-1">
+          We make our clients lives easier and their brands stronger.
+        </p>
       </div>
-    
     </>
   );
 };

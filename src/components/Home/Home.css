@@ -211,10 +211,17 @@
   margin: 3rem auto;
   display: block;
 }
-
-.www-logos{
+.container-www_logos{
   margin: 8rem auto;
-  display: block;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.www_logo{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
 }
 
 .p-1{
