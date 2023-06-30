@@ -76,10 +76,11 @@
         display: flex;
         width: 100%;
         place-content: space-between;
+        padding: 0rem 1rem;
     }
     .burger-hb{
         display: block;
         align-self: center;
-        margin-right: 1rem;
+        /* margin-right: 1rem; */
     }
 }

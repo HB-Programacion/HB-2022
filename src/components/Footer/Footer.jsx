@@ -7,21 +7,25 @@ const Footer = () => {
   return (
     <>
       <div className="container__footer">
-        {/* <div className="container__footer-boxItem">
-          <div className="container__footer-item">HOME</div>
-          <div className="container__footer-item">WORK</div>
-          <div className="container__footer-item">MANIFIESTO</div>
-          <div className="container__footer-item">CONTACT</div>
-        </div> */}
         <div className="container__footer-boxItem">
-          <div className="container__footer-item">info@henribarrett.com</div>
-          <div className="container__footer-item">+51 (1) 965 087 557</div>
-          <div className="container__footer-item">AV. PETHIT THOARS 4162</div>
-          <div className="container__footer-item">MIRAFLORES - pERÚ</div>
+          <div className="container__footer-item">HOME</div>
+          <div className="container__footer-item">about us</div>
+          <div className="container__footer-item">WORK</div>
+          <div className="container__footer-item">services</div>
+          <div className="container__footer-item">quicklys</div>
+          <div className="container__footer-item">CONTACT</div>
+        </div>
+        <div className="container__footer-boxItem info-text">
+          <div className="container__footer-item lowercase">info@henribarrett.com</div>
+          <div className="container__footer-item lowercase">+51 (1) 965 087 557</div>
+          <div className="container__footer-item lowercase">AV. PETHIT THOARS 4162</div>
+          <div className="container__footer-item lowercase">MIRAFLORES - pERÚ</div>
         </div>
         <div className="container__footer-boxItem">
-          <div className="container__footer-item">INSTAGRAM</div>
-          <div className="container__footer-item">BEHANCE</div>
+          <div className="container__footer-item lowercase">behance</div>
+          <div className="container__footer-item lowercase">linkedin</div>
+          <div className="container__footer-item lowercase">youtube</div>
+          <div className="container__footer-item lowercase">instagram</div>
         </div>
       </div>
       <div className="box-credits">

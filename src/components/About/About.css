@@ -1,0 +1,32 @@
+.box-about{
+    padding: 0 1rem;
+}.img-tiwwa{
+    width: 100%;
+    margin: 3rem auto;
+}
+.title-about{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -1.3px;
+    color: #fff;
+    margin: 2rem auto;
+}
+
+.subtitle-about{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -1.2px;
+    color: #575757;
+    margin: 0;
+}
+
+.img1{
+    margin: 4rem auto;
+}

@@ -10,6 +10,7 @@ import icontent from "../../assets/home/icontent.svg";
 import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/wwd-group.png";
 import www from "../../assets/home/www.svg";
+import wmct from "../../assets/home/wmct.svg";
 import logoPrueba from "../../assets/Betterfly.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
@@ -75,7 +76,7 @@ const Home = () => {
         <Link to="/rappi">Go to rappi</Link>
         <Link to="/umana">Go to umana</Link>
       </div>
-      {/* <div
+      <div
         className="box-marquee"
         style={{
         width: '100%',
@@ -85,43 +86,45 @@ const Home = () => {
         <Marquee
           speed={0.10}
           scrollWhen="overflow"
-          direction="left"
+          direction="right"
           delay={0}
         >
           <span className="marquee">
             always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy.
           </span>
         </Marquee>
-      </div> */}
-      <div>
-        <div className="box-video-background">
-          <video
-            width="100%"
-            height="100%"
-            autoPlay
-            muted
-            loop
-            className="video-mp4"
-          >
-            <source
-              src="https://webhb.s3.us-east-2.amazonaws.com/video-hb.mp4"
-              type="video/mp4"
-            ></source>
-          </video>
-        </div>
+      </div>
 
+      <div className="box-video-background">
+        <video
+          width="100%"
+          height="100%"
+          autoPlay
+          muted
+          loop
+          className="video-mp4"
+        >
+          <source
+            src="https://webhb.s3.us-east-2.amazonaws.com/video-hb.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
+      </div>
+      <div className="bg-white">
         <div className="box-text-home">
           {/* <img src={divider} className="gif" /> */}
           <div className="container__text">
-            <h1>{t("home-we-anticipate")}</h1>
+            <h1 className="text-title">{t("home-we-anticipate")}</h1>
             {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
         </div>
-      </div>
-      <div id="box-filter-parallax" className="box-test">
-        <h1 className="word">work</h1>
-        <div className="container__parallax">
-          {/* <div className="container__buttons">
+        <h1 className="text-word">
+          WORK
+        </h1>
+        {/* <div id="box-filter-parallax" className="box-test"> */}
+        {/* <h1 className="word">work</h1> */}
+        {/* <div className="container__parallax"> */}
+        {/* <div className="container__buttons">
             <div className="filter__style">FILTER</div>
             {buttons &&
               buttons.map((type, index) => (
@@ -136,17 +139,17 @@ const Home = () => {
                 </div>
               ))}
           </div> */}
-          <div className="container__images">
-            {filteredImages &&
-              filteredImages.map((type) => (
-                <div className="container__filter" key={type.id}>
-                  <a href={type.href}>
-                    <img src={type.url} alt={type.name} />
-                  </a>
-                </div>
-              ))}
-          </div>
+        <div className="container__images">
+          {filteredImages &&
+            filteredImages.map((type) => (
+              <div className="container__filter" key={type.id}>
+                <a href={type.href}>
+                  <img src={type.url} alt={type.name} />
+                </a>
+              </div>
+            ))}
         </div>
+        {/* </div> */}
         <div className="button__load">
           <button onClick={() => console.log("click load more")}>
             SEE OUR WORK
@@ -154,12 +157,14 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      {/* </div> */}
       <div className="box-bg-gray">
         <div className="box-wwd">
-          <img src={wwd} className="wwd" />
+          <img src={wmct} className="wwd" />
         </div>
-        <div className="container__text">
-          <h1>{t("home-the-world")}</h1>
+        <div className="container__text-wwd">
+          <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
         </div>
 
         <div className="group-btns">
@@ -232,7 +237,6 @@ const Home = () => {
           <div className="www_logo">
             <img src={logoPrueba} className="" />
           </div>
-
         </div>
         <p className="p-1">
           We make our clients lives easier and their brands stronger.
