@@ -16,12 +16,12 @@ import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
 import Contact from "../Contact/Contact.jsx";
 import Marquee from "react-double-marquee";
-// import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
 
 import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import logosMarcas from "../data/logos.json";
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
@@ -41,21 +41,53 @@ const handleLanguageClick = () => {
 const Home = () => {
   const { t } = useTranslation();
 
-  // const { ref } = useParallax({ speed: 100 });
+  const [imagesMarcasData, setImagesMarcasData] = useState([]);
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
+  const [transitioning, setTransitioning] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(-1);
 
-  useEffect(() => {
-    setFilteredImages(getImagesHome());
-  }, []);
 
-  const handleImagesHome = (e) => {
-    e.preventDefault();
-    let typeImagesHome = e.target.value;
-    typeImagesHome !== "all"
-      ? setFilteredImages(filterPokemon(typeImagesHome))
-      : setFilteredImages(getImagesHome());
-  };
+  const [visibleImages, setVisibleImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);   
+  
+    useEffect(() => {
+      // Lista de imágenes
+      function importAll(r) {
+        return r.keys().map(r);
+      }
+      
+      const imagesMarcas = importAll(require.context("../../assets/logosMarcas", false, /\.(png|jpe?g|svg)$/)); 
+  
+      const allImages = Object.values(imagesMarcas);
+      const totalImages = allImages.length;
+      const visibleImageCount = 8;
+      const initialVisibleImages = allImages.slice(0, visibleImageCount);
+      setVisibleImages(initialVisibleImages);
+
+      const interval = setInterval(() => {
+        let randomVisibleIndex;
+        do {
+          randomVisibleIndex = Math.floor(Math.random() * visibleImageCount);
+        } while (randomVisibleIndex === currentImageIndex);
+
+        let randomInvisibleIndex;
+        do {
+          randomInvisibleIndex = Math.floor(Math.random() * (totalImages - visibleImageCount) + visibleImageCount);
+        } while (randomInvisibleIndex === randomVisibleIndex);
+
+        const updatedVisibleImages = visibleImages.map((image, index) =>
+          index === randomVisibleIndex ? allImages[randomInvisibleIndex] : image
+        );
+
+        setCurrentImageIndex(randomVisibleIndex);
+        setVisibleImages(updatedVisibleImages);
+      }, 2000);
+
+      return () => clearInterval(interval);
+    }, []);
+  
 
   return (
     <>
@@ -75,24 +107,6 @@ const Home = () => {
         <Link to="/rappi">Go to rappi</Link>
         <Link to="/umana">Go to umana</Link>
       </div>
-      {/* <div
-        className="box-marquee"
-        style={{
-        width: '100%',
-        whiteSpace: 'nowrap',
-        }}
-      >
-        <Marquee
-          speed={0.10}
-          scrollWhen="overflow"
-          direction="left"
-          delay={0}
-        >
-          <span className="marquee">
-            always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy.
-          </span>
-        </Marquee>
-      </div> */}
       <div>
         <div className="box-video-background">
           <video
@@ -111,31 +125,14 @@ const Home = () => {
         </div>
 
         <div className="box-text-home">
-          {/* <img src={divider} className="gif" /> */}
           <div className="container__text">
             <h1>{t("home-we-anticipate")}</h1>
-            {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
         </div>
       </div>
       <div id="box-filter-parallax" className="box-test">
         <h1 className="word">work</h1>
         <div className="container__parallax">
-          {/* <div className="container__buttons">
-            <div className="filter__style">FILTER</div>
-            {buttons &&
-              buttons.map((type, index) => (
-                <div className="buttons__style" key={index}>
-                  <button
-                    key={index}
-                    value={type.value}
-                    onClick={handleImagesHome}
-                  >
-                    {type.name}
-                  </button>
-                </div>
-              ))}
-          </div> */}
           <div className="container__images">
             {filteredImages &&
               filteredImages.map((type) => (
@@ -208,31 +205,20 @@ const Home = () => {
       <div className="container-www">
         <img src={www} className="www-title" />
         <div className="container-www_logos">
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-          <div className="www_logo">
-            <img src={logoPrueba} className="" />
-          </div>
-
+          {visibleImages.map((image, index) => (
+            <div className="www_logo">
+              <img
+                className=""
+                key={index}
+                src={image}
+                alt={`Image ${index + 1}`}
+                style={{
+                  opacity: index === currentImageIndex ? 1 : 0.2,
+                  transition: 'opacity 0.5s ease-in-out',
+                }}
+              />
+            </div>
+          ))}
         </div>
         <p className="p-1">
           We make our clients lives easier and their brands stronger.
