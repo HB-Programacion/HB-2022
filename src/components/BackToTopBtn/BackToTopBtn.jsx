@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import BackToTopImg from "../../assets/header/backToTopImg.svg"
+import BackToTopImg from "../../assets/header/btt.svg"
 import "./BackToTopBtn.css";
 
 const BackToTopBtn = () => {

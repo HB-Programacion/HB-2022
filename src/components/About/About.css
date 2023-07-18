@@ -1,32 +1,125 @@
-.box-about{
-    padding: 0 1rem;
-}.img-tiwwa{
-    width: 100%;
+.box-about {
+  padding: 0 1rem;
+}
+.img-tiwwa {
+  width: 100%;
+  margin: 3rem auto;
+}
+.title-about {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.3px;
+  color: #fff;
+  margin: 2rem auto;
+}
+
+.subtitle-about {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.2px;
+  color: #575757;
+  margin: 0;
+}
+
+.img1 {
+  margin: 4rem auto;
+}
+
+.mop {
+  display: block;
+  margin: 2rem auto;
+  width: 95%;
+}
+
+.text-mop {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.box-group-people {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3rem auto;
+}
+.box-people {
+  width: 10rem;
+  height: 10rem;
+}
+.photo-people {
+  width: 88%;
+  margin: 2rem auto;
+}
+.text-people {
+  width: 100%;
+  margin: 5rem auto;
+  color: #575757;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.1rem;
+}
+
+.mt-people {
+  margin-top: 5rem;
+}
+
+.wwb {
+  width: 80%;
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.wwb-textdown {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.2rem;
+}
+
+.box-wwb-numbers{
     margin: 3rem auto;
 }
-.title-about{
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    letter-spacing: 1px;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: -1.3px;
-    color: #fff;
-    margin: 2rem auto;
+.wwb-numbers{
+    width: 100%;
+    margin: 5rem auto;
+    display: block;
 }
 
-.subtitle-about{
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: -1.2px;
-    color: #575757;
-    margin: 0;
+.fondo-surprise{
+    width: 100%;
+    position: relative;
+    /* background-image: url('../../assets/about/fondo-surprise.svg');
+    height: 50rem; */
 }
 
-.img1{
-    margin: 4rem auto;
+.box-title-surprise{
+  position: relative;
+  top: 5.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.img-surprise{
+  position: relative;
+  top: -6rem;
+}
+
+.p-surprise{
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -6rem;
+}
+.asterisco{
+  width: 3rem;
+  padding: 0 .6rem;
 }

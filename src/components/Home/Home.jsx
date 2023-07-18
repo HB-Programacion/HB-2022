@@ -11,12 +11,18 @@ import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/wwd-group.png";
 import www from "../../assets/home/www.svg";
 import wmct from "../../assets/home/wmct.svg";
+import hnk from "../../assets/home/hnk-home-mobile.png";
+import umana from "../../assets/home/umana-home-mobile.png";
+import rappi from "../../assets/home/rappi-home-mobile.png";
+import tacama from "../../assets/home/tacama-home-mobile.png";
+import hb from "../../assets/home/hb-home-mobile.png";
+
 import logoPrueba from "../../assets/Betterfly.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
 import "./Home.css";
 import Contact from "../Contact/Contact.jsx";
-import Marquee from "react-double-marquee";
+
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import word from "../../assets/home/work.svg";
 
@@ -60,7 +66,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>{t("test")}</h1>
+      {/* <h1>{t("test")}</h1>
       <span
         onClick={handleLanguageClick}
         style={{
@@ -79,21 +85,10 @@ const Home = () => {
       <div
         className="box-marquee"
         style={{
-        width: '100%',
-        whiteSpace: 'nowrap',
+          width: "100%",
+          whiteSpace: "nowrap",
         }}
-      >
-        <Marquee
-          speed={0.10}
-          scrollWhen="overflow"
-          direction="right"
-          delay={0}
-        >
-          <span className="marquee">
-            always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy. always watching. the curiosity is sexy.
-          </span>
-        </Marquee>
-      </div>
+      ></div> */}
 
       <div className="box-video-background">
         <video
@@ -110,7 +105,7 @@ const Home = () => {
           ></source>
         </video>
       </div>
-      <div className="bg-white">
+      <div className="bg-black">
         <div className="box-text-home">
           {/* <img src={divider} className="gif" /> */}
           <div className="container__text">
@@ -118,13 +113,11 @@ const Home = () => {
             {/* <img src={logoGift} className="logo-gift" /> */}
           </div>
         </div>
-        <h1 className="text-word">
-          WORK
-        </h1>
-        {/* <div id="box-filter-parallax" className="box-test"> */}
-        {/* <h1 className="word">work</h1> */}
-        {/* <div className="container__parallax"> */}
-        {/* <div className="container__buttons">
+        {/* <h1 className="text-word">WORK</h1> */}
+        <div id="box-filter-parallax" className="box-test">
+          <h1 className="word">work</h1>
+          {/* <div className="container__parallax"> */}
+          {/* <div className="container__buttons">
             <div className="filter__style">FILTER</div>
             {buttons &&
               buttons.map((type, index) => (
@@ -139,7 +132,7 @@ const Home = () => {
                 </div>
               ))}
           </div> */}
-        <div className="container__images">
+          {/* <div className="container__images">
           {filteredImages &&
             filteredImages.map((type) => (
               <div className="container__filter" key={type.id}>
@@ -148,65 +141,85 @@ const Home = () => {
                 </a>
               </div>
             ))}
+        </div> */}
+
+          <div className="container-img-home">
+            <div className="items-img-home">
+              <img src={hnk} className="w-100"/>
+            </div>
+            <div>
+              <img src={umana}className="w-100" />
+            </div>
+            <div>
+              <img src={rappi} className="w-100"/>
+            </div>
+            <div>
+              <img src={tacama}className="w-100" />
+            </div>
+            <div>
+              
+              <img src={hb} className="w-100"/>
+            </div>
+          </div>
+          {/* </div> */}
+          <div className="button__load">
+            <button onClick={() => console.log("click load more")}>
+              SEE OUR WORK
+              <img src={arrowbtn} alt="arrow-right" />
+            </button>
+          </div>
         </div>
+
         {/* </div> */}
-        <div className="button__load">
-          <button onClick={() => console.log("click load more")}>
-            SEE OUR WORK
-            <img src={arrowbtn} alt="arrow-right" />
-          </button>
-        </div>
-      </div>
+        <div className="box-bg-gray">
+          <div className="box-wwd">
+            <img src={wmct} className="wwd" />
+          </div>
+          <div className="container__text-wwd">
+            <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
+          </div>
 
-      {/* </div> */}
-      <div className="box-bg-gray">
-        <div className="box-wwd">
-          <img src={wmct} className="wwd" />
-        </div>
-        <div className="container__text-wwd">
-          <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
-        </div>
-
-        <div className="group-btns">
-          <button className="btn-services">
-            <img src={icontent} />
-            content
-            <img src={union} />
-          </button>
-          <button className="btn-services">
-            <img src={icontent} />
-            DESIGN
-            <img src={union} />
-          </button>
-          <button className="btn-services">
-            <img src={icontent} />
-            EVENTS
-            <img src={union} />
-          </button>
-          <button className="btn-services">
-            <img src={icontent} />
-            WEB DESIGN
-            <img src={union} />
-          </button>
-          <button className="btn-services">
-            <img src={icontent} />
-            PRODUCTION
-            <img src={union} />
-          </button>
-          <button className="btn-services">
-            <img src={icontent} />
-            STRATEGY
-            <img src={union} />
-          </button>
-        </div>
-        <div className="container_groupwwd">
-          <img src={groupwwd} alt="" className="" />
-        </div>
-        <div className="button__load">
-          <button onClick={() => console.log("click load more")}>
-            our services
-            <img src={arrowbtn} alt="arrow-right" />
-          </button>
+          <div className="group-btns">
+            <button className="btn-services">
+              <img src={icontent} />
+              content
+              <img src={union} />
+            </button>
+            <button className="btn-services">
+              <img src={icontent} />
+              DESIGN
+              <img src={union} />
+            </button>
+            <button className="btn-services">
+              <img src={icontent} />
+              EVENTS
+              <img src={union} />
+            </button>
+            <button className="btn-services">
+              <img src={icontent} />
+              WEB DESIGN
+              <img src={union} />
+            </button>
+            <button className="btn-services">
+              <img src={icontent} />
+              PRODUCTION
+              <img src={union} />
+            </button>
+            <button className="btn-services">
+              <img src={icontent} />
+              STRATEGY
+              <img src={union} />
+            </button>
+          </div>
+          <div className="container_groupwwd">
+            <img src={groupwwd} alt="" className="" />
+          </div>
+          <div className="button__load">
+            <button onClick={() => console.log("click load more")}>
+              our services
+              <img src={arrowbtn} alt="arrow-right" />
+            </button>
+          </div>
         </div>
       </div>
       <img src={img2} className="w-100" />

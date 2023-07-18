@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import logo from "../../assets/header/logohb-2023.svg";
+import logo from "../../assets/header/logo-blanco.svg";
 import logoGift from "../../assets/header/logo-gift.gif";
 import behance from "../../assets/header/Behance.png";
 import ig from "../../assets/header/Instagram.png";
-import burger from "../../assets/header/burger-hb.svg";
+import burger from "../../assets/header/burger-blanco.svg";
 
 import "./Header.css";
 import DropMenuMobile from "./DropMenuMobile";
