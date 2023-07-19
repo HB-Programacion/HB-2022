@@ -50,44 +50,78 @@ const Home = () => {
 
 
   const [visibleImages, setVisibleImages] = useState([]);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);   
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [newImageIndex, setNewImageIndex] = useState(null);
+  const [opacity, setOpacity] = useState(1);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const totalImages = 16;
+  const visibleImageCount = 8;
+
   
-    useEffect(() => {
-      // Lista de imágenes
-      function importAll(r) {
-        return r.keys().map(r);
-      }
-      
-      const imagesMarcas = importAll(require.context("../../assets/logosMarcas", false, /\.(png|jpe?g|svg)$/)); 
-  
-      const allImages = Object.values(imagesMarcas);
-      const totalImages = allImages.length;
-      const visibleImageCount = 8;
-      const initialVisibleImages = allImages.slice(0, visibleImageCount);
-      setVisibleImages(initialVisibleImages);
+  useEffect(() => {
+    // Lista de imágenes
+    function importAll(r) {
+      return r.keys().map(r);
+    }
 
-      const interval = setInterval(() => {
-        let randomVisibleIndex;
-        do {
-          randomVisibleIndex = Math.floor(Math.random() * visibleImageCount);
-        } while (randomVisibleIndex === currentImageIndex);
+    const loadImage = (src) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(src);
+        img.onerror = (error) => reject(error);
+        img.src = src;
+      });
+    };
 
-        let randomInvisibleIndex;
-        do {
-          randomInvisibleIndex = Math.floor(Math.random() * (totalImages - visibleImageCount) + visibleImageCount);
-        } while (randomInvisibleIndex === randomVisibleIndex);
+    const imagesMarcas = importAll(require.context("../../assets/logosMarcas", false, /\.(png|jpe?g|svg)$/));
+    const allImages = Object.values(imagesMarcas);
 
-        const updatedVisibleImages = visibleImages.map((image, index) =>
-          index === randomVisibleIndex ? allImages[randomInvisibleIndex] : image
-        );
+    const initialVisibleImages = allImages.slice(0, visibleImageCount);
+    setVisibleImages(initialVisibleImages);
 
+    Promise.all(initialVisibleImages.map((image) => loadImage(image)))
+      .then(() => setIsLoaded(true))
+      .catch((error) => console.log("Error loading images:", error));
+
+    const interval = setInterval(() => {
+      let randomVisibleIndex;
+      do {
+        randomVisibleIndex = Math.floor(Math.random() * visibleImageCount);
+      } while (randomVisibleIndex === currentImageIndex);
+
+      let randomInvisibleIndex;
+      do {
+        randomInvisibleIndex = Math.floor(Math.random() * totalImages);
+      } while (
+        randomInvisibleIndex === randomVisibleIndex ||
+        visibleImages.includes(allImages[randomInvisibleIndex])
+      );
+
+      setOpacity(0);
+
+      setTimeout(() => {
         setCurrentImageIndex(randomVisibleIndex);
-        setVisibleImages(updatedVisibleImages);
-      }, 2000);
 
-      return () => clearInterval(interval);
-    }, []);
-  
+        setTimeout(() => {
+          setOpacity(1);
+
+          setTimeout(() => {
+            const updatedVisibleImages = visibleImages.map((image, index) => {
+              if (index === randomVisibleIndex) {
+                return allImages[randomInvisibleIndex];
+              }
+              return image;
+            });
+
+            setVisibleImages(updatedVisibleImages);
+          }, 500);
+        }, 100);
+      }, 500);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -206,15 +240,14 @@ const Home = () => {
         <img src={www} className="www-title" />
         <div className="container-www_logos">
           {visibleImages.map((image, index) => (
-            <div className="www_logo">
+            <div className="www_logo" key={index}>
               <img
                 className=""
-                key={index}
                 src={image}
                 alt={`Image ${index + 1}`}
                 style={{
-                  opacity: index === currentImageIndex ? 1 : 0.2,
-                  transition: 'opacity 0.5s ease-in-out',
+                  opacity: index === currentImageIndex ? opacity : 1,
+                  transition: 'opacity 0.5s ease-in-out'
                 }}
               />
             </div>
