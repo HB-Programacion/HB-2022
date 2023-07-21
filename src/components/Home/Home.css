@@ -143,6 +143,13 @@
   margin: 0.5rem auto;
 }
 
+
+.box-text-home{
+  padding-bottom: 3rem;
+}
+
+
+
 @keyframes rightToLeft {
   0% {
     transform: translateX(100%);

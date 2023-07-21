@@ -157,6 +157,16 @@
   width: 25px;
 
 }
+
+.fondo-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13vh;
+  background-color: #000;
+  z-index: 80;
+  width: 100vw;
+}
 /* 
   .box-test .container__parallax{
     width: 100%;
@@ -178,8 +188,8 @@
 .word {
   position: -webkit-sticky;
   position: sticky;
-  top: 44vh;
-  height: 50vh;
+  top: 20%;
+  /* height: 50vh; */
   width: 100%;
   background-color: #000;
   text-align: center;
