@@ -2,8 +2,9 @@ import React, { useEffect, useState, useRef } from "react";
 import fw from "../../assets/work/feature-work.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterPokemon } from "../services/servicesFilter";
-import quicklys from "../../assets/work/quicklys.svg";
+import quicklys from "../../assets/work/quickly-all.svg";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import arrowbtn from "../../assets/arrow-btn.svg";
 
 import "./Work.css";
 
@@ -89,12 +90,17 @@ const Work = () => {
         assets and much more. All of this happens in our in-house production
         studios.
       </div>
-      <div className="button__load">
+      <div className="button__load-work">
         <button onClick={handleLoadImage}>LOAD MORE</button>
       </div>
-      <div className="box-work bg-white">
+      <div className="box-work-w bg-white">
         <img src={quicklys}/>
-
+      </div>
+      <div className="button__load">
+        <button onClick={() => console.log("click load more")}>
+          See all
+          <img src={arrowbtn} alt="arrow-right" />
+        </button>
       </div>
     </div>
   );
