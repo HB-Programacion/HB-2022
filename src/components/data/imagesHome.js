@@ -208,6 +208,6 @@ export const buttons = [
   },
   {
     name: "ILLUSTRATION",
-    value: "media-content",
+    value: "illustration",
   },
 ];

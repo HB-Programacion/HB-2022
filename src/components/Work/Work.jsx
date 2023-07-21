@@ -6,11 +6,14 @@ import quicklys from "../../assets/work/quickly-all.svg";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import arrowbtn from "../../assets/arrow-btn.svg";
 
+
 import "./Work.css";
 
 const Work = () => {
   const [filteredImages, setFilteredImages] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
+  const [activeButton, setActiveButton] = useState(null);
+
 
   const ref = useRef(null);
   useEffect(() => {
@@ -20,9 +23,13 @@ const Work = () => {
   const handleImagesHome = (e) => {
     e.preventDefault();
     let typeImagesHome = e.target.value;
-    typeImagesHome !== "all"
-      ? setFilteredImages(filterPokemon(typeImagesHome))
-      : setFilteredImages(getImagesHome());
+
+  // Actualiza el estado con el valor del botón clicado
+  setActiveButton(typeImagesHome);
+
+  typeImagesHome !== "all"
+    ? setFilteredImages(filterPokemon(typeImagesHome))
+    : setFilteredImages(getImagesHome());
   };
 
 
@@ -43,9 +50,18 @@ const Work = () => {
         {buttons &&
           buttons.map((type, index) => (
             <div className="buttons__style" key={index}>
-              <button key={index} value={type.value} onClick={handleImagesHome}>
-                {type.name}
-              </button>
+            <button
+              key={index}
+              value={type.value}
+              onClick={handleImagesHome}
+              style={{
+                background: activeButton === type.value ? "#FF4040" : "none",
+                color: activeButton === type.value ? "#000000" : "#ffffff",
+                border: activeButton === type.value && "#000000"
+              }}
+            >
+              {type.name}
+            </button>
             </div>
           ))}
       </div>
