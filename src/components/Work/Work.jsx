@@ -47,7 +47,7 @@ const Work = () => {
           ))}
       </div>
       <div className="box-work">
-        <div className="gallery__container">
+        <div className="gallery__container-work">
           {/* <ResponsiveMasonry
             columnCountBreakPoints={{ 350: 3, 750: 3, 900: 3 }}
           > */}

@@ -29,7 +29,7 @@
     font-size: 13px;
 }
 
-.gallery__container{
+.gallery__container-work{
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
