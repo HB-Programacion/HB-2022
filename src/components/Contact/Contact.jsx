@@ -7,7 +7,7 @@ import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
 import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
 import { buttons } from "../data/imagesHome";
-import { getImagesHome, filterPokemon } from "../services/servicesFilter";
+import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import "./Contact.css";
 import Marquee from "react-double-marquee";
 // import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
@@ -30,7 +30,7 @@ const handleImagesHome = (e) => {
    e.preventDefault();
    let typeImagesHome = e.target.value;
    typeImagesHome !== "all"
-      ? setFilteredImages(filterPokemon(typeImagesHome))
+      ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
 };
 
