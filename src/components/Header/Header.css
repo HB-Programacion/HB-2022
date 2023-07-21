@@ -1,8 +1,10 @@
 .header__container{
-    background-color: #000;
+    background-color: transparent;
     padding: 1.2rem 8rem;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
+    position: relative;
 }
 .container__gifLogo{
     display: flex;

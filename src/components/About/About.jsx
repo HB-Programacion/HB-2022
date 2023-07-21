@@ -15,12 +15,14 @@ import wwb3 from "../../assets/about/wwb-3.svg";
 import bgsurprise from "../../assets/about/fondo-surprise.svg";
 import sk from "../../assets/about/sk.svg";
 import asterisco from "../../assets/about/asterisco.svg";
+import arrowdown from "../../assets/about/arrowdown.svg";
 
 import "./About.css";
 
 const About = () => {
   return (
     <>
+    <div className="fondo-header"></div>
       <div className="bg-black ">
         <div className="box-about">
           <img src={tiwwa} className="img-tiwwa" />
@@ -159,8 +161,8 @@ const About = () => {
       </div>
       <div className="bg-black fondo-surprise">
         <div className="box-title-surprise">
-          <img src={sk} className="" />
-          <button className="btn-white mx2-auto">download</button>
+          <img src={sk} className="img-surprise-kit" />
+          <button className="btn-white-surprise mx2-auto">download <img src={arrowdown}/></button>
         </div>
         <img src={bgsurprise} className="img-surprise" />
         <p className="p-surprise">
