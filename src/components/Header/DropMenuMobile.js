@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import close from "../../assets/header/close.png";
-import logoHB from "../../assets/header/logohb.svg";
+import img from "../../assets/header/img-menumobile.png";
 
 import "./DropMenuMobile.css";
 
@@ -56,32 +56,32 @@ const DropMenuMobile = ({ active, setActive }) => {
         </div>
 
         <div className="container-social">
-          <div>Socials</div>
+          <div className="title-socials">Socials</div>
           <ul className="list-group">
-            <li className="list-group-item">
+            <li className="list-group-item item-social">
               <h6>Behance</h6>
             </li>
-            <li className="list-group-item">
+            <li className="list-group-item item-social">
               <h6>LinkedIn</h6>
             </li>
 
-            <li className="list-group-item">
+            <li className="list-group-item item-social">
               <h6>Youtube</h6>
             </li>
 
-            <li className="list-group-item">
+            <li className="list-group-item item-social">
               <h6>Instagram</h6>
             </li>
           </ul>
         </div>
         <div className="container-contact-dropdown">
-          <div>Say Hi!</div>
+          <div className="title-socials">Say Hi!</div>
           <ul className="list-group">
-            <li className="list-group-item">
+            <li className="list-group-item item-social">
               <h6>info@henribarrett.com</h6>
             </li>
             <li className="list-group-item">
-              <img src={logoHB} />
+              <img src={img} className="img-menumobile"/>
             </li>
           </ul>
         </div>

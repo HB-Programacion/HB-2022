@@ -18,8 +18,8 @@
 }
 
 .subtitle-about {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -103,10 +103,13 @@
   top: 5.5rem;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .img-surprise{
   position: relative;
   top: -6rem;
+  width: 100%;
 }
 
 .p-surprise{
