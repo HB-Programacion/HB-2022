@@ -86,7 +86,7 @@ li {
 
 .container-social {
   text-align: center;
-  height: 50%;
+  height: 37%;
 }
 .container-social ul {
   margin: 0;
@@ -102,8 +102,9 @@ li {
 
 .container-contact-dropdown {
   text-align: center;
-  
+  padding-bottom: 2rem;
 }
+
 
 .container-contact-dropdown ul {
     margin: 0;
@@ -113,10 +114,26 @@ li {
    
 }
 
+.img-menumobile{
+  width: 48%;
+  margin: 0 auto;
+}
+
 .container-social ul li {
     font-size: 40px;
     height: 0px;
   }
+.title-socials{
+  font-family: "nehue-has45";
+  font-size: 16px;
+  top: 1.2rem;
+  position: relative;
+}
+.item-social h6{
+  font-family: "nehue-has45";
+  font-size: 20px;
+}
+
 @media (min-width: 480px) {
   .drop-menu {
     width: 70%;
