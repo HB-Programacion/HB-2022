@@ -10,7 +10,7 @@ export function getImagesQuickly() {
     return imagesQuicklyList;
 }
 
-export function filterPokemon(homeType) {
+export function filterHomeType(homeType) {
     let filtredHomeType= getImagesHome().filter(tipo => tipo.type === homeType);
     return filtredHomeType;
 }

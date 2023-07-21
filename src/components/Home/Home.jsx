@@ -32,7 +32,7 @@ import gif7 from "../../assets/gifs/7.gif";
 import gif8 from "../../assets/gifs/8.gif";
 
 import { buttons } from "../data/imagesHome";
-import { getImagesHome, filterPokemon } from "../services/servicesFilter";
+import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import "./Home.css";
 import Contact from "../Contact/Contact.jsx";
 
@@ -73,7 +73,7 @@ const Home = () => {
     e.preventDefault();
     let typeImagesHome = e.target.value;
     typeImagesHome !== "all"
-      ? setFilteredImages(filterPokemon(typeImagesHome))
+      ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
   };
 

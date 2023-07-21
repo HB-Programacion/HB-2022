@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import fw from "../../assets/quickly/quickly.svg";
 import { buttons } from "../data/imagesHome";
-import { getImagesQuickly, filterPokemon } from "../services/servicesFilter";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 
 import "./Quickly.css";
@@ -20,7 +20,7 @@ const Quickly = () => {
     e.preventDefault();
     let typeImagesHome = e.target.value;
     typeImagesHome !== "all"
-      ? setFilteredImages(filterPokemon(typeImagesHome))
+      ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesQuickly());
   };
 
@@ -54,11 +54,11 @@ const Quickly = () => {
           <div className="gallery__container">
             {/* <ResponsiveMasonry
         columnCountBreakPoints={{ 350: 3, 750: 3, 900: 3 }}
-      >
-        <Masonry columnsCount={3} gutter="40px"> */}
+      > */}
+        <Masonry columnsCount={2} gutter="10px">
             {filteredImages &&
               filteredImages.map((type) => (
-                <div className="gallery__items" key={type.id}>
+                <div className="gallery__items-quickly" key={type.id}>
                   <a href={type.href}>
                     <img
                       src={type.url}
@@ -66,11 +66,11 @@ const Quickly = () => {
                       className="gallery__img"
                     />
                   </a>
-                  <h5 className="filter-title">{type.title}</h5>
+                  <h5 className="filter-title-quickly">{type.title}</h5>
                 </div>
               ))}
-            {/* </Masonry>
-      </ResponsiveMasonry>  */}
+            </Masonry>
+      {/* </ResponsiveMasonry>  */}
             {loadMoreImage &&
               loadMoreImage.map((type) => (
                 <div className="gallery__items" key={type.id}>
