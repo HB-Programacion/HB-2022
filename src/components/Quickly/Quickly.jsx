@@ -31,6 +31,8 @@ const Quickly = () => {
   }
 
   return (
+   <>
+       <div className="fondo-header"></div>
     <div className="bg-black ">
       <img src={fw} className="fw-title" />
       <p className="text-feature-work">Things we’ve made</p>
@@ -63,7 +65,6 @@ const Quickly = () => {
                 />
               </a>
               <h5 className="filter-title">{type.title}</h5>
-              <p className="filter-subtitle">{type.description}</p>
             </div>
           ))}
         {/* </Masonry>
@@ -79,7 +80,6 @@ const Quickly = () => {
               />
             </a>
             <h5 className="filter-title">{type.title}</h5>
-            <p className="filter-subtitle">{type.description}</p>
           </div>
         ))}
         </div>
@@ -89,13 +89,8 @@ const Quickly = () => {
         assets and much more. All of this happens in our in-house production
         studios.
       </div>
-      <div className="button__load">
-        <button onClick={handleLoadImage}>LOAD MORE</button>
-      </div>
-      <div className="box-work bg-white">
-        <img src={quicklys}/>
-      </div>
-    </div>
+      
+    </div></>
   );
 };
 

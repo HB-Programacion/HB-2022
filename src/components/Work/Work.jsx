@@ -32,6 +32,8 @@ const Work = () => {
   }
 
   return (
+<>
+    <div className="fondo-header"></div>
     <div className="bg-black ">
       <img src={fw} className="fw-title" />
       <p className="text-feature-work">Things we’ve made</p>
@@ -91,18 +93,21 @@ const Work = () => {
         studios.
       </div>
       <div className="button__load-work">
-        <button onClick={handleLoadImage}>LOAD MORE</button>
+        <button onClick={handleLoadImage}>LOAD MORE  <img src={arrowbtn} alt="arrow-right"/></button>
       </div>
       <div className="box-work-w bg-white">
         <img src={quicklys}/>
       </div>
-      <div className="button__load">
+     <div className="bg-white">
+     <div className="button__load">
         <button onClick={() => console.log("click load more")}>
           See all
           <img src={arrowbtn} alt="arrow-right" />
         </button>
       </div>
+     </div>
     </div>
+    </>
   );
 };
 
