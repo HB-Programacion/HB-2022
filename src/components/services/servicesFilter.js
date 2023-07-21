@@ -1,8 +1,13 @@
-import { imagesHome } from "../data/imagesHome"
+import { imagesHome, imagesQuickly } from "../data/imagesHome"
 
 export function getImagesHome() {
     const imagesHomeList = imagesHome;
     return imagesHomeList;
+}
+
+export function getImagesQuickly() {
+    const imagesQuicklyList = imagesQuickly;
+    return imagesQuicklyList;
 }
 
 export function filterPokemon(homeType) {

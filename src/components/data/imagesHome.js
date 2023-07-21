@@ -82,6 +82,105 @@ export const imagesHome = [
  
 ];
 
+export const imagesQuickly = [
+  {
+    id: 1,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/solito.png",
+    name: "Heineken",
+    title: "Heineken Fest",
+    href: "./heinekenFest",
+  },
+  {
+    id: 2,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/manColor.png",
+    name: "yummy",
+    title: "Yummy Super App",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 3,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/animal.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 4,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/color.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 5,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/painter.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 6,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/dog.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 7,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/tea.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 8,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/people.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 9,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/cicle.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 10,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/watch.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 11,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/vr.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  },
+  {
+    id: 12,
+    type: "point-of-sale",
+    url: "./dataimagesQuickly/food.png",
+    name: "yummy",
+    title: "Umana",
+    href: "./yummysuperapp",
+  }
+];
+
 export const buttons = [
   {
     name: "ALL",

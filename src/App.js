@@ -15,6 +15,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n/i18n';
 import About from "./components/About/About";
 import Work from "./components/Work/Work";
+import Quickly from "./components/Quickly/Quickly";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route exact path="/about" element={<About />} />
               <Route exact path="/work" element={<Work />} />
+              <Route exact path="/quickly" element={<Quickly />} />
               <Route exact path="/heinekenFest" element={<HeinekenFest />} />
               <Route exact path="/rappi" element={<Rappi />} />
               <Route exact path="/umana" element={<Umana />} />
