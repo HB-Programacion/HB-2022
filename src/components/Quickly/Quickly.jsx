@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import fw from "../../assets/quickly/quickly.svg";
 import { buttons } from "../data/imagesHome";
 import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 
 import "./Quickly.css";
@@ -53,37 +53,38 @@ const Quickly = () => {
         <div className="box-work">
           <div className="gallery__container">
             {/* <ResponsiveMasonry
-        columnCountBreakPoints={{ 350: 3, 750: 3, 900: 3 }}
-      > */}
-        <Masonry columnsCount={2} gutter="10px">
-            {filteredImages &&
-              filteredImages.map((type) => (
-                <div className="gallery__items-quickly" key={type.id}>
-                  <a href={type.href}>
-                    <img
-                      src={type.url}
-                      alt={type.name}
-                      className="gallery__img"
-                    />
-                  </a>
-                  <h5 className="filter-title-quickly">{type.title}</h5>
-                </div>
-              ))}
+              columnCountBreakPoints={{ 350: 3, 750: 3, 900: 3 }}
+            > */}
+            <Masonry columnsCount={2} gutter="10px">
+              {filteredImages &&
+                filteredImages.map((type) => (
+                  <div className="gallery__items-quickly" key={type.id}>
+                    <a href={type.href}>
+                      <img
+                        src={type.url}
+                        alt={type.name}
+                        className="gallery__img"
+                      />
+                    </a>
+                    <h5 className="filter-title-quickly">{type.title}</h5>
+                  </div>
+                ))}
             </Masonry>
-      {/* </ResponsiveMasonry>  */}
+            {/* </ResponsiveMasonry> */}
+            <Masonry columnsCount={2} gutter="10px">
             {loadMoreImage &&
               loadMoreImage.map((type) => (
-                <div className="gallery__items" key={type.id}>
-                  <a href={type.href}>
-                    <img
-                      src={type.url}
-                      alt={type.name}
-                      className="gallery__img"
-                    />
-                  </a>
-                  <h5 className="filter-title">{type.title}</h5>
-                </div>
-              ))}
+                <div className="gallery__items-quickly" key={type.id}>
+                    <a href={type.href}>
+                      <img
+                        src={type.url}
+                        alt={type.name}
+                        className="gallery__img"
+                      />
+                    </a>
+                    <h5 className="filter-title-quickly">{type.title}</h5>
+                  </div>
+              ))}</Masonry>
           </div>
         </div>
         <div className="p-white">
@@ -91,6 +92,10 @@ const Quickly = () => {
           digital assets and much more. All of this happens in our in-house
           production studios.
         </div>
+        <div className="button__load">
+          <button onClick={handleLoadImage}>LOAD MORE</button>
+        </div>
+      
       </div>
     </>
   );
