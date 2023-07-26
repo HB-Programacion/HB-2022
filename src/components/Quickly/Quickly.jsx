@@ -4,12 +4,17 @@ import { buttons } from "../data/imagesHome";
 import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
+import ReactModal from "react-modal";
+import union from "../../assets/home/union.svg";
+
 
 import "./Quickly.css";
 
 const Quickly = () => {
   const [filteredImages, setFilteredImages] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+
 
   const ref = useRef(null);
   useEffect(() => {
@@ -28,6 +33,14 @@ const Quickly = () => {
     setLoadMoreImage(getImagesQuickly());
   };
 
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+  
   return (
     <>
       <div className="fondo-header"></div>
@@ -59,7 +72,7 @@ const Quickly = () => {
               {filteredImages &&
                 filteredImages.map((type) => (
                   <div className="gallery__items-quickly" key={type.id}>
-                    <a href={type.href}>
+                    <a onClick={() => openModal(type)}>
                       <img
                         src={type.url}
                         alt={type.name}
@@ -75,7 +88,7 @@ const Quickly = () => {
             {loadMoreImage &&
               loadMoreImage.map((type) => (
                 <div className="gallery__items-quickly" key={type.id}>
-                    <a href={type.href}>
+                    <a onClick={() => openModal(type)}>
                       <img
                         src={type.url}
                         alt={type.name}
@@ -97,6 +110,53 @@ const Quickly = () => {
         </div>
       
       </div>
+      <ReactModal
+        isOpen={selectedImage !== null}
+        onRequestClose={closeModal}
+        contentLabel="Image Detail Modal"
+        ariaHideApp={false}
+        style={{
+          overlay: {
+            zIndex: 9999,
+            // Estilos del overlay del modal
+            // Puedes personalizar el fondo, la opacidad, etc.
+          },
+          content: {
+            // Estilos del contenido del modal
+            top: "0px", // Posición superior
+            left: "0px", // Posición izquierda
+            right: "0px", // Posición derecha
+            bottom: "0px", // Posición inferior
+            borderRadius: "10px", // Bordes redondeados
+            border: "none", // Sin borde
+            padding: "0px", // Espaciado interno
+            margin: "0", // Sin márgenes
+            backgroundColor: "#111111", // Fondo negro
+            color: "#ffffff",
+            // Puedes personalizar otros estilos según tus necesidades
+          }
+        }}
+      >
+        {/* Contenido personalizado del modal */}
+        <div className="topInternaButton">
+          <button className="back-button" onClick={closeModal}>
+            <img src={union} />
+            <div className="textBack">Back</div>
+          </button>
+          <div className="category-interna">
+            {selectedImage?.category}
+          </div>
+        </div>
+        <div className="containerInterna">
+          <img src={selectedImage?.urlInterno1} alt={selectedImage?.title} />
+          <img src={selectedImage?.urlInterno2} alt={selectedImage?.title} />
+          <div className="containerTextInterna">
+            <h2>{selectedImage?.titleInter}</h2>
+            <p>{selectedImage?.subTitleInter}</p>
+          </div>
+        </div>
+        {/* Agrega aquí los detalles adicionales de la imagen si es necesario */}
+      </ReactModal>
     </>
   );
 };

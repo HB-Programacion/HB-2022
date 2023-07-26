@@ -33,7 +33,6 @@ function App() {
 
   return (
     <I18nextProvider i18n={i18n}>
-       
       <div className="main">
       <Header />
           <Router>
