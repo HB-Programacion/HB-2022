@@ -228,6 +228,8 @@
   font-family: neue-haas-grotesk-display, sans-serif;
   justify-content: space-around;
   font-size: 23px;
+  color: #111;
+  background-color: transparent;
 }
 
 .btn-services img {

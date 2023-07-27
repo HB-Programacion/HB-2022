@@ -36,7 +36,8 @@ const handleImagesHome = (e) => {
 
 return (
    <>
-      <div>
+      <div className="bg-black">
+      <div className="fondo-header"></div>
          <div className="box-text-home">
             <div className="container__text">
                <img src={hireUs} className="hireusContact" />

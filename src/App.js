@@ -16,6 +16,7 @@ import i18n from './i18n/i18n';
 import About from "./components/About/About";
 import Work from "./components/Work/Work";
 import Quickly from "./components/Quickly/Quickly";
+import Heineken from "./components/Heineken/Heineken";
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
               <Route exact path="/rappi" element={<Rappi />} />
               <Route exact path="/umana" element={<Umana />} />
               <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/heineken" element={<Heineken />} />
             </Routes>
           </Router>
         <Footer />

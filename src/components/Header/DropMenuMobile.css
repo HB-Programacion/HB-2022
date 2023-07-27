@@ -61,7 +61,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 48px;
-  color: #000;
+  color: #111;
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
@@ -132,6 +132,13 @@ li {
 .item-social h6{
   font-family: "nehue-has45";
   font-size: 20px;
+}
+.item-social a{
+  color: #111;
+}
+
+.list-group-item a{
+  text-decoration: none;
 }
 
 @media (min-width: 480px) {

@@ -3,10 +3,11 @@ import close from "../../assets/header/close.png";
 import img from "../../assets/header/img-menumobile.png";
 
 import "./DropMenuMobile.css";
+import { BrowserRouter, a } from "react-router-dom";
 
 const DropMenuMobile = ({ active, setActive }) => {
   return (
-    <>
+    <BrowserRouter>
       <div className={`drop-menu ${active ? "" : "drop-menu-off"}`}>
         <div className="container-fullview">
           <div className="container-close">
@@ -21,34 +22,34 @@ const DropMenuMobile = ({ active, setActive }) => {
             <div className="container-options">
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  <div>
+                  <a href="/">
                     <h6 className="text-navbar">Home</h6>
-                  </div>
+                  </a>
                 </li>
                 <li className="list-group-item">
-                  <div>
+                  <a href="/about">
                     <h6 className="text-navbar">About us</h6>
-                  </div>
+                  </a>
                 </li>
                 <li className="list-group-item">
-                  <div>
+                  <a href="/work">
                     <h6 className="text-navbar">Work</h6>
-                  </div>
+                  </a>
                 </li>
                 <li className="list-group-item">
-                  <div>
+                  <a href="/">
                     <h6 className="text-navbar">services</h6>
-                  </div>
+                  </a>
                 </li>
                 <li className="list-group-item">
-                  <div>
+                  <a href="/quickly">
                     <h6 className="text-navbar">QUICKLYS</h6>
-                  </div>
+                  </a>
                 </li>
                 <li className="list-group-item">
-                  <div>
+                  <a href="/">
                     <h6 className="text-navbar">Contact</h6>
-                  </div>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -59,18 +60,29 @@ const DropMenuMobile = ({ active, setActive }) => {
           <div className="title-socials">Socials</div>
           <ul className="list-group">
             <li className="list-group-item item-social">
-              <h6>Behance</h6>
+              <a
+                href="https://www.behance.net/henribarrettstudio?tracking_source=search_users%7Chenri+barrett"
+                target="blank"
+              >
+                <h6>Behance</h6>
+              </a>
             </li>
             <li className="list-group-item item-social">
-              <h6>LinkedIn</h6>
+              <a href="https://www.linkedin.com/company/henri-barrett-studio/" target="blank">
+                <h6>LinkedIn</h6>
+              </a>
             </li>
 
             <li className="list-group-item item-social">
-              <h6>Youtube</h6>
+              <a href="https://www.youtube.com/@henribarrettstudio" target="blank">
+                <h6>Youtube</h6>
+              </a>
             </li>
 
             <li className="list-group-item item-social">
-              <h6>Instagram</h6>
+              <a href="https://instagram.com/henribarrettstudio?igshid=ZWQyN2ExYTkwZQ==" target="blank">
+                <h6>Instagram</h6>
+              </a>
             </li>
           </ul>
         </div>
@@ -81,12 +93,12 @@ const DropMenuMobile = ({ active, setActive }) => {
               <h6>info@henribarrett.com</h6>
             </li>
             <li className="list-group-item">
-              <img src={img} className="img-menumobile"/>
+              <img src={img} className="img-menumobile" />
             </li>
           </ul>
         </div>
       </div>
-    </>
+    </BrowserRouter>
   );
 };
 

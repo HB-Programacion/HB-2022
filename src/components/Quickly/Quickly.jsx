@@ -93,7 +93,7 @@ const Quickly = () => {
           production studios.
         </div>
         <div className="button__load">
-          <button onClick={handleLoadImage}>LOAD MORE</button>
+          <a  className="btn-white">LOAD MORE</a>
         </div>
       
       </div>

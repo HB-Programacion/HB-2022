@@ -176,10 +176,10 @@ const Home = () => {
           </div>
           {/* </div> */}
           <div className="box-btn">
-            <button onClick={() => console.log("click load more")} className="btn-white">
+            <Link to="/work" className="btn-white">
               SEE OUR WORK
               <img src={union} alt="arrow-right" className="arrow-black"/>
-            </button>
+            </Link>
           </div>
         </div>
 

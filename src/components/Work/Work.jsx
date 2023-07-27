@@ -116,10 +116,10 @@ const Work = () => {
       </div>
      <div className="bg-white">
      <div className="button__load">
-        <button onClick={() => console.log("click load more")}>
+        <a href="/quickly" className="btn-black">
           See all
           <img src={arrowbtn} alt="arrow-right" />
-        </button>
+        </a>
       </div>
      </div>
     </div>

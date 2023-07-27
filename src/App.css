@@ -76,6 +76,20 @@
   background-color: #fff;
   border-radius: 25px ;
   border: 0px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.btn-black{
+  font-family: neue-haas-grotesk-display, sans-serif;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  background-color: #111;
+  border-radius: 25px ;
+  border: 0px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
 }
 .mx2-auto{
   margin: 2rem auto;
@@ -162,7 +176,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 13vh;
+  height: 7rem;
   background-color: #000;
   z-index: 80;
   width: 100vw;
@@ -188,7 +202,7 @@
 .word {
   position: -webkit-sticky;
   position: sticky;
-  top: 20%;
+  top: 28%;
   /* height: 50vh; */
   width: 100%;
   background-color: #000;
