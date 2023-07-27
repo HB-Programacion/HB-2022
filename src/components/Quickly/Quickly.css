@@ -52,3 +52,72 @@
     line-height: 2.2rem;
 
 }
+
+.topInternaButton{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    padding: 0px 15px;
+}
+
+.topInternaButton .category-interna{
+    margin-left: 36%;
+    background-color: #FF4040;
+    align-self: center;
+    padding: 7px 15px;
+    border-radius: 25px;
+    color: #000000;
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 20px;
+}
+
+.containerInterna img{
+    width: 100%;
+}
+
+.containerInterna .containerTextInterna{
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+}
+
+.containerTextInterna h2{
+    color: #111;
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.containerTextInterna p{
+    color: #111;
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.5px;
+}
+
+.back-button{
+    display: flex;
+    left: 10px;
+    background-color: #ffffff8c;
+    align-items: center;
+    padding: 5px 16px;
+    border-radius: 25px;
+    border: none;
+}
+
+.back-button img{
+    transform: rotate(180deg);
+}
+
+.back-button .textBack{
+    font-family: "neue-haas-grotesk-display";
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 20px;
+}
