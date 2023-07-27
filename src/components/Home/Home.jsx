@@ -267,6 +267,9 @@ const Home = () => {
         <p className="p-1">
           We make our clients lives easier and their brands stronger.
         </p>
+        <div>
+          <Contact/>
+        </div>
       </div>
     </>
   );

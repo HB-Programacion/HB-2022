@@ -28,17 +28,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="container__footer-boxItem info-text">
-          <div className="container__footer-item lowercase">
+          <div className="container__footer-item ">
             info@henribarrett.com
           </div>
-          <div className="container__footer-item lowercase">
-            +51 (1) 965 087 557
+          <div className="container__footer-item ">
+            +51 965 087 557
           </div>
-          <div className="container__footer-item lowercase">
-            AV. PETHIT THOARS 4162
+          <div className="container__footer-item ">
+          Av. Petit Thouars 4162
           </div>
-          <div className="container__footer-item lowercase">
-            MIRAFLORES - pERÚ
+          <div className="container__footer-item ">
+          Miraflores, Lima - Perú
           </div>
         </div>
         <div className="container__footer-boxItem">
