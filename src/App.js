@@ -17,6 +17,7 @@ import About from "./components/About/About";
 import Work from "./components/Work/Work";
 import Quickly from "./components/Quickly/Quickly";
 import Heineken from "./components/Heineken/Heineken";
+import WorkDetails from "./components/WorkDetails/WorkDetails";
 
 function App() {
 
@@ -38,15 +39,16 @@ function App() {
       <Header />
           <Router>
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/work" element={<Work />} />
-              <Route exact path="/quickly" element={<Quickly />} />
-              <Route exact path="/heinekenFest" element={<HeinekenFest />} />
-              <Route exact path="/rappi" element={<Rappi />} />
-              <Route exact path="/umana" element={<Umana />} />
-              <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/heineken" element={<Heineken />} />
+              <Route  path="/" element={<Home />} />
+              <Route  path="/about" element={<About />} />
+              <Route  path="/work" element={<Work />} />
+              <Route  path="/workDetails/:id" element={<WorkDetails/>} />
+              <Route  path="/quickly" element={<Quickly />} />
+              {/* <Route  path="/heinekenFest" element={<HeinekenFest />} />*/}
+              <Route  path="/rappi" element={<Rappi />} />
+              <Route  path="/umana" element={<Umana />} />
+              <Route  path="/contact" element={<Contact />} />
+              <Route  path="/heineken" element={<Heineken />} />
             </Routes>
           </Router>
         <Footer />

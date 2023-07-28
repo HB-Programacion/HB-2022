@@ -8,6 +8,11 @@ export const imagesHome = [
     description:
       "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
     href: "./heinekenFest",
+    dataInterna : {
+      banner:"https://webhb.s3.us-east-2.amazonaws.com/video-hnk-sin-graf.mp4",
+      title: "titulo de interna hnk",
+      subtitle: "Subtitulo de interna ipsum dolor sit amet, consectetuer adipiscingipsum dolor sit amet, consectetuer adipiscing ipsum dolor sit amet, consectetuer adipiscing ipsum dolor sit amet, consectetuer adipiscing ipsum dolor sit amet, consectetuer adipiscing"
+    }
   },
   {
     id: 2,
@@ -18,6 +23,10 @@ export const imagesHome = [
     description:
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
     href: "./yummysuperapp",
+    dataInterna : {
+      title: "titulo de interna yummi",
+      subtitle: "Subtitulo de interna"
+    }
   },
   {
     id: 3,
