@@ -41,7 +41,7 @@ const Work = () => {
 
   const handleDataClick = (type) => {
     //setDataInterna(type); 
-    localStorage.setItem("dataInterna", JSON.stringify(type));
+    localStorage.setItem("work-details", JSON.stringify(type));
     navigate(`/workDetails/${type.id}`);
   };
 
