@@ -49,6 +49,7 @@ function App() {
               <Route  path="/umana" element={<Umana />} />
               <Route  path="/contact" element={<Contact />} />
               <Route  path="/heineken" element={<Heineken />} />
+              <Route  path="/contact" element={<Contact />} />
             </Routes>
           </Router>
         <Footer />

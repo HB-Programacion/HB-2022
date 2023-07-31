@@ -70,7 +70,7 @@ const WorkDetails = () => {
           <div className="container__gif2">
             <div>
               <h2>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                heineken Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                 aliquam erat volutpat. Ut wisi enim ad minim.
               </h2>

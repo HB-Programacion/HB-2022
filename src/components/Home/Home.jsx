@@ -31,6 +31,8 @@ import gif6 from "../../assets/gifs/6.gif";
 import gif7 from "../../assets/gifs/7.gif";
 import gif8 from "../../assets/gifs/8.gif";
 
+import title from "../../assets/contact/title-contacto.svg";
+
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import "./Home.css";
@@ -42,6 +44,7 @@ import word from "../../assets/home/work.svg";
 import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import FormContact from "../FormContact/FormContact";
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
@@ -267,8 +270,15 @@ const Home = () => {
         <p className="p-1">
           We make our clients lives easier and their brands stronger.
         </p>
-        <div>
-          <Contact/>
+        <div className="bg-black">
+        <div className="box-contact">
+          <img src={title} />
+          {/* <div className="container__subtitle">
+            <h1>{t("contact-getting")}</h1>
+          </div> */}
+       <FormContact/>
+
+        </div>
         </div>
       </div>
     </>
