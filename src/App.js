@@ -18,6 +18,7 @@ import Work from "./components/Work/Work";
 import Quickly from "./components/Quickly/Quickly";
 import Heineken from "./components/Heineken/Heineken";
 import WorkDetails from "./components/WorkDetails/WorkDetails";
+import ServiceView from "./components/ServiceView/ServiceView";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
               <Route  path="/workDetails/:id" element={<WorkDetails/>} />
               <Route  path="/quickly" element={<Quickly />} />
               {/* <Route  path="/heinekenFest" element={<HeinekenFest />} />*/}
+              <Route path="/services" element={<ServiceView/>}/>
               <Route  path="/rappi" element={<Rappi />} />
               <Route  path="/umana" element={<Umana />} />
               <Route  path="/contact" element={<Contact />} />
