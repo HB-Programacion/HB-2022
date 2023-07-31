@@ -228,3 +228,99 @@ export const buttons = [
     value: "illustration",
   },
 ];
+
+export const buttonService = [
+  {
+    name: "CONTENT",
+    value: "content",
+  },
+  {
+    name: "DESIGN",
+    value: "design",
+  },
+  {
+    name: "WEB DESIGN",
+    value: "web-design",
+  },
+  {
+    name: "EVENTS",
+    value: "events",
+  },
+  {
+    name: "PRODUCTION",
+    value: "production",
+  }
+];
+
+export const dataService = [
+  {
+    id: 1,
+    service: "content",
+    title: "content smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    key: "/Community management/Concept & Strategy/Art/Creative direction",
+    urlHbArea: "./dataImagesService/logoContent.png",
+    urlMarcaByService: [
+      "./dataImagesService/vr.png",
+      "./dataImagesService/painter.png",
+      "./dataImagesService/dog.png",
+      "./dataImagesService/color.png",
+      "./dataImagesService/animal.png"
+    ]
+  },
+  {
+    id: 2,
+    service: "design",
+    title: "design A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    key: "/Community management/Concept & Strategy/Art/Creative direction",
+    urlHbArea: "./dataImagesService/logoDesign.png",
+    urlMarcaByService: [
+      "./dataImagesService/cicle.png",
+      "./dataImagesService/food.png",
+      "./dataImagesService/manColor.png",
+      "./dataImagesService/solito.png",
+      "./dataImagesService/people.png"
+    ]
+  },
+  {
+    id: 3,
+    service: "web-design",
+    title: "web-design A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    key: "/Community management/Concept & Strategy/Art/Creative direction",
+    urlHbArea: "./dataImagesService/logoWeb.png",
+    urlMarcaByService: [
+      "./dataImagesService/people.png",
+      "./dataImagesService/manColor.png",
+      "./dataImagesService/manColor.png",
+      "./dataImagesService/solito.png",
+      "./dataImagesService/cicle.png"
+    ]
+  },
+  {
+    id: 4,
+    service: "events",
+    title: "events A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    key: "/Community management/Concept & Strategy/Art/Creative direction",
+    urlHbArea: "./dataImagesService/logoEvents.png",
+    urlMarcaByService: [
+      "./dataImagesService/cicle.png",
+      "./dataImagesService/food.png",
+      "./dataImagesService/solito.png",
+      "./dataImagesService/manColor.png",
+      "./dataImagesService/people.png"
+    ]
+  },
+  {
+    id: 5,
+    service: "production",
+    title: "production A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    key: "/Community management/Concept & Strategy/Art/Creative direction",
+    urlHbArea: "./dataImagesService/logoProduction.png",
+    urlMarcaByService: [
+      "./dataImagesService/vr.png",
+      "./dataImagesService/food.png",
+      "./dataImagesService/cicle.png",
+      "./dataImagesService/manColor.png",
+      "./dataImagesService/people.png"
+    ]
+  }
+]
