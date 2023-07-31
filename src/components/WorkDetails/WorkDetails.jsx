@@ -25,8 +25,8 @@ import gif6 from "../../assets/heinekenFest/gif06.gif";
 import "./WorkDetails.css";
 
 const WorkDetails = () => {
-  const dataInterna = JSON.parse(localStorage.getItem("dataInterna"));
-  const { title, subtitle, banner } = dataInterna.dataInterna
+  const dataInterna = JSON.parse(localStorage.getItem("work-details"));
+  const { title, subtitle, banner } = dataInterna.workDetails
 
 
   console.log('dataInternaWorkDetails', title)

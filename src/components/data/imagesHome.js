@@ -8,7 +8,7 @@ export const imagesHome = [
     description:
       "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
     href: "./heinekenFest",
-    dataInterna : {
+    workDetails : {
       banner:"https://webhb.s3.us-east-2.amazonaws.com/video-hnk-sin-graf.mp4",
       title: "titulo de interna hnk",
       subtitle: "Subtitulo de interna ipsum dolor sit amet, consectetuer adipiscingipsum dolor sit amet, consectetuer adipiscing ipsum dolor sit amet, consectetuer adipiscing ipsum dolor sit amet, consectetuer adipiscing ipsum dolor sit amet, consectetuer adipiscing"
@@ -23,7 +23,7 @@ export const imagesHome = [
     description:
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
     href: "./yummysuperapp",
-    dataInterna : {
+    workDetails : {
       title: "titulo de interna yummi",
       subtitle: "Subtitulo de interna"
     }
@@ -80,7 +80,7 @@ export const imagesHome = [
   },
   {
     id: 8,
-    type: "point-of-sale",
+    type: "illustration",
     url: "./dataimages/rappi.png",
     name: "yummy",
     title: "Umana",
@@ -190,7 +190,7 @@ export const imagesQuickly = [
   },
   {
     id: 12,
-    type: "point-of-sale",
+    type: "illustration",
     url: "./dataimagesQuickly/food.png",
     name: "yummy",
     title: "Umana",
@@ -205,23 +205,23 @@ export const buttons = [
   },
   {
     name: "BRANDING",
-    value: "point-of-sale",
+    value: "branding",
   },
   {
     name: "EVENT",
-    value: "progress",
+    value: "event",
   },
   {
     name: "TRADE",
-    value: "design",
+    value: "trade",
   },
   {
     name: "CONTENT",
-    value: "events",
+    value: "content",
   },
   {
     name: "CAMPAING",
-    value: "media-content",
+    value: "campaing",
   },
   {
     name: "ILLUSTRATION",
