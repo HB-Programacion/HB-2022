@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { buttons } from "../data/imagesHome";
+import { buttons, imagesHome } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import arrowbtn from "../../assets/arrow-btn.svg";
 import { Link, useNavigate } from "react-router-dom";
@@ -40,9 +40,17 @@ const Work = () => {
   };
 
   const handleDataClick = (type) => {
-    //setDataInterna(type);
-    localStorage.setItem("work-details", JSON.stringify(type));
-    navigate(`/workDetails/${type.id}`);
+    const index = imagesHome.findIndex(image => image.id === type.id);
+  
+    if (index !== -1 && index < imagesHome.length - 1) {
+      const matchedImage = imagesHome[index];
+      const nextImage = imagesHome[index + 1];
+  
+      localStorage.setItem("work-details", JSON.stringify(matchedImage));
+      localStorage.setItem("next-work-details", JSON.stringify(nextImage));
+      
+      navigate(`/workDetails/${matchedImage.id}`);
+    }
   };
 
   return (
