@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
 
 import section from "../../assets/heinekenFest/divider-hnk.png";
 import sectionMobile from "../../assets/heinekenFest/divider-mobile.svg";
@@ -22,130 +21,84 @@ import gif4 from "../../assets/heinekenFest/gif04.gif";
 import gif5 from "../../assets/heinekenFest/gif05.gif";
 import gif6 from "../../assets/heinekenFest/gif06.gif";
 
+import imgbg from "../../assets/hnk/baner-hnk.png";
+import titleproyect from "../../assets/hnk/heinekenFest.svg";
+import hnkimg1 from "../../assets/hnk/hnk-img1.png";
+import hnkimg2 from "../../assets/hnk/hnk-img2.png";
+import hnkimg3 from "../../assets/hnk/hnk-img3.png";
+
 import "./WorkDetails.css";
 
 const WorkDetails = () => {
   const dataInterna = JSON.parse(localStorage.getItem("work-details"));
-  const { title, subtitle, banner } = dataInterna.workDetails
+  const { title, subtitle, banner } = dataInterna.workDetails;
 
-
-  console.log('dataInternaWorkDetails', title)
+  console.log("dataInternaWorkDetails", title);
 
   return (
     <>
       <div className="box-video-background">
-        <video
-          width="100%"
-          height="100%"
-          autoPlay 
-          muted
-          loop
-          className="video-mp4"
-        >
-          <source
-            src={banner}
-            type="video/mp4"
-          ></source>
-        </video>
+        <img src={imgbg} width="100%" height="100%" className="video-mp4" />
       </div>
 
-      <div className="container-main">
-        <div className="Container__title">
-          <h2>{title}</h2>
-          <p>
-            {subtitle}
+      <div className=" bg-black">
+        <div className="box-workDetails">
+          <img src={titleproyect} />
+          <p className="subtitle-project">
+            KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS /
+            BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC
+          </p>
+          <div className="box-project-detail">
+            <div className="project-detail-item">EVENT</div>
+            <div className="project-detail-item">CAMPAIGN</div>
+            <div className="project-detail-item">ILLUSTRATION</div>
+          </div>
+          <div className="box-img-details">
+            <img src={hnkimg1} className="w-100" />
+
+            <h5 className="text-challenge">CHALLENGE</h5>
+            <p className="description-challenge">
+              We started with market research to understand the preferences and
+              expectations of local consumers, and then moved on to detailed
+              planning, covering everything from logistics and budgeting, to
+              marketing and staffing.
+            </p>
+            <h5 className="text-challenge">SOLUTION</h5>
+            <p className="description-challenge">
+              To create a memorable experience, we offered a variety of engaging
+              and interactive activities, such as games, contests, music
+              performances, and food options.
+            </p>
+          </div>
+          {/* <img src={hnkimg2} className="w-100"/> */}
+          <img src={gif2} className="w-100" />
+          <img src={gif1} className="gif-80" />
+
+          <p className="p-white">
+            /A fun and approachable brand system designed for instant
+            recognition.
           </p>
         </div>
-        <img src={section} width={"100%"} className="desktop"/>
-        <img src={sectionMobile} width={"100%"} className="mobile"/>
-        <div className="container__mosaico">
-          <div className="container__gif1">
-            <div>
-              <img src={img1} />
-            </div>
-            <div>
-              <img src={gif1} />
-            </div>
-          </div>
-          <div className="container__gif2">
-            <div>
-              <h2>
-                heineken Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim.
-              </h2>
-              <img src={gif2} className="gif2" />
-            </div>
-            <div>
-              <img src={img2} className="img-gif2" />
-            </div>
-          </div>
-          <div className="container__gif3">
-            <img src={gif3} className="img-gif3" />
-          </div>
-          <div className="container__gif4-5">
-            <div>
-              <img src={gif4} className="img-gif4" />
-              <h2>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod
-              </h2>
-            </div>
-            <div>
-              <img src={gif5} className="img-gif5" />
-              <h2>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt
-              </h2>
-            </div>
-          </div>
-          <div className="container__gif3">
-            <img src={gif6} className="img-gif3" />
-          </div>
-          <div className="container__img3">
-            <img src={img3} width={"80%"} className="" />
-          </div>
-          <div className="container__img-4-5">
-            <div>
-              <img src={img4} width={"80%"} className="" />
-            </div>
-            <div>
-              <img src={img5} width={"80%"} className="" />
-            </div>
-          </div>
-          <div className="container__img3">
-            <img src={img6} width={"80%"} className="" />
-          </div>
+        <img src={gif3} className="w-100" />
+        <img src={gif4} className="gif-70" />
+        <img src={gif5} className="gif-90" />
 
-          <div className="container__p-hnk">
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat.
-            </p>
-            <p>
-              {" "}
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat.
-            </p>
-          </div>
-          <div className="container__gif3">
-            <a href="/rappi">
-              <img src={next} width={"80%"} className="next" />
-            </a>
-          </div>
+        <div className="box-workDetails">
+          <p className="p-white text-right">
+            /Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida
+            ipsum accumsan
+          </p>
+        </div>
+        <img src={gif6} className="w-100" />
 
-          <div className="container__gift-next">
-            {/* <h2>NEXT</h2> */}
-            <img src={backNext} className="nextBack" />
-            <a href="/rappi">
-              <img src={imgNext} className="img-next" />
-            </a>
-          </div>
+        <div className="box-workDetails">
+          <img src={hnkimg3} className="w-100" />
+          <p className="text-gray-poject">
+            Artistic, black and white patterns constitute the playful basic
+            layer for other brand elements such as pictures, videos and
+            headlines. They refer to an important step in every chocolatier’s
+            process: hot tempering of the chocolate.
+          </p>
         </div>
       </div>
     </>

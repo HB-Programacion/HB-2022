@@ -16,7 +16,7 @@ const Work = () => {
   const [activeButton, setActiveButton] = useState(null);
   const [dataInterna, setDataInterna] = useState(null);
 
-  console.log('dataInternaWork', dataInterna)
+  console.log("dataInternaWork", dataInterna);
 
   useEffect(() => {
     setFilteredImages(getImagesHome());
@@ -40,18 +40,17 @@ const Work = () => {
   };
 
   const handleDataClick = (type) => {
-    //setDataInterna(type); 
+    //setDataInterna(type);
     localStorage.setItem("work-details", JSON.stringify(type));
     navigate(`/workDetails/${type.id}`);
   };
 
   return (
     <>
-      <div className="fondo-header">
+      <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
         <p className="text-feature-work">Things we’ve made</p>
-
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (
@@ -72,6 +71,7 @@ const Work = () => {
               </div>
             ))}
         </div>
+
         <div className="box-work">
           <div className="gallery__container-work">
             <div>
@@ -124,10 +124,12 @@ const Work = () => {
         studios.
       </div>
       <div className="button__load-work">
-        <button onClick={handleLoadImage}>LOAD MORE  <img src={arrowbtn} alt="arrow-right"/></button>
+        <button onClick={handleLoadImage}>
+          LOAD MORE <img src={arrowbtn} alt="arrow-right" />
+        </button>
       </div>
       <div className="box-work-w bg-white">
-        <img src={quicklys}/>
+        <img src={quicklys} />
       </div>
       <div className="bg-white">
         <div className="button__load">
@@ -137,8 +139,8 @@ const Work = () => {
           </a>
         </div>
       </div>
-    </div>
-    {dataInterna && <WorkDetails dataInterna={dataInterna} />}
+
+      {dataInterna && <WorkDetails dataInterna={dataInterna} />}
     </>
   );
 };

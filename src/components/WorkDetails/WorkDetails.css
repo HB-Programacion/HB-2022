@@ -1,4 +1,4 @@
-.container__mosaico {
+/* .container__mosaico {
   padding: 3rem 0;
   margin: 0 auto;
   text-align: center;
@@ -222,4 +222,79 @@ width: 100%;
   .container__gift-next .img-next{
     top: -2rem;
   }
+} */
+
+.subtitle-project{
+  color:#575757;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 12px;
+}
+
+.box-workDetails{
+  padding: 4rem 1rem;
+}
+
+.box-project-detail{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
+
+.project-detail-item{
+ border: 1px solid #fff;
+ border-radius: 50px;
+ color: #fff;
+ font-family: neue-haas-grotesk-display, sans-serif;
+ font-size: 1rem;
+padding: .3rem 1rem;
+}
+
+.box-img-details{
+  margin: 4rem auto;
+}
+
+.text-challenge{
+  color: #fff;
+  font-family: "nehue-has45";
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.description-challenge{
+  color: #575757;
+  font-family: "nehue-has55";
+  font-size: 1.51rem;
+  text-align: center;
+  line-height: 2.3rem;
+  margin-bottom: 4rem;
+}
+
+.gif-80{
+  width: 80%;
+  margin: 1rem auto;
+  display: block;
+}
+.gif-70{
+  width: 70%;
+  margin: 2rem auto;
+  display: block;
+}
+.gif-90{
+  width: 90%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-gray-poject{
+  color: #575757;
+  font-size: 1.5rem;
+  font-family: "nehue-has55";
+  line-height: 2.5rem;
+  margin: 4rem auto;
+  text-align: center;
 }
