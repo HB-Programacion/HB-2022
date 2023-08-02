@@ -46,23 +46,37 @@
  
 } */
 
-.checkContainer input[type="checkbox"]{
-   border: none;
-   -webkit-appearance: none;
-   appearance: none;
-   width: 30px;
-   height: 30px;
-   border-radius: 0em;
-   border: 1px solid #fff;
-   outline: none;
-   cursor: pointer;
+.checkContainer .checkboxLabel {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 5rem 0px 0px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
-.checkContainer .privacy-text {
-  margin-left: 20px;
-  font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 12px;
-  text-align: left;
+.checkContainer input[type="checkbox"] {
+  display: none;
+}
+
+.checkContainer .checkboxCustom {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.checkContainer input[type="checkbox"]:checked + .checkboxCustom::before {
+  content: '\2713';
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .selectContainer select {
@@ -82,6 +96,7 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
 
 .button__send button {
   font-size: 25px;

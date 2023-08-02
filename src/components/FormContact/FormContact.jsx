@@ -55,14 +55,34 @@ const FormContact = () => {
   const [services, setServices] = useState(servicesData);
   const [serviceSelected, setServiceSelected] = useState("");
   const [modalVisibleSubmit, setModalVisibleSubmit] = useState(false);
+  const [formularioCompleto, setFormularioCompleto] = useState(false);
+
+
 
   const handleChangeInput = (e) => {
-    const name = e.target.name;
+    const { name, value } = e.target;
+    setValues((valoresPrevios) => ({ ...valoresPrevios, [name]: value }));
+    verificarCompletitudFormulario(); // Verificar la completitud del formulario cuando cambie un campo
+  };
+  
+  const handleCheckPrivacyChange = (e) => {
+    setCheckPrivacy(e.target.checked);
+    verificarCompletitudFormulario(); // Verificar la completitud del formulario cuando cambie la casilla de verificación
+  };
 
-    setValues((prev) => ({
-      ...prev,
-      [name]: e.target.value,
-    }));
+  const verificarCompletitudFormulario = () => {
+    if (
+      serviceSelected &&
+      values.name &&
+      values.company &&
+      values.email &&
+      values.phone &&
+      checkPrivacy
+    ) {
+      setFormularioCompleto(true);
+    } else {
+      setFormularioCompleto(false);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -204,20 +224,23 @@ const FormContact = () => {
           </div>
         </div>
         <div className="checkContainer">
-          <input
-            className="privacy"
-            type="checkbox"
-            value={checkPrivacy}
-            name="checkPrivacy"
-            onChange={(e) => {
-              setCheckPrivacy(e.target.checked);
-            }}
-            checked={checkPrivacy}
-          />
-          <div className="privacy-text">{t("contact-form.check")}</div>
+          <label className="checkboxLabel">
+            <input
+              className="privacy"
+              type="checkbox"
+              value={checkPrivacy}
+              name="checkPrivacy"
+              onChange={(e) => {
+                setCheckPrivacy(e.target.checked);
+              }}
+              checked={checkPrivacy}
+            />
+            <span className="checkboxCustom"></span>
+            <div className="privacy-text">{t("contact-form.check")}</div>
+          </label>
         </div>
-        <div className="button__send">
-          <button type="submit">{t("contact-form.send")}</button>
+        <div className="button__send ">
+          <button type="submit" disabled={!formularioCompleto}>{t("contact-form.send")}</button>
         </div>
       </form>
       {modalVisibleSubmit && (
