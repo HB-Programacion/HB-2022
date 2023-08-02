@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 // import Marquee from "react-double-marquee";
-import Marquee from "react-fast-marquee";
+
 import tiwwa from "../../assets/about/tiwwa.svg";
 import img1 from "../../assets/about/img1-about.png";
 import img2 from "../../assets/about/img2-about.png";
@@ -14,15 +14,16 @@ import wwb2 from "../../assets/about/wwb-2.svg";
 import wwb3 from "../../assets/about/wwb-3.svg";
 import bgsurprise from "../../assets/about/fondo-surprise.svg";
 import sk from "../../assets/about/sk.svg";
-import asterisco from "../../assets/about/asterisco.svg";
+
 import arrowdown from "../../assets/about/arrowdown.svg";
 
 import "./About.css";
+import MarqueeHB from "../MarqueeHB/MarqueeHB";
 
 const About = () => {
   return (
     <>
-    <div className="fondo-header"></div>
+      <div className="fondo-header"></div>
       <div className="bg-black ">
         <div className="box-about">
           <img src={tiwwa} className="img-tiwwa" />
@@ -41,31 +42,7 @@ const About = () => {
           </h6>
         </div>
         <img src={img1} className="w-100 img1" />
-
-        <div className="box-marquee">
-          <Marquee direction="left" speed={100} delay={5}>
-            <span className="marquee">
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />
-            </span>
-          </Marquee>
-        </div>
-        <div className="box-marquee">
-          <Marquee direction="right" speed={100} delay={5} loop={0}>
-            <span className="marquee">
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />
-            </span>
-          </Marquee>
-        </div>
+      <MarqueeHB/>
 
         <div className="box-about">
           <h3 className="title-about">Our DNA</h3>
@@ -162,7 +139,9 @@ const About = () => {
       <div className="bg-black fondo-surprise">
         <div className="box-title-surprise">
           <img src={sk} className="img-surprise-kit" />
-          <button className="btn-white-surprise mx2-auto">download <img src={arrowdown}/></button>
+          <button className="btn-white-surprise mx2-auto">
+            download <img src={arrowdown} />
+          </button>
         </div>
         <img src={bgsurprise} className="img-surprise" />
         <p className="p-surprise">

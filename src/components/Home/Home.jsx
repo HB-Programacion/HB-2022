@@ -15,7 +15,7 @@ import campaignsicon from "../../assets/home/campaigns-icon.svg";
 import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/img-proyectos.png";
 
-import wmct from "../../assets/home/wmct.svg";
+import wmct from "../../assets/home/weMakeCoolThings.gif";
 import hnk from "../../assets/home/hnk-home-mobile.png";
 import umana from "../../assets/home/umana-home-mobile.png";
 import rappi from "../../assets/home/rappi-home-mobile.png";

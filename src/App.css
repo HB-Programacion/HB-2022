@@ -279,7 +279,7 @@
     width: 100%;
   }
   .word {
-    font-size: 9rem;
+    font-size: 8.8rem;
   }
 }
 @media (max-width: 400px) {
@@ -317,6 +317,3 @@
 }
 
 
-.box-marquee{
-  background-color: #111;
-}

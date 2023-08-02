@@ -37,7 +37,7 @@ const DropMenuMobile = ({ active, setActive }) => {
                   </a>
                 </li>
                 <li className="list-group-item">
-                  <a href="/">
+                  <a href="/services">
                     <h6 className="text-navbar">services</h6>
                   </a>
                 </li>
@@ -47,7 +47,7 @@ const DropMenuMobile = ({ active, setActive }) => {
                   </a>
                 </li>
                 <li className="list-group-item">
-                  <a href="/">
+                  <a href="/contact">
                     <h6 className="text-navbar">Contact</h6>
                   </a>
                 </li>

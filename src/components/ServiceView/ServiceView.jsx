@@ -11,6 +11,7 @@ import letstalk from "../../assets/services/lets-talk.svg";
 
 import "./ServiceView.css";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
+import MarqueeHB from "../MarqueeHB/MarqueeHB";
 
 const ServiceView = () => {
   const [filteredImages, setFilteredImages] = useState(null);
@@ -95,30 +96,7 @@ const ServiceView = () => {
         </div>
       </div>
       <div>
-        <div className="box-marquee">
-          <Marquee direction="left" speed={100} delay={5}>
-            <span className="marquee">
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />
-            </span>
-          </Marquee>
-        </div>
-        <div className="box-marquee">
-          <Marquee direction="right" speed={100} delay={5} loop={0}>
-            <span className="marquee">
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />
-            </span>
-          </Marquee>
-        </div>
+      <MarqueeHB/>
       </div>
       <WeWorkWith />
       <div className="box-services bg-black">
