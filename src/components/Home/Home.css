@@ -253,27 +253,7 @@
   margin: 0 auto;
 }
 
-.container-www{
-  background-color: #ffffff;
-  padding-top: 3rem;
-}
 
-.www-title{
-  margin: 3rem auto;
-  display: block;
-}
-.container-www_logos{
-  margin: 4rem auto;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.www_logo{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  margin: 0rem auto;
-}
 
 .p-1{
   font-size: 1.68rem;

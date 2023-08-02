@@ -14,7 +14,7 @@ import illustrationicon from "../../assets/home/illustration-icon.svg";
 import campaignsicon from "../../assets/home/campaigns-icon.svg";
 import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/img-proyectos.png";
-import www from "../../assets/home/www.svg";
+
 import wmct from "../../assets/home/wmct.svg";
 import hnk from "../../assets/home/hnk-home-mobile.png";
 import umana from "../../assets/home/umana-home-mobile.png";
@@ -22,14 +22,6 @@ import rappi from "../../assets/home/rappi-home-mobile.png";
 import tacama from "../../assets/home/tacama-home-mobile.png";
 import hb from "../../assets/home/hb-home-mobile.png";
 
-import gif1 from "../../assets/gifs/1.gif";
-import gif2 from "../../assets/gifs/2.gif";
-import gif3 from "../../assets/gifs/3.gif";
-import gif4 from "../../assets/gifs/4.gif";
-import gif5 from "../../assets/gifs/5.gif";
-import gif6 from "../../assets/gifs/6.gif";
-import gif7 from "../../assets/gifs/7.gif";
-import gif8 from "../../assets/gifs/8.gif";
 
 import title from "../../assets/contact/title-contacto.svg";
 
@@ -45,6 +37,7 @@ import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import FormContact from "../FormContact/FormContact";
+import WeWorkWith from "../WeWorkWith/WeWorkWith";
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
@@ -161,27 +154,26 @@ const Home = () => {
 
           <div className="container-img-home">
             <div className="items-img-home">
-              <img src={hnk} className="w-100"/>
+              <img src={hnk} className="w-100" />
             </div>
             <div>
-              <img src={umana}className="w-100" />
+              <img src={umana} className="w-100" />
             </div>
             <div>
-              <img src={rappi} className="w-100"/>
+              <img src={rappi} className="w-100" />
             </div>
             <div>
-              <img src={tacama}className="w-100" />
+              <img src={tacama} className="w-100" />
             </div>
             <div>
-              
-              <img src={hb} className="w-100"/>
+              <img src={hb} className="w-100" />
             </div>
           </div>
           {/* </div> */}
           <div className="box-btn">
             <Link to="/work" className="btn-white">
               SEE OUR WORK
-              <img src={union} alt="arrow-right" className="arrow-black"/>
+              <img src={union} alt="arrow-right" className="arrow-black" />
             </Link>
           </div>
         </div>
@@ -239,46 +231,15 @@ const Home = () => {
         </div>
       </div>
       <img src={img2} className="w-100" />
-      <div className="container-www">
-        <img src={www} className="www-title" />
-        <div className="container-www_logos">
-          <div className="www_logo">
-            <img src={gif1} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif2} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif3} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif4} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif5} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif6} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif7} className="w-100" />
-          </div>
-          <div className="www_logo">
-            <img src={gif8} className="w-100" />
-          </div>
-        </div>
-        <p className="p-1">
-          We make our clients lives easier and their brands stronger.
-        </p>
-        <div className="bg-black">
+      <WeWorkWith />
+
+      <div className="bg-black">
         <div className="box-contact">
           <img src={title} />
           {/* <div className="container__subtitle">
             <h1>{t("contact-getting")}</h1>
           </div> */}
-       <FormContact/>
-
-        </div>
+          <FormContact />
         </div>
       </div>
     </>
