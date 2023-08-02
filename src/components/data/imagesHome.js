@@ -37,6 +37,37 @@ export const imagesHome = [
     name: "Yummi",
     title: "Heineken Festi",
     description:
+      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
+    href: "./heinekenFest",
+    workDetails : {
+      imgbg: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
+      urlTitle: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
+      subtitle: "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
+      tabs: ["BRANDING","CAMPAIGN","CONTENT"],
+      image1: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
+      descriptionChallenge : "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+      decriptionSolution : "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
+      gif1: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+123.png",
+      gif2: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122.png",
+      gif3: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+164.png",
+      gif4: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/image+21.png",
+      gif5: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+127.png",
+      gif6: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122+(1).png",
+      img3: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+134.png",
+      text1: "/A fun and approachable brand system designed for instant recognition.",
+      text2: "/Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida ipsum accumsan",
+      text3: "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
+      textNext: "YUMMY FT. RAUW ALEJANDRO",
+      imageNext: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
+    }
+  },
+  {
+    id: 3,
+    type: "point-of-sale",
+    url: "./dataimages/umana.png",
+    name: "Yummi",
+    title: "Umana",
+    description:
       "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
     href: "./heinekenFest",
     workDetails : {
@@ -60,16 +91,6 @@ export const imagesHome = [
       textNext: "APP YUMMY REBRANDING",
       imageNext: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
     }
-  },
-  {
-    id: 3,
-    type: "point-of-sale",
-    url: "./dataimages/umana.png",
-    name: "yummy",
-    title: "Umana",
-    description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PHOTOGRAPHY",
-    href: "./yummysuperapp",
   },
   {
     id: 4,
