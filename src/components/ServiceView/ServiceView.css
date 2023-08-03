@@ -1,19 +1,56 @@
-.title-services{
-    padding: 3rem 0rem;
+.title-services {
+  padding: 3rem 0rem;
 }
 
-.box-services{
-    padding: 4rem 1rem;
-
+.box-services {
+  padding: 4rem 1rem;
 }
 
-.text-gray{
-    color: #575757;
-    font-family: "nehue-has55";
-    font-size: 1.5rem;
-    line-height: 2rem;
+.text-gray {
+  color: #575757;
+  font-family: "nehue-has55";
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.text-lets-talk{
-    padding: 3rem 0;
+.text-lets-talk {
+  padding: 3rem 0;
+}
+
+.box-btn-filter-services {
+  padding: 5rem 0.5rem;
+  padding-bottom: 0;
+}
+
+.btn-filter-services {
+  background-color: transparent;
+  font-family: "nehue-has55";
+  font-size: 2.2rem;
+  border: 0px none;
+}
+
+.description-filter-services {
+  font-family: "nehue-has45";
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.subtitle-filter-services {
+  font-family: "nehue-has55";
+  color: #575757;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-right: 1rem;}
+
+.box-subtitle-img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.icon-services{
+    width: 30%;
+    height: 30%;
+    margin: 1.5rem 0rem;
 }

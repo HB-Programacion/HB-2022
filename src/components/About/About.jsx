@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import tiwwa from "../../assets/about/tiwwa.svg";
 import img1 from "../../assets/about/img1-about.png";
 import img2 from "../../assets/about/img2-about.png";
-import people from "../../assets/about/people1.png";
+
 import mop from "../../assets/about/mop.svg";
 import img3 from "../../assets/about/img3-about.png";
 import img4 from "../../assets/about/img4-about.png";
@@ -19,6 +19,18 @@ import arrowdown from "../../assets/about/arrowdown.svg";
 
 import "./About.css";
 import MarqueeHB from "../MarqueeHB/MarqueeHB";
+
+import people1 from "../../assets/about/people/Team_1.gif";
+import people2 from "../../assets/about/people/Team_2.gif";
+import people3 from "../../assets/about/people/Team_3.gif";
+import people4 from "../../assets/about/people/Team_4.gif";
+import people5 from "../../assets/about/people/Team_5.gif";
+import people6 from "../../assets/about/people/Team_6.gif";
+import people7 from "../../assets/about/people/Team_7.gif";
+import people8 from "../../assets/about/people/Team_8.gif";
+import people9 from "../../assets/about/people/Team_9.gif";
+import people10 from "../../assets/about/people/Team_10.gif";
+
 
 const About = () => {
   return (
@@ -70,16 +82,16 @@ const About = () => {
         <div className="box-about">
           <div className="box-group-people">
             <div className="box-people">
-              <img src={people} className="photo-people" />
+              <img src={people1} className="photo-people" />
             </div>
             <div className="box-people mt-people">
-              <img src={people} className="photo-people" />
+              <img src={people2} className="photo-people" />
             </div>
             <div className="box-people">
-              <img src={people} className="photo-people" />
+              <img src={people3} className="photo-people" />
             </div>
             <div className="box-people mt-people">
-              <img src={people} className="photo-people" />
+              <img src={people4} className="photo-people" />
             </div>
             <div className="box-people">
               <p className="text-people">
@@ -88,16 +100,16 @@ const About = () => {
               </p>
             </div>
             <div className="box-people mt-people">
-              <img src={people} className="photo-people" />
+              <img src={people5} className="photo-people" />
             </div>
             <div className="box-people">
-              <img src={people} className="photo-people" />
+              <img src={people6} className="photo-people" />
             </div>
             <div className="box-people mt-people">
-              <img src={people} className="photo-people" />
+              <img src={people7} className="photo-people" />
             </div>
             <div className="box-people">
-              <img src={people} className="photo-people" />
+              <img src={people8} className="photo-people" />
             </div>
             <div className="box-people mt-people">
               <p className="text-people">
@@ -106,10 +118,10 @@ const About = () => {
               </p>
             </div>
             <div className="box-people">
-              <img src={people} className="photo-people" />
+              <img src={people9} className="photo-people" />
             </div>
             <div className="box-people mt-people">
-              <img src={people} className="photo-people" />
+              <img src={people10} className="photo-people" />
             </div>
           </div>
         </div>

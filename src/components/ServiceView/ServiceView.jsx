@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 import title from "../../assets/services/barrett-services.gif";
 import img1 from "../../assets/services/img-services1.png";
-import welove from "../../assets/services/we-love-creating.svg";
+import welove from "../../assets/services/we-love-creating.gif";
 import asterisco from "../../assets/about/asterisco.svg";
 import letstalk from "../../assets/services/lets-talk.svg";
 
@@ -36,7 +36,7 @@ const ServiceView = () => {
     <>
       <div className="fondo-header"> </div>
       <div className="bg-black ">
-        <img src={title} className="m-auto d-block title-services" />
+        <img src={title} className="w-90 m-auto d-block title-services" />
         <img src={img1} className=" w-90 m-auto d-block" />
         <div className="box-services">
           <p className="text-gray">
@@ -44,27 +44,31 @@ const ServiceView = () => {
             plan, future opportunities and dedicated solutions
           </p>
         </div>
-        <div className="">
-          <img src={welove} className=" m-auto d-block" />
+        <div>
+          <img src={welove} className=" w-90 m-auto d-block" />
 
-          {buttonService &&
-            buttonService.map((type, index) => (
-              <div className="" style={{ margin: "1rem 0.5rem" }} key={index}>
-                <button
-                  key={index}
-                  value={type.value}
-                  onClick={handleImagesHome}
-                  style={{
-                    background:
-                      activeButton === type.value ? "#FF4040" : "none",
-                    color: activeButton === type.value ? "#ffffff" : "#000000",
-                    border: activeButton === type.value && "#000000",
-                  }}
-                >
-                  {type.name}
-                </button>
-              </div>
-            ))}
+          <div className="box-btn-filter-services">
+            {" "}
+            {buttonService &&
+              buttonService.map((type, index) => (
+                <div style={{ margin: "1rem 0rem" }} key={index}>
+                  <button
+                    key={index}
+                    value={type.value}
+                    onClick={handleImagesHome}
+                    className="btn-filter-services"
+                    style={{
+                      // background:
+                      //   activeButton === type.value ? "#none" : "none",
+                      color: activeButton === type.value ? "#fff" : "#575757",
+                      border: activeButton === type.value && "#000000",
+                    }}
+                  >
+                    {type.name}
+                  </button>
+                </div>
+              ))}
+          </div>
         </div>
         <div className="">
           <div className="">
@@ -72,21 +76,26 @@ const ServiceView = () => {
               {filteredImages &&
                 filteredImages.map((type) => (
                   <>
-                    <div className="" key={type.id}>
-                      <div style={{ backgroundColor: "#1111" }}>
-                        <img
-                          src={type.urlHbArea}
-                          alt={type.service}
-                          className=""
-                        />
+                    <div className="box-services" key={type.id}>
+                      <h5 className="description-filter-services">
+                        {type.title}
+                      </h5>
+                      <div className="box-subtitle-img">
+                        <p className="subtitle-filter-services">{type.key}</p>
+                        <div className="icon-services">
+                          {" "}
+                          <img
+                            src={type.urlHbArea}
+                            alt={type.service}
+                            className="w-100"
+                          />
+                        </div>
                       </div>
-                      <h5 className="">{type.title}</h5>
-                      <p className="">{type.key}</p>
                     </div>
                     <div className="">
                       {type.urlMarcaByService &&
                         type.urlMarcaByService.map((url, index) => (
-                          <img key={index} src={url} alt={`Image ${index}`} />
+                          <img key={index} src={url} alt={`Image ${index}`} className="w-80 m-auto d-block"/>
                         ))}
                     </div>
                   </>
@@ -96,7 +105,7 @@ const ServiceView = () => {
         </div>
       </div>
       <div>
-      <MarqueeHB/>
+        <MarqueeHB />
       </div>
       <WeWorkWith />
       <div className="box-services bg-black">

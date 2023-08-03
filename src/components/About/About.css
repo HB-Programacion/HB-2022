@@ -57,6 +57,7 @@
 .photo-people {
   width: 88%;
   margin: 2rem auto;
+  display: block;
 }
 .text-people {
   width: 100%;
