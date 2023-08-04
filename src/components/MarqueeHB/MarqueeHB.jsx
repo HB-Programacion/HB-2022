@@ -5,30 +5,37 @@ import asterisco from "../../assets/about/asterisco.svg";
 
 import "./MarqueeHB.css"
 
+const generateRepeatedContent = (times) => {
+  const repeatedContent = [];
+  for (let i = 0; i < times; i++) {
+    repeatedContent.push(
+      <React.Fragment key={i}>
+        always watching <img src={asterisco} className="asterisco" /> the
+        curiosity is sexy <img src={asterisco} className="asterisco" />
+      </React.Fragment>
+    );
+  }
+  
+  return repeatedContent;
+}
+
 const MarqueeHB = () => {
+  const repeatedContent = generateRepeatedContent(50);
+
+  
   return (
     <div>
-         <div className="box-marquee">
-          <Marquee direction="left" speed={100} delay={5}>
+        <div className="box-marquee">
+          <Marquee direction="left" speed={100} loop={0}>
             <span className="marquee">
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />
+              {repeatedContent}
             </span>
           </Marquee>
         </div>
         <div className="box-marquee">
-          <Marquee direction="right" speed={100} delay={5} loop={0}>
+          <Marquee direction="right" speed={100} loop={0}>
             <span className="marquee">
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />{" "}
-              always watching <img src={asterisco} className="asterisco" /> the
-              curiosity is sexy <img src={asterisco} className="asterisco" />
+              {repeatedContent}
             </span>
           </Marquee>
         </div>
