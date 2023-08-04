@@ -229,8 +229,9 @@ const Home = () => {
             </button>
           </div>
         </div>
+        <img src={img2} className="w-100" />
       </div>
-      <img src={img2} className="w-100" />
+      
       <WeWorkWith />
 
       <div className="bg-black">

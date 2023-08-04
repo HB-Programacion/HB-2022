@@ -51,8 +51,8 @@
   margin: 3rem auto;
 }
 .box-people {
-  width: 10rem;
-  height: 10rem;
+  width: 141px;
+  height: 141px;
 }
 .photo-people {
   width: 88%;
@@ -61,7 +61,7 @@
 }
 .text-people {
   width: 100%;
-  margin: 5rem auto;
+  margin: 2rem auto;
   color: #575757;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1.1rem;
@@ -116,13 +116,13 @@
 
 .p-surprise{
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: #fff;
   width: 85%;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  top: -6rem;
+  top: -10rem;
 }
 .asterisco{
   width: 3rem;
