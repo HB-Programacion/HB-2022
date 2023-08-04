@@ -47,7 +47,7 @@
 .p-black{
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1.5rem;
-  color: #000;
+  color: #111;
   line-height: 2rem;
 }
 .lowercase {
@@ -170,7 +170,7 @@
   border-radius: 50px;
   border: 1px solid #fff;
   margin: auto 5px;
-  color: #000;
+  color: #111;
   cursor: pointer;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
@@ -203,7 +203,7 @@
     background-color: aqua;
   } */
 .box-test {
-  background-color: #000;
+  background-color: #111;
 }
 .container__parallax {
   position: relative;
@@ -215,7 +215,7 @@
   top: 28%;
   /* height: 50vh; */
   width: 100%;
-  background-color: #000;
+  background-color: #111;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;

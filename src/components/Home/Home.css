@@ -51,9 +51,9 @@
   font-size: 26px;
   padding: 6px 20px;
   border-radius: 50px;
-  border: 1px solid #000000;
+  border: 1px solid #111;
   margin: auto 5px;
-  background-color: #000000;
+  background-color: #111;
   color: #ffffff;
   cursor: pointer;
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -89,7 +89,7 @@
   border-radius: 20px;
   border: 1px solid #fff;
   margin: 8px 5px;
-  background-color: #000;
+  background-color: #111;
   cursor: pointer;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
@@ -126,13 +126,13 @@
 .wrapper {
   width: 100%;
   margin: auto;
-  border: 1px solid #000000;
+  border: 1px solid #111;
   overflow-x: hidden;
 }
 
 .target {
   font-weight: bold;
-  color: #000000;
+  color: #111;
   animation-name: rightToLeft;
   animation-duration: 15.5s;
   animation-timing-function: linear;
@@ -202,7 +202,7 @@
   font-weight: 500;
   font-style: normal;
   letter-spacing: -1.5px;
-  color: #000;
+  color: #111;
   padding-bottom: 4rem;
 }
 
@@ -220,7 +220,7 @@
 .btn-services {
   display: flex;
   align-items: center;
-  border: 1px solid #000000;
+  border: 1px solid #111;
   border-radius: 50px;
   margin: 0.9rem auto;
   padding: 0.1rem 0.4rem;
