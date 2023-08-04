@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 import gif from "../../assets/home/gif.png";
 import logoGift from "../../assets/header/logo-gift.gif";
 import divider from "../../assets/home/Divider.svg";
@@ -34,7 +35,6 @@ import word from "../../assets/home/work.svg";
 
 import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import FormContact from "../FormContact/FormContact";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
 
@@ -54,7 +54,10 @@ const handleLanguageClick = () => {
 };
 
 const Home = () => {
+  const navigate = useNavigate();
   const { t } = useTranslation();
+  const [showWork, setShowWork] = useState(false);
+
 
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
@@ -71,6 +74,15 @@ const Home = () => {
       ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
   };
+
+  const handleCategory = () => {
+    setShowWork(true)
+  }
+
+  const handleCategorybyName = (category) => {
+    navigate(`/work?category=${category}`)
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
@@ -186,39 +198,56 @@ const Home = () => {
           <div className="container__text-wwd">
             <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
           </div>
-
-          <div className="group-btns">
-            <button className="btn-services">
-              <img src={brandingicon} />
-              branding
-              <img src={union} />
-            </button>
-            <button className="btn-services">
-              <img src={eventsicon} />
-              events
-              <img src={union} />
-            </button>
-            <button className="btn-services">
-              <img src={contenticon} />
-              content
-              <img src={union} />
-            </button>
-            <button className="btn-services">
-              <img src={campaignsicon} />
-              campaigns
-              <img src={union} />
-            </button>
-            <button className="btn-services">
-              <img src={tradeicon} />
-              trade
-              <img src={union} />
-            </button>
-            <button className="btn-services">
-              <img src={illustrationicon} />
-              illustration
-              <img src={union} />
-            </button>
-          </div>
+            <div className="group-btns">
+                <button 
+                  className="btn-services" 
+                  onClick={() => handleCategorybyName("branding")}
+                >
+                    <img src={brandingicon} alt="Branding Icon" />
+                    branding
+                    <img src={union} alt="Union Icon" />
+                </button>
+                <button 
+                  className="btn-services"
+                  onClick={() => handleCategorybyName("event")}
+                  >
+                  <img src={eventsicon} />
+                  events
+                  <img src={union} />
+                </button>
+                <button 
+                  className="btn-services"
+                  onClick={() => handleCategorybyName("content")}  
+                >
+                  <img src={contenticon} />
+                  content
+                  <img src={union} />
+                </button>
+                <button
+                  className="btn-services"
+                  onClick={() => handleCategorybyName("campaing")} 
+                >
+                  <img src={campaignsicon} />
+                  campaigns
+                  <img src={union} />
+                </button>
+                <button
+                  className="btn-services"
+                  onClick={() => handleCategorybyName("trade")}
+                >
+                  <img src={tradeicon} />
+                  trade
+                  <img src={union} />
+                </button>
+                <button
+                  className="btn-services"
+                  onClick={() => handleCategorybyName("illustration")}
+                >
+                  <img src={illustrationicon} />
+                  illustration
+                  <img src={union} />
+                </button>
+            </div>
           <div className="container_groupwwd">
             <img src={groupwwd} alt="" className="" />
           </div>

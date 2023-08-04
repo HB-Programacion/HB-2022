@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { buttons, imagesHome } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import arrowbtn from "../../assets/arrow-btn.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
 
 import "./Work.css";
@@ -11,16 +11,20 @@ import fw from "../../assets/work/feature-work.svg";
 import quicklys from "../../assets/work/quickly-all.svg";
 
 const Work = () => {
+
   const [filteredImages, setFilteredImages] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
   const [dataInterna, setDataInterna] = useState(null);
 
-  console.log("dataInternaWork", dataInterna);
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const category = queryParams.get('category');
+  const filteredByCategory = filterHomeType(category);
 
   useEffect(() => {
-    setFilteredImages(getImagesHome());
-    setActiveButton('all');
+    setFilteredImages( filteredByCategory.length === 0 ? getImagesHome() : filterHomeType(filteredByCategory[0].type) );
+    setActiveButton( filteredByCategory.length === 0 ? 'all' :  filteredByCategory[0].type );
   }, []);
 
   const navigate = useNavigate();
@@ -34,6 +38,9 @@ const Work = () => {
     typeImagesHome !== "all"
       ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
+    
+    queryParams.delete('category');
+    navigate(`?${queryParams.toString()}`, { replace: true });
   };
 
   const handleLoadImage = () => {

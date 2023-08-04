@@ -170,8 +170,8 @@ const FormContact = () => {
             <option value="" disabled selected>
               {t("contact-form.for-me")}
             </option>
-            {services.map((op) => (
-              <option key={op.value} value={op.value}>
+            {services.map((op, index) => (
+              <option key={index} value={op.value}>
                 {op.nombre}
               </option>
             ))}

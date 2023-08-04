@@ -59,8 +59,8 @@ const WorkDetails = () => {
             {subtitle}
           </p>
           <div className="box-project-detail">
-            {tabs.map((tab) => (
-              <div className="project-detail-item">{tab}</div>
+            {tabs.map((tab, index) => (
+              <div key={index} className="project-detail-item">{tab}</div>
             ))}
           </div>
           <div className="box-img-details">
@@ -101,10 +101,10 @@ const WorkDetails = () => {
           </p>
         </div>
       </div>
-      <div class="">
-          <img src={imageNext} alt="Imagen" class=""/>
-          <div class="">
-            <a href="https://www.ejemplo.com" class="">{textNext}</a>
+      <div className="">
+          <img src={imageNext} alt="Imagen" className=""/>
+          <div className="">
+            <a href="https://www.ejemplo.com" className="">{textNext}</a>
           </div>
       </div>
     </>
