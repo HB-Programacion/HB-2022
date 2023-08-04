@@ -310,7 +310,7 @@ export const dataService = [
   {
     id: 1,
     service: "content",
-    title: "content smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    title: "CONTENT smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
     key: "/Community management/Concept & Strategy/Art/Creative direction",
     urlHbArea: "./dataImagesService/logoContent.png",
     urlMarcaByService: [
@@ -324,7 +324,7 @@ export const dataService = [
   {
     id: 2,
     service: "design",
-    title: "design A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
+    title: "DESIGN A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
     key: "/Community management/Concept & Strategy/Art/Creative direction",
     urlHbArea: "./dataImagesService/logoDesign.png",
     urlMarcaByService: [

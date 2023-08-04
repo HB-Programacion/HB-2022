@@ -114,19 +114,19 @@ const Work = () => {
             LOAD MORE <img src={arrowbtn} alt="arrow-right" />
           </button>
         </div>
-        <div className="box-work-w bg-white">
+        {/* <div className="box-work-w bg-white">
           <img src={quicklys} />
-        </div>
-        <div className="bg-white">
+        </div> */}
+        {/* <div className="bg-white">
           <div className="button__load">
             <button onClick={() => console.log("click load more")}>
               See all
               <img src={arrowbtn} alt="arrow-right" />
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="p-white">
+      {/* <div className="p-white">
         // We create brand launch campaigns, gadgets, signage, websites, digital
         assets and much more. All of this happens in our in-house production
         studios.
@@ -135,7 +135,7 @@ const Work = () => {
         <button onClick={handleLoadImage}>
           LOAD MORE <img src={arrowbtn} alt="arrow-right" />
         </button>
-      </div>
+      </div> */}
       <div className="box-work-w bg-white">
         <img src={quicklys} />
       </div>
