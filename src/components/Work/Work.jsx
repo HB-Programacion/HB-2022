@@ -20,6 +20,7 @@ const Work = () => {
 
   useEffect(() => {
     setFilteredImages(getImagesHome());
+    setActiveButton('all');
   }, []);
 
   const navigate = useNavigate();
