@@ -8,7 +8,7 @@
 }
 
 .drop-menu {
-  padding: 0.5rem 0;
+  padding: 0rem 0;
   position: fixed;
   z-index: 999998;
   width: 100%;
@@ -29,7 +29,7 @@
   height: 100vh;
 }
 .container-close {
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +60,7 @@
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 48px;
+  font-size: 46px;
   color: #111;
   text-align: center;
   font-weight: normal;
@@ -69,7 +69,7 @@
 }
 
 .contenedor-items {
-  top: 42%;
+  top: 45%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -58%);
