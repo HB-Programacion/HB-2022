@@ -1,7 +1,7 @@
 export const imagesHome = [
   {
     id: 1,
-    type: "point-of-sale",
+    type: "content",
     url: "./dataimages/hnk-fest.png",
     name: "Heineken",
     title: "Heineken Festi",
@@ -32,7 +32,7 @@ export const imagesHome = [
   },
   {
     id: 2,
-    type: "point-of-sale",
+    type: "trade",
     url: "./dataimages/yummy.png",
     name: "Yummi",
     title: "Heineken Festi",
@@ -63,7 +63,7 @@ export const imagesHome = [
   },
   {
     id: 3,
-    type: "point-of-sale",
+    type: "branding",
     url: "./dataimages/umana.png",
     name: "Yummi",
     title: "Umana",
@@ -94,7 +94,7 @@ export const imagesHome = [
   },
   {
     id: 4,
-    type: "point-of-sale",
+    type: "event",
     url: "./dataimages/iata.png",
     name: "yummy",
     title: "Umana",
@@ -104,7 +104,7 @@ export const imagesHome = [
   },
   {
     id: 5,
-    type: "point-of-sale",
+    type: "trade",
     url: "./dataimages/tacama.png",
     name: "yummy",
     title: "Umana",
@@ -114,7 +114,7 @@ export const imagesHome = [
   },
   {
     id: 6,
-    type: "point-of-sale",
+    type: "content",
     url: "./dataimages/tiger.png",
     name: "yummy",
     title: "Umana",
@@ -124,7 +124,7 @@ export const imagesHome = [
   },
   {
     id: 7,
-    type: "point-of-sale",
+    type: "campaing",
     url: "./dataimages/eureka.png",
     name: "yummy",
     title: "Umana",
