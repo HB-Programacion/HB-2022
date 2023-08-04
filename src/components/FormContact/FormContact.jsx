@@ -60,33 +60,22 @@ const FormContact = () => {
 
 
   const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setValues((valoresPrevios) => ({ ...valoresPrevios, [name]: value }));
-    verificarCompletitudFormulario(); // Verificar la completitud del formulario cuando cambie un campo
+    const { name } = e.target;
+    setValues(
+      (valoresPrevios) => ({
+          ...valoresPrevios,
+          [name]: e.target.value 
+      }));
   };
   
   const handleCheckPrivacyChange = (e) => {
     setCheckPrivacy(e.target.checked);
-    verificarCompletitudFormulario(); // Verificar la completitud del formulario cuando cambie la casilla de verificación
   };
 
-  const verificarCompletitudFormulario = () => {
-    if (
-      serviceSelected &&
-      values.name &&
-      values.company &&
-      values.email &&
-      values.phone &&
-      checkPrivacy
-    ) {
-      setFormularioCompleto(true);
-    } else {
-      setFormularioCompleto(false);
-    }
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('click')
     if (!checkPrivacy) {
       setAlert({
         title: "error",
@@ -240,7 +229,7 @@ const FormContact = () => {
           </label>
         </div>
         <div className="button__send ">
-          <button type="submit" disabled={!formularioCompleto}>{t("contact-form.send")}</button>
+          <button type="submit">{t("contact-form.send")}</button>
         </div>
       </form>
       {modalVisibleSubmit && (
