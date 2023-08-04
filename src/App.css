@@ -36,7 +36,7 @@
   src: url(./assets/fonts/NeueHaasDisplayRomanItalic.ttf);
 }
 .bg-black {
-  background-color: #000;
+  background-color: #111;
 }
 .bg-white{
   background-color: #fff;
@@ -187,7 +187,7 @@
   top: 0;
   left: 0;
   height: 7rem;
-  background-color: #000;
+  background-color: #111;
   z-index: 80;
   width: 100vw;
 }
@@ -279,7 +279,7 @@
     width: 100%;
   }
   .word {
-    font-size: 8.8rem;
+    font-size: 8.4rem;
   }
 }
 @media (max-width: 400px) {

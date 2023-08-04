@@ -22,7 +22,6 @@ import rappi from "../../assets/home/rappi-home-mobile.png";
 import tacama from "../../assets/home/tacama-home-mobile.png";
 import hb from "../../assets/home/hb-home-mobile.png";
 
-
 import title from "../../assets/contact/title-contacto.svg";
 
 import { buttons } from "../data/imagesHome";
@@ -170,6 +169,8 @@ const Home = () => {
             </div>
           </div>
           {/* </div> */}
+        </div>
+        <div className="bg-black">
           <div className="box-btn">
             <Link to="/work" className="btn-white">
               SEE OUR WORK
@@ -177,7 +178,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
         {/* </div> */}
         <div className="box-bg-gray">
           <div className="box-wwd">
