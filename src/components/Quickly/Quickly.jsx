@@ -14,16 +14,19 @@ const Quickly = () => {
   const [filteredImages, setFilteredImages] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [activeButton, setActiveButton] = useState(null);
 
 
   const ref = useRef(null);
   useEffect(() => {
     setFilteredImages(getImagesQuickly());
+    setActiveButton('all');
   }, []);
 
   const handleImagesHome = (e) => {
     e.preventDefault();
     let typeImagesHome = e.target.value;
+    setActiveButton(typeImagesHome);
     typeImagesHome !== "all"
       ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesQuickly());
@@ -57,6 +60,12 @@ const Quickly = () => {
                   key={index}
                   value={type.value}
                   onClick={handleImagesHome}
+                  style={{
+                    background:
+                      activeButton === type.value ? "#FF4040" : "none",
+                    color: activeButton === type.value ? "#000000" : "#ffffff",
+                    border: activeButton === type.value && "#000000",
+                  }}
                 >
                   {type.name}
                 </button>
