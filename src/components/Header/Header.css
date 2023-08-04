@@ -11,6 +11,9 @@
     justify-content: center;
     align-items: center;
 }
+.a-logo{
+    display: flex;
+}
 .logo{
     width: 14.5rem;
     height: auto;
@@ -50,6 +53,8 @@
 
 .burger-hb{
     display: none;
+    position: relative;
+    z-index: 999999;
 }
 
 @media (max-width : 680px){
