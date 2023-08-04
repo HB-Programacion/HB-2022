@@ -75,11 +75,10 @@ const FormContact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('click')
-    if (!checkPrivacy) {
+    if (serviceSelected === "") {
       setAlert({
-        title: "error",
-        subtitle: "Debes aceptar los términos y condiciones.",
+        title: "Error",
+        subtitle: "Debes seleccionar un servicio",
         type: "error",
         logo: false,
         open: true,
@@ -123,6 +122,15 @@ const FormContact = () => {
           open: true,
         });
         return;
+      } else if (!checkPrivacy) {
+        setAlert({
+          title: "error",
+          subtitle: "Debes aceptar los términos y condiciones.",
+          type: "error",
+          logo: false,
+          open: true,
+        });
+        return;
       } else {
         try {
           await uploadDocToFirebase(values.phone, {
@@ -131,6 +139,7 @@ const FormContact = () => {
           });
           setValues(initialState);
           setServiceSelected("");
+          setCheckPrivacy(false)
         } catch (error) {
           return setAlert({
             title: "Error",
