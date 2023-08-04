@@ -3,12 +3,11 @@ import close from "../../assets/header/close.png";
 import img from "../../assets/header/img-menumobile.png";
 
 import "./DropMenuMobile.css";
-import { BrowserRouter, a } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const DropMenuMobile = ({ active, setActive }) => {
 
   return (
-    <BrowserRouter>
       <div className={`drop-menu ${active ? "" : "drop-menu-off"}`}>
         <div className="container-fullview">
           <div className="container-close">
@@ -23,34 +22,34 @@ const DropMenuMobile = ({ active, setActive }) => {
             <div className="container-options">
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  <a href="/">
-                    <h6 className="text-navbar">Home</h6>
-                  </a>
+                <Link to="/" onClick={() => setActive(false)}>
+                  <h6 className="text-navbar">Home</h6>
+                </Link>
                 </li>
                 <li className="list-group-item">
-                  <a href="/about">
+                  <Link to="/about" onClick={() => setActive(false)}>
                     <h6 className="text-navbar">About us</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-group-item">
-                  <a href="/work">
+                  <Link to="/work" onClick={() => setActive(false)}>
                     <h6 className="text-navbar">Work</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-group-item">
-                  <a href="/services">
+                  <Link to="/services" onClick={() => setActive(false)}>
                     <h6 className="text-navbar">services</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-group-item">
-                  <a href="/quickly">
+                  <Link to="/quickly" onClick={() => setActive(false)}>
                     <h6 className="text-navbar">QUICKLYS</h6>
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-group-item">
-                  <a href="/contact">
+                  <Link to="/contact" onClick={() => setActive(false)}>
                     <h6 className="text-navbar">Contact</h6>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -99,7 +98,6 @@ const DropMenuMobile = ({ active, setActive }) => {
           </ul>
         </div>
       </div>
-    </BrowserRouter>
   );
 };
 

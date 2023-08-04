@@ -164,6 +164,26 @@ const Quickly = () => {
             <p>{selectedImage?.subTitleInter}</p>
           </div>
         </div>
+        <div className="similarCategory">
+          <div className="textCategorySimilar">
+            You make also like
+          </div>
+          <Masonry columnsCount={2} gutter="10px">
+            {filteredImages &&
+              filteredImages.map((type) => (
+                <div className="gallery__items-quickly" key={type.id}>
+                  <a onClick={() => openModal(type)}>
+                    <img
+                      src={type.url}
+                      alt={type.name}
+                      className="gallery__img"
+                    />
+                  </a>
+                  <h5 className="filter-title-quickly">{type.title}</h5>
+                </div>
+              ))}
+          </Masonry>
+        </div>
         {/* Agrega aquí los detalles adicionales de la imagen si es necesario */}
       </ReactModal>
     </>

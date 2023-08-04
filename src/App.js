@@ -37,8 +37,8 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <div className="main">
-      <Header />
-          <Router>
+      <Router>
+          <Header />
             <Routes>
               <Route  path="/" element={<Home />} />
               <Route  path="/about" element={<About />} />
