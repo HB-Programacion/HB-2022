@@ -48,15 +48,15 @@ const Work = () => {
   };
 
   const handleDataClick = (type) => {
-    const index = imagesHome.findIndex(image => image.id === type.id);
-  
+    const index = imagesHome.findIndex((image) => image.id === type.id);
+
     if (index !== -1 && index < imagesHome.length - 1) {
       const matchedImage = imagesHome[index];
       const nextImage = imagesHome[index + 1];
-  
+
       localStorage.setItem("work-details", JSON.stringify(matchedImage));
       localStorage.setItem("next-work-details", JSON.stringify(nextImage));
-      
+
       navigate(`/workDetails/${matchedImage.id}`);
     }
   };
@@ -113,15 +113,16 @@ const Work = () => {
           </div>
         </div>
         <div className="p-white">
-          We create brand launch campaigns, gadgets, signage, websites, digital
-          assets and much more. All of this happens in our in-house production
-          studios.
-        </div>
-        <div className="button__load-work">
-          <button onClick={handleLoadImage}>
-            LOAD MORE <img src={arrowbtn} alt="arrow-right" />
-          </button>
-        </div>
+        // We create brand launch campaigns, gadgets, signage, websites, digital
+        assets and much more. All of this happens in our in-house production
+        studios.
+      </div>
+     <div className="button__load-work">
+        <button onClick={handleLoadImage}>
+         LOAD MORE <img src={arrowbtn} alt="arrow-right" />
+        </button>
+      </div>
+   
         {/* <div className="box-work-w bg-white">
           <img src={quicklys} />
         </div> */}
@@ -134,16 +135,7 @@ const Work = () => {
           </div>
         </div> */}
       </div>
-      {/* <div className="p-white">
-        // We create brand launch campaigns, gadgets, signage, websites, digital
-        assets and much more. All of this happens in our in-house production
-        studios.
-      </div>
-      <div className="button__load-work">
-        <button onClick={handleLoadImage}>
-          LOAD MORE <img src={arrowbtn} alt="arrow-right" />
-        </button>
-      </div> */}
+     
       <div className="box-work-w bg-white">
         <img src={quicklys} />
       </div>

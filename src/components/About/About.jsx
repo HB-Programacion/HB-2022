@@ -13,7 +13,7 @@ import wwb1 from "../../assets/about/wwb-1.svg";
 import wwb2 from "../../assets/about/wwb-2.svg";
 import wwb3 from "../../assets/about/wwb-3.svg";
 import bgsurprise from "../../assets/about/fondo-surprise.svg";
-import sk from "../../assets/about/sk.svg";
+import sk from "../../assets/about/surprise-kit.gif";
 
 import arrowdown from "../../assets/about/arrowdown.svg";
 
