@@ -6,6 +6,7 @@ import "./DropMenuMobile.css";
 import { BrowserRouter, a } from "react-router-dom";
 
 const DropMenuMobile = ({ active, setActive }) => {
+
   return (
     <BrowserRouter>
       <div className={`drop-menu ${active ? "" : "drop-menu-off"}`}>
@@ -14,7 +15,7 @@ const DropMenuMobile = ({ active, setActive }) => {
             <div>SPANISH</div>
             <div className="icon-close-sidebar" onClick={setActive}>
               <div className="container-image-icon">
-                <img className="image-icon" src={close} alt="icon close menu" />
+                {/* <img className="image-icon" src={close} alt="icon close menu" /> */}
               </div>
             </div>
           </div>

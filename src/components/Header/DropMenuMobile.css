@@ -10,7 +10,7 @@
 .drop-menu {
   padding: 0.5rem 0;
   position: fixed;
-  z-index: 999999;
+  z-index: 999998;
   width: 100%;
   height: 100%;
   left: 0;

@@ -7,8 +7,11 @@ import burger from "../../assets/header/burger-blanco.svg";
 
 import "./Header.css";
 import DropMenuMobile from "./DropMenuMobile";
+import Hamburger from "hamburger-react";
 
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+
   const [active, setActive] = useState(false);
   const handleClick = () => {
     console.log("hi");
@@ -18,14 +21,20 @@ const Header = () => {
   return (
     <div className="header__container">
       <nav className="navbar-hb">
-        <a href="/">
+        <a href="/" className="a-logo">
           <div className="container__gifLogo">
             {/* <img src={logoGift} className="logoGift" /> */}
             <img src={logo} className="logo" />
           </div>
         </a>
         <div className="burger-hb" onClick={handleClick}>
-          <img className="img-burger" src={burger} alt="burger hb" />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            size={22} 
+            color={`${isOpen ? "#000" : "#fff"}`}
+          />
+          {/* <img className="img-burger" src={burger} alt="burger hb" /> */}
         </div>
       </nav>
       {/* <div className="header__container-item container__social">
