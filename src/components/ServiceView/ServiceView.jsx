@@ -18,18 +18,20 @@ const ServiceView = () => {
   const [activeButton, setActiveButton] = useState(null);
 
   useEffect(() => {
-    setFilteredImages(getDataServices());
+    setFilteredImages(filterServiceType('content'));
+    setActiveButton('content');
   }, []);
 
   const handleImagesHome = (e) => {
     e.preventDefault();
     let typeImagesService = e.target.value;
+    console.log('typeImagesService', typeImagesService)
 
     setActiveButton(typeImagesService);
 
-    typeImagesService !== "content"
+    typeImagesService !== "all"
       ? setFilteredImages(filterServiceType(typeImagesService))
-      : setFilteredImages(getDataServices());
+      : setFilteredImages(filterServiceType());
   };
 
   return (
