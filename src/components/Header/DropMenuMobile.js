@@ -6,7 +6,6 @@ import "./DropMenuMobile.css";
 import { BrowserRouter, a } from "react-router-dom";
 
 const DropMenuMobile = ({ active, setActive }) => {
-
   return (
     <BrowserRouter>
       <div className={`drop-menu ${active ? "" : "drop-menu-off"}`}>
@@ -69,19 +68,28 @@ const DropMenuMobile = ({ active, setActive }) => {
               </a>
             </li>
             <li className="list-group-item item-social">
-              <a href="https://www.linkedin.com/company/henri-barrett-studio/" target="blank">
+              <a
+                href="https://www.linkedin.com/company/henri-barrett-studio/"
+                target="blank"
+              >
                 <h6>LinkedIn</h6>
               </a>
             </li>
 
             <li className="list-group-item item-social">
-              <a href="https://www.youtube.com/@henribarrettstudio" target="blank">
+              <a
+                href="https://www.youtube.com/@henribarrettstudio"
+                target="blank"
+              >
                 <h6>Youtube</h6>
               </a>
             </li>
 
             <li className="list-group-item item-social">
-              <a href="https://instagram.com/henribarrettstudio?igshid=ZWQyN2ExYTkwZQ==" target="blank">
+              <a
+                href="https://instagram.com/henribarrettstudio?igshid=ZWQyN2ExYTkwZQ=="
+                target="blank"
+              >
                 <h6>Instagram</h6>
               </a>
             </li>
