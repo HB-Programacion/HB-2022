@@ -1,0 +1,150 @@
+.box-about {
+  padding: 0 1rem;
+}
+.img-tiwwa {
+  width: 100%;
+  margin: 3rem auto;
+}
+.title-about {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.3px;
+  color: #fff;
+  margin: 2rem auto;
+}
+
+.subtitle-about {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.2px;
+  color: #575757;
+  margin: 0;
+}
+
+.img1 {
+  margin: 4rem auto;
+}
+
+.mop {
+  display: block;
+  margin: 2rem auto;
+  width: 95%;
+}
+
+.text-mop {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.box-group-people {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3rem auto;
+}
+.box-people {
+  width: 141px;
+  height: 141px;
+}
+.photo-people {
+  width: 88%;
+  margin: 2rem auto;
+  display: block;
+}
+.text-people {
+  width: 100%;
+  margin: 2rem auto;
+  color: #575757;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.1rem;
+}
+
+.mt-people {
+  margin-top: 5rem;
+}
+
+.wwb {
+  width: 80%;
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.wwb-textdown {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.2rem;
+}
+
+.box-wwb-numbers{
+    margin: 3rem auto;
+}
+.wwb-numbers{
+    width: 100%;
+    margin: 5rem auto;
+    display: block;
+}
+
+.fondo-surprise{
+    width: 100%;
+    position: relative;
+    /* background-image: url('../../assets/about/fondo-surprise.svg');
+    height: 50rem; */
+}
+
+.box-title-surprise{
+  position: relative;
+  top: 5.5rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.img-surprise{
+  position: relative;
+  top: -12rem;
+  width: 100%;
+  z-index: 98;
+}
+
+.p-surprise{
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.7rem;
+  color: #fff;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -10rem;
+}
+.asterisco{
+  width: 3rem;
+  padding: 0 .6rem;
+}
+
+.img-surprise-kit{
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.btn-white-surprise{
+  background-color: #fff;
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  margin: 2rem auto;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 99;
+}

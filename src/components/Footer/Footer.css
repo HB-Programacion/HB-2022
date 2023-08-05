@@ -1,0 +1,60 @@
+.container__footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 0;
+  border-top: 1px solid #fff;
+  color: #fff;
+  background-color: #111;
+}
+
+.container__footer-boxItem {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.container__footer-item {
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  font-family: "nehue-has45";
+}
+
+.container__footer-item a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "nehue-has45";
+}
+.box-credits {
+  border-top: 1px solid #fff;
+  background-color: #111;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "nehue-has45";
+}
+.box-credits img {
+  margin-right: 1rem;
+}
+
+@media (max-width: 680px) {
+  .container__footer {
+    display: block;
+    padding: 8rem 0rem;
+  }
+  .container__footer .container__footer-boxItem {
+    padding: 1rem 0rem;
+  }
+  .box-credits {
+    display: grid;
+    place-items: center;
+    padding: 0.5rem 0;
+  }
+  .box-credits img {
+    margin-bottom: 0.2rem;
+  }
+  .info-text .container__footer-item{
+    padding: .3rem 0;
+  }
+}

@@ -1,0 +1,34 @@
+.container-www{
+    background-color: #ffffff;
+    padding-top: 3rem;
+  }
+  
+  .www-title{
+    margin: 3rem auto;
+    display: block;
+    width: 90%;
+  }
+  .container-www_logos{
+    margin: 4rem auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .www_logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0rem auto;
+  }
+
+  .p-www{
+    color: #111;
+    font-size: 1.68rem;
+    line-height: 2.5rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    width: 300px;
+    margin: 0rem auto;
+    text-align: center;
+    padding-bottom: 3rem;
+  }

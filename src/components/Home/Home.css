@@ -1,0 +1,266 @@
+.gif {
+  width: 100%;
+  height: 50%;
+}
+.text-word{
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "nehue-has45";
+  color: #fff;
+  width: 100%;
+
+}
+.container__text {
+  text-align: center;
+  position: relative;
+  /* padding: 2rem 0rem; */
+  /* width: 985px; */
+  width: 90%;
+  margin: 0rem auto;
+  padding-top: 5rem;
+}
+.container__text .text-title {
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
+.container__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  place-items: center;
+}
+
+.button__load {
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.button__load button {
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #111;
+  margin: auto 5px;
+  background-color: #111;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.container-img-home{
+  position: relative;
+}
+
+.container-img-home img{
+  width: 70%;
+  margin: 2.5rem auto;
+  display: block;
+}
+
+.button__load img {
+  margin-left: 10px;
+  padding: auto;
+}
+
+.filter__style {
+  margin: 0px 15px;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.buttons__style button {
+  font-size: 15px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin: 8px 5px;
+  background-color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.container__projects div {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.box-marquee {
+  padding: 0.3rem 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.marquee {
+  color: #ffff;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+.asterisco{
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  margin: auto;
+  border: 1px solid #111;
+  overflow-x: hidden;
+}
+
+.target {
+  font-weight: bold;
+  color: #111;
+  animation-name: rightToLeft;
+  animation-duration: 15.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation: rightToLeft 15.5s linear infinite;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 0.5rem auto;
+}
+
+
+.box-text-home{
+  padding-bottom: 3rem;
+}
+
+
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.bg-text {
+  position: absolute;
+  font-size: 400px;
+  bottom: 32%;
+  z-index: 1;
+  left: -100px;
+}
+
+@media (min-width: 1920px) {
+  /* .container__filter img{
+    width: 60%;
+  } */
+}
+
+@media (max-width: 680px) {
+  .container__buttons {
+    flex-wrap: wrap;
+  }
+}
+
+.box-bg-gray {
+  background-color: #eeeeee;
+
+  padding-top: 6rem;
+}
+.box-wwd {
+  position: relative;
+  padding-bottom: 2rem;
+}
+.wwd {
+  width: 90%;
+  margin: 2rem auto;
+  display: block;
+}
+
+.subtitle-wwd{
+  font-size: 1.9rem;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -1.5px;
+  color: #111;
+  padding-bottom: 4rem;
+}
+
+
+.container__text-wwd {
+  text-align: center;
+  position: relative;
+  /* padding: 2rem 0rem; */
+  /* width: 985px; */
+  width: 90%;
+  margin: 0rem auto;
+}
+
+
+.btn-services {
+  display: flex;
+  align-items: center;
+  border: 1px solid #111;
+  border-radius: 50px;
+  margin: 0.9rem auto;
+  padding: 0.1rem 0.4rem;
+  text-transform: uppercase;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  justify-content: space-around;
+  font-size: 23px;
+  color: #111;
+  background-color: transparent;
+}
+
+.btn-services img {
+  width: 22px;
+  padding: 0 0.3rem;
+}
+
+.btn-services:hover {
+  background-color: #ff4040;
+  border: none;
+}
+
+.container_groupwwd {
+  padding: 4rem 0 0rem 0;
+  margin: 0 auto;
+}
+
+.container_groupwwd img {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.p-1{
+  font-size: 1.68rem;
+  line-height: 2.5rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  width: 300px;
+  margin: 2rem auto;
+  text-align: center;
+}

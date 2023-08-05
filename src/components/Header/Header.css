@@ -1,0 +1,93 @@
+.header__container{
+    background-color: transparent;
+    padding: 1.2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    position: relative;
+}
+.container__gifLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-logo{
+    display: flex;
+}
+.logo{
+    width: 14.5rem;
+    height: auto;
+}
+
+.logoGift{
+    width: 3.5rem;
+    padding: 0.1rem;
+}
+.header__container-item{
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-family: "nehue-has45";
+}
+
+.container__social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-social-img{
+    padding: .5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container-social-img a{
+    padding: .5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container-social-img img{
+    width: 1.5rem;
+}
+
+.burger-hb{
+    display: none;
+    position: relative;
+    z-index: 999999;
+}
+
+@media (max-width : 680px){
+    .main{
+        width: 805px;
+    }
+    .container__social{
+        position: absolute;
+        right: -8rem;
+        top: 1rem;
+    }
+    .container__gifLogo{
+        display: grid;
+        place-items: center;
+    }
+    .container__gifLogo .logoGift{
+        width: 3.5rem;
+    }
+    .container__gifLogo .logo{
+        width: 5rem;
+    }
+    .header__container {
+        padding:1rem 1rem
+    }
+    .navbar-hb{
+        display: flex;
+        width: 100%;
+        place-content: space-between;
+        padding: 0rem 1rem;
+    }
+    .burger-hb{
+        display: block;
+        align-self: center;
+        /* margin-right: 1rem; */
+    }
+}

@@ -1,0 +1,17 @@
+{
+   "test":"texto de prueba",
+   "home-we-anticipate": "Anticipamos el futuro, anticipamos las posibilidades, proponemos soluciones que van más allá de lo obvio y lo breve, somos analíticos y pensamos siempre en la mejor solución según el problema",
+   "home-see-our-work": "VER NUESTRO TRABAJO",
+   "home-the-world":"El mundo y el mercado están cambiando. Las audiencias evolucionan. Las marcas crecen. Y necesitas navegar en este flujo constante de cambio",
+   
+   "contact-getting": "¿Llegar a conocer unos a otros? ¿Trabajando juntos? ¿Reunirse? Déjanos tus datos y pronto nos pondremos en contacto contigo",
+   "contact-form": {
+      "for-me": "Contáctame para...",
+      "name": "Nombre completo",
+      "company": "Nombre de compañía",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "check": "Sí, Henri Barrett puede procesar mis datos personales de acuerdo con la política de privacidad",
+      "send": "ENVIAR"
+   }
+}
