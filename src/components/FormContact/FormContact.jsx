@@ -57,21 +57,17 @@ const FormContact = () => {
   const [modalVisibleSubmit, setModalVisibleSubmit] = useState(false);
   const [formularioCompleto, setFormularioCompleto] = useState(false);
 
-
-
   const handleChangeInput = (e) => {
     const { name } = e.target;
-    setValues(
-      (valoresPrevios) => ({
-          ...valoresPrevios,
-          [name]: e.target.value 
-      }));
+    setValues((valoresPrevios) => ({
+      ...valoresPrevios,
+      [name]: e.target.value,
+    }));
   };
-  
+
   const handleCheckPrivacyChange = (e) => {
     setCheckPrivacy(e.target.checked);
   };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -139,7 +135,7 @@ const FormContact = () => {
           });
           setValues(initialState);
           setServiceSelected("");
-          setCheckPrivacy(false)
+          setCheckPrivacy(false);
         } catch (error) {
           return setAlert({
             title: "Error",
@@ -181,10 +177,13 @@ const FormContact = () => {
             id="name"
             name="name"
             type="text"
+            autocomplete="off"
             value={values.name}
-            placeholder={t("contact-form.name")}
+            // placeholder={t("contact-form.name")}
             onChange={handleChangeInput}
           />
+          <label className="label-form" for="name">Full name</label>
+
         </div>
         <div className="inputContainer">
           <input
@@ -192,10 +191,12 @@ const FormContact = () => {
             id="company"
             name="company"
             type="text"
+            autocomplete="off"
             value={values.company}
-            placeholder={t("contact-form.company")}
+            // placeholder={t("contact-form.company")}
             onChange={handleChangeInput}
           />
+        <label className="label-form" for="company">Company name</label>
         </div>
         <div className="container-two">
           <div className="inputContainer">
@@ -204,21 +205,25 @@ const FormContact = () => {
               id="email"
               name="email"
               type="email"
+              autocomplete="off"
               value={values.email}
-              placeholder={t("contact-form.email")}
+              // placeholder={t("contact-form.email")}
               onChange={handleChangeInput}
             />
+        <label className="label-form" for="email">Email</label>
           </div>
           <div className="inputContainer">
             <input
               className="phone"
               id="phone"
               name="phone"
-              type="tel"
+              type="number"
+              autocomplete="off"
               value={values.phone}
-              placeholder={t("contact-form.phone")}
+              // placeholder={t("contact-form.phone")}
               onChange={handleChangeInput}
             />
+        <label className="label-form" for="phone">Phone</label>
           </div>
         </div>
         <div className="checkContainer">

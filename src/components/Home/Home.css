@@ -181,7 +181,6 @@
 
 .box-bg-gray {
   background-color: #eeeeee;
-
   padding-top: 6rem;
 }
 .box-wwd {
@@ -263,4 +262,43 @@
   width: 300px;
   margin: 2rem auto;
   text-align: center;
+}
+
+@media (min-width: 1400px) {
+  .container__text-wwd{
+    width: 70%;
+  }
+  .box-bg-gray {
+    padding-top: 9rem;
+  }
+  .subtitle-wwd{
+    font-size: 2.6rem;
+    line-height: 3.3rem; 
+    margin-top: 5rem;
+
+  }
+
+  .group-btns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 5rem auto;
+  }
+
+  .btn-services{
+    font-size: 38px;
+  }
+  .btn-services img{
+    width: 38px;
+  }
+
+
+.box-img-ourservices{
+  padding: 5rem 0;
+}
+.img-title-contact{
+  width: 70%;
+  float: right;
+}
+  
 }

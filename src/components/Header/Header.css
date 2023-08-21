@@ -6,6 +6,8 @@
     z-index: 9999;
     position: relative;
 }
+
+
 .container__gifLogo{
     display: flex;
     justify-content: center;
@@ -52,7 +54,7 @@
 }
 
 .burger-hb{
-    display: none;
+    
     position: relative;
     z-index: 999999;
 }
@@ -89,5 +91,24 @@
         display: block;
         align-self: center;
         /* margin-right: 1rem; */
+    }
+}
+
+
+@media (min-width : 680px){
+
+
+    .navbar-hb{
+        display: flex;
+        width: 100%;
+        place-content: space-between;
+        padding: 0rem 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .logo{
+        width: 6rem;
     }
 }

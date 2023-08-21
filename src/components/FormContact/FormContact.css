@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.inputContainer input:focus-visible {
+  outline: none;
+}
+
 .container-form .container-two {
   /*display: flex;
    justify-content: center; */
@@ -15,21 +19,56 @@
   font-size: 1.6rem;
   padding: 2rem 0rem;
 }
+.inputContainer {
+  position: relative;
+  margin-bottom: 30px
+ }
+
+
 
 .inputContainer input {
+
+  font-family: neue-haas-grotesk-display, sans-serif;
+  display: block;
   width: 100%;
-  font-size: 20px;
-  background-color: transparent;
+  height: 40px;
+  background: transparent;
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #ffffff;
-  padding: 30px 0px;
-  font-family: neue-haas-grotesk-display, sans-serif;
+  transition: all .3s ease;
+  /* padding: 0 15px */
+}
+.inputContainer input:focus{
+  color: #fff;
+  border-bottom: 1px solid #575757;
 }
 
-.inputContainer input:focus-visible {
-  outline: none;
+.inputContainer label {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 0px;
+  font-size: 20px;
+  color: #fff;
+  transition: all .3s ease
 }
+
+
+.inputContainer input:focus + label {
+  font-size: 11px;
+  top: -5px
+}
+
+
+.inputContainer input:focus + label{
+  color: #575757
+}
+
+
+
 
 .checkContainer {
   display: flex;
@@ -70,7 +109,7 @@
 }
 
 .checkContainer input[type="checkbox"]:checked + .checkboxCustom::before {
-  content: '\2713';
+  content: "\2713";
   font-size: 20px;
   color: #ffffff;
   position: absolute;
@@ -86,8 +125,9 @@
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #ffffff;
-  padding: 30px 0px;
+  /* padding: 30px 0px; */
   font-family: neue-haas-grotesk-display, sans-serif;
+  margin: 1.5rem 0;
 }
 
 .button__send {
@@ -96,7 +136,6 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
 
 .button__send button {
   font-size: 25px;
@@ -114,3 +153,4 @@
   margin-left: 10px;
   padding: auto;
 }
+

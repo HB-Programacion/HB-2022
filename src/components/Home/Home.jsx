@@ -1,10 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
-import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import gif from "../../assets/home/gif.png";
 import logoGift from "../../assets/header/logo-gift.gif";
 import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
+
 import img2 from "../../assets/home/img-2.png";
+import img2D from "../../assets/home/desktop/img-our-services-desktop.png";
+
 import arrowbtn from "../../assets/arrow-btn.svg";
 import wwd from "../../assets/home/wwd.svg";
 import eventsicon from "../../assets/home/events-icon.svg";
@@ -15,13 +24,22 @@ import illustrationicon from "../../assets/home/illustration-icon.svg";
 import campaignsicon from "../../assets/home/campaigns-icon.svg";
 import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/img-proyectos.png";
+import groupwwdD from "../../assets/home/desktop/group-services-desktop.png";
 
 import wmct from "../../assets/home/weMakeCoolThings.gif";
+import wmctD from "../../assets/home/desktop/we make cool things-desktop.svg";
+
 import hnk from "../../assets/home/hnk-home-mobile.png";
 import umana from "../../assets/home/umana-home-mobile.png";
 import rappi from "../../assets/home/rappi-home-mobile.png";
 import tacama from "../../assets/home/tacama-home-mobile.png";
 import hb from "../../assets/home/hb-home-mobile.png";
+
+import hnkD from "../../assets/home/desktop/hnk-desktop.png";
+import umanaD from "../../assets/home/desktop/umana-desktop.png";
+import rappiD from "../../assets/home/desktop/rappi-desktop.png";
+import tacamaD from "../../assets/home/desktop/tacama-desktop.png";
+import hbD from "../../assets/home/desktop/hb-desktop.png";
 
 import title from "../../assets/contact/title-contacto.svg";
 
@@ -58,7 +76,6 @@ const Home = () => {
   const { t } = useTranslation();
   const [showWork, setShowWork] = useState(false);
 
-
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
@@ -76,13 +93,13 @@ const Home = () => {
   };
 
   const handleCategory = () => {
-    setShowWork(true)
-  }
+    setShowWork(true);
+  };
 
   const handleCategorybyName = (category) => {
-    navigate(`/work?category=${category}`)
+    navigate(`/work?category=${category}`);
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <>
@@ -165,21 +182,27 @@ const Home = () => {
 
           <div className="container-img-home">
             <div className="items-img-home">
-              <img src={hnk} className="w-100" />
+              <img src={hnk} className="w-100 mobile" />
+              <img src={hnkD} className="w-100 desktop" />
             </div>
             <div>
-              <img src={umana} className="w-100" />
+              <img src={umana} className="w-100 mobile" />
+              <img src={umanaD} className="w-100 desktop" />
             </div>
             <div>
-              <img src={rappi} className="w-100" />
+              <img src={rappi} className="w-100 mobile" />
+              <img src={rappiD} className="w-100 desktop" />
             </div>
             <div>
-              <img src={tacama} className="w-100" />
+              <img src={tacama} className="w-100 mobile" />
+              <img src={tacamaD} className="w-100 desktop" />
             </div>
             <div>
-              <img src={hb} className="w-100" />
+              <img src={hb} className="w-100 mobile" />
+              <img src={hbD} className="w-100 desktop" />
             </div>
           </div>
+
           {/* </div> */}
         </div>
         <div className="bg-black">
@@ -193,79 +216,74 @@ const Home = () => {
         {/* </div> */}
         <div className="box-bg-gray">
           <div className="box-wwd">
-            <img src={wmct} className="wwd" />
+            <img src={wmct} className="wwd mobile" />
+            <img src={wmctD} className="wwd desktop" />
           </div>
           <div className="container__text-wwd">
             <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
           </div>
-            <div className="group-btns">
-                <button 
-                  className="btn-services" 
-                  onClick={() => handleCategorybyName("branding")}
-                >
-                    <img src={brandingicon} alt="Branding Icon" />
-                    branding
-                    <img src={union} alt="Union Icon" />
-                </button>
-                <button 
-                  className="btn-services"
-                  onClick={() => handleCategorybyName("event")}
-                  >
-                  <img src={eventsicon} />
-                  events
-                  <img src={union} />
-                </button>
-                <button 
-                  className="btn-services"
-                  onClick={() => handleCategorybyName("content")}  
-                >
-                  <img src={contenticon} />
-                  content
-                  <img src={union} />
-                </button>
-                <button
-                  className="btn-services"
-                  onClick={() => handleCategorybyName("campaing")} 
-                >
-                  <img src={campaignsicon} />
-                  campaigns
-                  <img src={union} />
-                </button>
-                <button
-                  className="btn-services"
-                  onClick={() => handleCategorybyName("trade")}
-                >
-                  <img src={tradeicon} />
-                  trade
-                  <img src={union} />
-                </button>
-                <button
-                  className="btn-services"
-                  onClick={() => handleCategorybyName("illustration")}
-                >
-                  <img src={illustrationicon} />
-                  illustration
-                  <img src={union} />
-                </button>
-            </div>
-          <div className="container_groupwwd">
-            <img src={groupwwd} alt="" className="" />
-          </div>
-          <div className="button__load">
-            <button onClick={() => console.log("click load more")}>
-              our services
-              <img src={arrowbtn} alt="arrow-right" />
+          <div className="group-btns">
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("branding")}
+            >
+              branding
+            </button>
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("campaing")}
+            >
+              campaigns
+            </button>
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("event")}
+            >
+              events
+            </button>
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("trade")}
+            >
+              trade
+            </button>
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("content")}
+            >
+              content
+            </button>
+
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("illustration")}
+            >
+              illustration
             </button>
           </div>
+          <div className="container_groupwwd">
+            <img src={groupwwd} alt="" className="mobile" />
+            <img src={groupwwdD} alt="" className="desktop" />
+          </div>
+          <div className="box-img-ourservices">
+            <div className="button__load">
+              <button onClick={() => console.log("click load more")}>
+                our services
+                <img src={arrowbtn} alt="arrow-right" />
+              </button>
+            </div>
+          </div>
         </div>
-        <img src={img2} className="w-100" />
+
+        <img src={img2} className="w-100 mobile" />
+        <img src={img2D} className="w-100 desktop" />
       </div>
-      
+
       <WeWorkWith />
 
       <div className="bg-black">
         <div className="box-contact">
-          <img src={title} />
+          <img src={title} className="img-title-contact" />
           {/* <div className="container__subtitle">
             <h1>{t("contact-getting")}</h1>
           </div> */}

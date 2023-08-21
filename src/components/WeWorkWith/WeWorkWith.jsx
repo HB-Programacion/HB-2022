@@ -3,6 +3,7 @@ import React from 'react'
 import img2 from "../../assets/home/img-2.png";
 
 import www from "../../assets/home/weWorkWith.gif";
+import wwwD from "../../assets/home/desktop/weworkwith.svg";
 import gif1 from "../../assets/gifs/1.gif";
 import gif2 from "../../assets/gifs/2.gif";
 import gif3 from "../../assets/gifs/3.gif";
@@ -18,7 +19,8 @@ const WeWorkWith = () => {
   return (
     <div>
     <div className="container-www">
-      <img src={www} className="www-title" />
+      <img src={www} className="www-title mobile" />
+      <img src={wwwD} className="www-title desktop" />
       <div className="container-www_logos">
         <div className="www_logo">
           <img src={gif1} className="w-100" />

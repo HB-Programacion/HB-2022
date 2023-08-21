@@ -1,34 +1,57 @@
-.container-www{
-    background-color: #ffffff;
-    padding-top: 3rem;
-  }
-  
-  .www-title{
-    margin: 3rem auto;
-    display: block;
-    width: 90%;
-  }
-  .container-www_logos{
-    margin: 4rem auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .www_logo{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 0rem auto;
-  }
+.container-www {
+  background-color: #ffffff;
+  padding-top: 3rem;
+}
 
-  .p-www{
-    color: #111;
-    font-size: 1.68rem;
-    line-height: 2.5rem;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 500;
-    width: 300px;
-    margin: 0rem auto;
-    text-align: center;
-    padding-bottom: 3rem;
+.www-title {
+  margin: 3rem auto;
+  display: block;
+  width: 90%;
+}
+.container-www_logos {
+  margin: 4rem auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.www_logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0rem auto;
+}
+
+.p-www {
+  color: #111;
+  font-size: 1.68rem;
+  line-height: 2.5rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  width: 300px;
+  margin: 0rem auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1400px) {
+  .www_logo {
+    width: 25% !important;
   }
+  .container-www_logos {
+    margin: 6rem auto;
+    width: 60%;
+  }
+  .www-title {
+    width: 60%;
+  }
+  .container-www {
+    padding-top: 8rem;
+  }
+  .p-www {
+    width: 37%;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    padding: 3rem 0 9rem 0;
+
+  }
+}
