@@ -181,7 +181,7 @@ const FormContact = () => {
             // placeholder={t("contact-form.name")}
             onChange={handleChangeInput}
           />
-          <label className="label-form" for="name">Full name</label>
+          <label className={`label-form ${values.name ? "has-value" : ""}`} for="name">Full name</label>
 
         </div>
         <div className="inputContainer">
@@ -195,7 +195,7 @@ const FormContact = () => {
             // placeholder={t("contact-form.company")}
             onChange={handleChangeInput}
           />
-        <label className="label-form" for="company">Company name</label>
+        <label className={`label-form ${values.company ? "has-value" : ""}`} for="company">Company name</label>
         </div>
         <div className="container-two">
           <div className="inputContainer">
@@ -209,7 +209,7 @@ const FormContact = () => {
               // placeholder={t("contact-form.email")}
               onChange={handleChangeInput}
             />
-        <label className="label-form" for="email">Email</label>
+        <label className={`label-form ${values.email ? "has-value" : ""}`} for="email">Email</label>
           </div>
           <div className="inputContainer">
             <input
@@ -222,7 +222,7 @@ const FormContact = () => {
               // placeholder={t("contact-form.phone")}
               onChange={handleChangeInput}
             />
-        <label className="label-form" for="phone">Phone</label>
+        <label className={`label-form ${values.phone ? "has-value" : ""}`} for="phone">Phone</label>
           </div>
         </div>
         <div className="checkContainer">

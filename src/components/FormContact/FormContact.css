@@ -62,6 +62,11 @@
   top: -5px
 }
 
+.inputContainer label.has-value {
+  font-size: 11px;
+  top: -5px;
+}
+
 
 .inputContainer input:focus + label{
   color: #575757
