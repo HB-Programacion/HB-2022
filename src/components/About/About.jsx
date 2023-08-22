@@ -33,50 +33,74 @@ import people10 from "../../assets/about/people/Team_10.gif";
 
 
 const About = () => {
+
+  const AccordionItem = ({ title, content }) => {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleAccordion = () => {
+      setIsOpen(!isOpen);
+    };
+  
+    return (
+      <div className="accordion-item">
+        <button
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: 0,
+            font: 'inherit',
+            cursor: 'pointer',
+            color: '#575757'
+          }}
+          className="accordion-button"
+          onClick={toggleAccordion}>
+          {title}
+        </button>
+        {isOpen && <div className="accordion-content">{content}</div>}
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="fondo-header"></div>
       <div className="bg-black ">
         <div className="box-about">
           <img src={tiwwa} className="img-tiwwa" />
-          <h3 className="title-about">We make things</h3>
+          <h3 className="title-about">Design, Develop, Deliver</h3>
           <h6 className="subtitle-about">
-            We believe that actions make a difference. That’s why we love to
-            make things and try new ideas. We prototype, test and create,
-            whether it’s a brand identity, campaign or product.
+            Our actions aren’t just words. They are the backbone of what we do. Every idea, every concept, begins with a spark and we are passionate about turning that spark into tangible creations. From the earliest sketch of a brand identity to the final execution of a marketing campaign, we believe in prototyping, refining, and perfecting. Every product, every project, is a testament to our commitment to excellence and innovation.
           </h6>
-          <h3 className="title-about">We move brands</h3>
+          <h3 className="title-about">Mixed Mentality</h3>
           <h6 className="subtitle-about">
-            We believe in an interdisciplinary approach with a strong digital
-            core. That means that the strongest brands are built from the
-            product out, creating a platform for a strong identity and strong
-            marketing.
+            An integrated, interdisciplinary approach lies at the heart of our philosophy. Recognizing that the most compelling brands are built from their core offerings, we champion a foundation that fosters a distinct identity and potent marketing. Beyond mere external perceptions, it's a matter of orchestrating an ecosystem where product, brand, and communication harmonize effortlessly. In this fusion, brands are poised to resonate profoundly, accelerate growth, and command attention.
           </h6>
         </div>
         <img src={img1} className="w-100 img1" />
-      <MarqueeHB/>
-
+        <MarqueeHB/>
         <div className="box-about">
-          <h3 className="title-about">Our DNA</h3>
+          <h3 className="title-about">Mutual Trust Manifesto</h3>
           <h6 className="subtitle-about">
-            In a digital world that can sometimes feel disconnected, we believe
-            it's essential to form lasting partnerships with each of our
-            clients. By forming partnerships, it allows us to get to know each
-            other better, understand your needs and struggles, and offer full
-            trust in our decisions. To get off to a great start and adhere to
-            our first principle of full transparency, we have laid out our four
-            core principles. These principles enable us to do excellent work,
-            craft stunning experiences, and foster strong partnerships. We trust
-            that these four principles will give you an insight into the quality
-            of service you can expect from us, and help to build a strong bond
-            between our studio and you.
+            In a world increasingly driven by technology, we anchor ourselves in genuine human connection. Here, it's not just about the job, it's about the bond we share as a team of dedicated professionals. These are the cornerstones that guide our work:
+            <AccordionItem
+              title="Unified Vision:"
+              content={<p>Each individual offers a unique perspective. Melded together, these insights allow us to craft holistic, impactful solutions.</p>}
+            />
+            <AccordionItem
+              title="Endless Curiosity:"
+              content={<p>Our commitment to constant learning and innovation shapes the core of who we are. Diverse backgrounds and expertise feed our ceaseless quest for the next big idea.</p>}
+            />
+            <AccordionItem
+              title="Collaborative Spirit:"
+              content={<p>Every achievement is the result of the harmony and synergy that resonates within our team. Mutual respect, understanding, and collective growth underscore our every interaction.</p>}
+            />
           </h6>
           <img src={img2} className="w-100 img1" />
         </div>
         <div className="box-about ">
           <img src={mop} className="mop" />
           <p className="text-mop">
-            This is the great team that make things come true.
+            Discover the heartbeat of our studio. Together, we challenge conventions, celebrate diversity, and drive innovation. Unfold the layers of our team and witness the collaboration that defines us.
           </p>
         </div>
         <div className="box-about">
@@ -95,8 +119,7 @@ const About = () => {
             </div>
             <div className="box-people">
               <p className="text-people">
-                /Lorem ipsum dolor sit amet consectetur. Consectetur maecen
-                ravida ipsum accumsan.
+                Diversity is our superpower; unity, our secret sauce.
               </p>
             </div>
             <div className="box-people mt-people">
@@ -113,8 +136,7 @@ const About = () => {
             </div>
             <div className="box-people mt-people">
               <p className="text-people">
-                /Lorem ipsum dolor sit amet consectetur. Consectetur maecen
-                ravida ipsum accumsan.
+                Celebrating every hue of talent.
               </p>
             </div>
             <div className="box-people">
@@ -133,14 +155,11 @@ const About = () => {
         <img src={img4} className="w-100 img1" />
         <div className="box-about">
           <p className="p-black">
-            A strategy-driven creative agency that will obsess over executing it
-            flawlessly. After years perfecting the formula, today we believe
-            more than ever in the need to understand that strategy, creativity
-            and design must be connected if you want to have a great brand.
+            A creative agency where strategy, design, and creativity converge. Over the years, we've honed our belief that a standout brand emerges when these three elements seamlessly intertwine.
           </p>
 
           <img src={wwb} className="wwb" />
-          <p className="wwb-textdown">This is our work philosophy</p>
+          <p className="wwb-textdown">Henri Barrett is more than just an agency; it's a movement, a mindset. We're here to change narratives, elevate brands, and make a lasting imprint in the world of design and creativity. Dive into our guiding principles, the essence of what makes us Henri Barrett.</p>
           <div className="box-wwb-numbers">
             <img src={wwb1} className="wwb-numbers" />
             <img src={wwb2} className="wwb-numbers" />

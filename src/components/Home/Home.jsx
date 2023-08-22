@@ -208,7 +208,7 @@ const Home = () => {
         <div className="bg-black">
           <div className="box-btn">
             <Link to="/work" className="btn-white">
-              SEE OUR WORK
+              EXPLORE MORE
               <img src={union} alt="arrow-right" className="arrow-black" />
             </Link>
           </div>
@@ -231,15 +231,9 @@ const Home = () => {
             </button>
             <button
               className="btn-services"
-              onClick={() => handleCategorybyName("campaing")}
-            >
-              campaigns
-            </button>
-            <button
-              className="btn-services"
               onClick={() => handleCategorybyName("event")}
             >
-              events
+              event
             </button>
             <button
               className="btn-services"
@@ -253,7 +247,12 @@ const Home = () => {
             >
               content
             </button>
-
+            <button
+              className="btn-services"
+              onClick={() => handleCategorybyName("campaing")}
+            >
+              campaigns
+            </button>
             <button
               className="btn-services"
               onClick={() => handleCategorybyName("illustration")}
@@ -268,13 +267,12 @@ const Home = () => {
           <div className="box-img-ourservices">
             <div className="button__load">
               <button onClick={() => console.log("click load more")}>
-                our services
+                WHAT WE DO
                 <img src={arrowbtn} alt="arrow-right" />
               </button>
             </div>
           </div>
         </div>
-
         <img src={img2} className="w-100 mobile" />
         <img src={img2D} className="w-100 desktop" />
       </div>

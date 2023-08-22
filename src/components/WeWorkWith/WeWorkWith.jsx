@@ -48,9 +48,8 @@ const WeWorkWith = () => {
         </div>
       </div>
       <p className="p-www">
-        We make our clients lives easier and their brands stronger.
+        We make their life easier and their brands louder through creativity, design and experimentation.
       </p>
-   
     </div></div>
   )
 }

@@ -66,7 +66,7 @@ const Work = () => {
       <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Things we’ve made</p>
+        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (
@@ -113,16 +113,13 @@ const Work = () => {
           </div>
         </div>
         <div className="p-white">
-        // We create brand launch campaigns, gadgets, signage, websites, digital
-        assets and much more. All of this happens in our in-house production
-        studios.
+          Brands are more than logos; they're experiences, emotions, and connections. We harness this essence, optimizing every touchpoint for maximum impact. Discover how we amplify brand value, transforming clients' visions into victories.
       </div>
-     <div className="button__load-work">
+      <div className="button__load-work">
         <button onClick={handleLoadImage}>
-         LOAD MORE <img src={arrowbtn} alt="arrow-right" />
+          LOAD MORE <img src={arrowbtn} alt="arrow-right" />
         </button>
       </div>
-   
         {/* <div className="box-work-w bg-white">
           <img src={quicklys} />
         </div> */}
