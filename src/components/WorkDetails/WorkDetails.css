@@ -234,6 +234,7 @@ width: 100%;
   padding: 4rem 1rem;
 }
 
+
 .box-project-detail{
   display: flex;
   flex-wrap: wrap;
@@ -288,6 +289,10 @@ padding: .3rem 1rem;
 
 .text-right{
   text-align: right;
+}
+
+.text-left{
+  text-align: left!important;
 }
 
 .text-gray-poject{

@@ -19,6 +19,7 @@ import Quickly from "./components/Quickly/Quickly";
 import Heineken from "./components/Heineken/Heineken";
 import WorkDetails from "./components/WorkDetails/WorkDetails";
 import ServiceView from "./components/ServiceView/ServiceView";
+import Teclab from "./components/Teclab/Teclab";
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
               <Route  path="/contact" element={<Contact />} />
               <Route  path="/heineken" element={<Heineken />} />
               <Route  path="/contact" element={<Contact />} />
+              <Route  path="/Teclab" element={<Teclab />} />
             </Routes>
           </Router>
         <Footer />
