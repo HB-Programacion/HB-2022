@@ -12,13 +12,19 @@ import img6 from "../../assets/heinekenFest/img-hnk-6.png";
 import next from "../../assets/heinekenFest/next-divider.svg";
 import backNext from "../../assets/heinekenFest/next-background.png";
 import imgNext from "../../assets/heinekenFest/img-next.png";
-// import video from "https://res.cloudinary.com/henribarrett/video/upload/v1673456899/hb-2023/video-hnk_wczrbk.mp4";
 
 import "./WorkDetails.css";
 
 const WorkDetails = () => {
-  const dataInterna = JSON.parse(localStorage.getItem("work-details"));
-  const dataInternaNext = JSON.parse(localStorage.getItem("next-work-details"));
+  const allDataWork = JSON.parse(localStorage.getItem("work-details"));
+  const dataIdSpecific = JSON.parse(localStorage.getItem("work-specific"));
+
+  const [currentIndex, setCurrentIndex] = useState(dataIdSpecific);
+  const matchingWorkDetail = allDataWork[currentIndex];
+  const nextMatchingWorkDetail = allDataWork[currentIndex + 1];
+
+  console.log('nextMatchingWorkDetail', nextMatchingWorkDetail)
+
 
   const {
     imgbg,
@@ -42,9 +48,23 @@ const WorkDetails = () => {
     text1,
     text2,
     text3,
-  } = dataInterna.workDetails;
+  } = matchingWorkDetail.workDetails;
 
-  // const { imageNext, textNext } = dataInternaNext.workDetails;
+  const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
+
+  const handleNextButtonClick = () => {
+    if (currentIndex + 1 < allDataWork.length) {
+      setCurrentIndex(currentIndex + 1);
+    }else{
+      setCurrentIndex(0)
+    }
+  };
+
+  useEffect(() => {
+    const updatedMatchingWorkDetail = allDataWork[currentIndex];
+    // Update any state variables that depend on the new matchingWorkDetail
+  }, [currentIndex, allDataWork]);
+
 
   return (
     <>
@@ -159,13 +179,9 @@ const WorkDetails = () => {
       
       
       </div>
-      <div className="">
-        {/* <img src={imageNext} alt="Imagen" className="" /> */}
-        <div className="">
-          {/* <a href="https://www.ejemplo.com" className="">
-            {textNext}
-          </a> */}
-        </div>
+      <div className="nextButton">
+        <img src={imageNext} alt="Imagen" className="" />
+        <button onClick={handleNextButtonClick}>{textNext}</button>
       </div>
     </>
   );
