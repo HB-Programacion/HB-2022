@@ -107,14 +107,24 @@ const WorkDetails = () => {
       </div> */}
 
       <div className="box-video-background">
-        <video
+        {/* <video
           src={imgbg}
           alt="hnk"
           width="100%"
           height="100%"
           className="video-mp4"
-          autoPlay
-        ></video>
+          autoplay="autoplay"
+          loop="loop"
+          muted
+          defaultMuted
+          playsinline
+        ></video> */}
+        <iframe
+          src="https://player.vimeo.com/video/857674518?autoplay=1&autopause=0&loop=1&muted=1&title=0&portrait=0&byline=0"
+          width="100%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
       </div>
       <div className=" bg-black">
         <div className="box-workDetails">
@@ -142,7 +152,6 @@ const WorkDetails = () => {
           <p className="p-white">{text1}</p>
 
           <p className="p-white">{text2}</p>
-
         </div>
         <img src={gif3} className="w-100" />
         <img src={gif4} className="w-100" />
@@ -153,11 +162,9 @@ const WorkDetails = () => {
         <img src={img6} className="w-100" />
 
         <div className="box-workDetails">
-        <p className="text-gray-poject text-left">{text3}</p>
+          <p className="text-gray-poject text-left">{text3}</p>
         </div>
         <img src={img7} className="w-100" />
-      
-      
       </div>
       <div className="">
         {/* <img src={imageNext} alt="Imagen" className="" /> */}
