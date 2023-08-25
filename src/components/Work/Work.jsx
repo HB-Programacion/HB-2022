@@ -16,6 +16,7 @@ const Work = () => {
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
   const [dataInterna, setDataInterna] = useState(null);
+  const [matchedImage, setMatchedImage] = useState(0);
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -52,10 +53,11 @@ const Work = () => {
 
     if (index !== -1 && index < imagesHome.length - 1) {
       const matchedImage = imagesHome[index];
-      const nextImage = imagesHome[index + 1];
+      setMatchedImage(matchedImage)
+      //const nextImage = imagesHome[index + 1];
 
-      localStorage.setItem("work-details", JSON.stringify(matchedImage));
-      localStorage.setItem("next-work-details", JSON.stringify(nextImage));
+      localStorage.setItem("work-details", JSON.stringify(filteredImages));
+      localStorage.setItem("work-specific", JSON.stringify(matchedImage.id));
 
       navigate(`/workDetails/${matchedImage.id}`);
     }
@@ -66,7 +68,7 @@ const Work = () => {
       <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
+        <p className="text-feature-work">Things we’ve made</p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (
@@ -113,13 +115,16 @@ const Work = () => {
           </div>
         </div>
         <div className="p-white">
-          Brands are more than logos; they're experiences, emotions, and connections. We harness this essence, optimizing every touchpoint for maximum impact. Discover how we amplify brand value, transforming clients' visions into victories.
+        // We create brand launch campaigns, gadgets, signage, websites, digital
+        assets and much more. All of this happens in our in-house production
+        studios.
       </div>
-      <div className="button__load-work">
+     <div className="button__load-work">
         <button onClick={handleLoadImage}>
-          LOAD MORE <img src={arrowbtn} alt="arrow-right" />
+         LOAD MORE <img src={arrowbtn} alt="arrow-right" />
         </button>
       </div>
+   
         {/* <div className="box-work-w bg-white">
           <img src={quicklys} />
         </div> */}
@@ -145,7 +150,7 @@ const Work = () => {
         </div>
       </div>
 
-      {dataInterna && <WorkDetails dataInterna={dataInterna} />}
+      {dataInterna && <WorkDetails />}
     </>
   );
 };
