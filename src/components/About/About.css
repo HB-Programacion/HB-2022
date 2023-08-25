@@ -74,6 +74,7 @@
 .wwb {
   width: 80%;
   display: block;
+  margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
 }
@@ -90,6 +91,7 @@
     width: 100%;
     margin: 5rem auto;
     display: block;
+    padding-bottom: 5rem;
 }
 
 .fondo-surprise{

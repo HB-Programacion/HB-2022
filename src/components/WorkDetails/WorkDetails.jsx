@@ -127,7 +127,7 @@ const WorkDetails = () => {
       </div> */}
 
       <div className="box-video-background">
-        {/* <video
+        <video
           src={imgbg}
           alt="hnk"
           width="100%"
@@ -138,13 +138,13 @@ const WorkDetails = () => {
           muted
           defaultMuted
           playsinline
-        ></video> */}
-        <iframe
+        ></video>
+        {/* <iframe
           src="https://player.vimeo.com/video/857674518?autoplay=1&autopause=0&loop=1&muted=1&title=0&portrait=0&byline=0"
           width="100%"
           height="100%"
           frameborder="0"
-        ></iframe>
+        ></iframe> */}
       </div>
       <div className=" bg-black">
         <div className="box-workDetails">
