@@ -14,6 +14,7 @@
   width: 100%;
 
 }
+
 .container__text {
   text-align: center;
   position: relative;
@@ -215,14 +216,20 @@
   margin: 0rem auto;
 }
 
+.group-btns{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 5rem auto;
+}
 
 .btn-services {
   display: flex;
   align-items: center;
   border: 1px solid #111;
   border-radius: 50px;
-  margin: 0.9rem auto;
-  padding: 0.1rem 0.4rem;
+  margin: 0.5rem auto;
+  padding: 0.1rem 0.9rem;
   text-transform: uppercase;
   font-family: neue-haas-grotesk-display, sans-serif;
   justify-content: space-around;
@@ -278,12 +285,7 @@
 
   }
 
-  .group-btns{
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 5rem auto;
-  }
+
 
   .btn-services{
     font-size: 38px;

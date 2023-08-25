@@ -26,7 +26,7 @@ import union from "../../assets/home/union.svg";
 import groupwwd from "../../assets/home/img-proyectos.png";
 import groupwwdD from "../../assets/home/desktop/group-services-desktop.png";
 
-import wmct from "../../assets/home/weMakeCoolThings.gif";
+import wmct from "../../assets/home/settingthecool.svg";
 import wmctD from "../../assets/home/desktop/we make cool things-desktop.svg";
 
 import hnk from "../../assets/home/hnk-home-mobile.png";
@@ -55,6 +55,8 @@ import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import FormContact from "../FormContact/FormContact";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
+
+
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
@@ -258,7 +260,7 @@ const Home = () => {
               onClick={() => handleCategorybyName("illustration")}
             >
               illustration
-            </button>
+            </button> 
           </div>
           <div className="container_groupwwd">
             <img src={groupwwd} alt="" className="mobile" />
