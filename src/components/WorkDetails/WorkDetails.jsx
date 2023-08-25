@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import section from "../../assets/heinekenFest/divider-hnk.png";
 import sectionMobile from "../../assets/heinekenFest/divider-mobile.svg";
@@ -20,10 +20,12 @@ const WorkDetails = () => {
   const dataIdSpecific = JSON.parse(localStorage.getItem("work-specific"));
 
   const [currentIndex, setCurrentIndex] = useState(dataIdSpecific);
-  const matchingWorkDetail = allDataWork[currentIndex];
-  const nextMatchingWorkDetail = allDataWork[currentIndex + 1];
+  const matchingWorkDetail = allDataWork[currentIndex-1];
+  const nextMatchingWorkDetail = allDataWork[currentIndex];
 
   console.log('nextMatchingWorkDetail', nextMatchingWorkDetail)
+
+  const navigate = useNavigate();
 
 
   const {
@@ -53,15 +55,19 @@ const WorkDetails = () => {
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
 
   const handleNextButtonClick = () => {
-    if (currentIndex + 1 < allDataWork.length) {
-      setCurrentIndex(currentIndex + 1);
+    if (currentIndex < allDataWork.length-1) {
+      console.log('lenght', allDataWork.length)
+      setCurrentIndex(currentIndex+1);
+      console.log('final ok', currentIndex+1 )
     }else{
+      console.log('final')
       setCurrentIndex(0)
     }
   };
 
   useEffect(() => {
     const updatedMatchingWorkDetail = allDataWork[currentIndex];
+    navigate(`/workDetails/${matchingWorkDetail.id}`);
     // Update any state variables that depend on the new matchingWorkDetail
   }, [currentIndex, allDataWork]);
 

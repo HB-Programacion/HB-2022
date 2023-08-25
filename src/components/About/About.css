@@ -28,6 +28,21 @@
   margin: 0;
 }
 
+.accordion-item {
+  margin: 1rem auto;
+}
+
+.accordion-item .accordion-item_content{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+.accordion-item .accordion-item_content img{
+  height: 15px;
+  align-self: center;
+}
+
 .img1 {
   margin: 4rem auto;
 }

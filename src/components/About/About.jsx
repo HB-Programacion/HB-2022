@@ -30,7 +30,7 @@ import people7 from "../../assets/about/people/Team_7.gif";
 import people8 from "../../assets/about/people/Team_8.gif";
 import people9 from "../../assets/about/people/Team_9.gif";
 import people10 from "../../assets/about/people/Team_10.gif";
-
+import arrowDown from "../../assets/about/arrowDown2.svg";
 
 const About = () => {
 
@@ -43,19 +43,26 @@ const About = () => {
   
     return (
       <div className="accordion-item">
-        <button
-          style={{
-            background: 'none',
-            border: 'none',
-            padding: 0,
-            font: 'inherit',
-            cursor: 'pointer',
-            color: '#575757'
-          }}
-          className="accordion-button"
-          onClick={toggleAccordion}>
-          {title}
-        </button>
+        <div className="accordion-item_content">
+          <button
+            style={{
+              background: 'none',
+              border: 'none',
+              padding: 0,
+              font: 'inherit',
+              cursor: 'pointer',
+              color: '#fff'
+            }}
+            className="accordion-button"
+            onClick={toggleAccordion}>
+            {title}
+          </button>
+          {isOpen ?
+            <img src={arrowDown} alt="arrowDown" style={{transform: 'rotate(180deg)'}} />
+            :
+            <img src={arrowDown} alt="arrowDown"/>
+          }
+        </div>
         {isOpen && <div className="accordion-content">{content}</div>}
       </div>
     );
@@ -83,15 +90,15 @@ const About = () => {
           <h6 className="subtitle-about">
             In a world increasingly driven by technology, we anchor ourselves in genuine human connection. Here, it's not just about the job, it's about the bond we share as a team of dedicated professionals. These are the cornerstones that guide our work:
             <AccordionItem
-              title="Unified Vision:"
+              title="Unified Vision"
               content={<p>Each individual offers a unique perspective. Melded together, these insights allow us to craft holistic, impactful solutions.</p>}
             />
             <AccordionItem
-              title="Endless Curiosity:"
+              title="Endless Curiosity"
               content={<p>Our commitment to constant learning and innovation shapes the core of who we are. Diverse backgrounds and expertise feed our ceaseless quest for the next big idea.</p>}
             />
             <AccordionItem
-              title="Collaborative Spirit:"
+              title="Collaborative Spirit"
               content={<p>Every achievement is the result of the harmony and synergy that resonates within our team. Mutual respect, understanding, and collective growth underscore our every interaction.</p>}
             />
           </h6>
