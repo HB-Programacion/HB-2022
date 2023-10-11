@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { buttonService } from "../data/imagesHome";
-import { getDataServices, filterServiceType } from "../services/servicesFilter";
-import Marquee from "react-fast-marquee";
+import { filterServiceType } from "../services/servicesFilter";
 
 import title from "../../assets/services/barrett-services.gif";
-import img1 from "../../assets/services/img-services1.png";
 import welove from "../../assets/services/we-love-creating.gif";
-import asterisco from "../../assets/about/asterisco.svg";
 import letstalk from "../../assets/services/lets-talk.svg";
 
 import "./ServiceView.css";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
 import MarqueeHB from "../MarqueeHB/MarqueeHB";
+import SliderComponent from "../SliderComponent/SliderComponent";
 
 const ServiceView = () => {
 const [filteredImages, setFilteredImages] = useState(null);
@@ -39,7 +37,9 @@ return (
       <div className="fondo-header"> </div>
       <div className="bg-black ">
       <img src={title} className="w-90 m-auto d-block title-services" />
-      <img src={img1} className=" w-90 m-auto d-block" />
+      <div className=" w-90 m-auto d-block">
+         <SliderComponent/>
+      </div>
       <div className="box-services">
          <p className="text-gray">
             /// Our team is ready to spar with you over the brand’s evolution
