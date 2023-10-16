@@ -27,7 +27,7 @@ import groupwwd from "../../assets/home/img-proyectos.png";
 import groupwwdD from "../../assets/home/desktop/group-services-desktop.png";
 
 import wmct from "../../assets/home/settingthecool.svg";
-import wmctD from "../../assets/home/desktop/we make cool things-desktop.svg";
+import settingD from "../../assets/home/1.Setting.gif";
 
 import hnk from "../../assets/home/hnk-home-mobile.png";
 import umana from "../../assets/home/umana-home-mobile.png";
@@ -218,8 +218,8 @@ const Home = () => {
         {/* </div> */}
         <div className="box-bg-gray">
           <div className="box-wwd">
-            <img src={wmct} className="wwd mobile" />
-            <img src={wmctD} className="wwd desktop" />
+            <img src={settingD} className="wwd mobile" />
+            <img src={settingD} className="wwd desktop" />
           </div>
           <div className="container__text-wwd">
             <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>

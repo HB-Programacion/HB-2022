@@ -90,11 +90,11 @@ const SliderComponent = () => {
       />
       <div
         style={{
-          margin: "0 auto",
-          marginTop: "2rem",
-          width: "50%",
-          display: "flex",
-          justifyContent: "space-around"
+          // margin: "0 auto",
+          // marginTop: "2rem",
+          // width: "50%",
+          // display: "flex",
+          // justifyContent: "space-around"
         }}
       >
       </div>

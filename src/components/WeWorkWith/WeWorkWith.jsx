@@ -2,7 +2,7 @@ import React from 'react'
 
 import img2 from "../../assets/home/img-2.png";
 
-import www from "../../assets/home/ourclients.svg";
+import www from "../../assets/home/2.Clients.gif";
 import wwwD from "../../assets/home/desktop/weworkwith.svg";
 import gif1 from "../../assets/gifs/1.gif";
 import gif2 from "../../assets/gifs/2.gif";

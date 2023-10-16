@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { buttonService } from "../data/imagesHome";
 import { filterServiceType } from "../services/servicesFilter";
 
-import title from "../../assets/services/barrett-services.gif";
+import title from "../../assets/services/8.Services.gif";
 import welove from "../../assets/services/we-love-creating.gif";
 import letstalk from "../../assets/services/lets-talk.svg";
 

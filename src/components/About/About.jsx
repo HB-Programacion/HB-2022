@@ -1,14 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 // import Marquee from "react-double-marquee";
 
-import tiwwa from "../../assets/about/tiwwa.svg";
+import meet from "../../assets/about/3.Essence.gif";
 import img1 from "../../assets/about/img1-about.png";
 import img2 from "../../assets/about/img2-about.png";
 
-import mop from "../../assets/about/mop.svg";
+import makers from "../../assets/about/4.Makers.gif";
 import img3 from "../../assets/about/img3-about.png";
 import img4 from "../../assets/about/img4-about.png";
-import wwb from "../../assets/about/wwb.svg";
+import intrinsec from "../../assets/about/5.Intrinsic.gif";
 import wwb1 from "../../assets/about/wwb-1.svg";
 import wwb2 from "../../assets/about/wwb-2.svg";
 import wwb3 from "../../assets/about/wwb-3.svg";
@@ -73,7 +73,7 @@ const About = () => {
       <div className="fondo-header"></div>
       <div className="bg-black ">
         <div className="box-about">
-          <img src={tiwwa} className="img-tiwwa" />
+          <img src={meet} className="img-tiwwa" />
           <h3 className="title-about">Design, Develop, Deliver</h3>
           <h6 className="subtitle-about">
             Our actions aren’t just words. They are the backbone of what we do. Every idea, every concept, begins with a spark and we are passionate about turning that spark into tangible creations. From the earliest sketch of a brand identity to the final execution of a marketing campaign, we believe in prototyping, refining, and perfecting. Every product, every project, is a testament to our commitment to excellence and innovation.
@@ -86,7 +86,7 @@ const About = () => {
         <img src={img1} className="w-100 img1" />
         <MarqueeHB/>
         <div className="box-about">
-          <h3 className="title-about">Mutual Trust Manifesto</h3>
+          <h3 className="title-about text-mutual">Mutual Trust Manifesto</h3>
           <h6 className="subtitle-about">
             In a world increasingly driven by technology, we anchor ourselves in genuine human connection. Here, it's not just about the job, it's about the bond we share as a team of dedicated professionals. These are the cornerstones that guide our work:
             <AccordionItem
@@ -105,7 +105,7 @@ const About = () => {
           <img src={img2} className="w-100 img1" />
         </div>
         <div className="box-about ">
-          <img src={mop} className="mop" />
+          <img src={makers} className="mop" />
           <p className="text-mop">
             Discover the heartbeat of our studio. Together, we challenge conventions, celebrate diversity, and drive innovation. Unfold the layers of our team and witness the collaboration that defines us.
           </p>
@@ -165,7 +165,7 @@ const About = () => {
             A creative agency where strategy, design, and creativity converge. Over the years, we've honed our belief that a standout brand emerges when these three elements seamlessly intertwine.
           </p>
 
-          <img src={wwb} className="wwb" />
+          <img src={intrinsec} className="wwb" />
           <p className="wwb-textdown">Henri Barrett is more than just an agency; it's a movement, a mindset. We're here to change narratives, elevate brands, and make a lasting imprint in the world of design and creativity. Dive into our guiding principles, the essence of what makes us Henri Barrett.</p>
           <div className="box-wwb-numbers">
             <img src={wwb1} className="wwb-numbers" />

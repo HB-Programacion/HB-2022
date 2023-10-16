@@ -6,8 +6,8 @@
   margin: 3rem auto;
 }
 .title-about {
-  font-size: 1.6rem;
-  line-height: 1.8rem;
+  font-size: 2.1rem;
+  line-height: 2.3rem;
   letter-spacing: 1px;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
@@ -66,11 +66,14 @@
   margin: 3rem auto;
 }
 .box-people {
-  width: 141px;
-  height: 141px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .photo-people {
-  width: 88%;
+  width: 100%;
   margin: 2rem auto;
   display: block;
 }
@@ -79,7 +82,7 @@
   margin: 2rem auto;
   color: #575757;
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .mt-people {
@@ -164,4 +167,9 @@
   font-weight: 500;
   text-transform: uppercase;
   z-index: 99;
+}
+
+.text-mutual{
+  font-size: 2.8rem;
+  line-height: 3rem;
 }
