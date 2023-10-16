@@ -105,6 +105,19 @@
 .box-wwb-numbers{
     margin: 3rem auto;
 }
+
+.box-wwb-tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+  color: #8E8E8E;
+}
+
+.box-wwb-tabs .active{
+  text-decoration: underline;
+  color: #111111;
+}
+
 .wwb-numbers{
     width: 100%;
     margin: 5rem auto;

@@ -33,6 +33,47 @@ import people10 from "../../assets/about/people/Team_10.gif";
 import arrowDown from "../../assets/about/arrowDown2.svg";
 
 const About = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const tabs = [
+    {
+      title: 'BEYOND',
+      subtitle: 'BEYOND A SINGLE DISCIPLINE',
+      description: (
+        <div>
+          <p>At the heart of our process lies an understanding that the world doesn't fit into neat boxes, and neither do brands. We’re not bound by traditional lanes of design, strategy, or creativity.</p>
+          <p>Instead, we fuse them, creating an amalgam that resonates with the diverse, dynamic nature of today's audiences. </p>
+          <p>Our multidisciplinary approach ensures that every project is viewed from multiple angles, offering holistic solutions that stand out and stay relevant.</p>
+        </div>
+      ),
+    },
+    {
+      title: 'SHARED',
+      subtitle: 'SHARED A SINGLE DISCIPLINE',
+      description: (
+        <div>
+          <p>Descripción de la pestaña 1.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Descripción de la pestaña 1.</p>
+        </div>
+      ),
+    },
+    {
+      title: 'DEEPER',
+      subtitle: 'DEEPER A SINGLE DISCIPLINE',
+      description: (
+        <div>
+          <p>Descripción de la pestaña 1.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Descripción de la pestaña 1.</p>
+        </div>
+      ),
+    },
+  ];
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
 
   const AccordionItem = ({ title, content }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +81,7 @@ const About = () => {
     const toggleAccordion = () => {
       setIsOpen(!isOpen);
     };
-  
+
     return (
       <div className="accordion-item">
         <div className="accordion-item_content">
@@ -161,16 +202,30 @@ const About = () => {
       <div className="bg-white">
         <img src={img4} className="w-100 img1" />
         <div className="box-about">
-          <p className="p-black">
+          {/* <p className="p-black">
             A creative agency where strategy, design, and creativity converge. Over the years, we've honed our belief that a standout brand emerges when these three elements seamlessly intertwine.
-          </p>
+          </p> */}
 
           <img src={intrinsec} className="wwb" />
           <p className="wwb-textdown">Henri Barrett is more than just an agency; it's a movement, a mindset. We're here to change narratives, elevate brands, and make a lasting imprint in the world of design and creativity. Dive into our guiding principles, the essence of what makes us Henri Barrett.</p>
           <div className="box-wwb-numbers">
-            <img src={wwb1} className="wwb-numbers" />
-            <img src={wwb2} className="wwb-numbers" />
-            <img src={wwb3} className="wwb-numbers" />
+            <div className="box-wwb-tabs">
+              {
+                tabs.map((tab, index) => (
+                  <div
+                    key={index}
+                    className={`tab ${activeTab === index ? 'active' : ''}`}
+                    onClick={() => handleTabClick(index)}
+                  >
+                    {tab.title}
+                  </div>
+                ))
+              }
+            </div>
+            <div className="tab-content">
+              <h2>{tabs[activeTab].subtitle}</h2>
+              <p>{tabs[activeTab].description}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -182,10 +237,10 @@ const About = () => {
           </button>
         </div>
         <img src={bgsurprise} className="img-surprise" />
-        <p className="p-surprise">
+        {/* <p className="p-surprise">
           Lorem ipsum dolor sit amet consectetur. Lectus pharetra ac purus duis
           nisi placerat.
-        </p>
+        </p> */}
       </div>
     </>
   );
