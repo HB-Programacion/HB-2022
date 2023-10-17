@@ -5,6 +5,8 @@ import { filterServiceType } from "../services/servicesFilter";
 import title from "../../assets/services/8.Services.gif";
 import welove from "../../assets/services/we-love-creating.gif";
 import letstalk from "../../assets/services/lets-talk.svg";
+import union from "../../assets/services/arrowLeft.svg";
+
 
 import "./ServiceView.css";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
@@ -66,7 +68,13 @@ return (
                      border: activeButton === type.value && "#000000",
                   }}
                   >
-                  {type.name}
+                     {activeButton === type.value && '/'}
+                     {type.name}
+                     {activeButton === type.value &&
+                        <div className="btn-icon-services">
+                           <img src={union} />
+                        </div>
+                     }
                   </button>
                </div>
             ))}

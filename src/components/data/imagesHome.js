@@ -273,8 +273,8 @@ export const imagesQuickly = [
   },
   {
     id: 2,
-    category: "EVENT",
-    title: "Solito",
+    category: "CAMPAIGN",
+    title: "Henri Barrett",
     url: "./dataimagesQuickly/manColor.png",
     urlInterno1: "./imagesQuicklyInterna/solitoInterna1.png",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
