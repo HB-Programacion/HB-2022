@@ -50,52 +50,87 @@
 
 }
 
+.container-internaQuickly{
+    background-color: #FF4040;
+}
+
 .topInternaButton{
+    padding: 2rem 1rem;
     display: flex;
-    position: absolute;
-    top: 20px;
-    padding: 0px 15px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.topInternaText-container{
+    margin: 0rem 1rem 2.5rem;
+}
+
+.topInternaText-container .topInternaText-title{
+    color: #111111;
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.6px;
+}
+
+.topInternaText-container .topInternaText-subtitle{
+    color: #111111;
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 125%;
+    letter-spacing: -0.4px;
+}
+
+.imgInternaTop{
+    text-align: center;
 }
 
 .topInternaButton .category-interna{
-    margin-left: 36%;
-    background-color: #FF4040;
+    background-color: #111111;
     align-self: center;
     padding: 7px 15px;
     border-radius: 25px;
-    color: #111;
+    color: #FFFFFF;
     font-family: 'neue-haas-grotesk-display';
     font-size: 20px;
+}
+
+.topInterna-content{
+    margin: 1rem 1rem;
+    color: #111111;
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 125%;
+    letter-spacing: -0.5px;
+}
+
+.gif-hb{
+    text-align: center;
+}
+
+.gif-hb img{
+    margin: 3rem;
 }
 
 .containerInterna img{
     width: 100%;
 }
 
-.containerInterna .containerTextInterna{
-    background-color: #ffffff;
-    color: black;
-    padding: 10px 20px;
-}
-
-.containerTextInterna h2{
-    color: #111;
+.textCategorySimilar{
+    margin: 3rem;
+    text-align: center;
     font-family: 'neue-haas-grotesk-display';
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 450;
     line-height: normal;
-    letter-spacing: -0.8px;
-}
-
-.containerTextInterna p{
-    color: #111;
-    font-family: 'neue-haas-grotesk-display';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 450;
-    line-height: 150%; /* 30px */
-    letter-spacing: -0.5px;
+    letter-spacing: -0.7px;
 }
 
 .back-button{
@@ -108,16 +143,7 @@
     border: none;
 }
 
-.back-button img{
-    transform: rotate(180deg);
-}
 
-.back-button .textBack{
-    font-family: "neue-haas-grotesk-display";
-    text-transform: uppercase;
-    margin-left: 10px;
-    font-size: 20px;
-}
 
 .similarCategory{
     margin: 2rem auto;

@@ -261,15 +261,22 @@ export const imagesHome = [
 export const imagesQuickly = [
   {
     id: 1,
-    category: "BRANDING",
+    category: "CAMPAIGN",
     title: "Solito",
     url: "./dataimagesQuickly/solito.png",
-    urlInterno1: "./imagesQuicklyInterna/solitoInterna1.png",
+    urlInterno1: "./imagesQuicklyInterna/example1.png",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
     urlInterno3: "",
     titleInter: "Create brands with personality",
     subTitleInter: "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
     href: "./heinekenFest",
+    titleInterTop: "HENDRICKS GIN",
+    subtitleInterTop: "Out of Home Asia Bulevard",
+    internaContent: `<div>
+                      <p>Showcase your collectibles through the latest Web3 platform, ClubRare. This high-end collectibles market aims to redefine social commerce by connecting collectors and creators directly.</p>
+                      <p>Our work for this project included exploring and solidifying an art direction that would fit the brand with a bold and modern look. Another brand aspect that we covered includes the ideation and creation of motion graphics for their promotional videos, which are being displayed around the world, most prominently on Time Square. </p>
+                      <p>During the exploration phase of the branding process, we wanted to keep the familiar look of ClubRare while refreshing it with clean graphics that would easily transition to motion graphics.</p>
+                    </div>`
   },
   {
     id: 2,

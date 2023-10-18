@@ -86,23 +86,17 @@ const About = () => {
       <div className="accordion-item">
         <div className="accordion-item_content">
           <button
-            style={{
-              background: 'none',
-              border: 'none',
-              padding: 0,
-              font: 'inherit',
-              cursor: 'pointer',
-              color: '#fff'
-            }}
             className="accordion-button"
             onClick={toggleAccordion}>
-            {title}
+            <div>
+              {title}
+            </div>
+            {isOpen ?
+              <img src={arrowDown} alt="arrowDown" style={{transform: 'rotate(180deg)'}} />
+              :
+              <img src={arrowDown} alt="arrowDown"/>
+            }
           </button>
-          {isOpen ?
-            <img src={arrowDown} alt="arrowDown" style={{transform: 'rotate(180deg)'}} />
-            :
-            <img src={arrowDown} alt="arrowDown"/>
-          }
         </div>
         {isOpen && <div className="accordion-content">{content}</div>}
       </div>

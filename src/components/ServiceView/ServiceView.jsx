@@ -38,18 +38,18 @@ return (
    <>
       <div className="fondo-header"> </div>
       <div className="bg-black ">
-      <img src={title} className="w-90 m-auto d-block title-services" />
+      <img src={title} className="w-90 m-auto d-block title-services" alt="title"/>
       <div className=" w-90 m-auto d-block">
          <SliderComponent/>
       </div>
       <div className="box-services">
          <p className="text-gray">
-            /// Our team is ready to spar with you over the brand’s evolution
+            Our team is ready to spar with you over the brand’s evolution
             plan, future opportunities and dedicated solutions
          </p>
       </div>
       <div>
-         <img src={welove} className=" w-90 m-auto d-block" />
+         <img src={welove} className=" w-90 m-auto d-block" alt="weLove" />
 
          <div className="box-btn-filter-services">
             {" "}
@@ -72,7 +72,7 @@ return (
                      {type.name}
                      {activeButton === type.value &&
                         <div className="btn-icon-services">
-                           <img src={union} />
+                           <img src={union} alt="union" />
                         </div>
                      }
                   </button>
@@ -105,7 +105,7 @@ return (
                   <div className="">
                      {type.urlMarcaByService &&
                         type.urlMarcaByService.map((url, index) => (
-                        <img key={index} src={url} alt={`Image ${index}`} className="w-80 m-auto d-block"/>
+                        <img key={index} src={url} alt={`${index}`} className="w-80 m-auto d-block"/>
                         ))}
                   </div>
                   </>
@@ -119,7 +119,7 @@ return (
       </div>
       <WeWorkWith />
       <div className="box-services bg-black">
-      <img src={letstalk} className="m-auto d-block" />
+      <img src={letstalk} className="m-auto d-block" alt="letsTalk"/>
       <p className="text-gray text-lets-talk">
          We can help you and your brand stand out in today's competitive
          market, can build new brands from start to finish, or revive existing

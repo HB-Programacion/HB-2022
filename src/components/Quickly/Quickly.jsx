@@ -5,7 +5,7 @@ import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
-import union from "../../assets/home/union.svg";
+import hb from "../../assets/quickly/hb-back.svg";
 
 
 import "./Quickly.css";
@@ -74,9 +74,6 @@ const Quickly = () => {
         </div>
         <div className="box-work">
           <div className="gallery__container">
-            {/* <ResponsiveMasonry
-              columnCountBreakPoints={{ 350: 3, 750: 3, 900: 3 }}
-            > */}
             <Masonry columnsCount={2} gutter="10px">
               {filteredImages &&
                 filteredImages.map((type) => (
@@ -110,14 +107,13 @@ const Quickly = () => {
           </div>
         </div>
         <div className="p-white">
-          // We create brand launch campaigns, gadgets, signage, websites,
+          We create brand launch campaigns, gadgets, signage, websites,
           digital assets and much more. All of this happens in our in-house
           production studios.
         </div>
         <div className="button__load">
-          <a  className="btn-white">LOAD MORE</a>
+          <a href="/" className="btn-white">LOAD MORE</a>
         </div>
-      
       </div>
       <ReactModal
         isOpen={selectedImage !== null}
@@ -147,21 +143,32 @@ const Quickly = () => {
         }}
       >
         {/* Contenido personalizado del modal */}
-        <div className="topInternaButton">
-          <button className="back-button" onClick={closeModal}>
-            <img src={union} />
-            <div className="textBack">Back</div>
-          </button>
-          <div className="category-interna">
-            {selectedImage?.category}
+        <div className="container-internaQuickly">
+          <div className="topInternaButton">
+              <img src={hb} alt="union"/>
+              <div className="category-interna">
+                {selectedImage?.category}
+              </div>
           </div>
-        </div>
-        <div className="containerInterna">
-          <img src={selectedImage?.urlInterno1} alt={selectedImage?.title} />
-          <img src={selectedImage?.urlInterno2} alt={selectedImage?.title} />
-          <div className="containerTextInterna">
-            <h2>{selectedImage?.titleInter}</h2>
-            <p>{selectedImage?.subTitleInter}</p>
+          <div className="topInternaText">
+              <div className="topInternaText-container">
+                <div className="topInternaText-title">
+                  {selectedImage?.titleInterTop}
+                </div>
+                <div className="topInternaText-subtitle">
+                  {selectedImage?.subtitleInterTop}
+                </div>
+              </div>
+              <div className="imgInternaTop">
+                <img src={selectedImage?.urlInterno1} alt={selectedImage?.title} />
+              </div>
+              <div className="topInterna-content"
+                dangerouslySetInnerHTML={{ __html: selectedImage?.internaContent }}
+              >
+              </div>
+              <div className="gif-hb">
+                <img src={hb} alt="union"/>
+              </div>
           </div>
         </div>
         <div className="similarCategory">
