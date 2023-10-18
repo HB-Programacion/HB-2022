@@ -16,7 +16,7 @@
 }
 .container__footer-item {
   padding: 0.6rem 0;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-family: "nehue-has45";
 }
 
@@ -34,9 +34,7 @@
   color: #fff;
   font-family: "nehue-has45";
 }
-.box-credits img {
-  margin-right: 1rem;
-}
+
 
 @media (max-width: 680px) {
   .container__footer {
@@ -44,16 +42,15 @@
     padding: 8rem 0rem;
   }
   .container__footer .container__footer-boxItem {
-    padding: 1rem 0rem;
+    padding: 3rem 0rem;
   }
   .box-credits {
     display: grid;
     place-items: center;
-    padding: 0.5rem 0;
+    padding: 1.5rem 0rem 2rem 0rem ;
+    margin: 1rem;
   }
-  .box-credits img {
-    margin-bottom: 0.2rem;
-  }
+ 
   .info-text .container__footer-item{
     padding: .3rem 0;
   }

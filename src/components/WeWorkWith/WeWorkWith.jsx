@@ -19,8 +19,8 @@ const WeWorkWith = () => {
   return (
     <div>
     <div className="container-www">
-      <img src={www} className="www-title mobile" />
-      <img src={wwwD} className="www-title desktop" />
+      <img src={www} className="www-title " />
+      {/* <img src={wwwD} className="www-title desktop" /> */}
       <div className="container-www_logos">
         <div className="www_logo">
           <img src={gif1} className="w-100" />

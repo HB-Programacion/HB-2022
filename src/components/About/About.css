@@ -99,23 +99,28 @@
 
 .wwb-textdown {
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.47rem;
+  text-align: center;
 }
 
 .box-wwb-numbers{
-    margin: 3rem auto;
+    padding: 3rem 0;
 }
 
 .box-wwb-tabs {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   color: #8E8E8E;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.1rem;
 }
 
 .box-wwb-tabs .active{
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #111111;
+  border-bottom: 1px solid #000;
+  padding-bottom: .5rem;
 }
 
 .wwb-numbers{
@@ -142,7 +147,7 @@
 }
 .img-surprise{
   position: relative;
-  top: -12rem;
+  top: -8rem;
   width: 100%;
   z-index: 98;
 }
@@ -167,6 +172,15 @@
   margin: 2rem auto;
 }
 
+.text-random{
+  color: #fff;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+
 .btn-white-surprise{
   background-color: #fff;
   font-size: 26px;
@@ -185,4 +199,19 @@
 .text-mutual{
   font-size: 2.8rem;
   line-height: 3rem;
+}
+
+.title-tab{
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+}
+
+.description-tab{
+  text-align: center;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.47rem;
+  color: #8E8E8E;
+  padding: 2rem 0;
 }

@@ -229,12 +229,12 @@
   align-items: center;
   border: 1px solid #111;
   border-radius: 50px;
-  margin: 0.5rem auto;
+  margin: 0.35rem auto;
   padding: 0.1rem 0.9rem;
   text-transform: uppercase;
   font-family: neue-haas-grotesk-display, sans-serif;
   justify-content: space-around;
-  font-size: 23px;
+  font-size: 25px;
   color: #111;
   background-color: transparent;
 }
@@ -299,9 +299,6 @@
 .box-img-ourservices{
   padding: 5rem 0;
 }
-.img-title-contact{
-  width: 70%;
-  float: right;
-}
+
   
 }

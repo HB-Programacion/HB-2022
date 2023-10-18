@@ -13,7 +13,7 @@ import wwb1 from "../../assets/about/wwb-1.svg";
 import wwb2 from "../../assets/about/wwb-2.svg";
 import wwb3 from "../../assets/about/wwb-3.svg";
 import bgsurprise from "../../assets/about/fondo-surprise.svg";
-import sk from "../../assets/about/surprise-kit.gif";
+import random from "../../assets/about/6.Random.gif";
 
 import arrowdown from "../../assets/about/arrowdown.svg";
 
@@ -223,15 +223,16 @@ const About = () => {
               }
             </div>
             <div className="tab-content">
-              <h2>{tabs[activeTab].subtitle}</h2>
-              <p>{tabs[activeTab].description}</p>
+              <h2 className="title-tab">{tabs[activeTab].subtitle}</h2>
+              <p className="description-tab">{tabs[activeTab].description}</p>
             </div>
           </div>
         </div>
       </div>
       <div className="bg-black fondo-surprise">
         <div className="box-title-surprise">
-          <img src={sk} className="img-surprise-kit" />
+          <img src={random} className="img-surprise-kit" />
+          <h1 className="text-random">Take a break, download and explore this tad. Who knows where our bits of randomness will lead you?</h1>
           <button className="btn-white-surprise mx2-auto">
             download <img src={arrowdown} />
           </button>

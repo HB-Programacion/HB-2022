@@ -76,7 +76,7 @@
 .checkContainer {
   display: flex;
   color: #ffffff;
-  padding: 5rem 0px 0px;
+  padding: 2rem 0px;
   font-size: 12px;
   place-content: center;
   width: 100%;
@@ -92,9 +92,10 @@
   display: flex;
   align-items: center;
   color: #ffffff;
-  padding: 5rem 0px 0px;
+  padding: 0px 0px;
   font-size: 12px;
   cursor: pointer;
+  text-align: left;
 }
 
 .checkContainer input[type="checkbox"] {
@@ -157,3 +158,21 @@
   padding: auto;
 }
 
+
+@media (min-width : 680px){
+
+  .img-title-contact{
+    width: 70%;
+    float: right;
+    padding-bottom: 5rem;
+  }
+  .text-contact{
+    padding: 10rem 6rem;
+    width: 33%;
+    position: absolute;
+  }
+  .container-form{
+    width: 50%;
+    margin: 0 auto;
+  }
+}

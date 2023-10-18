@@ -47,6 +47,7 @@ const Footer = () => {
             <a
               href="https://www.behance.net/henribarrettstudio?tracking_source=search_users%7Chenri+barrett"
               target="blank"
+              className="underline"
             >
               Behance
             </a>
@@ -56,6 +57,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/company/henri-barrett-studio/"
               target="blank"
+              className="underline"
             >
               LinkedIn
             </a>
@@ -65,6 +67,7 @@ const Footer = () => {
             <a
               href="https://www.youtube.com/@henribarrettstudio"
               target="blank"
+              className="underline"
             >
               Youtube
             </a>
@@ -74,6 +77,7 @@ const Footer = () => {
             <a
               href="https://instagram.com/henribarrettstudio?igshid=ZWQyN2ExYTkwZQ=="
               target="blank"
+              className="underline"
             >
               Instagram
             </a>
