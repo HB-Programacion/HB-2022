@@ -168,11 +168,7 @@
   left: -100px;
 }
 
-@media (min-width: 1920px) {
-  /* .container__filter img{
-    width: 60%;
-  } */
-}
+
 
 @media (max-width: 680px) {
   .container__buttons {
@@ -286,10 +282,8 @@
 
   }
 
-
-
   .btn-services{
-    font-size: 38px;
+    font-size: 30px;
   }
   .btn-services img{
     width: 38px;
@@ -300,5 +294,18 @@
   padding: 5rem 0;
 }
 
+  
+}
+
+@media (max-width: 1920px) {
+  /* .container__filter img{
+    width: 60%;
+  } */
+  .group-btns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0rem auto;
+  }
   
 }

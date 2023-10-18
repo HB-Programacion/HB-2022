@@ -1,17 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import section from "../../assets/heinekenFest/divider-hnk.png";
-import sectionMobile from "../../assets/heinekenFest/divider-mobile.svg";
-import img1 from "../../assets/heinekenFest/img-hnk-1.png";
-import img2 from "../../assets/heinekenFest/img-hnk-2.png";
-import img3 from "../../assets/heinekenFest/img-hnk3.png";
-import img4 from "../../assets/heinekenFest/img-hnk-4.png";
-import img5 from "../../assets/heinekenFest/img-hnk-5.png";
-import img6 from "../../assets/heinekenFest/img-hnk-6.png";
-import next from "../../assets/heinekenFest/next-divider.svg";
-import backNext from "../../assets/heinekenFest/next-background.png";
-import imgNext from "../../assets/heinekenFest/img-next.png";
+
+import letterNext from "../../assets/work/letter-next.svg";
 
 import "./WorkDetails.css";
 
@@ -20,13 +11,12 @@ const WorkDetails = () => {
   const dataIdSpecific = JSON.parse(localStorage.getItem("work-specific"));
 
   const [currentIndex, setCurrentIndex] = useState(dataIdSpecific);
-  const matchingWorkDetail = allDataWork[currentIndex-1];
+  const matchingWorkDetail = allDataWork[currentIndex - 1];
   const nextMatchingWorkDetail = allDataWork[currentIndex];
 
-  console.log('nextMatchingWorkDetail', nextMatchingWorkDetail)
+  console.log("nextMatchingWorkDetail", nextMatchingWorkDetail);
 
   const navigate = useNavigate();
-
 
   const {
     imgbg,
@@ -55,13 +45,13 @@ const WorkDetails = () => {
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
 
   const handleNextButtonClick = () => {
-    if (currentIndex < allDataWork.length-1) {
-      console.log('lenght', allDataWork.length)
-      setCurrentIndex(currentIndex+1);
-      console.log('final ok', currentIndex+1 )
-    }else{
-      console.log('final')
-      setCurrentIndex(0)
+    if (currentIndex < allDataWork.length - 1) {
+      console.log("lenght", allDataWork.length);
+      setCurrentIndex(currentIndex + 1);
+      console.log("final ok", currentIndex + 1);
+    } else {
+      console.log("final");
+      setCurrentIndex(0);
     }
   };
 
@@ -70,7 +60,6 @@ const WorkDetails = () => {
     navigate(`/workDetails/${matchingWorkDetail.id}`);
     // Update any state variables that depend on the new matchingWorkDetail
   }, [currentIndex, allDataWork]);
-
 
   return (
     <>
@@ -192,9 +181,12 @@ const WorkDetails = () => {
         </div>
         <img src={img7} className="w-100" />
       </div>
-      <div className="nextButton">
-        <img src={imageNext} alt="Imagen" className="" />
-        <button onClick={handleNextButtonClick}>{textNext}</button>
+      <div className="bg-black">
+        <img src={letterNext} className="letter-next"/>
+        <div className="nextButton">
+          <img src={imageNext} alt="Imagen" className="img-next-project" />
+          <div onClick={handleNextButtonClick} className="btn-title-next">{textNext}</div>
+        </div>
       </div>
     </>
   );

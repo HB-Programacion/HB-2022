@@ -7,7 +7,7 @@ import WorkDetails from "../WorkDetails/WorkDetails";
 
 import "./Work.css";
 
-import fw from "../../assets/work/feature-work.svg";
+import fw from "../../assets/work/7.Work.gif";
 import quicklys from "../../assets/work/quickly-all.svg";
 
 const Work = () => {
@@ -68,7 +68,7 @@ const Work = () => {
       <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Things we’ve made</p>
+        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (

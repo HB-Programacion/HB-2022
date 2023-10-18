@@ -39,7 +39,7 @@ return (
       <div className="fondo-header"> </div>
       <div className="bg-black ">
       <img src={title} className="w-90 m-auto d-block title-services" alt="title"/>
-      <div className=" w-90 m-auto d-block">
+      <div className=" container-sliderComponent">
          <SliderComponent/>
       </div>
       <div className="box-services">
