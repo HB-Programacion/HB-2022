@@ -11,7 +11,7 @@ const DropMenuMobile = ({ active, setActive }) => {
         <div className="container-fullview">
           <div className="container-close">
             <div>SPANISH</div>
-            <div className="icon-close-sidebar" onClick={setActive}>
+            <div className="icon-close-sidebar" onClick={false}>
               <div className="container-image-icon">
                 {/* <img className="image-icon" src={close} alt="icon close menu" /> */}
               </div>
