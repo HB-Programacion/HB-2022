@@ -48,7 +48,7 @@
     display: grid;
     place-items: center;
     padding: 1.5rem 0rem 2rem 0rem ;
-    margin: 1rem;
+    /* margin: 1rem; */
   }
  
   .info-text .container__footer-item{

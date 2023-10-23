@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import fw from "../../assets/quickly/quickly.svg";
+import fw from "../../assets/quickly/10.Quicklys.gif";
 import { buttons } from "../data/imagesHome";
 import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";

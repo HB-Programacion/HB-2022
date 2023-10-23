@@ -60,3 +60,19 @@
     height: 30%;
     margin: 1.5rem 0rem;
 }
+.container-sliderComponent{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 680px) {
+.css-1fzpoyk img{
+  width: 90%;
+}
+.container-sliderComponent{
+  width: 100%;
+}
+
+
+}

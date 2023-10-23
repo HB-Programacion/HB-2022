@@ -1,0 +1,15 @@
+.box-carousel-services{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+@media (max-width: 680px) {
+    .box-carousel-services{
+        height: 200px;
+    }
+
+    .css-1fzpoyk{
+        width: 100%;
+    }
+}

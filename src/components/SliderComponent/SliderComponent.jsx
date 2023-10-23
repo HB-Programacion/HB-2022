@@ -6,6 +6,7 @@ import slider1 from "../../assets/services/slider1.png";
 import slider2 from "../../assets/services/slider2.png";
 import slider3 from "../../assets/services/slider3.png";
 
+import './SliderComponent.css'
 
 
 const SliderComponent = () => {
@@ -78,7 +79,7 @@ const SliderComponent = () => {
 
   return (
     <div
-      style={{ width: "80%", height: "500px", margin: "0 auto" }}
+      className="box-carousel-services"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >

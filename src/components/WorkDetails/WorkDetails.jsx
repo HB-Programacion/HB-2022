@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
+import letterNext from "../../assets/work/letter-next.svg";
+
 import "./WorkDetails.css";
 
 const WorkDetails = () => {
@@ -9,12 +11,11 @@ const WorkDetails = () => {
   const dataIdSpecific = JSON.parse(localStorage.getItem("work-specific"));
 
   const [currentIndex, setCurrentIndex] = useState(dataIdSpecific);
-  const matchingWorkDetail = allDataWork[currentIndex-1];
+  const matchingWorkDetail = allDataWork[currentIndex - 1];
   const nextMatchingWorkDetail = allDataWork[currentIndex];
 
 
   const navigate = useNavigate();
-
 
   const {
     imgbg,
@@ -43,13 +44,13 @@ const WorkDetails = () => {
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
 
   const handleNextButtonClick = () => {
-    if (currentIndex < allDataWork.length-1) {
-      console.log('lenght', allDataWork.length)
-      setCurrentIndex(currentIndex+1);
-      console.log('final ok', currentIndex+1 )
-    }else{
-      console.log('final')
-      setCurrentIndex(0)
+    if (currentIndex < allDataWork.length - 1) {
+      console.log("lenght", allDataWork.length);
+      setCurrentIndex(currentIndex + 1);
+      console.log("final ok", currentIndex + 1);
+    } else {
+      console.log("final");
+      setCurrentIndex(0);
     }
   };
 
@@ -59,7 +60,6 @@ const WorkDetails = () => {
   }, [
     //currentIndex, allDataWork
     ]);
-
 
   return (
     <>
@@ -117,9 +117,12 @@ const WorkDetails = () => {
         </div>
         <img src={img7} className="w-100" alt="img"/>
       </div>
-      <div className="nextButton">
-        <img src={imageNext} alt="Imagen" className="" />
-        <button onClick={handleNextButtonClick}>{textNext}</button>
+      <div className="bg-black">
+        <img src={letterNext} className="letter-next"/>
+        <div className="nextButton">
+          <img src={imageNext} alt="Imagen" className="img-next-project" />
+          <div onClick={handleNextButtonClick} className="btn-title-next">{textNext}</div>
+        </div>
       </div>
     </>
   );
