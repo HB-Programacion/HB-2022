@@ -96,31 +96,31 @@ const WorkDetails = () => {
             <h5 className="text-challenge">SOLUTION</h5>
             <p className="description-challenge">{decriptionSolution}</p>
           </div>
-          <img src={gif1} className="w-100" alt="img"/>
-          <img src={gif2} className="w-90" alt="img"/>
-          <img src={img3} className="w-90" alt="img"/>
-
+            {gif1 && <img src={gif1} className="w-100" alt="img" />}
+            {gif2 && <img src={gif2} className="w-90" alt="img" />}
+            {img3 && <img src={img3} className="w-90" alt="img" />}
           <p className="p-white">{text1}</p>
-
-          <p className="p-white">{text2}</p>
         </div>
-        <img src={gif3} className="w-100" alt="img"/>
-        <img src={gif4} className="w-100" alt="img"/>
-        <img src={gif5} className="gif-90" alt="img"/>
-        <img src={img5} className="gif-70" alt="img"/>
-        <img src={gif6} className="w-100" alt="img"/>
-        <img src={gif7} className="gif-70" alt="img"/>
-        <img src={img6} className="w-100" alt="img"/>
+        {gif3 && <img src={gif3} className="w-100" alt="img" />}
+        {gif4 && <img src={gif4} className="w-100" alt="img" />}
+        {gif5 && <img src={gif5} className="gif-90" alt="img" />}
+
+        <p className="p-white">{text2}</p>
+
+        {img5 && <img src={img5} className="gif-70" alt="img" />}
+        {gif6 && <img src={gif6} className="w-100" alt="img" />}
+        {gif7 && <img src={gif7} className="gif-70" alt="img" />}
+        {img6 && <img src={img6} className="w-100" alt="img" />}
 
         <div className="box-workDetails">
           <p className="text-gray-poject text-left">{text3}</p>
         </div>
-        <img src={img7} className="w-100" alt="img"/>
+        {/* {img7 && <img src={img7} className="w-100" alt="img"/>} */}
       </div>
       <div className="bg-black">
-        <img src={letterNext} className="letter-next"/>
+        <img src={letterNext} className="letter-next" alt="letterNext"/>
         <div className="nextButton">
-          <img src={imageNext} alt="Imagen" className="img-next-project" />
+          {imageNext && <img src={imageNext} alt="Imagen" className="img-next-project" />}
           <div onClick={handleNextButtonClick} className="btn-title-next">{textNext}</div>
         </div>
       </div>

@@ -115,9 +115,7 @@ const Work = () => {
           </div>
         </div>
         <div className="p-white">
-        // We create brand launch campaigns, gadgets, signage, websites, digital
-        assets and much more. All of this happens in our in-house production
-        studios.
+        Brands are more than logos; they're experiences, emotions, and connections. We harness this essence, optimizing every touchpoint for maximum impact. Discover how we amplify brand value, transforming clients' visions into victories.
       </div>
      <div className="button__load-work">
         <button onClick={handleLoadImage}>
