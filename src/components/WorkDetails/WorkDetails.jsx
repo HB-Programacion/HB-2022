@@ -107,8 +107,8 @@ const WorkDetails = () => {
 
         <p className="p-white">{text2}</p>
 
-        {img5 && <img src={img5} className="gif-70" alt="img" />}
         {gif6 && <img src={gif6} className="w-100" alt="img" />}
+        {img5 && <img src={img5} className="gif-70" alt="img" />}
         {gif7 && <img src={gif7} className="gif-70" alt="img" />}
         {img6 && <img src={img6} className="w-100" alt="img" />}
 

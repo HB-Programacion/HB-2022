@@ -26,10 +26,10 @@ export const imagesHome = [
       text1: "We crafted custom influencer kits mirroring the stadium theme, highlighting a Heineken bottle and featuring fan illustrations. These designs were later animated for the event, complemented by a premium VIP pass, invite, and brand goodies.",
       text2: "In collaboration with Graza Studio, we replicated the stadium ambiance using a blend of 3D stadium scenes, iconic player statues, and 2D animations.",
       text3: "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      img5: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img5.png",
+      img5: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/hnk5.png",
       img6: "",
       img7: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img7.png",
-      gif7: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/icon-gif.gif",
+      gif7: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/duplahnkgif7.png",
       textNext: "YUMMY",
       imageNext: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png"
     }
