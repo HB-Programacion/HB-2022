@@ -19,6 +19,7 @@ import arrowdown from "../../assets/about/arrowdown.svg";
 
 import "./About.css";
 import MarqueeHB from "../MarqueeHB/MarqueeHB";
+import SlideMeetMarkers from "../slideMeetMakers/slideMeetMakers"
 
 import people1 from "../../assets/about/people/Team_1.gif";
 import people2 from "../../assets/about/people/Team_2.gif";
@@ -146,7 +147,7 @@ const About = () => {
           </p>
         </div>
         <div className="box-about">
-          <div className="box-group-people">
+          {/* <div className="box-group-people">
             <div className="box-people">
               <img src={people1} className="photo-people" />
             </div>
@@ -187,7 +188,9 @@ const About = () => {
             <div className="box-people mt-people">
               <img src={people10} className="photo-people" />
             </div>
-          </div>
+          </div> */}
+
+<SlideMeetMarkers/>
         </div>
         <div className="box-about">
           <img src={img3} className="w-100 img1" />
