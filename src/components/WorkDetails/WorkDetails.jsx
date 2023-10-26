@@ -44,6 +44,11 @@ const WorkDetails = () => {
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
 
   const handleNextButtonClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
+
     if (currentIndex < allDataWork.length - 1) {
       console.log("lenght", allDataWork.length);
       setCurrentIndex(currentIndex + 1);
