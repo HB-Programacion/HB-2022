@@ -1,10 +1,14 @@
 .marqueeSlide {
-  /*   overflow: hidden; */
+  overflow: hidden;
+}
+
+.box-marqueeSlide{
+  margin: 5rem auto;
 }
 
 .marqueeSlide-content {
   display: flex;
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 15s linear infinite;
 }
 
 .marqueeSlide-item {
@@ -63,3 +67,4 @@
   margin: 0;
   padding:0 1rem;
 }
+

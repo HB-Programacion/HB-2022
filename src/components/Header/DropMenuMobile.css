@@ -86,7 +86,7 @@ li {
 
 .container-social {
   text-align: center;
-  height: 37%;
+  height: 16rem;
 }
 .container-social ul {
   margin: 0;
@@ -170,7 +170,14 @@ li {
 }
 @media (min-width: 993px) {
   .drop-menu {
-    display: none;
+    display: block;
+    width: 100%;
     /* visibility: hidden; */
+  }
+  .drop-desktop{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
   }
 }

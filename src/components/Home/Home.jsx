@@ -191,10 +191,10 @@ const Home = () => {
               <img src={umana} className="w-100 mobile" />
               <img src={umanaD} className="w-100 desktop" />
             </div>
-            <div>
+            {/* <div>
               <img src={rappi} className="w-100 mobile" />
               <img src={rappiD} className="w-100 desktop" />
-            </div>
+            </div> */}
             <div>
               <img src={tacama} className="w-100 mobile" />
               <img src={tacamaD} className="w-100 desktop" />

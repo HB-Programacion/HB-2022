@@ -152,7 +152,7 @@ const FormContact = () => {
   return (
     <div className="box-form-contact">
       <p className="text-contact">
-      — Have questions, ideas, or just want to chat about the weather? Say hello and see where it goes!{" "}
+      — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon 
       </p>
       <form onSubmit={handleSubmit} className="container-form">
         <div className="selectContainer">
