@@ -6,7 +6,7 @@ export const imagesHome = [
     name: "HEINEKEN FEST",
     title: "HEINEKEN FEST",
     description:
-      "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
+      "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
     href: "./heinekenFest",
     workDetails : {
       imgbg: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/baner-hnk.png",
@@ -204,7 +204,7 @@ export const imagesHome = [
     name: "EUREKA BRANDS",
     title: "EUREKA BRANDS",
     description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PHOTOGRAPHY",
+      "BRANDING / CONCEPT / CONTENT",
     href: "./yummysuperapp",
     workDetails : {
       imgbg: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
@@ -235,7 +235,7 @@ export const imagesHome = [
     name: "contenido 8",
     title: "RAPPI + SÍCLO",
     description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / production / content / illustrations / animation",
+      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILLUSTRATIONS / ANIMATION",
     href: "./yummysuperapp",
     workDetails : {
       imgbg: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
