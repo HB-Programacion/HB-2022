@@ -56,7 +56,12 @@
 }
 
 .img1 {
-  margin: 4rem auto;
+  margin: 3rem auto;
+}
+
+.text-acreative{
+  padding-top: 4rem;
+  text-align: center;
 }
 
 .mop {
