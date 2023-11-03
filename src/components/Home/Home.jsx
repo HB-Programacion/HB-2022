@@ -31,13 +31,13 @@ import settingD from "../../assets/home/1.Setting.gif";
 
 import hnk from "../../assets/home/hnk-home-mobile.png";
 import umana from "../../assets/home/umana-home-mobile.png";
-import rappi from "../../assets/home/rappi-home-mobile.png";
+import teclab from "../../assets/home/teclab-home-mobile.png";
 import tacama from "../../assets/home/tacama-home-mobile.png";
 import hb from "../../assets/home/hb-home-mobile.png";
 
 import hnkD from "../../assets/home/desktop/hnk-desktop.png";
 import umanaD from "../../assets/home/desktop/umana-desktop.png";
-import rappiD from "../../assets/home/desktop/rappi-desktop.png";
+import teclabD from "../../assets/home/desktop/teclab-desktop.png";
 import tacamaD from "../../assets/home/desktop/tacama-desktop.png";
 import hbD from "../../assets/home/desktop/hb-desktop.png";
 
@@ -196,8 +196,8 @@ const Home = () => {
               <img src={rappiD} className="w-100 desktop" />
             </div> */}
             <div>
-              <img src={tacama} className="w-100 mobile" />
-              <img src={tacamaD} className="w-100 desktop" />
+              <img src={teclab} className="w-100 mobile" />
+              <img src={teclabD} className="w-100 desktop" />
             </div>
             <div>
               <img src={hb} className="w-100 mobile" />
