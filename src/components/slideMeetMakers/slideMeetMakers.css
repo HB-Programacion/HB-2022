@@ -8,7 +8,7 @@
 
 .marqueeSlide-content {
   display: flex;
-  animation: scrolling 15s linear infinite;
+  animation: scrolling 25s linear infinite;
 }
 
 .marqueeSlide-item {

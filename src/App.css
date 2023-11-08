@@ -1,12 +1,20 @@
 body {
   background-color: #111;
 }
+video::-webkit-media-controls {
+  display: none;
+}
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-pausebutton {
+  display: none;
+}
 
 .desktop {
-  display: none!important;
+  display: none !important;
 }
 .mobile {
-  display: block!important;
+  display: block !important;
 }
 
 .main {
@@ -14,8 +22,8 @@ body {
   margin: 0 auto;
 }
 
-.underline{
-  text-decoration: underline!important;
+.underline {
+  text-decoration: underline !important;
 }
 @font-face {
   font-family: "nehue-has45";
@@ -270,7 +278,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  
   .main {
     width: 100%;
   }
@@ -315,10 +322,10 @@ body {
 
 @media (min-width: 1400px) {
   .desktop {
-    display: block!important;
+    display: block !important;
   }
   .mobile {
-    display: none!important;
+    display: none !important;
   }
   .word {
     font-size: 29rem;

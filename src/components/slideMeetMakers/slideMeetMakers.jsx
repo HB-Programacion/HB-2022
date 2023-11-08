@@ -28,11 +28,19 @@ const slideMeetMakers = () => {
           <div class="marqueeSlide-item">
             <div className="box-img-slide-people">
               <video
-                src={peopleV1}
+                data-url={peopleV1}
+               src={peopleV1}
                 className="img-l"
+                preload="metadata"
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
+                data-trigger-on-scroll="true" 
+                type="video/mp4"
+                ontrolslist="nofullscreen nodownload"
               ></video>
               {/* <img src={peopleV1} alt="" className="img-l"/> */}
             </div>
@@ -45,9 +53,16 @@ const slideMeetMakers = () => {
               <video
                 src={peopleV2}
                 className="img-s"
+                preload="metadata"
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
+                data-trigger-on-scroll="true" 
+                type="video/mp4"
+                ontrolslist="nofullscreen nodownload"
               ></video>
               {/* <img src={peopleV2} alt="" className="img-s"/> */}
             </div>
@@ -60,9 +75,16 @@ const slideMeetMakers = () => {
               <video
                 src={peopleV3}
                 className="img-l"
+                preload="metadata"
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
+                data-trigger-on-scroll="true" 
+                type="video/mp4"
+                ontrolslist="nofullscreen nodownload"
               ></video>
 
               {/* <img src={people3} alt="" className="img-l" /> */}
@@ -76,9 +98,16 @@ const slideMeetMakers = () => {
               <video
                 src={peopleV4}
                 className="img-s"
+                preload="metadata"
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
+                data-trigger-on-scroll="true" 
+                type="video/mp4"
+                ontrolslist="nofullscreen nodownload"
               ></video>
 
               {/* <img src={people4} alt="" className="img-s"/> */}
@@ -95,6 +124,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people5} alt="" className="img-l"/> */}
@@ -111,6 +143,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people6} alt="" className="img-s" /> */}
@@ -127,6 +162,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people1} alt="" className="img-l"/> */}
@@ -143,6 +181,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people2} alt="" className="img-s"/> */}
@@ -159,6 +200,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people3} alt="" className="img-l"/> */}
@@ -175,6 +219,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people4} alt="" className="img-s"/> */}
@@ -192,6 +239,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
             </div>
             <p className="title-people">Maria José Ramirez</p>
@@ -206,6 +256,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people6} alt="" className="img-s"/> */}
@@ -222,6 +275,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people1} alt="" className="img-l"/> */}
@@ -238,6 +294,9 @@ const slideMeetMakers = () => {
                 autoPlay
                 loop="true"
                 muted
+                controls="false"
+                webkit-playsinline
+                playsinline
               ></video>
 
               {/* <img src={people2} alt="" className="img-s"/> */}
