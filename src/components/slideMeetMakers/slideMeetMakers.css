@@ -1,5 +1,6 @@
 .marqueeSlide {
   overflow: hidden;
+  width: 100%;
 }
 
 .box-marqueeSlide{
@@ -8,19 +9,17 @@
 
 .marqueeSlide-content {
   display: flex;
-  animation: scrolling 25s linear infinite;
+  animation: scrolling 50s linear infinite;
 }
 
 .marqueeSlide-item {
-  flex: 0 0 16vw;
+  flex: 0 0 auto;
   margin: 0 0.5vw;
-  /*   flex: 0 0 20vw; */
-  /*   margin: 0 2vw; */
 }
 
 .marqueeSlide-item img {
   display: block;
-  /* width: 100%; */
+  /* width: 100%;
   /*   padding: 0 20px; */
 }
 
@@ -48,7 +47,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translatex(-144vw);
+    transform: translatex(-850vw);
   }
 }
 
