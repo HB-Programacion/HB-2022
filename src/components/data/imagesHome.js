@@ -9,44 +9,39 @@ export const imagesHome = [
       "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
     href: "./heinekenFest",
     workDetails: {
-      imgbg:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/baner-hnk.png",
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/heinekenFest.svg",
       subtitle:
         "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
       tabs: ["EVENT", "CAMPAIGN", "ILLUSTRATION"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
+      banner1:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       descriptionChallenge:
         "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
       decriptionSolution:
         "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/gif01.gif",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/gif02.gif",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/gif03.gif",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/gif04.gif",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/gif05.gif",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/gif06.gif",
-      img3: "",
+      videoBlock1:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       text1:
         "We crafted custom influencer kits mirroring the stadium theme, highlighting a Heineken bottle and featuring fan illustrations. These designs were later animated for the event, complemented by a premium VIP pass, invite, and brand goodies.",
+      videoBlock2:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      videoBlock3:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       text2:
         "In collaboration with Graza Studio, we replicated the stadium ambiance using a blend of 3D stadium scenes, iconic player statues, and 2D animations.",
+      videoBlock4:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      videoBlock5:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      videoBlock6:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       text3:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      img5: "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/hnk5.png",
-      img6: "",
-      img7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img7.png",
-      gif7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/duplahnkgif7.png",
+      videoBlock7:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
@@ -62,8 +57,8 @@ export const imagesHome = [
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
     href: "./heinekenFest",
     workDetails: {
-      imgbg:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:
@@ -109,7 +104,7 @@ export const imagesHome = [
     description: "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PHOTOGRAPHY",
     href: "./heinekenFest",
     workDetails: {
-      imgbg:
+      videoPrincipal:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab.svg",
@@ -145,7 +140,7 @@ export const imagesHome = [
       gif7:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/icon-gif.gif",
       text1:
-        "/Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
       text2:
         "Complemented by a sophisticated typographic style and clean illustrations reminiscent of architectural plans and precise line drawings, the overall brand system exudes a sense of structure, modernity, and innovation.",
       text3:
@@ -165,7 +160,7 @@ export const imagesHome = [
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / ILLUSTRATIONS / ANIMATION ",
     href: "./heinekenFest",
     workDetails: {
-      imgbg:
+      videoPrincipal:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab.svg",
@@ -201,7 +196,7 @@ export const imagesHome = [
       gif7:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/icon-gif.gif",
       text1:
-        "/Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
       text2:
         "Complemented by a sophisticated typographic style and clean illustrations reminiscent of architectural plans and precise line drawings, the overall brand system exudes a sense of structure, modernity, and innovation.",
       text3:
@@ -221,8 +216,8 @@ export const imagesHome = [
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
     href: "./heinekenFest",
     workDetails: {
-      imgbg:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:
@@ -268,8 +263,8 @@ export const imagesHome = [
     description: "BRANDING / EVENT / PRODUCTION / LOGISTIC",
     href: "./yummysuperapp",
     workDetails: {
-      imgbg:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:
@@ -315,8 +310,8 @@ export const imagesHome = [
     description: "BRANDING / CONCEPT / CONTENT",
     href: "./yummysuperapp",
     workDetails: {
-      imgbg:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:
@@ -363,8 +358,8 @@ export const imagesHome = [
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILLUSTRATIONS / ANIMATION",
     href: "./yummysuperapp",
     workDetails: {
-      imgbg:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+125+(1).png",
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:

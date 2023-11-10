@@ -18,27 +18,23 @@ const WorkDetails = () => {
   const navigate = useNavigate();
 
   const {
-    imgbg,
+    videoPrincipal,
     urlTitle,
     subtitle,
     tabs,
-    image1,
+    banner1,
     descriptionChallenge,
     decriptionSolution,
-    gif1,
-    gif2,
-    gif3,
-    gif4,
-    gif5,
-    gif6,
-    gif7,
-    img3,
-    img5,
-    img6,
-    img7,
+    videoBlock1,
     text1,
+    videoBlock2,
+    videoBlock3,
     text2,
+    videoBlock4,
+    videoBlock5,
+    videoBlock6,
     text3,
+    videoBlock7
   } = matchingWorkDetail.workDetails;
 
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
@@ -62,15 +58,13 @@ const WorkDetails = () => {
   useEffect(() => {
     const updatedMatchingWorkDetail = allDataWork[currentIndex];
     navigate(`/workDetails/${matchingWorkDetail.id}`);
-  }, [
-    //currentIndex, allDataWork
-    ]);
+  }, []);
 
   return (
     <>
       <div className="box-video-background">
         <video
-          src={imgbg}
+          src={videoPrincipal}
           alt="hnk"
           width="100%"
           height="100%"
@@ -94,33 +88,98 @@ const WorkDetails = () => {
             ))}
           </div>
           <div className="box-img-details">
-            <img src={image1} className="w-100" alt="img"/>
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner1} type="video/mp4" /> //banner 1
+            </video>
 
             <h5 className="text-challenge">CHALLENGE</h5>
             <p className="description-challenge">{descriptionChallenge}</p>
             <h5 className="text-challenge">SOLUTION</h5>
             <p className="description-challenge">{decriptionSolution}</p>
           </div>
-            {gif1 && <img src={gif1} className="w-100" alt="img" />}
-            {gif2 && <img src={gif2} className="w-90" alt="img" />}
-            {img3 && <img src={img3} className="w-90" alt="img" />}
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={videoBlock1} type="video/mp4" /> //frame 290
+            </video>
           <p className="p-white">{text1}</p>
         </div>
-        {gif3 && <img src={gif3} className="w-100" alt="img" />}
-        {gif4 && <img src={gif4} className="w-100" alt="img" />}
-        {gif5 && <img src={gif5} className="gif-90" alt="img" />}
-
-        <p className="p-white">{text2}</p>
-
-        {gif6 && <img src={gif6} className="w-100" alt="img" />}
-        {img5 && <img src={img5} className="gif-70" alt="img" />}
-        {gif7 && <img src={gif7} className="gif-70" alt="img" />}
-        {img6 && <img src={img6} className="w-100" alt="img" />}
-
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={videoBlock2} type="video/mp4" /> //frame 293
+          </video>
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={videoBlock3} type="video/mp4" /> //frame 294
+          </video>
+          <p className="p-white">{text2}</p>
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={videoBlock4} type="video/mp4" /> //frame 295
+          </video>
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={videoBlock5} type="video/mp4" /> //frame 296
+          </video>
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={videoBlock6} type="video/mp4" /> //frame 298
+          </video>
         <div className="box-workDetails">
           <p className="text-gray-poject text-left">{text3}</p>
         </div>
-        {/* {img7 && <img src={img7} className="w-100" alt="img"/>} */}
+        <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={videoBlock7} type="video/mp4" /> //frame 294
+          </video>
       </div>
       <div className="bg-black">
         <img src={letterNext} className="letter-next" alt="letterNext"/>

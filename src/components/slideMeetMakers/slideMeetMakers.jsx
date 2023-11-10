@@ -13,16 +13,16 @@ const SlideMeetMakers = () => {
             <div class="marqueeSlide-item" key={index}>
               <div className="box-img-slide-people">
                 <video
-                className={video.className}
-                controls={false}
-                autoPlay
-                muted
-                playsInline
-                loop={true}
-              >
-                <source src={video.source} type="video/mp4" />
-              </video>
-            </div>
+                  className={video.className}
+                  controls={false}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop={true}
+                >
+                  <source src={video.source} type="video/mp4" />
+                </video>
+              </div>
             <p className="title-people">{video.title}</p>
               <p className="descrption-people">{video.description}</p>
             </div>
