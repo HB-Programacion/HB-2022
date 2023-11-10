@@ -19,7 +19,7 @@ import arrowdown from "../../assets/about/arrowdown.svg";
 
 import "./About.css";
 import MarqueeHB from "../MarqueeHB/MarqueeHB";
-import SlideMeetMarkers from "../slideMeetMakers/SlideMeetMakers";
+import SlideMeetMarkers from "../slideMeetMakers/slideMeetMakers";
 
 import people1 from "../../assets/about/people/Team_1.gif";
 import people2 from "../../assets/about/people/Team_2.gif";
