@@ -20,7 +20,7 @@ import peopleV10 from "../../assets/about/people/JOSE AJU.mp4";
 
 import "./slideMeetMakers.css";
 
-const slideMeetMakers = () => {
+const SlideMeetMakers = () => {
   return (
     <div className="box-marqueeSlide">
       <div class="marqueeSlide">
@@ -29,7 +29,7 @@ const slideMeetMakers = () => {
             <div className="box-img-slide-people">
               <video
                 data-url={peopleV1}
-               src={peopleV1}
+                src={peopleV1}
                 className="img-l"
                 preload="metadata"
                 autoPlay
@@ -326,4 +326,4 @@ const slideMeetMakers = () => {
   );
 };
 
-export default slideMeetMakers;
+export default SlideMeetMakers;

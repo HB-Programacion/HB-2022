@@ -1,9 +1,4 @@
 import peopleV1 from '../../assets/about/people/RIC AJU.mp4'
-import people2 from "../../assets/about/people/foto2.png";
-import people3 from "../../assets/about/people/foto3.png";
-import people4 from "../../assets/about/people/foto4.png";
-import people5 from "../../assets/about/people/foto5.png";
-import people6 from "../../assets/about/people/foto6.png";
 
 import peopleV2 from "../../assets/about/people/Tate_Res.mp4";
 import peopleV3 from "../../assets/about/people/ADRI AJUS.mp4";
