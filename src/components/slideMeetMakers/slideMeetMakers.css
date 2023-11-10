@@ -57,6 +57,7 @@
   font-size: 1rem;
   margin: 0;
   padding:0 1rem;
+  margin-top: .5rem;
 }
 
 .descrption-people {
@@ -67,3 +68,8 @@
   padding:0 1rem;
 }
 
+
+.box-title-s{
+  margin-top: -3.2rem;
+  padding: 1.1rem ;
+}

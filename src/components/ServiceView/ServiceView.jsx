@@ -1,4 +1,13 @@
 import React, { useEffect, useState } from "react";
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
+
 import { buttonService } from "../data/imagesHome";
 import { filterServiceType } from "../services/servicesFilter";
 
@@ -7,6 +16,7 @@ import welove from "../../assets/services/9.Help.gif";
 import letstalk from "../../assets/services/lets-talk.svg";
 import union from "../../assets/services/arrowLeft.svg";
 import groupServices from "../../assets/services/group-services.png";
+import unionBtn from "../../assets/home/union.svg"
 
 import "./ServiceView.css";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
@@ -125,9 +135,13 @@ const ServiceView = () => {
           </div>
         </div>
         <div className="">
-         <img src={groupServices} className="w-100"/>
-
-         <div className="btn-white">SEE OUR WORK</div>
+          <img src={groupServices} className="w-100" />
+          <div className="box-btn">
+            <Link to="/work" className="btn-white">
+              SEE OUR WORK
+              <img src={unionBtn} alt="arrow-right" className="arrow-black" />
+            </Link>
+          </div>
         </div>
       </div>
       <div>

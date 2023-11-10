@@ -19,7 +19,7 @@ import arrowdown from "../../assets/about/arrowdown.svg";
 
 import "./About.css";
 import MarqueeHB from "../MarqueeHB/MarqueeHB";
-import SlideMeetMarkers from "../slideMeetMakers/SlideMeetMakers";
+import SlideMeetMarkers from "../slideMeetMakers/slideMeetMakers.jsx"
 
 import people1 from "../../assets/about/people/Team_1.gif";
 import people2 from "../../assets/about/people/Team_2.gif";
@@ -187,7 +187,7 @@ const About = () => {
         </div>
         <div className="box-about ">
           <img src={makers} className="mop" />
-          <p className="text-mop">
+          <p className="text-mop text-center">
             Discover the heartbeat of our studio. Together, we challenge
             conventions, celebrate diversity, and drive innovation. Unfold the
             layers of our team and witness the collaboration that defines us.

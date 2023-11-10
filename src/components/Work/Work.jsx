@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import { buttons, imagesHome } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import arrowbtn from "../../assets/arrow-btn.svg";
+import unionBtn from "../../assets/home/union.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
 
 import "./Work.css";
 
 import fw from "../../assets/work/7.Work.gif";
-import quicklys from "../../assets/work/quickly-all.svg";
+import quicklys from "../../assets/work/quicklys.svg";
 
 const Work = () => {
-
   const [filteredImages, setFilteredImages] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
@@ -20,12 +20,18 @@ const Work = () => {
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const category = queryParams.get('category');
+  const category = queryParams.get("category");
   const filteredByCategory = filterHomeType(category);
 
   useEffect(() => {
-    setFilteredImages( filteredByCategory.length === 0 ? getImagesHome() : filterHomeType(filteredByCategory[0].type) );
-    setActiveButton( filteredByCategory.length === 0 ? 'all' :  filteredByCategory[0].type );
+    setFilteredImages(
+      filteredByCategory.length === 0
+        ? getImagesHome()
+        : filterHomeType(filteredByCategory[0].type)
+    );
+    setActiveButton(
+      filteredByCategory.length === 0 ? "all" : filteredByCategory[0].type
+    );
   }, []);
 
   const navigate = useNavigate();
@@ -39,8 +45,8 @@ const Work = () => {
     typeImagesHome !== "all"
       ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
-    
-    queryParams.delete('category');
+
+    queryParams.delete("category");
     navigate(`?${queryParams.toString()}`, { replace: true });
   };
 
@@ -53,7 +59,7 @@ const Work = () => {
 
     if (index !== -1 && index < imagesHome.length - 1) {
       const matchedImage = imagesHome[index];
-      setMatchedImage(matchedImage)
+      setMatchedImage(matchedImage);
       //const nextImage = imagesHome[index + 1];
 
       localStorage.setItem("work-details", JSON.stringify(filteredImages));
@@ -68,7 +74,10 @@ const Work = () => {
       <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Things we’ve made Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
+        <p className="text-feature-work">
+          Things we’ve made Content, branding, events, trade marketing – we do
+          it all. Choose a category or take a tour through our diverse work.
+        </p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (
@@ -114,14 +123,17 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="p-white">
-        We create brand launch campaigns, gadgets, signage, websites, digital assets and much more.  All of this happens in our in-house production studios.      </div>
-     <div className="button__load-work">
-        <button onClick={handleLoadImage}>
-         LOAD MORE <img src={arrowbtn} alt="arrow-right" />
-        </button>
-      </div>
-   
+        <div className="box-work p-gray">
+          // We create brand launch campaigns, gadgets, signage, websites,
+          digital assets and much more. All of this happens in our in-house
+          production studios.{" "}
+        </div>
+        <div className="button__load-work">
+          <button onClick={handleLoadImage}>
+            LOAD MORE <img src={unionBtn} alt="arrow-right" />
+          </button>
+        </div>
+
         {/* <div className="box-work-w bg-white">
           <img src={quicklys} />
         </div> */}
@@ -134,9 +146,14 @@ const Work = () => {
           </div>
         </div> */}
       </div>
-     
+
       <div className="box-work-w bg-white">
         <img src={quicklys} />
+        <p className="p-black">
+          A collection of projects we've whipped up in record time. They may not
+          have taken ages to conceive, but they radiate our commitment to
+          quality and creativity.{" "}
+        </p>
       </div>
       <div className="bg-white">
         <div className="button__load">

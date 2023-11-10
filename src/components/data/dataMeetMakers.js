@@ -20,6 +20,7 @@ export const meetMakers = [
   {
     className: "img-s",
     source: peopleV2,
+    classNameBoxTitle:"box-title-s",
     title: "Nombre de makers #2",
     description: "Production",
   },
@@ -33,6 +34,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV4,
     title: "Nombre de makers #4",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   },
   {
@@ -45,6 +47,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV6,
     title: "Nombre de makers #6",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   },
   {
@@ -57,6 +60,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV8,
     title: "Nombre de makers #8",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   },
   {
@@ -69,6 +73,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV10,
     title: "Nombre de makers #10",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   },
   {
@@ -81,6 +86,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV2,
     title: "Nombre de makers #12",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   },
   {
@@ -93,6 +99,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV4,
     title: "Nombre de makers #14",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   },
   {
@@ -105,6 +112,7 @@ export const meetMakers = [
     className: "img-s",
     source: peopleV4,
     title: "Nombre de makers #16",
+    classNameBoxTitle:"box-title-s",
     description: "Production",
   }
 ];

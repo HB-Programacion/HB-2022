@@ -1,4 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
+
 import fw from "../../assets/quickly/10.Quicklys.gif";
 import { buttons } from "../data/imagesHome";
 import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
@@ -6,7 +15,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
 import hb from "../../assets/quickly/hb-back.svg";
-
+import unionBtn from "../../assets/home/union.svg"
 
 import "./Quickly.css";
 
@@ -16,11 +25,10 @@ const Quickly = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
 
-
   const ref = useRef(null);
   useEffect(() => {
     setFilteredImages(getImagesQuickly());
-    setActiveButton('all');
+    setActiveButton("all");
   }, []);
 
   const handleImagesHome = (e) => {
@@ -43,13 +51,16 @@ const Quickly = () => {
   const closeModal = () => {
     setSelectedImage(null);
   };
-  
+
   return (
     <>
       <div className="fondo-header"></div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Things we’ve made</p>
+        <p className="text-feature-work">
+          Explore to see what we can craft, even on the fly! Remember, a quickly
+          is always a good idea.{" "}
+        </p>
 
         <div className="container__buttons">
           {/* <div className="filter__style"></div> */}
@@ -91,9 +102,9 @@ const Quickly = () => {
             </Masonry>
             {/* </ResponsiveMasonry> */}
             <Masonry columnsCount={2} gutter="10px">
-            {loadMoreImage &&
-              loadMoreImage.map((type) => (
-                <div className="gallery__items-quickly" key={type.id}>
+              {loadMoreImage &&
+                loadMoreImage.map((type) => (
+                  <div className="gallery__items-quickly" key={type.id}>
                     <a onClick={() => openModal(type)}>
                       <img
                         src={type.url}
@@ -103,17 +114,26 @@ const Quickly = () => {
                     </a>
                     <h5 className="filter-title-quickly">{type.title}</h5>
                   </div>
-              ))}</Masonry>
+                ))}
+            </Masonry>
           </div>
         </div>
-        <div className="p-white">
-          We create brand launch campaigns, gadgets, signage, websites,
-          digital assets and much more. All of this happens in our in-house
-          production studios.
-        </div>
-        <div className="button__load">
-          <a href="/" className="btn-white">LOAD MORE</a>
-        </div>
+        {/* <div className="p-white">
+          We create brand launch campaigns, gadgets, signage, websites, digital
+          assets and much more. All of this happens in our in-house production
+          studios.
+        </div> */}
+        {/* <div className="button__load">
+          <a href="/" className="btn-white">
+            LOAD MORE
+          </a>
+        </div> */}
+         <div className="box-btn">
+            <Link to="/work" className="btn-white">
+            LOAD MORE
+              <img src={unionBtn} alt="arrow-right" className="arrow-black" />
+            </Link>
+          </div>
       </div>
       <ReactModal
         isOpen={selectedImage !== null}
@@ -139,42 +159,43 @@ const Quickly = () => {
             backgroundColor: "#111111", // Fondo negro
             color: "#ffffff",
             // Puedes personalizar otros estilos según tus necesidades
-          }
+          },
         }}
       >
         {/* Contenido personalizado del modal */}
         <div className="container-internaQuickly">
           <div className="topInternaButton">
-              <img src={hb} alt="union"/>
-              <div className="category-interna">
-                {selectedImage?.category}
-              </div>
+            <img src={hb} alt="union" />
+            <div className="category-interna">{selectedImage?.category}</div>
           </div>
           <div className="topInternaText">
-              <div className="topInternaText-container">
-                <div className="topInternaText-title">
-                  {selectedImage?.titleInterTop}
-                </div>
-                <div className="topInternaText-subtitle">
-                  {selectedImage?.subtitleInterTop}
-                </div>
+            <div className="topInternaText-container">
+              <div className="topInternaText-title">
+                {selectedImage?.titleInterTop}
               </div>
-              <div className="imgInternaTop">
-                <img src={selectedImage?.urlInterno1} alt={selectedImage?.title} />
+              <div className="topInternaText-subtitle">
+                {selectedImage?.subtitleInterTop}
               </div>
-              <div className="topInterna-content"
-                dangerouslySetInnerHTML={{ __html: selectedImage?.internaContent }}
-              >
-              </div>
-              <div className="gif-hb">
-                <img src={hb} alt="union"/>
-              </div>
+            </div>
+            <div className="imgInternaTop">
+              <img
+                src={selectedImage?.urlInterno1}
+                alt={selectedImage?.title}
+              />
+            </div>
+            <div
+              className="topInterna-content"
+              dangerouslySetInnerHTML={{
+                __html: selectedImage?.internaContent,
+              }}
+            ></div>
+            <div className="gif-hb">
+              <img src={hb} alt="union" />
+            </div>
           </div>
         </div>
         <div className="similarCategory">
-          <div className="textCategorySimilar">
-            You make also like
-          </div>
+          <div className="textCategorySimilar">You make also like</div>
           <Masonry columnsCount={2} gutter="10px">
             {filteredImages &&
               filteredImages.map((type) => (
