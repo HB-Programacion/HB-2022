@@ -105,38 +105,16 @@ const Home = () => {
 
   return (
     <>
-      {/* <h1>{t("test")}</h1>
-      <span
-        onClick={handleLanguageClick}
-        style={{
-          cursor: "pointer",
-          textDecoration: "underline",
-        }}
-      >
-        {i18n.language === "en" ? "Español" : "English"}
-      </span>
-      <div>
-        <Link to="/contact">Go to Contact</Link>
-        <Link to="/heinekenFest">Go to heinekenFest</Link>
-        <Link to="/rappi">Go to rappi</Link>
-        <Link to="/umana">Go to umana</Link>
-      </div>
-      <div
-        className="box-marquee"
-        style={{
-          width: "100%",
-          whiteSpace: "nowrap",
-        }}
-      ></div> */}
-
       <div className="box-video-background">
         <video
           width="100%"
           height="100%"
           autoPlay
           muted
-          loop
+          loop={true}
+          playsInline
           className="video-mp4"
+          controls={false}
         >
           <source
             src="https://webhb.s3.us-east-2.amazonaws.com/video-hb.mp4"
