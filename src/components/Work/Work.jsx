@@ -150,9 +150,7 @@ const Work = () => {
       <div className="box-work-w bg-white">
         <img src={quicklys} />
         <p className="p-black">
-          A collection of projects we've whipped up in record time. They may not
-          have taken ages to conceive, but they radiate our commitment to
-          quality and creativity.{" "}
+        Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.
         </p>
       </div>
       <div className="bg-white">
