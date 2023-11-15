@@ -232,3 +232,8 @@
   color: #8E8E8E;
   padding: 2rem 0;
 }
+
+.download img{
+  width: 12%;
+  margin-left: 3px;
+}

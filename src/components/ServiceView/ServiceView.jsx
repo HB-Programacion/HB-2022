@@ -6,7 +6,7 @@ import title from "../../assets/services/8.Services.gif";
 import welove from "../../assets/services/9.Help.gif";
 import letstalk from "../../assets/services/lets-talk.svg";
 import union from "../../assets/services/arrowLeft.svg";
-import groupServices from "../../assets/services/group-services.png";
+import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
 
 import "./ServiceView.css";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
@@ -125,9 +125,11 @@ const ServiceView = () => {
           </div>
         </div>
         <div className="">
-         <img src={groupServices} className="w-100"/>
-
-         <div className="btn-white">SEE OUR WORK</div>
+        <div className="button__load-services">
+            <button onClick="">
+            SEE OUR WORK <img src={arrowBtnBlack} alt="arrow-right" className="w-100" />
+            </button>
+        </div>
         </div>
       </div>
       <div>
@@ -141,7 +143,11 @@ const ServiceView = () => {
           market, can build new brands from start to finish, or revive existing
           ones.
         </p>
-        <div className="btn-white">hire us!</div>
+        <div className="button__load-services">
+            <button onClick="">
+            hire us! <img src={arrowBtnBlack} alt="arrow-right" className="w-100" />
+            </button>
+        </div>
       </div>
     </>
   );

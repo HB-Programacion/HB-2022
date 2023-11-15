@@ -32,6 +32,7 @@ import people8 from "../../assets/about/people/Team_8.gif";
 import people9 from "../../assets/about/people/Team_9.gif";
 import people10 from "../../assets/about/people/Team_10.gif";
 import arrowDown from "../../assets/about/arrowDown2.svg";
+import download from "../../assets/about/download.svg";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -49,7 +50,7 @@ const About = () => {
           </p>
           <p>
             Instead, we fuse them, creating an amalgam that resonates with the
-            diverse, dynamic nature of today's audiences.{" "}
+            diverse, dynamic nature of today's audiences.
           </p>
           <p>
             Our multidisciplinary approach ensures that every project is viewed
@@ -61,23 +62,21 @@ const About = () => {
     },
     {
       title: "SHARED",
-      subtitle: "SHARED A SINGLE DISCIPLINE",
+      subtitle: "SHARED VISION, COLLECTIVE VICTORY",
       description: (
         <div>
-          <p>Descripción de la pestaña 1.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Descripción de la pestaña 1.</p>
+          <p>We're firm believers in the power of collaboration. Every project is a partnership, a shared journey where our team and our partners contribute equally. </p>
+          <p>There's no hierarchy in innovation. From the newest intern to the seasoned veteran, every voice matters. Because in diversity, in different perspectives, lies the true strength of innovative ideas. </p>
+          <p>This approach fosters an environment where creativity flourishes, and projects evolve to be bigger and better than initially imagined.</p>
         </div>
       ),
     },
     {
       title: "DEEPER",
-      subtitle: "DEEPER A SINGLE DISCIPLINE",
+      subtitle: "DEEPER CONNECTIONS THROUGH UNDERSTANDING",
       description: (
         <div>
-          <p>Descripción de la pestaña 1.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Descripción de la pestaña 1.</p>
+          <p>We know that this is a business, that behind everything we do there is a very specific objective, so we will make sure to create a strategic framework and offer you tools that guarantee correct decision-making.</p>
         </div>
       ),
     },
@@ -291,8 +290,8 @@ const About = () => {
             Take a break, download and explore this tad. Who knows where our
             bits of randomness will lead you?
           </h1>
-          <button className="btn-white-surprise mx2-auto">
-            download <img src={arrowdown} />
+          <button className="btn-white-surprise mx2-auto download">
+            download <img src={download} />
           </button>
         </div>
         <img src={bgsurprise} className="img-surprise" />

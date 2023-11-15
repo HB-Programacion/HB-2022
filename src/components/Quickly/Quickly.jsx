@@ -6,6 +6,8 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
 import hb from "../../assets/quickly/hb-back.svg";
+import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
+
 
 
 import "./Quickly.css";
@@ -42,15 +44,13 @@ const Quickly = () => {
 
   const closeModal = () => {
     setSelectedImage(null);
-  };
-  
+  }
   return (
     <>
       <div className="fondo-header"></div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Things we’ve made</p>
-
+        <p className="text-feature-work">Explore to see what we can craft, even on the fly! Remember, a quickly is always a good idea. </p>
         <div className="container__buttons">
           {/* <div className="filter__style"></div> */}
           {buttons &&
@@ -106,13 +106,10 @@ const Quickly = () => {
               ))}</Masonry>
           </div>
         </div>
-        <div className="p-white">
-          We create brand launch campaigns, gadgets, signage, websites,
-          digital assets and much more. All of this happens in our in-house
-          production studios.
-        </div>
-        <div className="button__load">
-          <a href="/" className="btn-white">LOAD MORE</a>
+        <div className="button__load-quickly">
+            <button onClick="">
+            Load more <img src={arrowBtnBlack} alt="arrow-right" className="w-100" />
+            </button>
         </div>
       </div>
       <ReactModal

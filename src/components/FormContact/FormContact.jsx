@@ -10,6 +10,8 @@ import Modal from "../Modal/Modal";
 import ModalResponse from "../ModalResponse/ModalResponse";
 import "./FormContact.css";
 import { useTranslation } from "react-i18next";
+import arrowbtn from "../../assets/arrow-btn-black.svg";
+
 
 const FormContact = () => {
   const { t } = useTranslation();
@@ -152,8 +154,7 @@ const FormContact = () => {
   return (
     <div className="box-form-contact">
       <p className="text-contact">
-      — Getting to know each other? Working together? Meet up? Leave your details and we will get back to you soon 
-      </p>
+        Have questions, ideas, or just want to chat about the weather? Say hello and see where it goes!      </p>
       <form onSubmit={handleSubmit} className="container-form">
         <div className="selectContainer">
           <select
@@ -241,8 +242,11 @@ const FormContact = () => {
             <div className="privacy-text">{t("contact-form.check")}</div>
           </label>
         </div>
-        <div className="button__send ">
-          <button type="submit">{t("contact-form.send")}</button>
+        <div className="button__load-send">
+            <button onClick="" type="submit">
+            {t("contact-form.send")}
+            {/* <img src={arrowBtnBlack} alt="arrow-right" className="w-100" /> */}
+            </button>
         </div>
       </form>
       {modalVisibleSubmit && (

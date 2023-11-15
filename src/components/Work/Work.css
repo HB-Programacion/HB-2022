@@ -71,3 +71,8 @@
     text-transform: uppercase;
 }
 
+.button__load-work img{
+    width: 11%;
+    margin-left: 5px;
+}
+

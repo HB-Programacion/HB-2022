@@ -65,6 +65,62 @@
   display: block;
   margin: 0 auto;
 }
+.btn-white-btn{
+  width: 65%;
+  background-color: #fff;
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  margin: 100px 5px;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.btn-white-new{
+  background-color: #fff;
+    font-size: 26px;
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    margin: auto 5px;
+    color: #111;
+    cursor: pointer;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button__load-services{
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.button__load-services button{
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #111;
+  margin: auto 5px;
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.button__load-services img{
+  width: 11%;
+  margin-left: 5px;
+}
 
 @media (max-width: 680px) {
 .css-1fzpoyk img{

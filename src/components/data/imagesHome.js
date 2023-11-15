@@ -303,7 +303,7 @@ export const imagesHome = [
   },
   {
     id: 7,
-    type: "campaing",
+    type: "campaign",
     url: "./dataimages/eureka.png",
     name: "EUREKA BRANDS",
     title: "EUREKA BRANDS",
@@ -536,8 +536,8 @@ export const buttons = [
     value: "content",
   },
   {
-    name: "CAMPAING",
-    value: "campaing",
+    name: "CAMPAIGN",
+    value: "campaign",
   },
   {
     name: "ILLUSTRATION",
@@ -572,9 +572,11 @@ export const dataService = [
   {
     id: 1,
     service: "content",
-    title:
-      "In a content-saturated era, it’s crucial to elevate above the noise. With our own in-house studio, we're perfectly poised to do just that. The power of content lies in its ability to create genuine connections, and we ensure every piece we craft resonates deeply with audiences. ",
-    key: "/Community management/Concept & Strategy/Art/Creative direction",
+    title:<>
+        <p>In a content-saturated era, it’s crucial to elevate above the noise. With our own in-house studio, we're perfectly poised to do just that. The power of content lies in its ability to create genuine connections, and we ensure every piece we craft resonates deeply with audiences. Our studio isn’t just a workspace; it’s the heart of our content creation process, enabling us to mold, adapt, and perfect each detail. This streamlined, integrated approach not only offers cost-effective solutions for brands, but it also ensures authentic and timely content delivery.</p>
+        <p>On top of this, our distinguished regional endorsement by TikTok stamps our expertise in understanding and innovating on modern platforms. It's not just about being present in the digital space; it's about pioneering, and with us, brands are always at the forefront.</p>
+      </>,
+    key: "/Community management/\nConcept & Strategy/\nArt/Creative direction",
     urlHbArea: "./dataImagesService/logoContent.png",
     urlMarcaByService: [
       "./dataImagesService/vr.png",
@@ -588,8 +590,8 @@ export const dataService = [
     id: 2,
     service: "design",
     title:
-      "DESIGN A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
-    key: "/Community management/Concept & Strategy/Art/Creative direction",
+      "Design isn't just about aesthetics—it's about encapsulating stories, emotions, and brand truths into tangible forms. Our approach is rooted in understanding and strategy, ensuring every design choice echoes a brand's essence and resonates with its audience. Through meticulous conceptualization and a keen sense for aesthetics, we ensure our designs not only capture attention but also encapsulate brand values, creating connections that are both deep and lasting.",
+    key: "/Visual Identity/\nPackaging/\nArt Direction",
     urlHbArea: "./dataImagesService/logoDesign.png",
     urlMarcaByService: [
       "./dataImagesService/cicle.png",
@@ -603,8 +605,8 @@ export const dataService = [
     id: 3,
     service: "web-design",
     title:
-      "web-design A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
-    key: "/Community management/Concept & Strategy/Art/Creative direction",
+      "At the intersection of aesthetics and functionality lies our approach to web design. Prioritizing user experience and storytelling, we craft websites that resonate with the brand's essence and engage audiences. Dive into our web designs and witness how we turn digital platforms into powerful brand extensions.",
+    key: "/UX Research/\nInterface Design/\nPrototype",
     urlHbArea: "./dataImagesService/logoWeb.png",
     urlMarcaByService: [
       "./dataImagesService/people.png",
@@ -618,8 +620,8 @@ export const dataService = [
     id: 4,
     service: "events",
     title:
-      "events A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
-    key: "/Community management/Concept & Strategy/Art/Creative direction",
+      "Events are more than mere occasions; they're narratives that unfold with every heartbeat. With carefully curated visuals and precision in execution, we craft narratives that echo long after the curtains drop. We simplify the process for our clients, delivering unparalleled quality with an unwavering dedication to detail. By housing all event essentials under one umbrella, we promise efficiency, cohesion, and our distinctive flair in every project.",
+    key: "/Visual Identity/\nPackaging/\nArt Direction ",
     urlHbArea: "./dataImagesService/logoEvents.png",
     urlMarcaByService: [
       "./dataImagesService/cicle.png",
@@ -633,8 +635,11 @@ export const dataService = [
     id: 5,
     service: "production",
     title:
-      "production A smart brand is tuned into society and the market, knowing its purpose in the world. Its promise is crystal clear. Personality, story and behaviour — appealing to its tribes. We build a solid basis for that connection.",
-    key: "/Community management/Concept & Strategy/Art/Creative direction",
+      <>
+        <p>The world and the market are changing.</p>
+        <p>And you need to navigate in this constant flux of change. Our team of brand and business strategists is ready to spar with you.</p>
+      </>,
+    key: "/Visual Identity/\nPackaging/\nArt Direction",
     urlHbArea: "./dataImagesService/logoProduction.png",
     urlMarcaByService: [
       "./dataImagesService/vr.png",

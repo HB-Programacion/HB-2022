@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { buttons, imagesHome } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
+import arrowbtnBlack from "../../assets/arrow-btn-black.svg";
 import arrowbtn from "../../assets/arrow-btn.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
@@ -68,7 +69,7 @@ const Work = () => {
       <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Things we’ve made Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
+        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (
@@ -115,10 +116,10 @@ const Work = () => {
           </div>
         </div>
         <div className="p-white">
-        We create brand launch campaigns, gadgets, signage, websites, digital assets and much more.  All of this happens in our in-house production studios.      </div>
+        Brands are more than logos; they're experiences, emotions, and connections. We harness this essence, optimizing every touchpoint for maximum impact. Discover how we amplify brand value, transforming clients' visions into victories.      </div>
      <div className="button__load-work">
         <button onClick={handleLoadImage}>
-         LOAD MORE <img src={arrowbtn} alt="arrow-right" />
+         LOAD MORE <img src={arrowbtnBlack} alt="arrow-right" />
         </button>
       </div>
    
