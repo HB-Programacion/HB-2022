@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import { v4 as uuidv4 } from "uuid";
-import slider1 from "../../assets/services/slider1.png";
-import slider2 from "../../assets/services/sliderMobile.png";
-import slider3 from "../../assets/services/slider3.png";
-import { useWindowDimensions } from '../CustomHooks/UseWindowDimensions/UseWindowDimensions'
-import './SliderComponent.css'
+import slider1 from "../../../assets/work/sliderWork1.png";
+import './SliderComponentWork.css'
 
 
-const SliderComponent = () => {
+const SliderComponentWork = () => {
   const [goToSlide, setGoToSlide] = useState(0);
   const [offsetRadius, setOffsetRadius] = useState(2);
   const [enableSwipe, setEnableSwipe] = useState(true);
@@ -24,35 +21,18 @@ const SliderComponent = () => {
     );
   };
 
-  const slidesDesk = [
+  const slider = [
     {
       key: uuidv4(),
       content: <img src={slider1} alt="1" />
     },
     {
       key: uuidv4(),
-      content: <img src={slider3} alt="2" />
+      content: <img src={slider1} alt="2" />
     },
     {
       key: uuidv4(),
-      content: <img src={slider3} alt="3" />
-    },
-  ].map((slide, index) => {
-    return { ...slide, onClick: () => setGoToSlide(index) };
-  });
-
-  const slidesMobile = [
-    {
-      key: uuidv4(),
-      content: <img src={slider2} alt="1" />
-    },
-    {
-      key: uuidv4(),
-      content: <img src={slider2} alt="2" />
-    },
-    {
-      key: uuidv4(),
-      content: <img src={slider2} alt="3" />
+      content: <img src={slider1} alt="3" />
     },
   ].map((slide, index) => {
     return { ...slide, onClick: () => setGoToSlide(index) };
@@ -94,9 +74,6 @@ const SliderComponent = () => {
     }
   };
 
-  const { width } = useWindowDimensions()
-  const breakpoint = 576;
-
   return (
     <div
       className="box-carousel-services"
@@ -104,13 +81,7 @@ const SliderComponent = () => {
       onTouchMove={handleTouchMove}
     >
       <Carousel
-        slides={
-          width < breakpoint ? (
-            slidesMobile
-          ) : (
-            slidesDesk
-          )
-        }
+        slides={slider}
         goToSlide={goToSlide}
         offsetRadius={offsetRadius}
         animationConfig={config[configType]}
@@ -129,4 +100,4 @@ const SliderComponent = () => {
   );
 };
 
-export default SliderComponent;
+export default SliderComponentWork;

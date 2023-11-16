@@ -5,11 +5,14 @@ import arrowbtnBlack from "../../assets/arrow-btn-black.svg";
 import arrowbtn from "../../assets/arrow-btn.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
+import { useWindowDimensions } from '../CustomHooks/UseWindowDimensions/UseWindowDimensions'
+
 
 import "./Work.css";
 
 import fw from "../../assets/work/7.Work.gif";
 import quicklys from "../../assets/work/quickly-all.svg";
+import SliderComponentWork from "./sliderComponentWork/SliderComponentWork";
 
 const Work = () => {
 
@@ -63,6 +66,9 @@ const Work = () => {
       navigate(`/workDetails/${matchedImage.id}`);
     }
   };
+
+  const { width } = useWindowDimensions()
+  const breakpoint = 576;
 
   return (
     <>
@@ -136,9 +142,16 @@ const Work = () => {
         </div> */}
       </div>
      
-      <div className="box-work-w bg-white">
-        <img src={quicklys} />
-      </div>
+      {
+        width > breakpoint ? (
+          <div className="box-work-w bg-white">
+            <img src={quicklys} />
+          </div>
+        ) :
+        (
+          <SliderComponentWork/>
+        )
+      }
       <div className="bg-white">
         <div className="button__load">
           <a href="/quickly" className="btn-black">
