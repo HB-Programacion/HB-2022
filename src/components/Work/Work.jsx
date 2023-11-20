@@ -6,11 +6,14 @@ import arrowbtn from "../../assets/arrow-btn.svg";
 import unionBtn from "../../assets/home/union.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
+import { useWindowDimensions } from '../CustomHooks/UseWindowDimensions/UseWindowDimensions'
+
 
 import "./Work.css";
 
 import fw from "../../assets/work/7.Work.gif";
-import quicklys from "../../assets/work/quicklys.svg";
+import quicklys from "../../assets/work/quickly-all.svg";
+import SliderComponentWork from "./sliderComponentWork/SliderComponentWork";
 
 const Work = () => {
   const [filteredImages, setFilteredImages] = useState(null);
@@ -69,6 +72,9 @@ const Work = () => {
       navigate(`/workDetails/${matchedImage.id}`);
     }
   };
+
+  const { width } = useWindowDimensions()
+  const breakpoint = 576;
 
   return (
     <>
@@ -142,12 +148,18 @@ const Work = () => {
         </div> */}
       </div>
 
-      <div className="box-work-w bg-white">
-        <img src={quicklys} />
-        <p className="p-black">
-        Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.
-        </p>
-      </div>
+     
+      {
+        width > breakpoint ? (
+          <div className="box-work-w bg-white">
+            <img src={quicklys} />
+          </div>
+        ) :
+        (
+          <SliderComponentWork/>
+        )
+      }
+
       <div className="bg-white">
         <div className="button__load">
           <a href="/quickly" className="btn-black">
