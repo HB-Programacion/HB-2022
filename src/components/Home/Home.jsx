@@ -247,7 +247,7 @@ const Home = () => {
           <div className="box-img-ourservices">
             <div className="button__load">
               <button onClick={() => console.log("click load more")}>
-                WHAT WE DO
+                our services
                 <img src={arrowbtn} alt="arrow-right" />
               </button>
             </div>

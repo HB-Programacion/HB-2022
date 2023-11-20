@@ -155,7 +155,11 @@ const ServiceView = () => {
           market, can build new brands from start to finish, or revive existing
           ones.
         </p>
-        <div className="btn-white">hire us!</div>
+        {/* <div className="button__load-services">
+            <button onClick="">
+            hire us! <img src={arrowBtnBlack} alt="arrow-right" className="w-100" />
+            </button>
+        </div> */}
       </div>
     </>
   );

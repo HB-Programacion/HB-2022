@@ -118,17 +118,7 @@ const Quickly = () => {
             </Masonry>
           </div>
         </div>
-        {/* <div className="p-white">
-          We create brand launch campaigns, gadgets, signage, websites, digital
-          assets and much more. All of this happens in our in-house production
-          studios.
-        </div> */}
-        {/* <div className="button__load">
-          <a href="/" className="btn-white">
-            LOAD MORE
-          </a>
-        </div> */}
-         <div className="box-btn">
+        <div className="box-btn">
             <Link to="/work" className="btn-white">
             LOAD MORE
               <img src={unionBtn} alt="arrow-right" className="arrow-black" />
