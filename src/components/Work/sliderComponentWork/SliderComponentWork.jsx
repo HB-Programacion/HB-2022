@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import { v4 as uuidv4 } from "uuid";
 import slider1 from "../../../assets/work/sliderWork1.png";
 import './SliderComponentWork.css'
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const SliderComponentWork = () => {
   const [goToSlide, setGoToSlide] = useState(0);
@@ -23,79 +23,41 @@ const SliderComponentWork = () => {
 
   const slider = [
     {
-      key: uuidv4(),
-      content: <img src={slider1} alt="1" />
+      id: 1,
+      content: slider1,
+      text: "text 1"
     },
     {
-      key: uuidv4(),
-      content: <img src={slider1} alt="2" />
+      id: 12,
+      content: slider1,
+      text: "text 2"
     },
     {
-      key: uuidv4(),
-      content: <img src={slider1} alt="3" />
+      id: 3,
+      content: slider1,
+      text: "text 3"
     },
-  ].map((slide, index) => {
-    return { ...slide, onClick: () => setGoToSlide(index) };
-  });
+  ]
 
 
-  const handleTouchStart = (evt) => {
-    if (!enableSwipe) {
-      return;
-    }
-
-    const firstTouch = getTouches(evt)[0];
-    setXDown(firstTouch.clientX);
-    setYDown(firstTouch.clientY);
-  };
-
-  const handleTouchMove = (evt) => {
-    if (!enableSwipe || (!xDown && !yDown)) {
-      return;
-    }
-
-    let xUp = evt.touches[0].clientX;
-    let yUp = evt.touches[0].clientY;
-
-    let xDiff = xDown - xUp;
-    let yDiff = yDown - yUp;
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      if (xDiff > 0) {
-        /* left swipe */
-        setGoToSlide(goToSlide + 1);
-        setXDown(null);
-        setYDown(null);
-      } else {
-        /* right swipe */
-        setGoToSlide(goToSlide - 1);
-        setXDown(null);
-        setYDown(null);
-      }
-    }
-  };
 
   return (
-    <div
-      className="box-carousel-services"
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-    >
+    <div className="box-carousel-services-work">
       <Carousel
-        slides={slider}
-        goToSlide={goToSlide}
-        offsetRadius={offsetRadius}
-        animationConfig={config[configType]}
-      />
-      <div
-        style={{
-          // margin: "0 auto",
-          // marginTop: "2rem",
-          // width: "50%",
-          // display: "flex",
-          // justifyContent: "space-around"
-        }}
+        autoPlay={true}
+        infiniteLoop={true}
+        showThumbs={false}
+        showArrows={false}
+        showStatus={false}
+        showIndicators={false}
       >
-      </div>
+        {slider.map((item, index) => (
+          <div key={index}>
+            <img src={item.content} alt={item.id} />
+            <h1>{item.text}</h1>
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };

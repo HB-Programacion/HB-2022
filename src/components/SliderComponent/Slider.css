@@ -1,11 +1,11 @@
-.box-carousel-services{
+.box-carousel-services-slider{
     width: 80%;
     height: 500px;
     margin: 0px auto;
 }
 
 @media (max-width: 680px) {
-    .box-carousel-services-work{
+    .box-carousel-services-slider{
         height: 200px;
     }
 

@@ -7,6 +7,7 @@ import slider2 from "../../assets/services/sliderMobile.png";
 import slider3 from "../../assets/services/slider3.png";
 import { useWindowDimensions } from '../CustomHooks/UseWindowDimensions/UseWindowDimensions'
 import './SliderComponent.css'
+import Slider from "./Slider";
 
 
 const SliderComponent = () => {
@@ -94,6 +95,12 @@ const SliderComponent = () => {
     }
   };
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const onClick = () => {
+    setCurrentSlide((prev) => (prev + 1) % slidesMobile.length);
+  };
+
   const { width } = useWindowDimensions()
   const breakpoint = 576;
 
@@ -103,18 +110,19 @@ const SliderComponent = () => {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
-      <Carousel
-        slides={
-          width < breakpoint ? (
-            slidesMobile
-          ) : (
-            slidesDesk
-          )
-        }
-        goToSlide={goToSlide}
-        offsetRadius={offsetRadius}
-        animationConfig={config[configType]}
-      />
+      {
+        width < breakpoint ? (
+          <Slider/>
+        ) : (
+          <Carousel
+            onClick={onClick}
+            slides={slidesDesk}
+            goToSlide={currentSlide}
+            offsetRadius={offsetRadius}
+            animationConfig={config[configType]}
+          />
+        )
+      }
       <div
         style={{
           // margin: "0 auto",
