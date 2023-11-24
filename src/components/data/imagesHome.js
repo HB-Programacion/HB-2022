@@ -584,7 +584,7 @@ export const dataService = [
         <p>In a content-saturated era, it’s crucial to elevate above the noise. With our own in-house studio, we're perfectly poised to do just that. The power of content lies in its ability to create genuine connections, and we ensure every piece we craft resonates deeply with audiences. Our studio isn’t just a workspace; it’s the heart of our content creation process, enabling us to mold, adapt, and perfect each detail. This streamlined, integrated approach not only offers cost-effective solutions for brands, but it also ensures authentic and timely content delivery.</p>
         <p>On top of this, our distinguished regional endorsement by TikTok stamps our expertise in understanding and innovating on modern platforms. It's not just about being present in the digital space; it's about pioneering, and with us, brands are always at the forefront.</p>
       </>,
-    key: "/Community management/\nConcept & Strategy/\nArt/Creative direction",
+    key: "/Community management \n /Concept & Strategy/\nArt/Creative direction",
     urlHbArea: "./dataImagesService/logoContent.png",
     urlMarcaByService: [
       "./dataImagesService/vr.png",

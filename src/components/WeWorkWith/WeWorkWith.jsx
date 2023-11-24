@@ -22,7 +22,7 @@ const WeWorkWith = () => {
       {/* <img src={www} className="www-title " /> */}
       {/* <img src={wwwD} className="www-title desktop" /> */}
       <div className="box-titleHb">
-            <h2 className="titleHb-black">OUR CLIENTS</h2>
+            <h2 className="titleHb-black">OUR <br></br>CLIENTS</h2>
           </div>
       <div className="container-www_logos">
         <div className="www_logo">

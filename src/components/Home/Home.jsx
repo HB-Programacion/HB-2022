@@ -198,7 +198,7 @@ const Home = () => {
           {/* <img src={settingD} className="wwd mobile" />
             <img src={settingD} className="wwd desktop" /> */}
           <div className="box-titleHb">
-            <h2 className="titleHb-black">SETTING THE COOL STANDARD</h2>
+            <h2 className="titleHb-black">SETTING <br></br>THE COOL<br></br> STANDARD</h2>
           </div>
           <div className="container__text-wwd">
             <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>

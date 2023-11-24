@@ -12,7 +12,14 @@
     .css-1fzpoyk{
         width: 100%;
     }
-    .carousel .slider-wrapper.axis-horizontal .slider .slide h1{
-        display: none;
-    }
+   .text-slider-work{
+     font-family: "nehue-has45";
+     font-size: 1.1rem;
+     text-transform: uppercase;
+     text-align: left;
+   }
+
+   .box-carousel-services-work .carousel .slider{
+    width: 85%;
+   }
 }

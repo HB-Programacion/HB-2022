@@ -120,7 +120,7 @@ const About = () => {
       <div className="bg-black ">
         <div className="box-about">
           {/* <img src={meet} className="img-tiwwa" /> */}
-          <h2 className="titleHb-white">MEET OUR <span className="titleHb-white-italic">ESSENCE</span></h2>
+          <h2 className="titleHb-white">MEET OUR <br></br><span className="titleHb-white-italic">ESSENCE</span></h2>
           <h3 className="title-about">Design,  Develop,  Deliver</h3>
           <h6 className="subtitle-about">
             Our actions aren’t just words. They are the backbone of what we do.
