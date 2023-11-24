@@ -69,17 +69,17 @@ const WorkDetails = () => {
           width="100%"
           height="100%"
           className="video-mp4"
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop="loop"
           muted
           defaultMuted
-          playsinline
+          playsInline
         ></video>
       </div>
       <div className=" bg-black">
         <div className="box-workDetails">
           <img src={urlTitle} alt="img"/>
-          <p className="subtitle-project">{subtitle}</p>
+          <p className="subtitle-project">{subtitle.toUpperCase()}</p>
           <div className="box-project-detail">
             {tabs.map((tab, index) => (
               <div key={index} className="project-detail-item">

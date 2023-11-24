@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/header/logo-blanco.svg";
-
+import burguerHB from "../../assets/header/burguer.svg";
 import "./Header.css";
 import DropMenuMobile from "./DropMenuMobile";
 import Hamburger from "hamburger-react";
@@ -34,7 +34,9 @@ const Header = () => {
             toggle={setOpen}
             size={22}
             color={`${isOpen ? "#000" : "#fff"}`}
-          />
+          >
+            <img src={burguerHB} alt="Burguer" />
+          </Hamburger>
         </div>
       </nav>
       <DropMenuMobile active={active} setActive={handleClickBurguer} />

@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import fw from "../../assets/quickly/10.Quicklys.gif";
 import { buttons } from "../data/imagesHome";
-import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
+import { getImagesQuickly, filterQuicklyType } from "../services/servicesFilter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
 import hb from "../../assets/quickly/hb-back.svg";
 import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
 
 
 
@@ -30,7 +32,7 @@ const Quickly = () => {
     let typeImagesHome = e.target.value;
     setActiveButton(typeImagesHome);
     typeImagesHome !== "all"
-      ? setFilteredImages(filterHomeType(typeImagesHome))
+      ? setFilteredImages(filterQuicklyType(typeImagesHome))
       : setFilteredImages(getImagesQuickly());
   };
 
@@ -112,31 +114,11 @@ const Quickly = () => {
             </button>
         </div>
       </div>
-      <ReactModal
-        isOpen={selectedImage !== null}
-        onRequestClose={closeModal}
-        contentLabel="Image Detail Modal"
-        ariaHideApp={false}
+      <Modal
+        open={selectedImage !== null}
+        onClose={closeModal}
         style={{
-          overlay: {
-            zIndex: 9999,
-            // Estilos del overlay del modal
-            // Puedes personalizar el fondo, la opacidad, etc.
-          },
-          content: {
-            // Estilos del contenido del modal
-            top: "0px", // Posición superior
-            left: "0px", // Posición izquierda
-            right: "0px", // Posición derecha
-            bottom: "0px", // Posición inferior
-            borderRadius: "10px", // Bordes redondeados
-            border: "none", // Sin borde
-            padding: "0px", // Espaciado interno
-            margin: "0", // Sin márgenes
-            backgroundColor: "#111111", // Fondo negro
-            color: "#ffffff",
-            // Puedes personalizar otros estilos según tus necesidades
-          }
+          textAlign: "center"
         }}
       >
         {/* Contenido personalizado del modal */}
@@ -189,7 +171,7 @@ const Quickly = () => {
           </Masonry>
         </div>
         {/* Agrega aquí los detalles adicionales de la imagen si es necesario */}
-      </ReactModal>
+      </Modal>
     </>
   );
 };

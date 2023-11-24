@@ -351,7 +351,7 @@ export const imagesHome = [
   {
     id: 8,
     type: "illustration",
-    url: "./dataimages/rappi.png",
+    url: "./dataimages/rappiWork.png",
     name: "contenido 8",
     title: "RAPPI + SÍCLO",
     description:
@@ -363,8 +363,8 @@ export const imagesHome = [
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:
-        "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
-      tabs: ["CONT 8", "BRANDING", "CAMPAIGN", "CONTENT"],
+        "Event Identity / Event Concept / Event Production / Welcome Kit / Illustration / Animation / Visuals",
+      tabs: ["BRANDING", "ILLUSTRATION", "EVENT"],
       image1:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
       descriptionChallenge:
@@ -396,15 +396,57 @@ export const imagesHome = [
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
     },
   },
+  {
+    id: 9,
+    workDetails: {
+      videoPrincipal:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      urlTitle:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/heinekenFest.svg",
+      subtitle:
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["EVENT", "CAMPAIGN", "ILLUSTRATION"],
+      banner1:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      descriptionChallenge:
+        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+      decriptionSolution:
+        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
+      videoBlock1:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      text1:
+        "We crafted custom influencer kits mirroring the stadium theme, highlighting a Heineken bottle and featuring fan illustrations. These designs were later animated for the event, complemented by a premium VIP pass, invite, and brand goodies.",
+      videoBlock2:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      videoBlock3:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      text2:
+        "In collaboration with Graza Studio, we replicated the stadium ambiance using a blend of 3D stadium scenes, iconic player statues, and 2D animations.",
+      videoBlock4:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      videoBlock5:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      videoBlock6:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      text3:
+        "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
+      videoBlock7:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      textNext: "YUMMY",
+      imageNext:
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
+    },
+  }
 ];
 
 export const imagesQuickly = [
   {
     id: 1,
     category: "CAMPAIGN",
-    title: "Solito",
+    type: "campaign",
+    title: "Hendrick’s OOH",
     url: "./dataimagesQuickly/solito.png",
-    urlInterno1: "./imagesQuicklyInterna/example1.png",
+    urlInterno1: "./imagesQuicklyInterna/imgIntern1.png",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
     urlInterno3: "",
     titleInter: "Create brands with personality",
@@ -421,8 +463,9 @@ export const imagesQuickly = [
   },
   {
     id: 2,
-    category: "CAMPAIGN",
-    title: "Henri Barrett",
+    category: "CAMPAIGN / ILLUSTRATION",
+    type: "campaign",
+    title: "Jork Christmas",
     url: "./dataimagesQuickly/manColor.png",
     urlInterno1: "./imagesQuicklyInterna/solitoInterna1.png",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
@@ -434,82 +477,47 @@ export const imagesQuickly = [
   },
   {
     id: 3,
-    type: "point-of-sale",
+    category: "BRANDING",
+    type: "branding",
     url: "./dataimagesQuickly/animal.png",
     name: "yummy",
-    title: "Umana",
+    title: "Centria",
     href: "./yummysuperapp",
   },
   {
     id: 4,
-    type: "point-of-sale",
+    category: "ILLUSTRATION",
+    type: "illustration",
     url: "./dataimagesQuickly/color.png",
     name: "yummy",
-    title: "Umana",
+    title: "BDI",
     href: "./yummysuperapp",
   },
   {
     id: 5,
-    type: "point-of-sale",
+    category: "CONTENT",
+    type: "content",
     url: "./dataimagesQuickly/painter.png",
     name: "yummy",
-    title: "Umana",
+    title: "Back to poster",
     href: "./yummysuperapp",
   },
   {
     id: 6,
-    type: "point-of-sale",
+    category: "TRADE",
+    type: "trade",
     url: "./dataimagesQuickly/dog.png",
     name: "yummy",
-    title: "Umana",
+    title: "Heineken",
     href: "./yummysuperapp",
   },
   {
     id: 7,
-    type: "point-of-sale",
+    category: "CONTENT",
+    type: "content",
     url: "./dataimagesQuickly/tea.png",
     name: "yummy",
-    title: "Umana",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 8,
-    type: "point-of-sale",
-    url: "./dataimagesQuickly/people.png",
-    name: "yummy",
-    title: "Umana",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 9,
-    type: "point-of-sale",
-    url: "./dataimagesQuickly/cicle.png",
-    name: "yummy",
-    title: "Umana",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 10,
-    type: "point-of-sale",
-    url: "./dataimagesQuickly/watch.png",
-    name: "yummy",
-    title: "Umana",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 11,
-    type: "point-of-sale",
-    url: "./dataimagesQuickly/vr.png",
-    name: "yummy",
-    title: "Umana",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 12,
-    type: "illustration",
-    url: "./dataimagesQuickly/food.png",
-    name: "yummy",
-    title: "Umana",
+    title: "Summer stickers",
     href: "./yummysuperapp",
   },
 ];

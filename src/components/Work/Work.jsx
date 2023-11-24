@@ -43,7 +43,7 @@ const Work = () => {
     typeImagesHome !== "all"
       ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
-    
+
     queryParams.delete('category');
     navigate(`?${queryParams.toString()}`, { replace: true });
   };
@@ -75,7 +75,7 @@ const Work = () => {
       <div className="fondo-header"> </div>
       <div className="bg-black ">
         <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
+        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our work.</p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (

@@ -98,14 +98,6 @@ const ServiceView = () => {
                       </h5>
                       <div className="box-subtitle-img">
                         <p className="subtitle-filter-services">{type.key}</p>
-                        <div className="icon-services">
-                          {" "}
-                          <img
-                            src={type.urlHbArea}
-                            alt={type.service}
-                            className="w-100"
-                          />
-                        </div>
                       </div>
                     </div>
                     {/* <div className="">
