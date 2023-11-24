@@ -112,8 +112,9 @@ const Work = () => {
         <div className="box-work">
           <div className="gallery__container-work">
             <div>
-              {filteredImages &&
-                filteredImages.map((type) => (
+            {filteredImages &&
+              filteredImages.map((type) => (
+                type.title && (
                   <div
                     className="gallery__items"
                     key={type.id}
@@ -127,9 +128,10 @@ const Work = () => {
                       />
                     </div>
                     <h5 className="filter-title">{type.title}</h5>
-                    <p className="filter-subtitle">{type.description}</p>
+                    <p className="filter-subtitle">{type.description.toUpperCase()}</p>
                   </div>
-                ))}
+                )
+              ))}
             </div>
           </div>
         </div>
