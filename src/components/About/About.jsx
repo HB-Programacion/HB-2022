@@ -119,8 +119,9 @@ const About = () => {
       <div className="fondo-header"></div>
       <div className="bg-black ">
         <div className="box-about">
-          <img src={meet} className="img-tiwwa" />
-          <h3 className="title-about">Design, Develop, Deliver</h3>
+          {/* <img src={meet} className="img-tiwwa" /> */}
+          <h2 className="titleHb-white">MEET OUR <span className="titleHb-white-italic">ESSENCE</span></h2>
+          <h3 className="title-about">Design,  Develop,  Deliver</h3>
           <h6 className="subtitle-about">
             Our actions aren’t just words. They are the backbone of what we do.
             Every idea, every concept, begins with a spark and we are passionate
@@ -185,7 +186,9 @@ const About = () => {
           <img src={img2} className="w-100 img1" />
         </div>
         <div className="box-about ">
-          <img src={makers} className="mop" />
+          {/* <img src={makers} className="mop" /> */}
+          <h2 className="titleHb-white">Meet THE MAKERS</h2>
+
           <p className="text-mop text-center">
             Discover the heartbeat of our studio. Together, we challenge
             conventions, celebrate diversity, and drive innovation. Unfold the
@@ -245,6 +248,7 @@ const About = () => {
       <div className="bg-white">
         <div className="box-about">
           {" "}
+
           <p className="p-black text-acreative">
             A creative agency where strategy, design, and creativity converge.
             Over the years, we've honed our belief that a standout brand emerges
@@ -257,7 +261,10 @@ const About = () => {
             A creative agency where strategy, design, and creativity converge. Over the years, we've honed our belief that a standout brand emerges when these three elements seamlessly intertwine.
           </p> */}
 
-          <img src={intrinsec} className="wwb" />
+          {/* <img src={intrinsec} className="wwb" /> */}
+
+          <h2 className="titleHb-black">Intrinsic Ideology</h2>
+
           <p className="wwb-textdown">
             Henri Barrett is more than just an agency; it's a movement, a
             mindset. We're here to change narratives, elevate brands, and make a
@@ -285,7 +292,9 @@ const About = () => {
       </div>
       <div className="bg-black fondo-surprise">
         <div className="box-title-surprise">
-          <img src={random} className="img-surprise-kit" />
+          {/* <img src={random} className="img-surprise-kit" /> */}
+          <h2 className="titleHb-white">random <span className="titleHb-white-italic">igniters</span></h2>
+
           <h1 className="text-random">
             Take a break, download and explore this tad. Who knows where our
             bits of randomness will lead you?

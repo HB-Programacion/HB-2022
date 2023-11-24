@@ -7,7 +7,7 @@ import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
 import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
 import { buttons } from "../data/imagesHome";
-import title from "../../assets/contact/lets create sexy.svg";
+import title from "../../assets/contact/contact-title-mobile.svg";
 import img1 from "../../assets/contact/img-contact.png";
 
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
@@ -46,7 +46,7 @@ const Contact = () => {
           {/* <div className="container__subtitle">
             <h1>{t("contact-getting")}</h1>
           </div> */}
-          <img src={img1} className="m-auto d-block"/>
+          {/* <img src={img1} className="m-auto d-block"/> */}
           <FormContact />
         </div>
       </div>

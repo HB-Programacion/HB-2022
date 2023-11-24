@@ -24,3 +24,8 @@ export function filterServiceType(serviceType) {
     let filtredServiceType= getDataServices().filter(tipo => tipo.service === serviceType);
     return filtredServiceType;
 }
+
+export function filterQuicklyType(homeType) {
+    let filtredHomeType= getImagesQuickly().filter(tipo => tipo.type === homeType);
+    return filtredHomeType;
+}

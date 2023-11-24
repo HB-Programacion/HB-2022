@@ -11,6 +11,7 @@ import ModalResponse from "../ModalResponse/ModalResponse";
 import "./FormContact.css";
 import { useTranslation } from "react-i18next";
 import arrowbtn from "../../assets/arrow-btn-black.svg";
+import unionBtn from "../../assets/home/union.svg";
 
 
 const FormContact = () => {
@@ -154,7 +155,9 @@ const FormContact = () => {
   return (
     <div className="box-form-contact">
       <p className="text-contact">
-        Have questions, ideas, or just want to chat about the weather? Say hello and see where it goes!      </p>
+        — Getting to know each other? Working together? Meet up? Leave your
+        details and we will get back to you soon{" "}
+      </p>
       <form onSubmit={handleSubmit} className="container-form">
         <div className="selectContainer">
           <select
@@ -182,8 +185,12 @@ const FormContact = () => {
             // placeholder={t("contact-form.name")}
             onChange={handleChangeInput}
           />
-          <label className={`label-form ${values.name ? "has-value" : ""}`} for="name">Full name</label>
-
+          <label
+            className={`label-form ${values.name ? "has-value" : ""}`}
+            for="name"
+          >
+            Full name
+          </label>
         </div>
         <div className="inputContainer">
           <input
@@ -196,7 +203,12 @@ const FormContact = () => {
             // placeholder={t("contact-form.company")}
             onChange={handleChangeInput}
           />
-        <label className={`label-form ${values.company ? "has-value" : ""}`} for="company">Company name</label>
+          <label
+            className={`label-form ${values.company ? "has-value" : ""}`}
+            for="company"
+          >
+            Company name
+          </label>
         </div>
         <div className="container-two">
           <div className="inputContainer">
@@ -210,7 +222,12 @@ const FormContact = () => {
               // placeholder={t("contact-form.email")}
               onChange={handleChangeInput}
             />
-        <label className={`label-form ${values.email ? "has-value" : ""}`} for="email">Email</label>
+            <label
+              className={`label-form ${values.email ? "has-value" : ""}`}
+              for="email"
+            >
+              Email
+            </label>
           </div>
           <div className="inputContainer">
             <input
@@ -223,7 +240,12 @@ const FormContact = () => {
               // placeholder={t("contact-form.phone")}
               onChange={handleChangeInput}
             />
-        <label className={`label-form ${values.phone ? "has-value" : ""}`} for="phone">Phone</label>
+            <label
+              className={`label-form ${values.phone ? "has-value" : ""}`}
+              for="phone"
+            >
+              Phone
+            </label>
           </div>
         </div>
         <div className="checkContainer">
@@ -243,10 +265,10 @@ const FormContact = () => {
           </label>
         </div>
         <div className="button__load-send">
-            <button onClick="" type="submit">
+          <button onClick="" type="submit">
             {t("contact-form.send")}
-            {/* <img src={arrowBtnBlack} alt="arrow-right" className="w-100" /> */}
-            </button>
+            <img src={unionBtn} alt="arrow-right" className="w-100 arrow-black" />
+          </button>
         </div>
       </form>
       {modalVisibleSubmit && (

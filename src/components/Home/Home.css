@@ -85,11 +85,11 @@
 }
 
 .buttons__style button {
-  font-size: 15px;
+  font-size: 17px;
   padding: 3px 10px;
   border-radius: 20px;
   border: 1px solid #fff;
-  margin: 8px 5px;
+  margin: 8px 2px;
   background-color: #111;
   cursor: pointer;
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -168,6 +168,12 @@
   left: -100px;
 }
 
+
+.img-title-contact{
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
 
 
 @media (max-width: 680px) {

@@ -42,7 +42,7 @@
 }
 .inputContainer input:focus{
   color: #fff;
-  border-bottom: 1px solid #575757;
+  border-bottom: 1px solid #8E8E8E;
 }
 
 .inputContainer label {
@@ -61,11 +61,11 @@
 .inputContainer input:focus + label {
   font-size: 11px;
   top: -5px;
-  color: #575757;
+  color: #8E8E8E;
 }
 
 .inputContainer label.has-value {
-  color: #575757;
+  color: #8E8E8E;
   font-size: 11px;
   top: -5px;
 }
@@ -181,10 +181,10 @@
   text-transform: uppercase;
 }
 
-.button__load-send img{
+/* .button__load-send img{
   width: 11%;
   margin-left: 5px;
-}
+} */
 
 @media (min-width : 680px){
 

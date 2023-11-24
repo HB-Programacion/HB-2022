@@ -16,7 +16,7 @@ import welove from "../../assets/services/9.Help.gif";
 import letstalk from "../../assets/services/lets-talk.svg";
 import union from "../../assets/services/arrowLeft.svg";
 import groupServices from "../../assets/services/group-services.png";
-import unionBtn from "../../assets/home/union.svg"
+import unionBtn from "../../assets/home/union.svg";
 
 import "./ServiceView.css";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
@@ -48,11 +48,15 @@ const ServiceView = () => {
     <>
       <div className="fondo-header"> </div>
       <div className="bg-black ">
-        <img
+        {/* <img
           src={title}
           className="w-90 m-auto d-block title-services"
           alt="title"
-        />
+        /> */}
+        <h2 className="titleHb-white">
+          services<br></br> <span className="titleHb-white-italic">frame</span>
+        </h2>
+
         <div className=" container-sliderComponent">
           <SliderComponent />
         </div>
@@ -65,7 +69,10 @@ const ServiceView = () => {
           </p>
         </div>
         <div>
-          <img src={welove} className=" w-90 m-auto d-block" alt="weLove" />
+          {/* <img src={welove} className=" w-90 m-auto d-block" alt="weLove" /> */}
+          <h2 className="titleHb-white">
+            WE CAN<br></br> HELP WITH
+          </h2>
 
           <div className="box-btn-filter-services">
             {" "}
@@ -108,14 +115,6 @@ const ServiceView = () => {
                       </h5>
                       <div className="box-subtitle-img">
                         <p className="subtitle-filter-services">{type.key}</p>
-                        <div className="icon-services">
-                          {" "}
-                          <img
-                            src={type.urlHbArea}
-                            alt={type.service}
-                            className="w-100"
-                          />
-                        </div>
                       </div>
                     </div>
                     {/* <div className="">
@@ -149,7 +148,11 @@ const ServiceView = () => {
       </div>
       <WeWorkWith />
       <div className="box-services bg-black">
-        <img src={letstalk} className="m-auto d-block" alt="letsTalk" />
+        <img
+          src={letstalk}
+          className="m-auto d-block letsTalk"
+          alt="letsTalk"
+        />
         <p className="text-gray text-lets-talk">
           We can help you and your brand stand out in today's competitive
           market, can build new brands from start to finish, or revive existing
@@ -160,6 +163,12 @@ const ServiceView = () => {
             hire us! <img src={arrowBtnBlack} alt="arrow-right" className="w-100" />
             </button>
         </div> */}
+        <div className="box-btn">
+          <Link to="/work" className="btn-white">
+            hire us!
+            <img src={unionBtn} alt="arrow-right" className="arrow-black" />
+          </Link>
+        </div>
       </div>
     </>
   );

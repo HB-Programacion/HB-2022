@@ -35,7 +35,7 @@ const Slider = () => {
       >
         {slider.map((item, index ) => (
           <div key={index}>
-            <img src={item.content} alt={item.id} />
+            <img src={item.content} alt={item.id} className="w-100" />
           </div>
         ))}
       </Carousel>

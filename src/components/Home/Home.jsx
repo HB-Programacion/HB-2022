@@ -13,6 +13,7 @@ import load from "../../assets/home/load-more.png";
 
 import img2 from "../../assets/home/img-2.png";
 import img2D from "../../assets/home/desktop/img-our-services-desktop.png";
+import workParallax from "../../assets/home/work-parallax.svg";
 
 import arrowbtn from "../../assets/arrow-btn.svg";
 import wwd from "../../assets/home/wwd.svg";
@@ -32,7 +33,7 @@ import settingD from "../../assets/home/1.Setting.gif";
 import hnk from "../../assets/home/hnk-home-mobile.png";
 import umana from "../../assets/home/umana-home-mobile.png";
 import teclab from "../../assets/home/teclab-home-mobile.png";
-import tacama from "../../assets/home/tacama-home-mobile.png";
+import rappi from "../../assets/home/rappi-home-mobile.png";
 import hb from "../../assets/home/hb-home-mobile.png";
 
 import hnkD from "../../assets/home/desktop/hnk-desktop.png";
@@ -41,7 +42,7 @@ import teclabD from "../../assets/home/desktop/teclab-desktop.png";
 import tacamaD from "../../assets/home/desktop/tacama-desktop.png";
 import hbD from "../../assets/home/desktop/hb-desktop.png";
 
-import title from "../../assets/contact/title-contacto.svg";
+import title from "../../assets/contact/tiltle-contact-home.svg";
 
 import { buttons } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
@@ -55,8 +56,6 @@ import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import FormContact from "../FormContact/FormContact";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
-
-
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
@@ -132,7 +131,8 @@ const Home = () => {
         </div>
         {/* <h1 className="text-word">WORK</h1> */}
         <div id="box-filter-parallax" className="box-test">
-          <h1 className="word">work</h1>
+          <img src={workParallax} className="word" />
+          {/* <h1 className="word">work</h1> */}
           {/* <div className="container__parallax"> */}
           {/* <div className="container__buttons">
             <div className="filter__style">FILTER</div>
@@ -166,21 +166,21 @@ const Home = () => {
               <img src={hnkD} className="w-100 desktop" />
             </div>
             <div>
+              <img src={rappi} className="w-100 mobile" />
+              <img src={rappi} className="w-100 desktop" />
+            </div>
+            <div>
               <img src={umana} className="w-100 mobile" />
               <img src={umanaD} className="w-100 desktop" />
             </div>
-            {/* <div>
-              <img src={rappi} className="w-100 mobile" />
-              <img src={rappiD} className="w-100 desktop" />
-            </div> */}
             <div>
               <img src={teclab} className="w-100 mobile" />
               <img src={teclabD} className="w-100 desktop" />
             </div>
-            <div>
+            {/* <div>
               <img src={hb} className="w-100 mobile" />
               <img src={hbD} className="w-100 desktop" />
-            </div>
+            </div> */}
           </div>
 
           {/* </div> */}
@@ -195,9 +195,10 @@ const Home = () => {
         </div>
         {/* </div> */}
         <div className="box-bg-gray">
-          <div className="box-wwd">
-            <img src={settingD} className="wwd mobile" />
-            <img src={settingD} className="wwd desktop" />
+          {/* <img src={settingD} className="wwd mobile" />
+            <img src={settingD} className="wwd desktop" /> */}
+          <div className="box-titleHb">
+            <h2 className="titleHb-black">SETTING THE COOL STANDARD</h2>
           </div>
           <div className="container__text-wwd">
             <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
@@ -238,7 +239,7 @@ const Home = () => {
               onClick={() => handleCategorybyName("illustration")}
             >
               illustration
-            </button> 
+            </button>
           </div>
           <div className="container_groupwwd">
             <img src={groupwwd} alt="" className="mobile" />
@@ -247,7 +248,7 @@ const Home = () => {
           <div className="box-img-ourservices">
             <div className="button__load">
               <button onClick={() => console.log("click load more")}>
-                our services
+              WHAT WE DO
                 <img src={arrowbtn} alt="arrow-right" />
               </button>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import close from "../../assets/header/close.png";
-import img from "../../assets/header/img-menumobile.png";
+import img from "../../assets/header/Proyectos_Menu.gif";
 
 import "./DropMenuMobile.css";
 import { Link } from "react-router-dom";

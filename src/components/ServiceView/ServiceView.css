@@ -7,18 +7,22 @@
 }
 
 .text-gray {
-  color: #575757;
+  color: #8E8E8E;
   font-family: "nehue-has55";
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
+.letsTalk{
+  position: relative;
+  top: 3rem;
+}
 .text-lets-talk {
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
 }
 
 .box-btn-filter-services {
-  padding: 5rem 0.5rem;
+  padding: 3rem 0.5rem;
   padding-bottom: 0;
 }
 
@@ -44,7 +48,7 @@
 
 .subtitle-filter-services {
   font-family: "nehue-has55";
-  color: #575757;
+  color: #8E8E8E;
   font-size: 1.4rem;
   line-height: 2rem;
   margin-right: 1rem;}

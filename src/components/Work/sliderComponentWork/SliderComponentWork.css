@@ -6,10 +6,13 @@
 
 @media (max-width: 680px) {
     .box-carousel-services-work{
-        height: 200px;
+        height: 100%;
     }
 
     .css-1fzpoyk{
         width: 100%;
+    }
+    .carousel .slider-wrapper.axis-horizontal .slider .slide h1{
+        display: none;
     }
 }

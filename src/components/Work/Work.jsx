@@ -6,8 +6,7 @@ import arrowbtn from "../../assets/arrow-btn.svg";
 import unionBtn from "../../assets/home/union.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
-import { useWindowDimensions } from '../CustomHooks/UseWindowDimensions/UseWindowDimensions'
-
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
 import "./Work.css";
 
@@ -73,15 +72,22 @@ const Work = () => {
     }
   };
 
-  const { width } = useWindowDimensions()
+  const { width } = useWindowDimensions();
   const breakpoint = 576;
 
   return (
     <>
       <div className="fondo-header"> </div>
       <div className="bg-black ">
-        <img src={fw} className="fw-title" />
-        <p className="text-feature-work">Content, branding, events, trade marketing – we do it all. Choose a category or take a tour through our diverse work.</p>
+        {/* <img src={fw} className="fw-title" /> */}
+        <h2 className="titleHb-white">
+          work & <span className="titleHb-white-italic">wonders</span>
+        </h2>
+
+        <p className="text-feature-work">
+          Content, branding, events, trade marketing – we do it all. Choose a
+          category or take a tour through our work.
+        </p>
         <div className="container__buttons">
           {buttons &&
             buttons.map((type, index) => (
@@ -127,18 +133,30 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="p-white">
-        Brands are more than logos; they're experiences, emotions, and connections. We harness this essence, optimizing every touchpoint for maximum impact. Discover how we amplify brand value, transforming clients' visions into victories.      </div>
-     <div className="button__load-work">
-        <button onClick={handleLoadImage}>
-         LOAD MORE <img src={arrowbtnBlack} alt="arrow-right" />
-        </button>
-      </div>
-   
-        {/* <div className="box-work-w bg-white">
-          <img src={quicklys} />
-        </div> */}
-        {/* <div className="bg-white">
+        <div className="box-work">
+          <p className="p-gray text-center">
+            Brands are more than logos; they're experiences, emotions, and
+            connections. We harness this essence, optimizing every touchpoint
+            for maximum impact. Discover how we amplify brand value,
+            transforming clients' visions into victories.{" "}
+          </p>
+        </div>
+        <div className="button__load-work">
+          <button onClick={handleLoadImage}>
+            LOAD MORE <img src={arrowbtnBlack} alt="arrow-right" />
+          </button>
+        </div>
+
+        <div className="box-work-w bg-white">
+          {/* <img src={quicklys} /> */}
+          <h2 className="titleHb-black">quicklys</h2>
+          <p className="p-black text-center">
+            A collection of projects we've whipped up in record time. They may
+            not have taken ages to conceive, but they radiate our commitment to
+            quality and creativity.{" "}
+          </p>
+
+          {/* <div className="bg-white">
           <div className="button__load">
             <button onClick={() => console.log("click load more")}>
               See all
@@ -146,30 +164,22 @@ const Work = () => {
             </button>
           </div>
         </div> */}
-      </div>
 
-     
-      {
-        width > breakpoint ? (
-          <div className="box-work-w bg-white">
+          {width > breakpoint ? (
             <img src={quicklys} />
-          </div>
-        ) :
-        (
-          <SliderComponentWork/>
-        )
-      }
+          ) : (
+            <div className="box-slider-component-work"><SliderComponentWork /></div>
+          )}
 
-      <div className="bg-white">
-        <div className="button__load">
-          <a href="/quickly" className="btn-black">
-            See all
-            <img src={arrowbtn} alt="arrow-right" />
-          </a>
+          <div className="button__load">
+            <a href="/quickly" className="btn-black">
+              See all
+              <img src={arrowbtn} alt="arrow-right" />
+            </a>
+          </div>
+          {dataInterna && <WorkDetails />}
         </div>
       </div>
-
-      {dataInterna && <WorkDetails />}
     </>
   );
 };

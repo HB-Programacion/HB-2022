@@ -64,7 +64,7 @@ video::-webkit-media-controls-pausebutton {
   background-color: #111;
 }
 .bg-white {
-  background-color: #fff;
+  background-color: #EEEEEE;
 }
 .uppercase {
   text-transform: uppercase;
@@ -244,7 +244,7 @@ video::-webkit-media-controls-pausebutton {
   position: sticky;
   top: 28%;
   /* height: 50vh; */
-  width: 100%;
+  width: 95%;
   background-color: #111;
   text-align: center;
   text-transform: uppercase;
@@ -285,6 +285,32 @@ video::-webkit-media-controls-pausebutton {
 .gallery__img {
   width: 100%;
 }
+.box-titleHb{
+  padding: 0rem 2rem;
+}
+.titleHb-black{
+  font-family: "nehue-has45";
+  font-size: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titleHb-white{
+  font-family: "nehue-has45";
+  font-size: 4.5rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.titleHb-white-italic{
+  font-family: "nehue-has45";
+  font-size: 4.5rem;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  text-transform: uppercase;
+}
 
 @media (max-width: 768px) {
   .main {
@@ -295,7 +321,7 @@ video::-webkit-media-controls-pausebutton {
   }
   .container__buttons {
     flex-wrap: wrap;
-    padding: 0rem 4rem;
+    padding: 0rem 4.5rem;
   }
 }
 @media (max-width: 680px) {

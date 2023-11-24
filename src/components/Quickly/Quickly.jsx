@@ -10,12 +10,17 @@ import {
 
 import fw from "../../assets/quickly/10.Quicklys.gif";
 import { buttons } from "../data/imagesHome";
-import { getImagesQuickly, filterHomeType } from "../services/servicesFilter";
+import { getImagesQuickly, filterQuicklyType } from "../services/servicesFilter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
 import hb from "../../assets/quickly/hb-back.svg";
-import unionBtn from "../../assets/home/union.svg"
+import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import unionBtn from "../../assets/home/union.svg";
+
+
 
 import "./Quickly.css";
 
@@ -36,7 +41,7 @@ const Quickly = () => {
     let typeImagesHome = e.target.value;
     setActiveButton(typeImagesHome);
     typeImagesHome !== "all"
-      ? setFilteredImages(filterHomeType(typeImagesHome))
+      ? setFilteredImages(filterQuicklyType(typeImagesHome))
       : setFilteredImages(getImagesQuickly());
   };
 
@@ -56,7 +61,10 @@ const Quickly = () => {
     <>
       <div className="fondo-header"></div>
       <div className="bg-black ">
-        <img src={fw} className="fw-title" />
+        {/* <img src={fw} className="fw-title" /> */}
+        <h2 className="titleHb-white">
+          see our<br></br> <span className="titleHb-white-italic">quicklys</span>
+        </h2>
         <p className="text-feature-work">
           Explore to see what we can craft, even on the fly! Remember, a quickly
           is always a good idea.{" "}
@@ -121,35 +129,15 @@ const Quickly = () => {
         <div className="box-btn">
             <Link to="/work" className="btn-white">
             LOAD MORE
-              <img src={unionBtn} alt="arrow-right" className="arrow-black" />
+            <img src={unionBtn} alt="arrow-right" className="arrow-black" />
             </Link>
           </div>
       </div>
-      <ReactModal
-        isOpen={selectedImage !== null}
-        onRequestClose={closeModal}
-        contentLabel="Image Detail Modal"
-        ariaHideApp={false}
+      <Modal
+        open={selectedImage !== null}
+        onClose={closeModal}
         style={{
-          overlay: {
-            zIndex: 9999,
-            // Estilos del overlay del modal
-            // Puedes personalizar el fondo, la opacidad, etc.
-          },
-          content: {
-            // Estilos del contenido del modal
-            top: "0px", // Posición superior
-            left: "0px", // Posición izquierda
-            right: "0px", // Posición derecha
-            bottom: "0px", // Posición inferior
-            borderRadius: "10px", // Bordes redondeados
-            border: "none", // Sin borde
-            padding: "0px", // Espaciado interno
-            margin: "0", // Sin márgenes
-            backgroundColor: "#111111", // Fondo negro
-            color: "#ffffff",
-            // Puedes personalizar otros estilos según tus necesidades
-          },
+          textAlign: "center"
         }}
       >
         {/* Contenido personalizado del modal */}
@@ -203,7 +191,7 @@ const Quickly = () => {
           </Masonry>
         </div>
         {/* Agrega aquí los detalles adicionales de la imagen si es necesario */}
-      </ReactModal>
+      </Modal>
     </>
   );
 };
