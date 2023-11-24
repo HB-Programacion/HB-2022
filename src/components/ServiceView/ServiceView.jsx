@@ -117,17 +117,6 @@ const ServiceView = () => {
                         <p className="subtitle-filter-services">{type.key}</p>
                       </div>
                     </div>
-                    {/* <div className="">
-                      {type.urlMarcaByService &&
-                        type.urlMarcaByService.map((url, index) => (
-                          <img
-                            key={index}
-                            src={url}
-                            alt={`${index}`}
-                            className="w-80 m-auto d-block"
-                          />
-                        ))}
-                    </div> */}
                   </>
                 ))}
             </div>

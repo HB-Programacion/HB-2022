@@ -2,7 +2,7 @@ export const imagesHome = [
   {
     id: 1,
     type: "content",
-    url: "./dataimages/hnk-fest.png",
+    url: "./dataimages/hnk.png",
     name: "HEINEKEN FEST",
     title: "HEINEKEN FEST",
     description:
@@ -50,11 +50,11 @@ export const imagesHome = [
   {
     id: 2,
     type: "trade",
-    url: "./dataimages/yummy.png",
+    url: "./dataimages/yummy2.png",
     name: "YUMMY SUPER APP",
     title: "YUMMY SUPER APP",
     description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
+      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION",
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
@@ -62,7 +62,7 @@ export const imagesHome = [
       urlTitle:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
       subtitle:
-        "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
+        "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION",
       tabs: ["BRANDING", "ILLUSTRATION"],
       image1:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
@@ -98,10 +98,10 @@ export const imagesHome = [
   {
     id: 3,
     type: "branding",
-    url: "./dataimages/umana.png",
+    url: "./dataimages/umana2.png",
     name: "UMANA",
     title: "UMANA",
-    description: "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PHOTOGRAPHY",
+    description: "Brand Concept / Brand Development / Illustrations / Art Direction / Motion Graphics",
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
@@ -157,7 +157,7 @@ export const imagesHome = [
     name: "TECLAB",
     title: "TECLAB",
     description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / ILLUSTRATIONS / ANIMATION ",
+      "BRANDING / CREATIVITY / CONCEPT / GUIDELINES / ILlUSTRATION / ANIMATION",
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
@@ -210,10 +210,10 @@ export const imagesHome = [
     id: 5,
     type: "trade",
     url: "./dataimages/vinedosTacama.png",
-    name: "VIÑEDOS TACAMA",
-    title: "VIÑEDOS TACAMA",
+    name: "LA BICOLOR",
+    title: "LA BICOLOR",
     description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION /",
+      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION",
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
@@ -257,10 +257,10 @@ export const imagesHome = [
   {
     id: 6,
     type: "content",
-    url: "./dataimages/tiger.png",
-    name: "CERVEZA TIGER",
-    title: "CERVEZA TIGER",
-    description: "BRANDING / EVENT / PRODUCTION / LOGISTIC",
+    url: "./dataimages/tiger2.png",
+    name: "PETCO",
+    title: "PETCO",
+    description: "BRANDING / CREATIVITY / CONCEPT / GUIDELINES / ILlUSTRATION / ANIMATION ",
     href: "./yummysuperapp",
     workDetails: {
       videoPrincipal:
@@ -304,9 +304,9 @@ export const imagesHome = [
   {
     id: 7,
     type: "campaign",
-    url: "./dataimages/eureka.png",
-    name: "EUREKA BRANDS",
-    title: "EUREKA BRANDS",
+    url: "./dataimages/eureka2.png",
+    name: "JOKR Verano 23’",
+    title: "JOKR Verano 23’",
     description: "BRANDING / CONCEPT / CONTENT",
     href: "./yummysuperapp",
     workDetails: {
@@ -355,7 +355,7 @@ export const imagesHome = [
     name: "contenido 8",
     title: "RAPPI + SÍCLO",
     description:
-      "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILLUSTRATIONS / ANIMATION",
+      "Event Identity / Event Concept / Event Production / Welcome Kit / Illustration / Animation / Visuals",
     href: "./yummysuperapp",
     workDetails: {
       videoPrincipal:
