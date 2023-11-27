@@ -196,49 +196,6 @@ const About = () => {
           </p>
         </div>
         <div className="box-about">
-          {/* <div className="box-group-people">
-            <div className="box-people">
-              <img src={people1} className="photo-people" />
-            </div>
-            <div className="box-people mt-people">
-              <img src={people2} className="photo-people" />
-            </div>
-            <div className="box-people">
-              <img src={people3} className="photo-people" />
-            </div>
-            <div className="box-people mt-people">
-              <img src={people4} className="photo-people" />
-            </div>
-            <div className="box-people">
-              <p className="text-people">
-                Diversity is our superpower; unity, our secret sauce.
-              </p>
-            </div>
-            <div className="box-people mt-people">
-              <img src={people5} className="photo-people" />
-            </div>
-            <div className="box-people">
-              <img src={people6} className="photo-people" />
-            </div>
-            <div className="box-people mt-people">
-              <img src={people7} className="photo-people" />
-            </div>
-            <div className="box-people">
-              <img src={people8} className="photo-people" />
-            </div>
-            <div className="box-people mt-people">
-              <p className="text-people">
-                Celebrating every hue of talent.
-              </p>
-            </div>
-            <div className="box-people">
-              <img src={people9} className="photo-people" />
-            </div>
-            <div className="box-people mt-people">
-              <img src={people10} className="photo-people" />
-            </div>
-          </div> */}
-
           <SlideMeetMarkers />
         </div>
         <div className="box-about">

@@ -1,5 +1,4 @@
 import peopleV1 from '../../assets/about/people/RIC AJU.mp4'
-
 import peopleV2 from "../../assets/about/people/Tate_Res.mp4";
 import peopleV3 from "../../assets/about/people/ADRI AJUS.mp4";
 import peopleV4 from "../../assets/about/people/CARLITA AJU.mp4";
