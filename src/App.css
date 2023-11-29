@@ -384,4 +384,7 @@ video::-webkit-media-controls-pausebutton {
   .box-btn {
     padding-bottom: 10rem;
   }
+  .titleHb-black{
+    font-size: 6rem;
+  }
 }

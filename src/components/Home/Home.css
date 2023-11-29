@@ -284,7 +284,7 @@
   .subtitle-wwd{
     font-size: 2.6rem;
     line-height: 3.3rem; 
-    margin-top: 4rem;
+    margin: 0 6rem
 
   }
 
@@ -300,7 +300,9 @@
   padding: 5rem 0;
 }
 
-  
+.group-btns {
+  flex-direction: row;
+}
 }
 
 @media (max-width: 1920px) {
