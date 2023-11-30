@@ -3,8 +3,7 @@ import { buttons, imagesHome } from "../data/imagesHome";
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import arrowbtnBlack from "../../assets/arrow-btn-black.svg";
 import arrowbtn from "../../assets/arrow-btn.svg";
-import unionBtn from "../../assets/home/union.svg";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
 import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
@@ -20,6 +19,8 @@ const Work = () => {
   const [activeButton, setActiveButton] = useState(null);
   const [dataInterna, setDataInterna] = useState(null);
   const [matchedImage, setMatchedImage] = useState(0);
+  const [imageClasses, setImageClasses] = useState([]);
+
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -63,7 +64,6 @@ const Work = () => {
     if (index !== -1 && index < imagesHome.length - 1) {
       const matchedImage = imagesHome[index];
       setMatchedImage(matchedImage);
-      //const nextImage = imagesHome[index + 1];
 
       localStorage.setItem("work-details", JSON.stringify(filteredImages));
       localStorage.setItem("work-specific", JSON.stringify(matchedImage.id));
@@ -75,11 +75,32 @@ const Work = () => {
   const { width } = useWindowDimensions();
   const breakpoint = 576;
 
+  const handleImageLoad = (event, image) => {
+    const width = event.target.naturalWidth;
+    const newClasses = [...imageClasses];
+
+    newClasses[image.index] = getImageClass(width);
+    setImageClasses(newClasses);
+  };
+
+  const getImageClass = (width) => {
+    console.log(width)
+    const smallImageWidth = 760;
+    const largeImageWidth = 1450;
+
+    if (width <= smallImageWidth) {
+      return 'small-image';
+    } else if (width <= largeImageWidth) {
+      return 'large-image';
+    }
+
+    return '';
+  };
+
   return (
     <>
       <div className="fondo-header"> </div>
       <div className="bg-black ">
-        {/* <img src={fw} className="fw-title" /> */}
         <h2 className="titleHb-white">
           work & <span className="titleHb-white-italic">wonders</span>
         </h2>
@@ -111,36 +132,28 @@ const Work = () => {
 
         <div className="box-work">
           <div className="gallery__container-work">
-            <div>
             {filteredImages &&
-              filteredImages.map((type) => (
-                type.title && (
-                  <div
-                    className="gallery__items"
-                    key={type.id}
-                    onClick={() => handleDataClick(type)}
-                  >
-                    <div>
-                      <img
-                        src={type.url}
-                        alt={type.name}
-                        className="gallery__img"
-                      />
-                    </div>
-                    <h5 className="filter-title">{type.title}</h5>
-                    <p className="filter-subtitle">{type.description.toUpperCase()}</p>
-                  </div>
-                )
+              filteredImages.map((type, index) => (
+                <div
+                  className={`gallery__items ${imageClasses[index] || 'small-image'}`}
+                  key={type.id}
+                  onClick={() => handleDataClick(type)}
+                >
+                  <img
+                    src={type.url}
+                    alt={type.name}
+                    className="gallery__img"
+                    onLoad={(e) => handleImageLoad(e, { index })}
+                  />
+                  <h5 className="filter-title">{type.title}</h5>
+                  <p className="filter-subtitle">{type.description}</p>
+                </div>
               ))}
-            </div>
           </div>
         </div>
         <div className="box-work">
-          <p className="p-gray text-center">
-            Brands are more than logos; they're experiences, emotions, and
-            connections. We harness this essence, optimizing every touchpoint
-            for maximum impact. Discover how we amplify brand value,
-            transforming clients' visions into victories.{" "}
+          <p className="p-gray text-center parrafo">
+          We create brand launch campaigns, gadgets, signage, websites, digital assets and much more.  All of this happens in our in-house production studios.{" "}
           </p>
         </div>
         <div className="button__load-work">
@@ -150,35 +163,24 @@ const Work = () => {
         </div>
 
         <div className="box-work-w bg-white">
-          {/* <img src={quicklys} /> */}
           <h2 className="titleHb-black">quicklys</h2>
-          <p className="p-black text-center">
+          <p className="p-black text-center parrafo">
             A collection of projects we've whipped up in record time. They may
             not have taken ages to conceive, but they radiate our commitment to
             quality and creativity.{" "}
           </p>
-
-          {/* <div className="bg-white">
-          <div className="button__load">
-            <button onClick={() => console.log("click load more")}>
-              See all
-              <img src={arrowbtn} alt="arrow-right" />
-            </button>
-          </div>
-        </div> */}
-
           {width > breakpoint ? (
-            <img src={quicklys} />
+            <img src={quicklys} alt="quicklys" />
           ) : (
             <div className="box-slider-component-work"><SliderComponentWork /></div>
           )}
 
-          <div className="button__load">
+          {/* <div className="button__load">
             <a href="/quickly" className="btn-black">
               See all
               <img src={arrowbtn} alt="arrow-right" />
             </a>
-          </div>
+          </div> */}
           {dataInterna && <WorkDetails />}
         </div>
       </div>

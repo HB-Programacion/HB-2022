@@ -13,15 +13,15 @@
 .text-feature-work{
     font-family: neue-haas-grotesk-display, sans-serif;
     color: #8E8E8E;
-    font-size: 1.5rem;
+    font-size: 4rem;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
 
 .filter-title{
     color: #fff;
     font-family: "nehue-has45";
-    font-size: 28px;
+    font-size: 2.25rem;
     margin: 1rem 0;
 }
 .filter-subtitle{
@@ -32,13 +32,26 @@
 
 .gallery__container-work{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 3rem auto;
 }
-.gallery__items{
+.gallery__items {
+    flex: 0 0 calc(33.33% - 10px);
     margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
+
+.small-image {
+    width: calc(50% - 10px);
+}
+
+.large-image {
+    flex: 0 0 85%;
+    width: 100%;
+}
+
 
 .p-white{
     color: #fff;
@@ -78,4 +91,13 @@
 
 .box-slider-component-work{
     margin: 5rem auto;
+}
+
+@media (max-width: 400px) {
+    .gallery__items {
+        flex-basis: fit-content;
+    }
+    .text-feature-work{
+        font-size: 1.75rem !important;
+    }
 }
