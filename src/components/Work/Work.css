@@ -97,4 +97,7 @@
     .gallery__items {
         flex-basis: fit-content;
     }
+    .text-feature-work{
+        font-size: 1.75rem !important;
+    }
 }
