@@ -321,12 +321,12 @@ video::-webkit-media-controls-pausebutton {
   .main {
     width: 100%;
   }
-
-
   .container__buttons {
     flex-wrap: wrap;
     padding: 0rem 4.5rem;
   }
+
+
 }
 @media (max-width: 680px) {
   .main {
@@ -386,5 +386,12 @@ video::-webkit-media-controls-pausebutton {
   }
   .titleHb-black{
     font-size: 6rem;
+  }
+  .titleHb-white{
+    font-size: 11rem;
+  }
+  
+  .titleHb-white-italic{
+    font-size: 11rem;
   }
 }
