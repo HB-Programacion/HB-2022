@@ -311,7 +311,7 @@ video::-webkit-media-controls-pausebutton {
 
 .titleHb-white{
   font-family: "nehue-has45";
-  font-size: 16rem;
+  font-size: 4rem;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -319,7 +319,7 @@ video::-webkit-media-controls-pausebutton {
 
 .titleHb-white-italic{
   font-family: "nehue-has45";
-  font-size: 16rem;
+  font-size: 4rem;
   text-align: center;
   color: #fff;
   font-style: italic;
@@ -334,7 +334,7 @@ video::-webkit-media-controls-pausebutton {
 
   .container__buttons {
     flex-wrap: wrap;
-    padding: 0rem 2.5rem;
+    padding: 0rem 4.5rem;
   }
 }
 @media (max-width: 680px) {
