@@ -108,20 +108,20 @@ const Home = () => {
           <img src={workParallax} className="word" alt="work"/>
           <div className="container-img-home">
             <div className="items-img-home">
-              <img src={hnk} className="w-100 mobile" />
-              <img src={hnkD} className="w-100 desktop" />
+              <img src={hnk} className="w-100 mobile" alt="hnk"/>
+              <img src={hnkD} className="w-100 desktop" alt="hnkD" />
             </div>
             <div>
-              <img src={rappi} className="w-100 mobile" />
-              <img src={rappiD} className="w-100 desktop" />
+              <img src={rappi} className="w-100 mobile" alt="rappi" />
+              <img src={rappiD} className="w-100 desktop" alt="rappiD" />
             </div>
             <div>
-              <img src={umana} className="w-100 mobile" />
-              <img src={umanaD} className="w-100 desktop" />
+              <img src={umana} className="w-100 mobile" alt="umana" />
+              <img src={umanaD} className="w-100 desktop" alt="umanaD" />
             </div>
             <div>
-              <img src={teclab} className="w-100 mobile" />
-              <img src={teclabD} className="w-100 desktop" />
+              <img src={teclab} className="w-100 mobile" alt="teclab" />
+              <img src={teclabD} className="w-100 desktop" alt="teclabD" />
             </div>
           </div>
 

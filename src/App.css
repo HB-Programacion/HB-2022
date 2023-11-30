@@ -82,6 +82,15 @@ video::-webkit-media-controls-pausebutton {
   color: #8E8E8E;
   line-height: 2rem;
 }
+.parrafo{
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 125%;
+  letter-spacing: -1.6px;
+  margin: 0 8rem;
+}
 .lowercase {
   text-transform: lowercase;
 }
@@ -302,7 +311,7 @@ video::-webkit-media-controls-pausebutton {
 
 .titleHb-white{
   font-family: "nehue-has45";
-  font-size: 4rem;
+  font-size: 16rem;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -310,7 +319,7 @@ video::-webkit-media-controls-pausebutton {
 
 .titleHb-white-italic{
   font-family: "nehue-has45";
-  font-size: 4rem;
+  font-size: 16rem;
   text-align: center;
   color: #fff;
   font-style: italic;
@@ -325,7 +334,7 @@ video::-webkit-media-controls-pausebutton {
 
   .container__buttons {
     flex-wrap: wrap;
-    padding: 0rem 4.5rem;
+    padding: 0rem 2.5rem;
   }
 }
 @media (max-width: 680px) {
@@ -352,6 +361,19 @@ video::-webkit-media-controls-pausebutton {
   .Container__title p {
     font-size: 1.6rem;
     line-height: 2.5rem;
+  }
+  .titleHb-white{
+    font-size: 4.25rem;
+  }
+  .titleHb-white-italic{
+    font-size: 4.25rem;
+  }
+  .text-feature-work{
+    font-size: 1.75rem !important;
+  }
+  .parrafo{
+    font-size: 1.75rem;
+    margin: 0 1rem;
   }
 }
 
