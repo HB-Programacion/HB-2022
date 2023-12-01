@@ -13,15 +13,15 @@
 .text-feature-work{
     font-family: neue-haas-grotesk-display, sans-serif;
     color: #8E8E8E;
-    font-size: 4rem;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 .filter-title{
     color: #fff;
     font-family: "nehue-has45";
-    font-size: 2.25rem;
+    font-size: 28px;
     margin: 1rem 0;
 }
 .filter-subtitle{
@@ -32,25 +32,23 @@
 
 .gallery__container-work{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     margin: 3rem auto;
 }
 .gallery__items {
-    flex: 0 0 calc(33.33% - 10px);
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
 }
 
-.small-image {
+/* .small-image {
     width: calc(50% - 10px);
 }
 
 .large-image {
     flex: 0 0 85%;
     width: 100%;
-}
+} */
 
 
 .p-white{
@@ -93,11 +91,11 @@
     margin: 5rem auto;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .gallery__items {
         flex-basis: fit-content;
     }
     .text-feature-work{
         font-size: 1.75rem !important;
     }
-}
+} */

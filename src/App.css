@@ -82,15 +82,6 @@ video::-webkit-media-controls-pausebutton {
   color: #8E8E8E;
   line-height: 2rem;
 }
-.parrafo{
-  font-family: "Neue Haas Grotesk Display Pro";
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 125%;
-  letter-spacing: -1.6px;
-  margin: 0 8rem;
-}
 .lowercase {
   text-transform: lowercase;
 }
@@ -361,16 +352,6 @@ video::-webkit-media-controls-pausebutton {
   .Container__title p {
     font-size: 1.6rem;
     line-height: 2.5rem;
-  }
-  .titleHb-white{
-    font-size: 4.25rem;
-  }
-  .titleHb-white-italic{
-    font-size: 4.25rem;
-  }
-  .parrafo{
-    font-size: 1.75rem;
-    margin: 0 1rem;
   }
 }
 
