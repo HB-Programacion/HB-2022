@@ -74,13 +74,13 @@ video::-webkit-media-controls-pausebutton {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1.5rem;
   color: #111;
-  line-height: 2rem;
+  /* line-height: 2rem; */
 }
 .p-gray{
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1.5rem;
   color: #8E8E8E;
-  line-height: 2rem;
+  /* line-height: 2rem; */
 }
 .lowercase {
   text-transform: lowercase;
@@ -393,5 +393,12 @@ video::-webkit-media-controls-pausebutton {
   
   .titleHb-white-italic{
     font-size: 11rem;
+  }
+
+  .p-gray{
+    font-size: 2.5rem;
+  }
+  .p-black{
+    font-size: 2.5rem;
   }
 }

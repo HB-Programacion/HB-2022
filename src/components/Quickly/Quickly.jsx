@@ -91,7 +91,7 @@ const Quickly = () => {
               </div>
             ))}
         </div>
-        <div className="box-work">
+        <div className="box-quicklys">
           <div className="gallery__container">
             <Masonry columnsCount={2} gutter="10px">
               {filteredImages &&
