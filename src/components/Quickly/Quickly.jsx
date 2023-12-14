@@ -19,6 +19,7 @@ import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import unionBtn from "../../assets/home/union.svg";
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions"
 
 
 
@@ -57,6 +58,9 @@ const Quickly = () => {
     setSelectedImage(null);
   };
 
+  const { width } = useWindowDimensions();
+  const breakpoint = 1200;
+
   return (
     <>
       <div className="fondo-header"></div>
@@ -65,7 +69,7 @@ const Quickly = () => {
         <h2 className="titleHb-white">
           see our<br></br> <span className="titleHb-white-italic">quicklys</span>
         </h2>
-        <p className="text-feature-work">
+        <p className="text-feature-work container__text">
           Explore to see what we can craft, even on the fly! Remember, a quickly
           is always a good idea.{" "}
         </p>
@@ -93,7 +97,7 @@ const Quickly = () => {
         </div>
         <div className="box-quicklys">
           <div className="gallery__container">
-            <Masonry columnsCount={2} gutter="10px">
+            <Masonry columnsCount={ width > breakpoint ? 3 : 2 } gutter="10px">
               {filteredImages &&
                 filteredImages.map((type) => (
                   <div className="gallery__items-quickly" key={type.id}>

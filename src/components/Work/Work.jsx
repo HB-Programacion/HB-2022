@@ -10,7 +10,9 @@ import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindo
 import "./Work.css";
 
 import fw from "../../assets/work/7.Work.gif";
-import quicklys from "../../assets/work/quickly-all.svg";
+import bulevard from "../../assets/work/bulevard.svg";
+import jokr1 from "../../assets/work/jokr1.svg";
+import centria from "../../assets/work/centria.svg";
 import SliderComponentWork from "./sliderComponentWork/SliderComponentWork";
 
 const Work = () => {
@@ -101,11 +103,11 @@ const Work = () => {
     <>
       <div className="fondo-header"> </div>
       <div className="bg-black ">
-        <h2 className="titleHb-white">
+        <h2 className="titleHb-white container__text">
           work & <span className="titleHb-white-italic">wonders</span>
         </h2>
 
-        <p className="text-feature-work">
+        <p className="text-feature-work container__text">
           Content, branding, events, trade marketing – we do it all. Choose a
           category or take a tour through our work.
         </p>
@@ -152,7 +154,7 @@ const Work = () => {
           </div>
         </div>
         <div className="box-work">
-          <p className="p-gray text-center parrafo">
+          <p className="p-gray text-center parrafo container__text">
           We create brand launch campaigns, gadgets, signage, websites, digital assets and much more.  All of this happens in our in-house production studios.{" "}
           </p>
         </div>
@@ -164,13 +166,26 @@ const Work = () => {
 
         <div className="box-work-w bg-white">
           <h2 className="titleHb-black">quicklys</h2>
-          <p className="p-black text-center parrafo">
+          <p className="p-black text-center parrafo container__text">
             A collection of projects we've whipped up in record time. They may
             not have taken ages to conceive, but they radiate our commitment to
             quality and creativity.{" "}
           </p>
           {width > breakpoint ? (
-            <img src={quicklys} alt="quicklys" />
+            <div className="gallery__container-img">
+            <div className="gallery__item">
+              <img src={bulevard} alt="bulevard" className="single-image" />
+              <h5 className="filter-title-item">Hendrick’s OOH Asia Bulevard</h5>
+            </div>
+            <div className="gallery__item">
+              <img src={jokr1} alt="jokr1" className="single-image" />
+              <h5 className="filter-title-item">JOKR Christmas Illustrations</h5>
+            </div>
+            <div className="gallery__item">
+              <img src={centria} alt="centria" className="single-image" />
+              <h5 className="filter-title-item">Centria Rebranding</h5>
+            </div>
+          </div>
           ) : (
             <div className="box-slider-component-work"><SliderComponentWork /></div>
           )}
