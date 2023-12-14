@@ -118,71 +118,75 @@ const About = () => {
     <>
       <div className="fondo-header"></div>
       <div className="bg-black ">
-        <div className="box-about">
-          {/* <img src={meet} className="img-tiwwa" /> */}
-          <h2 className="titleHb-white">MEET OUR <br></br><span className="titleHb-white-italic">ESSENCE</span></h2>
-          <h3 className="title-about">Design,  Develop,  Deliver</h3>
-          <h6 className="subtitle-about">
-            Our actions aren’t just words. They are the backbone of what we do.
-            Every idea, every concept, begins with a spark and we are passionate
-            about turning that spark into tangible creations. From the earliest
-            sketch of a brand identity to the final execution of a marketing
-            campaign, we believe in prototyping, refining, and perfecting. Every
-            product, every project, is a testament to our commitment to
-            excellence and innovation.
-          </h6>
-          <h3 className="title-about">Mixed Mentality</h3>
-          <h6 className="subtitle-about">
-            An integrated, interdisciplinary approach lies at the heart of our
-            philosophy. Recognizing that the most compelling brands are built
-            from their core offerings, we champion a foundation that fosters a
-            distinct identity and potent marketing. Beyond mere external
-            perceptions, it's a matter of orchestrating an ecosystem where
-            product, brand, and communication harmonize effortlessly. In this
-            fusion, brands are poised to resonate profoundly, accelerate growth,
-            and command attention.
-          </h6>
-        </div>
+          <div className="box-about">
+            {/* <img src={meet} className="img-tiwwa" /> */}
+            <h2 className="titleHb-white">MEET OUR <br></br><span className="titleHb-white-italic">ESSENCE</span></h2>
+            <div className="container__text">
+              <h3 className="title-about align-start">Design,  Develop,  Deliver</h3>
+              <h6 className="subtitle-about align-start">
+                Our actions aren’t just words. They are the backbone of what we do.
+                Every idea, every concept, begins with a spark and we are passionate
+                about turning that spark into tangible creations. From the earliest
+                sketch of a brand identity to the final execution of a marketing
+                campaign, we believe in prototyping, refining, and perfecting. Every
+                product, every project, is a testament to our commitment to
+                excellence and innovation.
+              </h6>
+              <h3 className="title-about align-start">Mixed Mentality</h3>
+              <h6 className="subtitle-about align-start">
+                An integrated, interdisciplinary approach lies at the heart of our
+                philosophy. Recognizing that the most compelling brands are built
+                from their core offerings, we champion a foundation that fosters a
+                distinct identity and potent marketing. Beyond mere external
+                perceptions, it's a matter of orchestrating an ecosystem where
+                product, brand, and communication harmonize effortlessly. In this
+                fusion, brands are poised to resonate profoundly, accelerate growth,
+                and command attention.
+              </h6>
+            </div>
+          </div>
         <img src={img1} className="w-100 img1" />
         <MarqueeHB />
         <div className="box-about">
-          <h3 className="title-about text-mutual">Mutual Trust Manifesto</h3>
-          <h6 className="subtitle-about">
-            In a world increasingly driven by technology, we anchor ourselves in
-            genuine human connection. Here, it's not just about the job, it's
-            about the bond we share as a team of dedicated professionals. These
-            are the cornerstones that guide our work:
-            <AccordionItem
-              title="Unified Vision"
-              content={
-                <p>
-                  Each individual offers a unique perspective. Melded together,
-                  these insights allow us to craft holistic, impactful
-                  solutions.
-                </p>
-              }
-            />
-            <AccordionItem
-              title="Endless Curiosity"
-              content={
-                <p>
-                  Our commitment to constant learning and innovation shapes the
-                  core of who we are. Diverse backgrounds and expertise feed our
-                  ceaseless quest for the next big idea.
-                </p>
-              }
-            />
-            <AccordionItem
-              title="Collaborative Spirit"
-              content={
-                <p>
-                  Every achievement is the result of the harmony and synergy
-                  that resonates within our team. Mutual respect, understanding,
-                  and collective growth underscore our every interaction.
-                </p>
-              }
-            />
-          </h6>
+          <div className="container-accordion">
+            <h3 className="title-about text-mutual">Mutual Trust Manifesto</h3>
+            <h6 className="subtitle-about">
+              In a world increasingly driven by technology, we anchor ourselves in
+              genuine human connection. Here, it's not just about the job, it's
+              about the bond we share as a team of dedicated professionals. These
+              are the cornerstones that guide our work:
+              <AccordionItem
+                title="Unified Vision"
+                content={
+                  <p>
+                    Each individual offers a unique perspective. Melded together,
+                    these insights allow us to craft holistic, impactful
+                    solutions.
+                  </p>
+                }
+              />
+              <AccordionItem
+                title="Endless Curiosity"
+                content={
+                  <p>
+                    Our commitment to constant learning and innovation shapes the
+                    core of who we are. Diverse backgrounds and expertise feed our
+                    ceaseless quest for the next big idea.
+                  </p>
+                }
+              />
+              <AccordionItem
+                title="Collaborative Spirit"
+                content={
+                  <p>
+                    Every achievement is the result of the harmony and synergy
+                    that resonates within our team. Mutual respect, understanding,
+                    and collective growth underscore our every interaction.
+                  </p>
+                }
+              />
+            </h6>
+          </div>
           <img src={img2} className="w-100 img1" />
         </div>
         <div className="box-about ">

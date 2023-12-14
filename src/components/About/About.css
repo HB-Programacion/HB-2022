@@ -246,12 +246,16 @@
   }
   .title-about{
     font-size: 4rem;
+    margin: 4rem auto;
   }
   .subtitle-about{
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.75rem;
+    line-height: 3.438rem;
   }
   .text-mop{
     font-size: 2.8rem;
+  }
+  .container-accordion{
+    display: flex;
   }
 }
