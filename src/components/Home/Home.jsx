@@ -24,6 +24,8 @@ import umanaD from "../../assets/home/desktop/umana-desktop.png";
 import teclabD from "../../assets/home/desktop/teclab-desktop.png";
 
 import title from "../../assets/contact/tiltle-contact-home.svg";
+import titleD from "../../assets/contact/title-contact-desktop.png";
+
 
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import "./Home.css";
@@ -202,7 +204,8 @@ const Home = () => {
 
       <div className="bg-black">
         <div className="box-contact">
-          <img src={title} className="img-title-contact" />
+          <img src={title} className="img-title-contact mobile" />
+          <img src={titleD} className="img-title-contact-desktop desktop" />
           <FormContact />
         </div>
       </div>

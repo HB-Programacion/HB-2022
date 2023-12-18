@@ -166,7 +166,7 @@ const Work = () => {
 
         <div className="box-work-w bg-white">
           <h2 className="titleHb-black">quicklys</h2>
-          <p className="p-black text-center parrafo container__text">
+          <p className="p-black text-center  ">
             A collection of projects we've whipped up in record time. They may
             not have taken ages to conceive, but they radiate our commitment to
             quality and creativity.{" "}

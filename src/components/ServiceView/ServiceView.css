@@ -134,5 +134,12 @@
   width: 100%;
 }
 
-
 }
+
+
+@media (min-width: 1200px) {
+.box-services{
+  padding: 5rem 10rem;
+}
+  
+  }

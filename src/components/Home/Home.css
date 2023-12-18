@@ -313,8 +313,29 @@
   .group-btns{
     display: flex;
     flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     margin: 0rem auto;
   }
+
+  .img-title-contact-desktop{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .text-contact{
+    top: 10%;
+    left: 7%;
+  }
   
+  .buttons__style button{
+    font-size: 30px;
+  }
+
+  .container__buttons{
+    flex-wrap: wrap;
+    width: 55%;
+    margin: 2rem auto;
+    margin-bottom: 8rem;
+  }
 }

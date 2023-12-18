@@ -13,6 +13,7 @@ import wwb1 from "../../assets/about/wwb-1.svg";
 import wwb2 from "../../assets/about/wwb-2.svg";
 import wwb3 from "../../assets/about/wwb-3.svg";
 import bgsurprise from "../../assets/about/fondo-surprise.svg";
+import bgsurpriseD from "../../assets/about/img-surprise-desktop.svg";
 import random from "../../assets/about/6.Random.gif";
 
 import arrowdown from "../../assets/about/arrowdown.svg";
@@ -121,7 +122,7 @@ const About = () => {
           <div className="box-about">
             {/* <img src={meet} className="img-tiwwa" /> */}
             <h2 className="titleHb-white">MEET OUR <br></br><span className="titleHb-white-italic">ESSENCE</span></h2>
-            <div className="container__text">
+            <div className="">
               <h3 className="title-about align-start">Design,  Develop,  Deliver</h3>
               <h6 className="subtitle-about align-start">
                 Our actions aren’t just words. They are the backbone of what we do.
@@ -264,7 +265,8 @@ const About = () => {
             download <img src={download} />
           </button>
         </div>
-        <img src={bgsurprise} className="img-surprise" />
+        <img src={bgsurprise} className="img-surprise mobile" />
+        <img src={bgsurpriseD} className="img-surprise desktop" />
         {/* <p className="p-surprise">
           Lorem ipsum dolor sit amet consectetur. Lectus pharetra ac purus duis
           nisi placerat.

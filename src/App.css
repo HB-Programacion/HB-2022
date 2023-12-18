@@ -1,5 +1,7 @@
 body {
   background-color: #111;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 video::-webkit-media-controls {
   display: none;
@@ -176,6 +178,9 @@ video::-webkit-media-controls-pausebutton {
   top: 0;
   left: 0;
   z-index: -999;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container__banner-parallax {

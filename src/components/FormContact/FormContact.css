@@ -20,10 +20,7 @@
   margin: 0 10px 30px;
 }
 
-
-
 .inputContainer input {
-
   font-family: neue-haas-grotesk-display, sans-serif;
   display: block;
   width: 100%;
@@ -32,13 +29,13 @@
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #ffffff;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   font-size: 20px;
   /* padding: 0 15px */
 }
-.inputContainer input:focus{
+.inputContainer input:focus {
   color: #fff;
-  border-bottom: 1px solid #8E8E8E;
+  border-bottom: 1px solid #8e8e8e;
 }
 
 .inputContainer label {
@@ -50,24 +47,20 @@
   left: 0px;
   font-size: 20px;
   color: #fff;
-  transition: all .3s ease
+  transition: all 0.3s ease;
 }
-
 
 .inputContainer input:focus + label {
   font-size: 11px;
   top: -5px;
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .inputContainer label.has-value {
-  color: #8E8E8E;
+  color: #8e8e8e;
   font-size: 11px;
   top: -5px;
 }
-
-
-
 
 .checkContainer {
   display: flex;
@@ -157,14 +150,14 @@
   margin-block-end: auto;
 }
 
-.button__load-send{
+.button__load-send {
   text-align: center;
   position: relative;
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
-.button__load-send button{
+.button__load-send button {
   font-size: 26px;
   padding: 6px 20px;
   border-radius: 50px;
@@ -183,28 +176,52 @@
   margin-left: 5px;
 } */
 
-@media (min-width : 680px){
-
-  .img-title-contact{
+@media (min-width: 680px) {
+  .img-title-contact {
     width: 70%;
     float: right;
     padding-bottom: 5rem;
   }
-  .text-contact{
+  .text-contact {
     padding: 10rem 6rem;
-    width: 33%;
+    width: 36%;
     position: absolute;
+    font-size: 2.2rem;
   }
-  .container-form{
+  .container-form {
     width: 50%;
     margin: 0 auto;
+    position: relative;
+    top: 3rem;
   }
   .container-form .container-two {
     display: flex;
     /* justify-content: center; */
   }
-  .container-two .inputContainer{
+  .container-two .inputContainer {
     width: 50%;
     margin: 0 10px;
+  }
+  .selectContainer select {
+    font-size: 28px;
+    padding: 40px 0px;
+    margin: 2.8rem 0;
+  }
+  .inputContainer input {
+    font-size: 28px;
+    height: 60px;
+  }
+  .inputContainer label{
+    font-size: 28px;
+  }
+
+  .inputContainer{
+    margin: 0 10px 50px;
+  }
+  .checkContainer{
+    margin: 50px auto;
+  }
+  .checkContainer .checkboxLabel{
+    font-size: 12px;
   }
 }

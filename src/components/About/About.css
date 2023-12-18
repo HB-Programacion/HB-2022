@@ -231,7 +231,7 @@
   text-align: center;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1.47rem;
-  color: #3C3C3C;
+  color: #8E8E8E;
   padding: 2rem 0;
 }
 
@@ -239,23 +239,45 @@
   width: 12%;
   margin-left: 3px;
 }
-@media only screen and (max-width: 1000px) and (min-width: 1920px) {
-/* @media (min-width: 1920px) { */
+/* @media only screen and (max-width: 1000px) and (min-width: 1920px) { */
+
+@media (min-width: 1200px) {
   .box-about{
     padding: 0 10rem;
   }
   .title-about{
     font-size: 4rem;
     margin: 4rem auto;
+    line-height: 4.5rem;
   }
   .subtitle-about{
     font-size: 2.75rem;
     line-height: 3.438rem;
+    padding: 0rem 3rem;
   }
   .text-mop{
     font-size: 2.8rem;
   }
   .container-accordion{
     display: flex;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+
+  .wwb-textdown{
+    font-size: 2.5rem;
+  }
+  .box-wwb-tabs{
+    font-size: 2.5rem;
+  }
+
+  .title-tab{
+    font-size: 5.8rem;
+  }
+  .description-tab{
+    font-size: 2.3rem;
+  }
+  .text-random{
+    font-size: 2.5rem;
   }
 }
