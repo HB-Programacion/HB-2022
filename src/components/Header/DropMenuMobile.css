@@ -160,7 +160,7 @@ li {
 
 @media (min-width: 480px) {
   .drop-menu {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
