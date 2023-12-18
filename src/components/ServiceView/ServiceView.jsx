@@ -16,6 +16,7 @@ import welove from "../../assets/services/9.Help.gif";
 import letstalk from "../../assets/services/lets-talk.svg";
 import union from "../../assets/services/arrowLeft.svg";
 import groupServices from "../../assets/services/group-services.png";
+import groupServicesD from "../../assets/services/group-img-services-desktop.png";
 import unionBtn from "../../assets/home/union.svg";
 
 import "./ServiceView.css";
@@ -73,7 +74,8 @@ const ServiceView = () => {
           <h2 className="titleHb-white">
             WE CAN<br></br> HELP WITH
           </h2>
-
+        </div>
+        <div className="box-tabs-services">
           <div className="box-btn-filter-services">
             {" "}
             {buttonService &&
@@ -102,28 +104,30 @@ const ServiceView = () => {
                 </div>
               ))}
           </div>
-        </div>
-        <div className="">
           <div className="">
-            <div>
-              {filteredImages &&
-                filteredImages.map((type) => (
-                  <>
-                    <div className="box-services" key={type.id}>
-                      <h5 className="description-filter-services">
-                        {type.title}
-                      </h5>
-                      <div className="box-subtitle-img">
-                        <p className="subtitle-filter-services">{type.key}</p>
+            <div className="">
+              <div>
+                {filteredImages &&
+                  filteredImages.map((type) => (
+                    <>
+                      <div className="box-services" key={type.id}>
+                        <h5 className="description-filter-services">
+                          {type.title}
+                        </h5>
+                        <div className="box-subtitle-img">
+                          <p className="subtitle-filter-services">{type.key}</p>
+                        </div>
                       </div>
-                    </div>
-                  </>
-                ))}
+                    </>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
         <div className="">
-          <img src={groupServices} className="w-100" />
+          <img src={groupServices} className="w-100 mobile" />
+          <img src={groupServicesD} className="w-100 groupServicesD desktop  " />
+
           <div className="box-btn">
             <Link to="/work" className="btn-white">
               SEE OUR WORK
