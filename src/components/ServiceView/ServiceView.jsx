@@ -91,6 +91,7 @@ const ServiceView = () => {
                       //   activeButton === type.value ? "#none" : "none",
                       color: activeButton === type.value ? "#fff" : "#575757",
                       border: activeButton === type.value && "#000000",
+                      marginLeft: activeButton === type.value ? "-10rem" : "0rem"
                     }}
                   >
                     {activeButton === type.value && "/"}
@@ -104,13 +105,13 @@ const ServiceView = () => {
                 </div>
               ))}
           </div>
-          <div className="">
+          <div className="box-description-tabs">
             <div className="">
               <div>
                 {filteredImages &&
                   filteredImages.map((type) => (
                     <>
-                      <div className="box-services" key={type.id}>
+                      <div className="box-services-tabs" key={type.id}>
                         <h5 className="description-filter-services">
                           {type.title}
                         </h5>
@@ -126,7 +127,10 @@ const ServiceView = () => {
         </div>
         <div className="">
           <img src={groupServices} className="w-100 mobile" />
-          <img src={groupServicesD} className="w-100 groupServicesD desktop  " />
+          <img
+            src={groupServicesD}
+            className="w-100 groupServicesD desktop  "
+          />
 
           <div className="box-btn">
             <Link to="/work" className="btn-white">
@@ -140,17 +144,19 @@ const ServiceView = () => {
         <MarqueeHB />
       </div>
       <WeWorkWith />
-      <div className="box-services bg-black">
-        <img
-          src={letstalk}
-          className="m-auto d-block letsTalk"
-          alt="letsTalk"
-        />
-        <p className="text-gray text-lets-talk">
-          We can help you and your brand stand out in today's competitive
-          market, can build new brands from start to finish, or revive existing
-          ones.
-        </p>
+      <div className=" bg-black">
+        <div className=" box-lets-talk">
+          {/* <img src={welove} className=" w-90 m-auto d-block" alt="weLove" /> */}
+          <h2 className="titleHb-white title-lets-talk">
+            LET'S TALK — <br></br> about your brand
+          </h2>
+
+          <p className="text-gray text-lets-talk">
+            We can help you and your brand stand out in today's competitive
+            market, can build new brands from start to finish, or revive
+            existing ones.
+          </p>
+        </div>
         {/* <div className="button__load-services">
             <button onClick="">
             hire us! <img src={arrowBtnBlack} alt="arrow-right" className="w-100" />
