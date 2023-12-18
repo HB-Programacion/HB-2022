@@ -147,18 +147,20 @@ const Quickly = () => {
         {/* Contenido personalizado del modal */}
         <div className="container-internaQuickly">
           <div className="topInternaButton">
-            <img src={hb} alt="union" />
+            <div className="topInternaButton-left">
+              <img src={hb} alt="union" />
+              <div className="topInternaText-container">
+                <div className="topInternaText-title">
+                  {selectedImage?.titleInterTop}
+                </div>
+                <div className="topInternaText-subtitle">
+                  {selectedImage?.subtitleInterTop}
+                </div>
+              </div>
+            </div>
             <div className="category-interna">{selectedImage?.category}</div>
           </div>
           <div className="topInternaText">
-            <div className="topInternaText-container">
-              <div className="topInternaText-title">
-                {selectedImage?.titleInterTop}
-              </div>
-              <div className="topInternaText-subtitle">
-                {selectedImage?.subtitleInterTop}
-              </div>
-            </div>
             <div className="imgInternaTop">
               <img
                 src={selectedImage?.urlInterno1}
@@ -171,9 +173,9 @@ const Quickly = () => {
                 __html: selectedImage?.internaContent,
               }}
             ></div>
-            <div className="gif-hb">
+            {/* <div className="gif-hb">
               <img src={hb} alt="union" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="similarCategory">

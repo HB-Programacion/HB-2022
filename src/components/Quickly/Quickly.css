@@ -54,7 +54,7 @@
 
 
 .topInternaButton{
-    padding: 4rem 1rem 1rem;
+    padding: 4rem 2rem 1rem;
     display: flex;
     width: 90%;
     justify-content: space-between;
@@ -189,4 +189,20 @@
 
 .react-responsive-modal-root{
     z-index: 99999;
+}
+
+.topInternaText-container{
+    margin: 0rem;
+}
+
+@media (min-width: 1400px) {
+    .topInternaText{
+        margin: 0rem 4rem 10rem;
+    }
+    .topInternaButton-left{
+        display: flex;
+    }
+    .topInternaText-container {
+        margin-left: 1rem;
+    }
 }
