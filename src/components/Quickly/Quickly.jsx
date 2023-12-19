@@ -162,10 +162,20 @@ const Quickly = () => {
           </div>
           <div className="topInternaText">
             <div className="imgInternaTop">
-              <img
+              {/* <img
                 src={selectedImage?.urlInterno1}
                 alt={selectedImage?.title}
-              />
+              /> */}
+              <video
+                className="w-100"
+                controls={false}
+                autoPlay
+                muted
+                playsInline
+                loop={true}
+              >
+                <source src={selectedImage?.urlInterno1} type="video/mp4" />
+              </video>
             </div>
             <div
               className="topInterna-content"

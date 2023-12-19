@@ -442,23 +442,23 @@ export const imagesHome = [
 export const imagesQuickly = [
   {
     id: 1,
-    category: "CAMPAIGN",
+    category: "CONTENT",
     type: "campaign",
     title: "Hendrick’s OOH",
     url: "./dataimagesQuickly/solito.png",
-    urlInterno1: "./imagesQuicklyInterna/imgIntern1.png",
+    urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/Quickly_Back2Poster_1.mp4",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
     urlInterno3: "",
     titleInter: "Create brands with personality",
     subTitleInter:
       "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
     href: "./heinekenFest",
-    titleInterTop: "HENDRICKS GIN",
-    subtitleInterTop: "Out of Home Asia Bulevard",
+    titleInterTop: "HENRI BARRETT",
+    subtitleInterTop: "Back to the poster",
     internaContent: `<div>
-                      <p>Showcase your collectibles through the latest Web3 platform, ClubRare. This high-end collectibles market aims to redefine social commerce by connecting collectors and creators directly.</p>
-                      <p>Our work for this project included exploring and solidifying an art direction that would fit the brand with a bold and modern look. Another brand aspect that we covered includes the ideation and creation of motion graphics for their promotional videos, which are being displayed around the world, most prominently on Time Square. </p>
-                      <p>During the exploration phase of the branding process, we wanted to keep the familiar look of ClubRare while refreshing it with clean graphics that would easily transition to motion graphics.</p>
+                      <p>At the studio we're embarking on a nostalgic and creative journey with our new dynamic, 'Back to the Poster'.Throughout history, posters have immortalized key moments, encapsulated eras, and spurred meaningful change. They've been a crossroad of art and activism, giving a voice to revolutionary ideas and artistic expressions.</p>
+                      <p>With 'Back to the Poster', we aim to revive and honor this potent medium. Each month, we'll introduce a challenging theme for our team members to explore. In pairs, they'll have the freedom to dive deep into their creativity, employing any technique of their choice to convey their unique vision on an A2 poster.</p>
+                      <p>This initiative is more than just a display of skill and imagination. It's a celebration of diverse perspectives, an opportunity to learn, share, and grow together as a cohesive team. Through our varied monthly themes, each poster becomes a window to new and exciting worlds, reflecting the rich tapestry of ideas and styles that flow within Henri Barrett.</p>
                     </div>`,
   },
   {
