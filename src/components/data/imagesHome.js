@@ -12,7 +12,7 @@ export const imagesHome = [
       videoPrincipal:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/heinekenFest.svg",
+        "/workDetails/hnkMobile.svg",
       subtitle:
         "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
       tabs: ["EVENT", "CAMPAIGN", "ILLUSTRATION"],
