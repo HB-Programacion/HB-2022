@@ -105,55 +105,52 @@ li {
   padding-bottom: 2rem;
 }
 
-
 .container-contact-dropdown ul {
-    margin: 0;
-    padding: 0;
-    font-family: "nehue-has45";
-    font-weight: 500;
-   
+  margin: 0;
+  padding: 0;
+  font-family: "nehue-has45";
+  font-weight: 500;
 }
 
-.img-menumobile{
+.img-menumobile {
   width: 48%;
   margin: 0 auto;
 }
 
 .container-social ul li {
-    font-size: 40px;
-    height: 0px;
-  }
-.title-socials{
+  font-size: 40px;
+  height: 0px;
+}
+.title-socials {
   font-family: "nehue-has45";
   font-size: 16px;
   top: 1.2rem;
   position: relative;
 }
-.item-social h6{
+.item-social h6 {
   font-family: "nehue-has45";
   font-size: 20px;
   color: #111;
 }
 
-.text-navbar:hover{
+.text-navbar:hover {
   color: #fff;
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1.5px;
 }
-.text-navbar:active{
+.text-navbar:active {
   color: #fff;
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1.5px;
 }
 
-.text-navbar
-.item-social a{
+.text-navbar .item-social a {
   color: #fff;
 }
 
-.list-group-item a{
+.list-group-item a {
   text-decoration: none;
   color: #111;
 }
@@ -165,7 +162,7 @@ li {
 }
 @media (min-width: 768px) {
   .drop-menu {
-    width: 50%;
+    width: 100%;
   }
 }
 @media (min-width: 993px) {
@@ -174,10 +171,35 @@ li {
     width: 100%;
     /* visibility: hidden; */
   }
-  .drop-desktop{
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
+  .drop-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+padding: 0rem 10rem;
+  }
+
+  .img-menumobile {
+    width: 25%;
+  }
+  .drop-desktop .container-fullview {
+    width: 50%;
+  }
+  .box-social-contact {
+    width: 50%;
+  }
+  .text-navbar {
+    text-align: left;
+    font-size: 4.3rem;
+    margin: 1rem 0;
+  }
+  .container-social {
+    text-align: left;
+  }
+  .container-contact-dropdown {
+    text-align: left;
+  }
+  .container-close{
+    padding: 2rem 0;
   }
 }

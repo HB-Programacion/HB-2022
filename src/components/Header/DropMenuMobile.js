@@ -55,7 +55,7 @@ const DropMenuMobile = ({ active, setActive }) => {
         </div>
       </div>
 
-      <div>
+      <div className="box-social-contact">
         {" "}
         <div className="container-social">
           <div className="title-socials">Socials</div>
