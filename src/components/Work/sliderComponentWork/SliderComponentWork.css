@@ -22,4 +22,7 @@
    .box-carousel-services-work .carousel .slider{
     width: 85%;
    }
+   .box-carousel-services-work li.slide{
+    margin:0 6px;
+   }
 }
