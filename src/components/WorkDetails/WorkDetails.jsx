@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
+import hnkDesk from "../../assets/work/workDetails/hnk-desk.png";
 import letterNext from "../../assets/work/letter-next.svg";
 
 import "./WorkDetails.css";
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
 const WorkDetails = () => {
   const allDataWork = JSON.parse(localStorage.getItem("work-details"));
@@ -60,6 +61,9 @@ const WorkDetails = () => {
     navigate(`/workDetails/${matchingWorkDetail.id}`);
   }, []);
 
+  const { width } = useWindowDimensions();
+  const breakpoint = 1200;
+
   return (
     <>
       <div className="box-video-background">
@@ -78,7 +82,10 @@ const WorkDetails = () => {
       </div>
       <div className=" bg-black">
         <div className="box-workDetails">
-          <img src={urlTitle} alt="img"/>
+          { width > breakpoint ?
+            <img src={hnkDesk} alt="img"/> :
+            <img src={urlTitle} alt="img"/>
+          }
           <p className="subtitle-project">{subtitle.toUpperCase()}</p>
           <div className="box-project-detail">
             {tabs.map((tab, index) => (
@@ -100,9 +107,9 @@ const WorkDetails = () => {
             </video>
 
             <h5 className="text-challenge">CHALLENGE</h5>
-            <p className="description-challenge">{descriptionChallenge}</p>
+            <p className="description-challenge container__challenge">{descriptionChallenge}</p>
             <h5 className="text-challenge">SOLUTION</h5>
-            <p className="description-challenge">{decriptionSolution}</p>
+            <p className="description-challenge container__challenge">{decriptionSolution}</p>
           </div>
             <video
               className="w-100"
@@ -114,7 +121,7 @@ const WorkDetails = () => {
             >
               <source src={videoBlock1} type="video/mp4" /> //frame 290
             </video>
-          <p className="p-white">{text1}</p>
+          <p className="p-white container-parrafo">{text1}</p>
         </div>
           <video
             className="w-100"

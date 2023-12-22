@@ -110,3 +110,20 @@
   border-bottom: 1px solid #fff;
   font-size: 1.5rem;
 }
+
+@media (min-width: 1200px) {
+  .box-workDetails{
+    text-align: center;
+  }
+  .box-project-detail{
+    justify-content: center;
+  }
+  .project-detail-item{
+    margin: auto 0.5rem;
+  }
+  .container-parrafo{
+    width: 40%;
+    text-align: start;
+    margin-left: 1rem;
+  }
+}

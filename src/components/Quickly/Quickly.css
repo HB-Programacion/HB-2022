@@ -215,4 +215,9 @@
     .box-quicklys{
         padding: 0rem 4rem;
     }
+    .container__challenge{
+        width: 65%;
+        padding: 2rem 0 2rem 0;
+        margin: 0rem auto;
+    }
 }

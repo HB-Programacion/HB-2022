@@ -19,9 +19,9 @@ export const imagesHome = [
       banner1:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Heineken, a primary sponsor of the UEFA Champions League, sought our assistance for their monumental event in Peru, the Heineken Fest. This gathering revolved around the Champions League final, and it was packed with exhilaration, memorable moments, and Heineken's unique touch.",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
+        "Despite the hurdles from conception to execution, our team efficiently handled market research, comprehensive planning (from logistics to marketing), and presented engaging activities, such as games, contests, music performances, and food options. We also secured partnerships and sponsorships with local businesses, which helped increase exposure, drive attendance, and generate additional revenue.",
       videoBlock1:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
       text1:
