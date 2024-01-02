@@ -1,8 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import {
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import img2 from "../../assets/home/img-2.png";
 import img2D from "../../assets/home/desktop/img-our-services-desktop.png";
@@ -26,10 +23,8 @@ import teclabD from "../../assets/home/desktop/teclab-desktop.png";
 import title from "../../assets/contact/tiltle-contact-home.svg";
 import titleD from "../../assets/contact/title-contact-desktop.png";
 
-
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import "./Home.css";
-
 
 import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
@@ -107,10 +102,10 @@ const Home = () => {
           </div>
         </div>
         <div id="box-filter-parallax" className="box-test">
-          <img src={workParallax} className="word" alt="work"/>
+          <img src={workParallax} className="word" alt="work" />
           <div className="container-img-home">
             <div className="items-img-home">
-              <img src={hnk} className="w-100 mobile" alt="hnk"/>
+              <img src={hnk} className="w-100 mobile" alt="hnk" />
               <img src={hnkD} className="w-100 desktop" alt="hnkD" />
             </div>
             <div>
@@ -140,48 +135,68 @@ const Home = () => {
         {/* </div> */}
         <div className="box-bg-gray">
           <div className="box-titleHb">
-            <h2 className="titleHb-black">SETTING <br></br>THE COOL<br></br> STANDARD</h2>
+            <h2 className="titleHb-black">
+              SETTING <br></br>THE COOL<br></br> STANDARD
+            </h2>
           </div>
           <div className="container__text-wwd">
             <h1 className="subtitle-wwd text-title">{t("home-the-world")}</h1>
           </div>
-          <div className="group-btns">
-            <button
-              className="btn-services"
-              onClick={() => handleCategorybyName("branding")}
-            >
-              branding
-            </button>
-            <button
-              className="btn-services"
-              onClick={() => handleCategorybyName("event")}
-            >
-              event
-            </button>
-            <button
-              className="btn-services"
-              onClick={() => handleCategorybyName("trade")}
-            >
-              trade
-            </button>
-            <button
-              className="btn-services"
-              onClick={() => handleCategorybyName("content")}
-            >
-              content
-            </button>
-            <button
-              className="btn-services"
-              onClick={() => handleCategorybyName("campaing")}
-            >
-              campaigns
-            </button>
-            <button
-              className="btn-services"
-              onClick={() => handleCategorybyName("illustration")}
-            >
-              illustration
-            </button>
+          <div className="container__buttons">
+            <div>
+              {" "}
+              <button
+                className="btn-services"
+                onClick={() => handleCategorybyName("branding")}
+              >
+                branding
+              </button>
+            </div>
+            <div>
+              {" "}
+              <button
+                className="btn-services"
+                onClick={() => handleCategorybyName("event")}
+              >
+                event
+              </button>
+            </div>
+            <div>
+              {" "}
+              <button
+                className="btn-services"
+                onClick={() => handleCategorybyName("trade")}
+              >
+                trade
+              </button>
+            </div>
+            <div>
+              {" "}
+              <button
+                className="btn-services"
+                onClick={() => handleCategorybyName("content")}
+              >
+                content
+              </button>
+            </div>
+            <div>
+              {" "}
+              <button
+                className="btn-services"
+                onClick={() => handleCategorybyName("campaing")}
+              >
+                campaigns
+              </button>
+            </div>
+            <div>
+              {" "}
+              <button
+                className="btn-services"
+                onClick={() => handleCategorybyName("illustration")}
+              >
+                illustration
+              </button>
+            </div>
           </div>
           <div className="container_groupwwd">
             <img src={groupwwd} alt="" className="mobile" />
@@ -190,7 +205,7 @@ const Home = () => {
           <div className="box-img-ourservices">
             <div className="button__load">
               <button onClick={() => console.log("click load more")}>
-              OUR SERVICES
+                OUR SERVICES
                 <img src={arrowbtn} alt="arrow-right" />
               </button>
             </div>

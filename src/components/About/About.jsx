@@ -4,10 +4,12 @@ import React, { useEffect, useState, useRef } from "react";
 import meet from "../../assets/about/3.Essence.gif";
 import img1 from "../../assets/about/img1-about.png";
 import img2 from "../../assets/about/img2-about.png";
+import img2D from "../../assets/about/img2-about-desktop.png";
 
 import makers from "../../assets/about/4.Makers.gif";
 import img3 from "../../assets/about/img3-about.png";
 import img4 from "../../assets/about/img4-about.png";
+import img4D from "../../assets/about/img4-about-desktop.png";
 import intrinsec from "../../assets/about/5.Intrinsic.gif";
 import wwb1 from "../../assets/about/wwb-1.svg";
 import wwb2 from "../../assets/about/wwb-2.svg";
@@ -188,7 +190,8 @@ const About = () => {
               />
             </h6>
           </div>
-          <img src={img2} className="w-100 img1" />
+          <img src={img2} className="w-100 img1 mobile" />
+          <img src={img2D} className="w-100 img1 desktop" />
         </div>
         <div className="box-about ">
           {/* <img src={makers} className="mop" /> */}
@@ -216,7 +219,8 @@ const About = () => {
             Over the years, we've honed our belief that a standout brand emerges
             when these three elements seamlessly intertwine.
           </p>
-          <img src={img4} className="w-100 img1" />
+          <img src={img4} className="w-100 img1 mobile" />
+          <img src={img4D} className="w-100 img1 desktop" />
         </div>
         <div className="box-about">
           {/* <p className="p-black">

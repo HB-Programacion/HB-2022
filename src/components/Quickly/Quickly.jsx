@@ -74,7 +74,7 @@ const Quickly = () => {
           is always a good idea.{" "}
         </p>
 
-        <div className="container__buttons">
+        <div className="container__buttons ">
           {/* <div className="filter__style"></div> */}
           {buttons &&
             buttons.map((type, index) => (

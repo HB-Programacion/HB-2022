@@ -8,6 +8,8 @@ import {
   useNavigate,
 } from "react-router-dom";
 
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
+
 import { buttonService } from "../data/imagesHome";
 import { filterServiceType } from "../services/servicesFilter";
 
@@ -44,6 +46,8 @@ const ServiceView = () => {
       ? setFilteredImages(filterServiceType(typeImagesService))
       : setFilteredImages(filterServiceType());
   };
+  const { width } = useWindowDimensions();
+  const breakpoint = 1200;
 
   return (
     <>
@@ -91,7 +95,14 @@ const ServiceView = () => {
                       //   activeButton === type.value ? "#none" : "none",
                       color: activeButton === type.value ? "#fff" : "#575757",
                       border: activeButton === type.value && "#000000",
-                      marginLeft: activeButton === type.value ? "-10rem" : "0rem"
+                      marginLeft:
+                        width > breakpoint
+                          ? activeButton === type.value
+                            ? "-10rem"
+                            : "0rem"
+                          : activeButton === type.value
+                          ? "0rem"
+                          : "0rem",
                     }}
                   >
                     {activeButton === type.value && "/"}

@@ -26,14 +26,14 @@ const MarqueeHB = () => {
   return (
     <div>
         <div className="box-marquee">
-          <Marquee direction="left" speed={100} loop={0}>
+          <Marquee direction="left" speed={30} loop={0}>
             <span className="marquee">
               {repeatedContent}
             </span>
           </Marquee>
         </div>
         <div className="box-marquee">
-          <Marquee direction="right" speed={100} loop={0}>
+          <Marquee direction="rigth" speed={30} loop={100}>
             <span className="marquee">
               {repeatedContent}
             </span>

@@ -245,10 +245,14 @@
   .box-about{
     padding: 0 10rem;
   }
+ 
   .title-about{
     font-size: 4rem;
     margin: 4rem auto;
     line-height: 4.5rem;
+  }
+  .text-mutual{
+    margin: 0rem auto;
   }
   .subtitle-about{
     font-size: 2.75rem;

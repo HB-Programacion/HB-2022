@@ -123,9 +123,11 @@
     /* gap: 15px; */
   flex-direction: row; 
         flex-wrap: wrap; 
+        gap: 15px
   }
   .gallery__items {
     box-sizing: border-box;
+    margin: 2rem 0;
   }
   .gallery__img {
     width: 100%;
@@ -150,5 +152,8 @@
     margin: 1rem 0;
     text-align: start;
     color: #111;
+  }
+  .filter-subtitle {
+    font-size: 18px;
   }
 }

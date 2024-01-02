@@ -313,7 +313,7 @@
   .group-btns{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
     margin: 0rem auto;
   }
 
