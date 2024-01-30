@@ -334,8 +334,11 @@
 
   .container__buttons{
     flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     margin: 2rem auto;
     margin-bottom: 8rem;
+  }
+  .button__load button{
+    font-size: 40px;
   }
 }

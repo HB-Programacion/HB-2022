@@ -176,11 +176,10 @@
   margin-left: 5px;
 }
 
-
 .react-responsive-modal-modal {
   border-radius: 15px;
   margin: 0.5rem;
-  
+
   padding: 0rem;
   max-width: 100%;
 }
@@ -191,6 +190,14 @@
 
 .topInternaText-container {
   margin: 0rem;
+}
+
+.box-quicklyst-a {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1400px) {
@@ -204,7 +211,8 @@
     } */
   .topInternaButton {
     margin: 0 auto;
-    width: 60%;margin-top: 2rem;
+    width: 60%;
+    margin-top: 2rem;
   }
   .topInternaButton-left {
     display: flex;

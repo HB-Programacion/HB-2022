@@ -10,18 +10,19 @@ import {
 
 import fw from "../../assets/quickly/10.Quicklys.gif";
 import { buttons } from "../data/imagesHome";
-import { getImagesQuickly, filterQuicklyType } from "../services/servicesFilter";
+import {
+  getImagesQuickly,
+  filterQuicklyType,
+} from "../services/servicesFilter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
 import hb from "../../assets/quickly/hb-back.svg";
 import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 import unionBtn from "../../assets/home/union.svg";
-import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions"
-
-
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
 import "./Quickly.css";
 
@@ -67,7 +68,8 @@ const Quickly = () => {
       <div className="bg-black ">
         {/* <img src={fw} className="fw-title" /> */}
         <h2 className="titleHb-white">
-          see our<br></br> <span className="titleHb-white-italic">quicklys</span>
+          see our<br></br>{" "}
+          <span className="titleHb-white-italic">quicklys</span>
         </h2>
         <p className="text-feature-work container__text">
           Explore to see what we can craft, even on the fly! Remember, a quickly
@@ -97,7 +99,7 @@ const Quickly = () => {
         </div>
         <div className="box-quicklys">
           <div className="gallery__container">
-            <Masonry columnsCount={ width > breakpoint ? 3 : 2 } gutter="10px">
+            <Masonry columnsCount={width > breakpoint ? 3 : 2} gutter="10px">
               {filteredImages &&
                 filteredImages.map((type) => (
                   <div className="gallery__items-quickly" key={type.id}>
@@ -131,17 +133,17 @@ const Quickly = () => {
           </div>
         </div>
         <div className="box-btn">
-            <Link to="/work" className="btn-white">
+          <Link to="/work" className="btn-white">
             LOAD MORE
             <img src={unionBtn} alt="arrow-right" className="arrow-black" />
-            </Link>
-          </div>
+          </Link>
+        </div>
       </div>
       <Modal
         open={selectedImage !== null}
         onClose={closeModal}
         style={{
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         {/* Contenido personalizado del modal */}
@@ -189,7 +191,11 @@ const Quickly = () => {
           </div>
         </div>
         <div className="similarCategory">
-          <div className="textCategorySimilar">You make also like</div>
+          <div className="textCategorySimilar">You might like</div>
+          <div className="box-quicklyst-a">
+            <p>More about campaign</p>
+            <p>View all</p>
+          </div>
           <Masonry columnsCount={2} gutter="10px">
             {filteredImages &&
               filteredImages.map((type) => (

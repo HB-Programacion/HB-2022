@@ -102,7 +102,7 @@
     }
 } */
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .box-work-w {
     padding: 5rem 10rem;
   }
@@ -148,12 +148,12 @@
   }
   .filter-title-item {
     font-family: "nehue-has45";
-    font-size: 28px;
+    font-size: 24px;
     margin: 1rem 0;
     text-align: start;
     color: #111;
   }
   .filter-subtitle {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
