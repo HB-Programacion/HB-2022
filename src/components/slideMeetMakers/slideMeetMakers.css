@@ -9,7 +9,7 @@
 
 .marqueeSlide-content {
   display: flex;
-  animation: scrolling 50s linear infinite;
+  animation: scrolling 200s linear infinite;
 }
 
 .marqueeSlide-item {
