@@ -444,8 +444,8 @@ export const imagesQuickly = [
     id: 1,
     category: "CONTENT",
     type: "campaign",
-    title: "Hendrick’s OOH",
-    url: "./dataimagesQuickly/solito.png",
+    title: "Centria Rebranding",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/sarcay/quickly-sarcay.svg",
     urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/Quickly_Back2Poster_1.mp4",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
     urlInterno3: "",
@@ -463,10 +463,53 @@ export const imagesQuickly = [
   },
   {
     id: 2,
-    category: "CAMPAIGN / ILLUSTRATION",
+    category: "CONTENT",
     type: "campaign",
-    title: "Jork Christmas",
-    url: "./dataimagesQuickly/manColor.png",
+    title: "Hendrick’s OOH ",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/sarcay/quickly-sarcay.svg",
+    urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/Quickly_Vendimia.mp4",
+    urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
+    urlInterno3: "",
+    titleInter: "Create brands with personality",
+    subTitleInter:
+      "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
+    href: "./heinekenFest",
+    titleInterTop: "HENRI BARRETT",
+    subtitleInterTop: "Back to the poster",
+    internaContent: `<div>
+                      <p>At the studio we're embarking on a nostalgic and creative journey with our new dynamic, 'Back to the Poster'.Throughout history, posters have immortalized key moments, encapsulated eras, and spurred meaningful change. They've been a crossroad of art and activism, giving a voice to revolutionary ideas and artistic expressions.</p>
+                      <p>With 'Back to the Poster', we aim to revive and honor this potent medium. Each month, we'll introduce a challenging theme for our team members to explore. In pairs, they'll have the freedom to dive deep into their creativity, employing any technique of their choice to convey their unique vision on an A2 poster.</p>
+                      <p>This initiative is more than just a display of skill and imagination. It's a celebration of diverse perspectives, an opportunity to learn, share, and grow together as a cohesive team. Through our varied monthly themes, each poster becomes a window to new and exciting worlds, reflecting the rich tapestry of ideas and styles that flow within Henri Barrett.</p>
+                    </div>`,
+  },
+  {
+    id: 3,
+    category: "EVENT",
+    type: "campaign",
+    title: "Betterfly Event",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/sarcay/quickly-betterfly.svg",
+    urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/Quickly_Betterfly.mp4",
+    urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
+    urlInterno3: "",
+    titleInter: "Create brands with personality",
+    subTitleInter:
+      "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
+    href: "./heinekenFest",
+    titleInterTop: "HENRI BARRETT",
+    subtitleInterTop: "Betterfly",
+    internaContent: `<div>
+                      <p>This social housing project is all about making dreams come true for lower-income families. 
+                      Our aim? To  make home ownership feel achievable, welcoming, and full of heart. We used simple designs and friendly animated illustrations to bring these family values to life and connect with the target.</p>
+                      <p>The homes in the “Piura del Campo” urbanization will form a small city. Thousands of homes will expand in the territory, it is a new space to consolidate a life. The urbanization not only represents a physical space, but a space to create community. Where you can plan the rest of your life.</p>
+                      <p>To capture this idea we created the concept "WE BUILD THE FUTURE TOGETHER" which allowed us to empathize with the desires and emotions of our audience. We gave life to this concept through a simple, colorful design, full of life and joy that has a daring look, totally different from what other construction companies in the country use.</p>
+                    </div>`,
+  },
+  {
+    id: 4,
+    category: "CONTENT",
+    type: "campaign",
+    title: "Hendrick’s OOH ",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/sarcay/quickly-sarcay.svg",
     urlInterno1: "./imagesQuicklyInterna/solitoInterna1.png",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
     urlInterno3: "",
@@ -474,51 +517,56 @@ export const imagesQuickly = [
     subTitleInter:
       "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
     href: "./heinekenFest",
-  },
-  {
-    id: 3,
-    category: "BRANDING",
-    type: "branding",
-    url: "./dataimagesQuickly/animal.png",
-    name: "yummy",
-    title: "Centria",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 4,
-    category: "ILLUSTRATION",
-    type: "illustration",
-    url: "./dataimagesQuickly/color.png",
-    name: "yummy",
-    title: "BDI",
-    href: "./yummysuperapp",
+    titleInterTop: "HENRI BARRETT",
+    subtitleInterTop: "Back to the poster",
+    internaContent: `<div>
+                      <p>Aons</p>
+                      <p>Aons</p>
+                      <p>Aons</p>
+                    </div>`,
   },
   {
     id: 5,
-    category: "CONTENT",
-    type: "content",
-    url: "./dataimagesQuickly/painter.png",
-    name: "yummy",
-    title: "Back to poster",
-    href: "./yummysuperapp",
+    category: "ILLUSTRATION",
+    type: "campaign",
+    title: "BDI Real Estate",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/sarcay/bdi.svg",
+    urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/Quickly_BDI.mp4",
+    urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
+    urlInterno3: "",
+    titleInter: "Create brands with personality",
+    subTitleInter:
+      "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
+    href: "./heinekenFest",
+    titleInterTop: "HENRI BARRETT",
+    subtitleInterTop: "BDI Real Estate",
+    internaContent: `<div>
+                      <p>This social housing project is all about making dreams come true for lower-income families.
+                      Our aim? To  make home ownership feel achievable, welcoming, and full of heart. We used simple designs and friendly animated illustrations to bring these family values to life and connect with the target.</p>
+                      <p>The homes in the “Piura del Campo” urbanization will form a small city. Thousands of homes will expand in the territory, it is a new space to consolidate a life. The urbanization not only represents a physical space, but a space to create community. Where you can plan the rest of your life.</p>
+                      <p>To capture this idea we created the concept "WE BUILD THE FUTURE TOGETHER" which allowed us to empathize with the desires and emotions of our audience. We gave life to this concept through a simple, colorful design, full of life and joy that has a daring look, totally different from what other construction companies in the country use.</p>
+                    </div>`,
   },
   {
     id: 6,
-    category: "TRADE",
-    type: "trade",
-    url: "./dataimagesQuickly/dog.png",
-    name: "yummy",
-    title: "Heineken",
-    href: "./yummysuperapp",
-  },
-  {
-    id: 7,
-    category: "CONTENT",
-    type: "content",
-    url: "./dataimagesQuickly/tea.png",
-    name: "yummy",
-    title: "Summer stickers",
-    href: "./yummysuperapp",
+    category: "BRANDING",
+    type: "campaign",
+    title: "DJ Arbaiza Branding",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/sarcay/arbaiza.svg",
+    urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/Quickly+Arbaiza+(1).mp4",
+    urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
+    urlInterno3: "",
+    titleInter: "Create brands with personality",
+    subTitleInter:
+      "We are excited by the idea of ​​creating brands that we ourselves would choose over others; brands we trust and that we want to always have close by.",
+    href: "./heinekenFest",
+    titleInterTop: "HENRI BARRETT",
+    subtitleInterTop: "DJ Arbaiza",
+    internaContent: `<div>
+                      <p>Get to know our artistic journey from the inside with a friend of the house Guillermo Arbaiza. Peruvian DJ and producer, who challenges conventions with his eclectic musical style, which mixes Melodic House, Afro House, Techno and Afro-Peruvian sounds.</p>
+                      <p>For this new personal identity we created a unique symbol, drawn from local geometric influences and the vivacious spirit of the sun, an emblem that pulses with the euphoric energy of its rhythms.</p>
+                      <p>Like the rays of the sun that reach out and touch everything they encounter, music reaches out and touches every fiber of our being. It unites people, regardless of their background or history, and creates a universal language that everyone understands. Music, like the sun and the eye, is a catalyst that reveals our true essence, allowing us to connect and share our light with others. Together, these three elements—the sun, the eye, and the music—form a triangle of connection and authenticity. “Each one acts as a bridge, taking us from darkness to light, from isolation to community, and from silence to symphony</p>
+                    </div>`,
   },
 ];
 

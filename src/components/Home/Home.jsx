@@ -1,25 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
-import img2 from "https://webhb.s3.us-east-2.amazonaws.com/Home/img-2.png";
-import img2D from "https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/img-our-services-desktop.png";
-import workParallax from "https://webhb.s3.us-east-2.amazonaws.com/Home/work-parallax.svg";
-
-import arrowbtn from "../../assets/arrow-btn.svg";
-import union from "https://webhb.s3.us-east-2.amazonaws.com/Home/union.svg";
-import groupwwd from "https://webhb.s3.us-east-2.amazonaws.com/Home/img-proyectos.png";
-import groupwwdD from "https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/group-services-desktop.png";
-
-import hnk from "https://webhb.s3.us-east-2.amazonaws.com/Home/hnk-home-mobile.png";
-import umana from "https://webhb.s3.us-east-2.amazonaws.com/Home/umana-home-mobile.png";
-import teclab from "https://webhb.s3.us-east-2.amazonaws.com/Home/teclab-home-mobile.png";
-import rappi from "https://webhb.s3.us-east-2.amazonaws.com/Home/rappi-home-mobile.png";
-import rappiD from "https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/rappi-home-desktop.png";
-
-import hnkD from "https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/hnk-desktop.png";
-import umanaD from "https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/umana-desktop.png";
-import teclabD from "https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/teclab-desktop.png";
-
 import title from "../../assets/contact/tiltle-contact-home.svg";
 import titleD from "../../assets/contact/title-contact-desktop.png";
 
@@ -30,13 +10,13 @@ import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
 import FormContact from "../FormContact/FormContact";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
+import { getImageUrl } from "../../services/s3services";
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
 };
 
 const handleLanguageClick = () => {
-  console.log("handle leng", i18n.language);
   const currentLanguage = i18n.language;
 
   if (currentLanguage === "en") {
@@ -54,6 +34,22 @@ const Home = () => {
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
+
+  const hnkD = getImageUrl('hnkD');
+  const rappiD = getImageUrl('rappiD');
+  const img2 = getImageUrl('img2');
+  const img2D = getImageUrl('img2D');
+  const workParallax = getImageUrl('workParallax');
+  const union = getImageUrl('union');
+  const groupwwd = getImageUrl('groupwwd');
+  const groupwwdD = getImageUrl('groupwwdD');
+  const hnk = getImageUrl('hnk');
+  const umana = getImageUrl('umana');
+  const teclab = getImageUrl('teclab');
+  const rappi = getImageUrl('rappi');
+  const umanaD = getImageUrl('umanaD');
+  const teclabD = getImageUrl('teclabD');
+  const arrowbtn = getImageUrl('arrowbtn');
 
   useEffect(() => {
     setFilteredImages(getImagesHome());

@@ -20,10 +20,15 @@ import Heineken from "./components/Heineken/Heineken";
 import WorkDetails from "./components/WorkDetails/WorkDetails";
 import ServiceView from "./components/ServiceView/ServiceView";
 import Teclab from "./components/Teclab/Teclab";
+import { getImagesFromS3 } from "./services/s3services";
 
 function App() {
 
   const [showButtonTop, setShowButtonTop] = useState(false);
+
+  useEffect(() => {
+    getImagesFromS3();
+  }, [])
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
