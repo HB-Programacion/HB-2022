@@ -20,8 +20,8 @@ export const getImagesFromS3 = async () => {
    imageUrls.arrowbtn = 'https://webhb.s3.us-east-2.amazonaws.com/Home/arrow-btn.svg';
 
 
-   //QUICKLY
-
+   //WORK
+   
 
    return imageUrls;
 };

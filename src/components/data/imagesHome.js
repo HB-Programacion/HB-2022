@@ -2,7 +2,7 @@ export const imagesHome = [
   {
     id: 1,
     type: "content",
-    url: "./dataimages/hnk.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-hnk.png",
     name: "HEINEKEN FEST",
     title: "HEINEKEN FEST",
     description:
@@ -50,7 +50,7 @@ export const imagesHome = [
   {
     id: 2,
     type: "trade",
-    url: "./dataimages/yummy2.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-yummi.png",
     name: "YUMMY SUPER APP",
     title: "YUMMY SUPER APP",
     description:
@@ -98,7 +98,7 @@ export const imagesHome = [
   {
     id: 3,
     type: "branding",
-    url: "./dataimages/umana2.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-umana.png",
     name: "UMANA",
     title: "UMANA",
     description: "Brand Concept / Brand Development / Illustrations / Art Direction / Motion Graphics",
@@ -153,7 +153,7 @@ export const imagesHome = [
   {
     id: 4,
     type: "branding",
-    url: "./dataimages/teclab.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-teclab.png",
     name: "TECLAB",
     title: "TECLAB",
     description:
@@ -209,7 +209,7 @@ export const imagesHome = [
   {
     id: 5,
     type: "trade",
-    url: "./dataimages/vinedosTacama.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-labico.png",
     name: "LA BICOLOR",
     title: "LA BICOLOR",
     description:
@@ -304,7 +304,7 @@ export const imagesHome = [
   {
     id: 7,
     type: "campaign",
-    url: "./dataimages/eureka2.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-jokr.png",
     name: "JOKR Verano 23’",
     title: "JOKR Verano 23’",
     description: "BRANDING / CONCEPT / CONTENT",
@@ -351,7 +351,7 @@ export const imagesHome = [
   {
     id: 8,
     type: "illustration",
-    url: "./dataimages/rappiWork.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-rappi.png",
     name: "contenido 8",
     title: "RAPPI + SÍCLO",
     description:
