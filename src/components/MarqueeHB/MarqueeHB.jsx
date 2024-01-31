@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 import Marquee from "react-fast-marquee";
 import asterisco from "../../assets/about/asterisco.svg";
 
-import "./MarqueeHB.css"
+import "./MarqueeHB.css";
 
 const generateRepeatedContent = (times) => {
   const repeatedContent = [];
@@ -15,17 +15,16 @@ const generateRepeatedContent = (times) => {
       </React.Fragment>
     );
   }
-  
+
   return repeatedContent;
-}
+};
 
 const MarqueeHB = () => {
   const repeatedContent = generateRepeatedContent(50);
 
-  
   return (
     <div>
-        <div className="box-marquee">
+      {/* <div className="box-marquee">
           <Marquee direction="left" speed={30} loop={0}>
             <span className="marquee">
               {repeatedContent}
@@ -38,9 +37,28 @@ const MarqueeHB = () => {
               {repeatedContent}
             </span>
           </Marquee>
-        </div>
-    </div>
-  )
-}
+        </div> */}
+      <div className="box-marquee">
+        <section class="a-section">
+          <div class="a-section-marquee-box">
+          <h2 class="marquee-text">always watching <img src={asterisco} className="asterisco" /> </h2>
+            <h2 class="marquee-text">curiosity is sexy <img src={asterisco} className="asterisco" /> </h2>
+            <h2 class="marquee-text">always watching  <img src={asterisco} className="asterisco" /> </h2>
+            <h2 class="marquee-text">curiosity is sexy <img src={asterisco} className="asterisco" /> </h2>
+          </div>
+        </section>
 
-export default MarqueeHB
+        <section class="b-section">
+          <div class="b-section-marquee-box">
+            <h2 class="marquee-text">always watching <img src={asterisco} className="asterisco" /> </h2>
+            <h2 class="marquee-text">curiosity is sexy <img src={asterisco} className="asterisco" /> </h2>
+            <h2 class="marquee-text">always watching  <img src={asterisco} className="asterisco" /> </h2>
+            <h2 class="marquee-text">curiosity is sexy <img src={asterisco} className="asterisco" /> </h2>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default MarqueeHB;

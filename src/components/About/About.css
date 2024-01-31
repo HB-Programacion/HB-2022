@@ -285,6 +285,13 @@
     font-size: 2.5rem;
   }
 
+  .box-title-surprise{
+    padding: 0rem 10rem;
+  }
+
+  .img-surprise{
+    top: -15rem;
+  }
   .btn-white-surprise{
     font-size: 40px;
   }

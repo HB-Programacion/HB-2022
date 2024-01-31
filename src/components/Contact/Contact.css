@@ -2,3 +2,16 @@
     padding: 4rem 0rem;
     position: relative;
 }
+.title-contact-desktop{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .title-contact-desktop{
+        width: 70%;
+        margin: 2rem auto;
+        display: block;
+    }
+    
+
+}

@@ -340,5 +340,9 @@
   }
   .button__load button{
     font-size: 40px;
+    padding: 14px 28px;
+  }
+  .button__load img {
+    width: 2.5rem;
   }
 }

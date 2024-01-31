@@ -102,7 +102,7 @@
     }
 } */
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .box-work-w {
     padding: 5rem 10rem;
   }

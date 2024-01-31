@@ -35,21 +35,21 @@ const Home = () => {
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
 
-  const hnkD = getImageUrl('hnkD');
-  const rappiD = getImageUrl('rappiD');
-  const img2 = getImageUrl('img2');
-  const img2D = getImageUrl('img2D');
-  const workParallax = getImageUrl('workParallax');
-  const union = getImageUrl('union');
-  const groupwwd = getImageUrl('groupwwd');
-  const groupwwdD = getImageUrl('groupwwdD');
-  const hnk = getImageUrl('hnk');
-  const umana = getImageUrl('umana');
-  const teclab = getImageUrl('teclab');
-  const rappi = getImageUrl('rappi');
-  const umanaD = getImageUrl('umanaD');
-  const teclabD = getImageUrl('teclabD');
-  const arrowbtn = getImageUrl('arrowbtn');
+  const hnkD = getImageUrl("hnkD");
+  const rappiD = getImageUrl("rappiD");
+  const img2 = getImageUrl("img2");
+  const img2D = getImageUrl("img2D");
+  const workParallax = getImageUrl("workParallax");
+  const union = getImageUrl("union");
+  const groupwwd = getImageUrl("groupwwd");
+  const groupwwdD = getImageUrl("groupwwdD");
+  const hnk = getImageUrl("hnk");
+  const umana = getImageUrl("umana");
+  const teclab = getImageUrl("teclab");
+  const rappi = getImageUrl("rappi");
+  const umanaD = getImageUrl("umanaD");
+  const teclabD = getImageUrl("teclabD");
+  const arrowbtn = getImageUrl("arrowbtn");
 
   useEffect(() => {
     setFilteredImages(getImagesHome());
@@ -200,10 +200,12 @@ const Home = () => {
           </div>
           <div className="box-img-ourservices">
             <div className="button__load">
-              <button onClick={() => console.log("click load more")}>
-                OUR SERVICES
-                <img src={arrowbtn} alt="arrow-right" />
-              </button>
+              <a href="/services">
+                <button onClick={() => console.log("click load more")}>
+                  OUR SERVICES
+                  <img src={arrowbtn} alt="arrow-right" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
