@@ -18,10 +18,12 @@ export const getImagesFromS3 = async () => {
    imageUrls.umanaD = 'https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/umana-desktop.png';
    imageUrls.teclabD = 'https://webhb.s3.us-east-2.amazonaws.com/Home/desktop/teclab-desktop.png';
    imageUrls.arrowbtn = 'https://webhb.s3.us-east-2.amazonaws.com/Home/arrow-btn.svg';
+   imageUrls.title = 'https://webhb.s3.us-east-2.amazonaws.com/Home/title-contacto.svg';
+   imageUrls.titleD = 'https://webhb.s3.us-east-2.amazonaws.com/Home/title-contact-desktop.png';
 
 
    //WORK
-   
+
 
    return imageUrls;
 };

@@ -31,8 +31,10 @@ const Quickly = () => {
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
+  const [videoRefs, setVideoRefs] = useState({});
 
-  const ref = useRef(null);
+  const videoRef = useRef(null);
+
   useEffect(() => {
     setFilteredImages(getImagesQuickly());
     setActiveButton("all");
@@ -45,6 +47,25 @@ const Quickly = () => {
     typeImagesHome !== "all"
       ? setFilteredImages(filterQuicklyType(typeImagesHome))
       : setFilteredImages(getImagesQuickly());
+  };
+
+  const handleMouseEnter = (id) => {
+    if (videoRefs[id]) {
+      videoRefs[id].play();
+    }
+  };
+
+  const handleMouseLeave = (id) => {
+    if (videoRefs[id]) {
+      videoRefs[id].pause();
+      videoRefs[id].currentTime = 0;
+    }
+  };
+
+  const updateVideoRef = (id, ref) => {
+    if (videoRefs[id] !== ref) {
+      setVideoRefs((prevRefs) => ({ ...prevRefs, [id]: ref }));
+    }
   };
 
   const handleLoadImage = () => {
@@ -103,12 +124,22 @@ const Quickly = () => {
               {filteredImages &&
                 filteredImages.map((type) => (
                   <div className="gallery__items-quickly" key={type.id}>
-                    <a onClick={() => openModal(type)}>
-                      <img
-                        src={type.url}
-                        alt={type.name}
+                    <a
+                      onClick={() => openModal(type)}
+                      onMouseEnter={() => handleMouseEnter(type.id)}
+                      onMouseLeave={() => handleMouseLeave(type.id)}
+                    >
+                      <video
+                        ref={(ref) => updateVideoRef(type.id, ref)}
                         className="gallery__img"
-                      />
+                        controls={false}
+                        autoPlay={false}
+                        muted
+                        playsInline
+                        loop={true}
+                      >
+                        <source src={type?.url} type="video/mp4" />
+                      </video>
                     </a>
                     <h5 className="filter-title-quickly">{type.title}</h5>
                   </div>

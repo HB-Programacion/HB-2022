@@ -1,8 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import title from "../../assets/contact/tiltle-contact-home.svg";
-import titleD from "../../assets/contact/title-contact-desktop.png";
-
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
 import "./Home.css";
 
@@ -50,6 +47,8 @@ const Home = () => {
   const umanaD = getImageUrl("umanaD");
   const teclabD = getImageUrl("teclabD");
   const arrowbtn = getImageUrl("arrowbtn");
+  const title = getImageUrl("title");
+  const titleD = getImageUrl("titleD");
 
   useEffect(() => {
     setFilteredImages(getImagesHome());
