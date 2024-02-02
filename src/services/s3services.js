@@ -22,7 +22,8 @@ export const getImagesFromS3 = async () => {
    imageUrls.titleD = 'https://webhb.s3.us-east-2.amazonaws.com/Home/title-contact-desktop.png';
 
 
-   //WORK
+   //CONTACT
+   imageUrls.contactGif = 'https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif'
 
 
    return imageUrls;

@@ -9,7 +9,7 @@ import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
 import { buttons } from "../data/imagesHome";
 import titleM from "../../assets/contact/contact-title-mobile.svg";
 import titleD from "../../assets/contact/contact-title-desktop.svg";
-import gifContact from "https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif";
+// import gifContact from "https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif";
 import img1 from "../../assets/contact/img-contact.png";
 
 import { getImagesHome, filterHomeType } from "../services/servicesFilter";
@@ -20,12 +20,14 @@ import word from "../../assets/home/work.svg";
 import FormContact from "../FormContact/FormContact";
 
 import { useTranslation } from "react-i18next";
+import { getImageUrl } from "../../services/s3services";
 
 const Contact = () => {
   const { t } = useTranslation();
   // const { ref } = useParallax({ speed: 100 });
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
+  const contactGif = getImageUrl("contactGif");
 
   useEffect(() => {
     setFilteredImages(getImagesHome());
@@ -45,8 +47,7 @@ const Contact = () => {
         <div className="fondo-header"></div>
         <div className="box-contact">
           <div>
-      
-            <img src='https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif' className="" />
+            <img src={contactGif} className="" />
           </div>
           <img src={titleD} className="d-desktop title-contact-desktop" />
           {/* <div className="container__subtitle">
