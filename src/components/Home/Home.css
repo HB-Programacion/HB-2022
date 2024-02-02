@@ -176,12 +176,7 @@
 }
 
 
-@media (max-width: 680px) {
-  .container__buttons {
-    flex-wrap: wrap;
-    margin: 4rem auto;
-  }
-}
+
 
 .box-bg-gray {
   background-color: #eeeeee;
@@ -344,5 +339,20 @@
   }
   .button__load img {
     width: 2.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .container__buttons {
+    flex-wrap: wrap;
+    margin: 4rem auto;
+  }
+
+  .buttons__style button{
+    font-size: 20px;
+  }
+  .container__buttons{
+    width: 80%;
+    padding: 0;
   }
 }
