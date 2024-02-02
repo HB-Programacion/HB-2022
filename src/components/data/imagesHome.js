@@ -257,7 +257,7 @@ export const imagesHome = [
   {
     id: 6,
     type: "content",
-    url: "./dataimages/tiger2.png",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-petco.png",
     name: "PETCO",
     title: "PETCO",
     description: "BRANDING / CREATIVITY / CONCEPT / GUIDELINES / ILlUSTRATION / ANIMATION ",
