@@ -58,7 +58,7 @@ const ServiceView = () => {
           className="w-90 m-auto d-block title-services"
           alt="title"
         /> */}
-        <h2 className="titleHb-white">
+        <h2 className="titleHb-white container__text">
           services<br></br> <span className="titleHb-white-italic">frame</span>
         </h2>
 
