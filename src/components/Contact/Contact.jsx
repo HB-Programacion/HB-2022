@@ -47,7 +47,8 @@ const Contact = () => {
         <div className="fondo-header"></div>
         <div className="box-contact">
           <div>
-            <img src={contactGif} className="" />
+      
+            {/* <img src='https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif' className="" /> */}
           </div>
           <img src={titleD} className="d-desktop title-contact-desktop" />
           {/* <div className="container__subtitle">
