@@ -7,8 +7,8 @@ import divider from "../../assets/home/Divider.svg";
 import load from "../../assets/home/load-more.png";
 import arrowRightWhite from "../../assets/home/arrow-right-white.svg";
 import { buttons } from "../data/imagesHome";
-import titleM from "../../assets/contact/contact-title-mobile.svg";
-import titleD from "../../assets/contact/contact-title-desktop.svg";
+import titleM from "../../assets/contact/title-contact-mobile.svg";
+import titleD from "../../assets/contact/title-contact-desktop.svg";
 // import gifContact from "https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif";
 import img1 from "../../assets/contact/img-contact.png";
 
@@ -40,17 +40,21 @@ const Contact = () => {
       ? setFilteredImages(filterHomeType(typeImagesHome))
       : setFilteredImages(getImagesHome());
   };
-
+  const arrowbtn = getImageUrl("arrowbtn");
   return (
     <>
       <div className="bg-black">
         <div className="fondo-header"></div>
         <div className="box-contact">
-          <div>
-      
-            {/* <img src='https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif' className="" /> */}
+
+         
+
+
+          <div className="box-title-contact">
+            <img src={titleD} className="title-contact-desktop1 desktop"></img>
+            <img src={titleM} className="title-contact-mobile1 mobile"></img>
+            <img src='https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif' className="gif-contact-title" />
           </div>
-          <img src={titleD} className="d-desktop title-contact-desktop" />
           {/* <div className="container__subtitle">
             <h1>{t("contact-getting")}</h1>
           </div> */}
