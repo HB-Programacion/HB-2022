@@ -20,22 +20,30 @@ const WorkDetails = () => {
 
   const {
     videoPrincipal,
-    urlTitle,
+    titleDesk,
+    titleMobile,
     subtitle,
     tabs,
     banner1,
+    banner2,
+    banner3,
+    banner4,
+    banner5,
+    banner6,
+    banner7,
+    banner8,
+    banner9,
     descriptionChallenge,
     decriptionSolution,
-    videoBlock1,
-    text1,
-    videoBlock2,
-    videoBlock3,
     text2,
-    videoBlock4,
-    videoBlock5,
-    videoBlock6,
     text3,
-    videoBlock7
+    text4,
+    text5,
+    text6,
+    text7,
+    text8,
+    text9,
+    footer
   } = matchingWorkDetail.workDetails;
 
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
@@ -83,8 +91,8 @@ const WorkDetails = () => {
       <div className=" bg-black">
         <div className="box-workDetails">
           { width > breakpoint ?
-            <img src={hnkDesk} alt="img"/> :
-            <img src={urlTitle} alt="img"/>
+            <img src={titleDesk} alt="img"/> :
+            <img src={titleMobile} alt="img"/>
           }
           <p className="subtitle-project">{subtitle.toUpperCase()}</p>
           <div className="box-project-detail">
@@ -95,22 +103,50 @@ const WorkDetails = () => {
             ))}
           </div>
           <div className="box-img-details">
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner1} type="video/mp4" /> //banner 1
-            </video>
-
-            <h5 className="text-challenge">CHALLENGE</h5>
-            <p className="description-challenge container__challenge">{descriptionChallenge}</p>
-            <h5 className="text-challenge">SOLUTION</h5>
-            <p className="description-challenge container__challenge">{decriptionSolution}</p>
+            { banner1 && (
+              <video
+                className="w-100"
+                controls={false}
+                autoPlay
+                muted
+                playsInline
+                loop={true}
+              >
+                <source src={banner1} type="video/mp4" />
+              </video>
+            )}
+            { descriptionChallenge && (
+              <>
+                <h5 className="text-challenge">CHALLENGE</h5>
+                <p className="description-challenge container__challenge">{descriptionChallenge}</p>
+              </>
+            )}
+            { decriptionSolution && (
+              <>
+                <h5 className="text-challenge">SOLUTION</h5>
+                <p className="description-challenge container__challenge">{decriptionSolution}</p>
+              </>
+            )}
           </div>
+            { banner2 && (
+              <video
+                className="w-100"
+                controls={false}
+                autoPlay
+                muted
+                playsInline
+                loop={true}
+              >
+                <source src={banner2} type="video/mp4" />
+              </video>
+            )}
+            { text2 && (
+              <div className="box-workDetails">
+                <p className="p-white container-parrafo">{text2}</p>
+              </div>
+            )}
+        </div>
+          { banner3 && (
             <video
               className="w-100"
               controls={false}
@@ -119,74 +155,118 @@ const WorkDetails = () => {
               playsInline
               loop={true}
             >
-              <source src={videoBlock1} type="video/mp4" /> //frame 290
+              <source src={banner3} type="video/mp4" />
             </video>
-          <p className="p-white container-parrafo">{text1}</p>
-        </div>
-          <video
-            className="w-100"
-            controls={false}
-            autoPlay
-            muted
-            playsInline
-            loop={true}
-          >
-            <source src={videoBlock2} type="video/mp4" /> //frame 293
-          </video>
-          <video
-            className="w-100"
-            controls={false}
-            autoPlay
-            muted
-            playsInline
-            loop={true}
-          >
-            <source src={videoBlock3} type="video/mp4" /> //frame 294
-          </video>
-          <p className="p-white">{text2}</p>
-          <video
-            className="w-100"
-            controls={false}
-            autoPlay
-            muted
-            playsInline
-            loop={true}
-          >
-            <source src={videoBlock4} type="video/mp4" /> //frame 295
-          </video>
-          <video
-            className="w-100"
-            controls={false}
-            autoPlay
-            muted
-            playsInline
-            loop={true}
-          >
-            <source src={videoBlock5} type="video/mp4" /> //frame 296
-          </video>
-          <video
-            className="w-100"
-            controls={false}
-            autoPlay
-            muted
-            playsInline
-            loop={true}
-          >
-            <source src={videoBlock6} type="video/mp4" /> //frame 298
-          </video>
-        <div className="box-workDetails">
-          <p className="text-gray-poject text-left">{text3}</p>
-        </div>
-        <video
-            className="w-100"
-            controls={false}
-            autoPlay
-            muted
-            playsInline
-            loop={true}
-          >
-            <source src={videoBlock7} type="video/mp4" /> //frame 294
-          </video>
+          )}
+          { text3 && (
+            <div className="box-workDetails">
+              <p className="p-white container-parrafo">{text3}</p>
+            </div>
+          )}
+          { banner4 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner4} type="video/mp4" />
+            </video>
+          )}
+          { text4 && (
+            <div className="box-workDetails">
+              <p className="p-white">{text4}</p>
+            </div>
+          )}
+          { banner5 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner5} type="video/mp4" />
+            </video>
+          )}
+          {text5 && (
+            <div className="box-workDetails">
+              <p className="p-white container-parrafo">{text5}</p>
+            </div>
+          )}
+          {banner6 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner6} type="video/mp4" />
+            </video>
+          )}
+          {text6 && (
+            <div className="box-workDetails">
+              <p className="p-white container-parrafo">{text6}</p>
+            </div>
+          )}
+          {banner7 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner7} type="video/mp4" />
+            </video>
+          )}
+          { text7 && (
+            <div className="box-workDetails">
+              <p className="p-white container-parrafo">{text7}</p>
+            </div>
+          )}
+          { banner8 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner8} type="video/mp4" />
+            </video>
+          )}
+          { text8 && (
+            <div className="box-workDetails">
+              <p className="text-gray-poject text-left">{text8}</p>
+            </div>
+          )}
+          { banner9 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner9} type="video/mp4" />
+            </video>
+          )}
+          { text9 && (
+              <div className="box-workDetails">
+                <p className="text-gray-poject text-left">{text9}</p>
+              </div>
+            )
+          }
+        <img src={footer} alt="img"/>
       </div>
       <div className="bg-black">
         <img src={letterNext} className="letter-next" alt="letterNext"/>

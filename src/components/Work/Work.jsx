@@ -99,6 +99,13 @@ const Work = () => {
     return '';
   };
 
+  const topScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant'
+    });
+  }
+
   return (
     <>
       <div className="fondo-header"> </div>
@@ -146,6 +153,8 @@ const Work = () => {
                     alt={type.name}
                     className="gallery__img"
                     onLoad={(e) => handleImageLoad(e, { index })}
+                    onClick={topScroll}
+                    style={{ cursor: 'pointer' }}
                   />
                   <h5 className="filter-title">{type.title}</h5>
                   <p className="filter-subtitle">{type.description}</p>

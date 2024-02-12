@@ -10,38 +10,50 @@ export const imagesHome = [
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "/workDetails/hnkMobile.svg",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
         "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
-      tabs: ["EVENT", "CAMPAIGN", "ILLUSTRATION"],
+      tabs: ["BRANDING", "ILLUSTRATION"],
       banner1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "Heineken, a primary sponsor of the UEFA Champions League, sought our assistance for their monumental event in Peru, the Heineken Fest. This gathering revolved around the Champions League final, and it was packed with exhilaration, memorable moments, and Heineken's unique touch.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "Despite the hurdles from conception to execution, our team efficiently handled market research, comprehensive planning (from logistics to marketing), and presented engaging activities, such as games, contests, music performances, and food options. We also secured partnerships and sponsorships with local businesses, which helped increase exposure, drive attendance, and generate additional revenue.",
-      videoBlock1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      text1:
-        "We crafted custom influencer kits mirroring the stadium theme, highlighting a Heineken bottle and featuring fan illustrations. These designs were later animated for the event, complemented by a premium VIP pass, invite, and brand goodies.",
-      videoBlock2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      videoBlock3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "In collaboration with Graza Studio, we replicated the stadium ambiance using a blend of 3D stadium scenes, iconic player statues, and 2D animations.",
-      videoBlock4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      videoBlock5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      videoBlock6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      videoBlock7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
       textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
@@ -58,41 +70,53 @@ export const imagesHome = [
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
       tabs: ["BRANDING", "ILLUSTRATION"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+123.png",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+164.png",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/image+21.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+127.png",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122+(1).png",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+134.png",
-      text1:
-        "/A fun and approachable brand system designed for instant recognition.",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "/Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida ipsum accumsan",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
       textNext: "YUMMY",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
   },
   {
@@ -105,47 +129,51 @@ export const imagesHome = [
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab.svg",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
-      tabs: ["CONT 3", "BRANDING", "ILLUSTRATION"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img1.png",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["BRANDING", "ILLUSTRATION"],
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience. ",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-logo.gif",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img2.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-tipografia.gif",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img4.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/gif-marketing.gif",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-gif2.gif",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img3.png",
-      img5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img5.png",
-      img6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img6.png",
-      img7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img7.png",
-      gif7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/icon-gif.gif",
-      text1:
-        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "Complemented by a sophisticated typographic style and clean illustrations reminiscent of architectural plans and precise line drawings, the overall brand system exudes a sense of structure, modernity, and innovation.",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
-        "Teclab’s reimagined identity positions them as a forward-thinking industry leader, ready to take on new challenges and excel in today’s ever-changing business landscape.Teclab’s successful rebranding journey is a testament to their adaptability and commitment to staying at the forefront of the industry. ",
-      textNext: "contenido 3 tec lab",
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
+        "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+      textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
@@ -161,47 +189,51 @@ export const imagesHome = [
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab.svg",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
-      tabs: ["CONT 3", "BRANDING", "ILLUSTRATION"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img1.png",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["BRANDING", "ILLUSTRATION"],
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience. ",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-logo.gif",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img2.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-tipografia.gif",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img4.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/gif-marketing.gif",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-gif2.gif",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img3.png",
-      img5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img5.png",
-      img6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img6.png",
-      img7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/teclab-img7.png",
-      gif7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/icon-gif.gif",
-      text1:
-        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "Complemented by a sophisticated typographic style and clean illustrations reminiscent of architectural plans and precise line drawings, the overall brand system exudes a sense of structure, modernity, and innovation.",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
-        "Teclab’s reimagined identity positions them as a forward-thinking industry leader, ready to take on new challenges and excel in today’s ever-changing business landscape.Teclab’s successful rebranding journey is a testament to their adaptability and commitment to staying at the forefront of the industry. ",
-      textNext: "contenido 3 tec lab",
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
+        "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+      textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
@@ -217,41 +249,53 @@ export const imagesHome = [
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
-      tabs: ["CONT 5", "BRANDING", "CAMPAIGN", "CONTENT"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["BRANDING", "ILLUSTRATION"],
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+123.png",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+164.png",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/image+21.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+127.png",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122+(1).png",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+134.png",
-      text1:
-        "/A fun and approachable brand system designed for instant recognition.",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "/Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida ipsum accumsan",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      textNext: "contenido 5",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+      textNext: "YUMMY",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
   },
   {
@@ -264,41 +308,53 @@ export const imagesHome = [
     href: "./yummysuperapp",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
-      tabs: ["CONT 6", "BRANDING", "CAMPAIGN", "CONTENT"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["BRANDING", "ILLUSTRATION"],
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+123.png",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+164.png",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/image+21.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+127.png",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122+(1).png",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+134.png",
-      text1:
-        "/A fun and approachable brand system designed for instant recognition.",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "/Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida ipsum accumsan",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      textNext: "contenido 6",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+      textNext: "YUMMY",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
   },
   {
@@ -311,41 +367,53 @@ export const imagesHome = [
     href: "./yummysuperapp",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "KEY VISUAL / ILLUSTRATIONS / LANDING PAGE / WELCOME KITS / VISUALS / BRANDING / EVENT / ANIMATIONS / PRODUCTION / LOGISTIC",
-      tabs: ["CONT 7", "BRANDING", "CAMPAIGN", "CONTENT"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["BRANDING", "ILLUSTRATION"],
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+123.png",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+164.png",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/image+21.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+127.png",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122+(1).png",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+134.png",
-      text1:
-        "/A fun and approachable brand system designed for instant recognition.",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "/Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida ipsum accumsan",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      textNext: "contenido 7",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+      textNext: "YUMMY",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
   },
   {
@@ -359,79 +427,103 @@ export const imagesHome = [
     href: "./yummysuperapp",
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+153.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "Event Identity / Event Concept / Event Production / Welcome Kit / Illustration / Animation / Visuals",
-      tabs: ["BRANDING", "ILLUSTRATION", "EVENT"],
-      image1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+128.png",
+        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
+      tabs: ["BRANDING", "ILLUSTRATION"],
+      banner1:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      gif1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+123.png",
-      gif2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122.png",
-      gif3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+164.png",
-      gif4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/image+21.png",
-      gif5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+127.png",
-      gif6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Rectangle+122+(1).png",
-      img3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummy/Group+134.png",
-      text1:
-        "/A fun and approachable brand system designed for instant recognition.",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "/Lorem ipsum dolor sit amet consectetur. Consectetur maecen ravida ipsum accumsan",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      textNext: "contenido 8",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+      textNext: "YUMMY",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/yummi.png",
+        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
     },
   },
   {
     id: 9,
     workDetails: {
       videoPrincipal:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      urlTitle:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/heinekenFest.svg",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+      titleDesk:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+      titleMobile:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
         "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
-      tabs: ["EVENT", "CAMPAIGN", "ILLUSTRATION"],
+      tabs: ["BRANDING", "ILLUSTRATION"],
       banner1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
       descriptionChallenge:
-        "We started with market research to understand the preferences and expectations of local consumers, and then moved on to detailed planning, covering everything from logistics and budgeting, to marketing and staffing.",
+        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
       decriptionSolution:
-        "To create a memorable experience, we offered a variety of engaging and interactive activities, such as games, contests, music performances, and food options.",
-      videoBlock1:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      text1:
-        "We crafted custom influencer kits mirroring the stadium theme, highlighting a Heineken bottle and featuring fan illustrations. These designs were later animated for the event, complemented by a premium VIP pass, invite, and brand goodies.",
-      videoBlock2:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      videoBlock3:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+      banner2:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
       text2:
-        "In collaboration with Graza Studio, we replicated the stadium ambiance using a blend of 3D stadium scenes, iconic player statues, and 2D animations.",
-      videoBlock4:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      videoBlock5:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
-      videoBlock6:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+        "",
+      banner3:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
       text3:
+      "",
+      banner4:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      text4:
+        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+      banner5:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      text5:
+      "",
+      banner6:
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      text6:
+      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      banner7:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+      text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      videoBlock7:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/teclab/videobg-teclab.mp4",
+      banner8:"",
+      text8:"",
+      banner9:"",
+      text9:"",
+      footer:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
       textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
