@@ -176,7 +176,7 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-/* padding: 0rem 10rem; */
+    padding: 0rem 10rem;
   }
 
   .img-menumobile {
@@ -184,7 +184,7 @@ li {
   }
   .drop-desktop .container-fullview {
     width: 50%;
-    padding: 0rem 10rem;
+    /* padding: 0rem 10rem; */
   }
   .box-social-contact {
     width: 50%;
