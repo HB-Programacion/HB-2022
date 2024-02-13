@@ -7,6 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
 import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "./Work.css";
 
 import fw from "../../assets/work/7.Work.gif";
@@ -140,7 +141,12 @@ const Work = () => {
         </div>
 
         <div className="box-work">
+       
           <div className="gallery__container-work">
+          <Masonry columnsCount={width > breakpoint ? 2 : 1}gutter="10px">
+
+
+
             {filteredImages &&
               filteredImages.map((type, index) => (
                 <div
@@ -160,6 +166,8 @@ const Work = () => {
                   <p className="filter-subtitle">{type.description}</p>
                 </div>
               ))}
+                </Masonry>
+
           </div>
         </div>
         <div className="box-work">
