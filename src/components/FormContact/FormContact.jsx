@@ -1,16 +1,7 @@
 import React, { useState } from "react";
-import { uploadDocToFirebase } from "../../firebase";
-import {
-  validateNames,
-  validateCity,
-  validateEmail,
-  validatePhone,
-} from "../../helpers/validators";
 import Modal from "../Modal/Modal";
-import ModalResponse from "../ModalResponse/ModalResponse";
 import "./FormContact.css";
 import { useTranslation } from "react-i18next";
-import arrowbtn from "../../assets/arrow-btn-black.svg";
 import unionBtn from "../../assets/home/union.svg";
 
 
@@ -18,30 +9,12 @@ const FormContact = () => {
   const { t } = useTranslation();
 
   const servicesData = [
-    {
-      nombre: "Content",
-      id: 1,
-    },
-    {
-      nombre: "Design",
-      id: 2,
-    },
-    {
-      nombre: "Strategy",
-      id: 3,
-    },
-    {
-      nombre: "Web Design",
-      id: 4,
-    },
-    {
-      nombre: "Events",
-      id: 5,
-    },
-    {
-      nombre: "Productions",
-      id: 6,
-    },
+    { nombre: "Content", id: 1 },
+    { nombre: "Design", id: 2 },
+    { nombre: "Strategy", id: 3 },
+    { nombre: "Web Design", id: 4 },
+    { nombre: "Events", id: 5 },
+    { nombre: "Productions", id: 6 },
   ];
 
   const initialState = {
@@ -49,105 +22,51 @@ const FormContact = () => {
     company: "",
     email: "",
     phone: "",
+    service: "",
   };
 
   const [checkPrivacy, setCheckPrivacy] = useState(false);
   const [values, setValues] = useState(initialState);
-  const [alert, setAlert] = useState(undefined);
-
-  const [services, setServices] = useState(servicesData);
-  const [serviceSelected, setServiceSelected] = useState("");
-  const [modalVisibleSubmit, setModalVisibleSubmit] = useState(false);
-  const [formularioCompleto, setFormularioCompleto] = useState(false);
-
-  const handleChangeInput = (e) => {
-    const { name } = e.target;
-    setValues((valoresPrevios) => ({
-      ...valoresPrevios,
-      [name]: e.target.value,
-    }));
-  };
-
-  const handleCheckPrivacyChange = (e) => {
-    setCheckPrivacy(e.target.checked);
-  };
+  const [errors, setErrors] = useState({});
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (serviceSelected === "") {
-      setAlert({
-        title: "Error",
-        subtitle: "Debes seleccionar un servicio",
-        type: "error",
-        logo: false,
-        open: true,
-      });
-      return;
+    const newErrors = {};
+
+    if (!values.service) {
+      newErrors.service = "Debes seleccionar un servicio";
+    }
+
+    if (!values.name || !/^[a-zA-Z\s]+$/.test(values.name)) {
+      newErrors.name = "Debes ingresar tu nombre y apellidos completos.";
+    }
+
+    if (!values.company) {
+      newErrors.company = "Debes ingresar el nombre de tu compañía.";
+    }
+
+    if (!values.email || !/^\S+@\S+\.\S+$/.test(values.email)) {
+      newErrors.email = "Debes ingresar una dirección de correo válida.";
+    }
+
+    if (!values.phone  || !/^\+?\d+$/.test(values.phone)) {
+      newErrors.phone = "Debes ingresar un número de contacto válido.";
+    }
+
+    if (!checkPrivacy) {
+      newErrors.privacy = "Debes aceptar los términos y condiciones.";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
     } else {
-      if (!validateNames(values.name)) {
-        setAlert({
-          title: "Error",
-          subtitle: "Debes de ingresar tu nombre y apellidos completos.",
-          type: "error",
-          logo: false,
-          open: true,
-        });
-        return;
-      } else if (!validateNames(values.company)) {
-        setAlert({
-          title: "Error",
-          subtitle: "Debes de ingresar tu nombre de su compañía.",
-          type: "error",
-          logo: false,
-          open: true,
-        });
-        return;
-      } else if (!validateEmail(values.email)) {
-        setAlert({
-          title: "Error",
-          subtitle: "Debes de ingresar una dirección de correo válida.",
-          type: "error",
-          logo: false,
-          open: true,
-        });
-        return;
-      } else if (!validatePhone(values.phone)) {
-        setAlert({
-          title: "Error",
-          subtitle: "Debes de ingresar un número de contacto válido.",
-          subtitle3: "*Máximo 9 dígitos",
-          type: "error",
-          logo: false,
-          open: true,
-        });
-        return;
-      } else if (!checkPrivacy) {
-        setAlert({
-          title: "error",
-          subtitle: "Debes aceptar los términos y condiciones.",
-          type: "error",
-          logo: false,
-          open: true,
-        });
-        return;
-      } else {
-        try {
-          await uploadDocToFirebase(values.phone, {
-            ...values,
-            services: serviceSelected,
-          });
-          setValues(initialState);
-          setServiceSelected("");
-          setCheckPrivacy(false);
-        } catch (error) {
-          return setAlert({
-            title: "Error",
-            subtitle: "Hubo un error al registrar el usuario.",
-            type: "error",
-            logo: false,
-            open: true,
-          });
-        }
+      try {
+        // Aquí iría tu lógica para enviar el formulario
+        console.log("Formulario enviado:", values);
+        setValues(initialState);
+        setCheckPrivacy(true);
+      } catch (error) {
+        console.error("Error al enviar el formulario:", error);
       }
     }
   };
@@ -161,29 +80,31 @@ const FormContact = () => {
       <form onSubmit={handleSubmit} className="container-form">
         <div className="selectContainer">
           <select
-            value={serviceSelected}
-            onChange={(e) => setServiceSelected(e.target.value)}
+            className={errors.service ? "error" : ""}
+            value={values.service}
+            onChange={(e) => setValues({ ...values, service: e.target.value })}
           >
             <option value="" disabled selected>
               {t("contact-form.for-me")}
             </option>
-            {services.map((op, index) => (
-              <option key={index} value={op.value}>
+            {servicesData.map((op, index) => (
+              <option key={index} value={op.nombre}>
                 {op.nombre}
               </option>
             ))}
           </select>
+          {errors.service && <p className="error-message-select">{errors.service}</p>}
         </div>
         <div className="inputContainer">
           <input
-            className="name"
+            className={errors.name ? "error" : ""}
             id="name"
             name="name"
             type="text"
             autocomplete="off"
             value={values.name}
             // placeholder={t("contact-form.name")}
-            onChange={handleChangeInput}
+            onChange={(e) => setValues({ ...values, name: e.target.value })}
           />
           <label
             className={`label-form ${values.name ? "has-value" : ""}`}
@@ -191,17 +112,18 @@ const FormContact = () => {
           >
             Full name
           </label>
+          {errors.name && <p className="error-message">{errors.name}</p>}
         </div>
         <div className="inputContainer">
           <input
-            className="company"
+            className={errors.company ? "error" : ""}
             id="company"
             name="company"
             type="text"
             autocomplete="off"
             value={values.company}
             // placeholder={t("contact-form.company")}
-            onChange={handleChangeInput}
+            onChange={(e) => setValues({ ...values, company: e.target.value })}
           />
           <label
             className={`label-form ${values.company ? "has-value" : ""}`}
@@ -209,18 +131,19 @@ const FormContact = () => {
           >
             Company name
           </label>
+          {errors.company && <p className="error-message">{errors.company}</p>}
         </div>
         <div className="container-two">
-          <div className="inputContainer">
-            <input
-              className="email"
+        <div className="inputContainer">
+          <input
+            className={errors.email ? "error" : ""}
               id="email"
               name="email"
-              type="email"
+              type="text"
               autocomplete="off"
               value={values.email}
               // placeholder={t("contact-form.email")}
-              onChange={handleChangeInput}
+              onChange={(e) => setValues({ ...values, email: e.target.value })}
             />
             <label
               className={`label-form ${values.email ? "has-value" : ""}`}
@@ -228,17 +151,18 @@ const FormContact = () => {
             >
               Email
             </label>
+            {errors.email && <p className="error-message">{errors.email}</p>}
           </div>
           <div className="inputContainer">
-            <input
-              className="phone"
+          <input
+              className={errors.phone ? "error" : ""}
               id="phone"
               name="phone"
-              type="number"
+              type="text"
               autocomplete="off"
               value={values.phone}
               // placeholder={t("contact-form.phone")}
-              onChange={handleChangeInput}
+              onChange={(e) => setValues({ ...values, phone: e.target.value })}
             />
             <label
               className={`label-form ${values.phone ? "has-value" : ""}`}
@@ -246,6 +170,7 @@ const FormContact = () => {
             >
               Phone
             </label>
+            {errors.phone && <p className="error-message">{errors.phone}</p>}
           </div>
         </div>
         <div className="checkContainer">
@@ -264,6 +189,7 @@ const FormContact = () => {
             <div className="privacy-text">{t("contact-form.check")}</div>
           </label>
         </div>
+        { !errors.checkPrivacy  && <p className="error-message">{errors.privacy}</p>}
         <div className="button__load-send">
           <button onClick="" type="submit">
             {t("contact-form.send")}
@@ -271,25 +197,6 @@ const FormContact = () => {
           </button>
         </div>
       </form>
-      {modalVisibleSubmit && (
-        <Modal
-          logo={true}
-          title="¡Formulario recibido!"
-          subtitle="Te enviaremos un correo electrónico con 
-            la confirmación de tu registro"
-          onClick={() => setModalVisibleSubmit(false)}
-        />
-      )}
-      {alert && alert.open && (
-        <ModalResponse
-          type={alert.type}
-          title={alert.title}
-          subtitle={alert.subtitle}
-          subtitle3={alert.subtitle3}
-          logo={alert.logo}
-          close={() => setAlert({ open: false })}
-        />
-      )}
     </div>
   );
 };
