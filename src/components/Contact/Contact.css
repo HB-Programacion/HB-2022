@@ -8,7 +8,7 @@
 
 .title-contact-desktop1 {
 width: 60%;
-
+z-index: 9;
   }
 
 .box-title-contact {
@@ -25,6 +25,8 @@ width: 60%;
   height: 20%;
   position: relative;
   top: 5rem;
+  left: -2rem;
+  z-index: 8;
 }
 
 
