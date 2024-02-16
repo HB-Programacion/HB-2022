@@ -66,7 +66,7 @@
   margin: 1.5rem 0rem;
 }
 .container-sliderComponent {
-  width: 90%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -178,7 +178,11 @@
     line-height: 2.5rem;
   }
 }
-
+@media (max-width: 1199px) {
+  .description-filter-services {
+    padding: 1.5rem;
+   }
+}
 @media (max-width: 680px) {
   .css-1fzpoyk img {
     width: 90%;
@@ -187,6 +191,11 @@
     width: 100%;
   }
   .description-filter-services {
-   padding: 1rem;
+   padding: 1.5rem;
   }
+  .text-lets-talk {
+    padding: 0rem 1rem 0;
+  }
+  
 }
+

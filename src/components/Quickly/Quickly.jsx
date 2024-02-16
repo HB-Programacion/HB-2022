@@ -226,7 +226,9 @@ const Quickly = () => {
           <div className="textCategorySimilar">You might like</div>
           <div className="box-quicklyst-a">
             <p>More about campaign</p>
-            <p>View all</p>
+            <a href="/quickly">
+              <p className="all-work">View all</p>
+            </a>
           </div>
           <Masonry columnsCount={2} gutter="10px">
             {filteredImages &&

@@ -225,6 +225,10 @@
   text-align: center;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
+
+}
+.tab{
+  cursor: pointer;
 }
 
 .description-tab{
