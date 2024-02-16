@@ -137,6 +137,7 @@ const Quickly = () => {
                         muted
                         playsInline
                         loop={true}
+                        style={{ cursor: 'pointer' }}
                       >
                         <source src={type?.url} type="video/mp4" />
                       </video>
@@ -230,17 +231,18 @@ const Quickly = () => {
           <Masonry columnsCount={2} gutter="10px">
             {filteredImages &&
               filteredImages.map((type) => (
-                <div className="gallery__items-quickly" key={type.id}>
+                <div className="" key={type.id}>
                   <a onClick={() => openModal(type)}>
                     <img
-                      src={type.url}
+                      src={type.imageUrl}
                       alt={type.name}
                       className="gallery__img"
                     />
                   </a>
                   <h5 className="filter-title-quickly">{type.title}</h5>
                 </div>
-              ))}
+              ))
+            }
           </Masonry>
         </div>
         {/* Agrega aquí los detalles adicionales de la imagen si es necesario */}
