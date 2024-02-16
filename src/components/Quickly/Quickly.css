@@ -121,14 +121,27 @@
   text-align: center;
   color: #fff;
   font-family: "neue-haas-grotesk-display";
-  font-size: 28px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
   letter-spacing: -0.7px;
   padding: 2rem 0rem;
 }
+.all-work{
+  font-family: "neue-haas-grotesk-display";
+  font-size: 25px;
+  color: #fff;
+  text-decoration: underline;
 
+}
+
+.more-about-campaign{
+  font-family: "neue-haas-grotesk-display";
+  font-size: 20px;
+  color: #fff;
+  
+}
 .back-button {
   display: flex;
   left: 10px;
@@ -197,7 +210,7 @@
   display: flex;
   justify-content: space-between;
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 1400px) {

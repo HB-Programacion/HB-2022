@@ -12,6 +12,7 @@ video::-webkit-media-controls-pausebutton {
   display: none;
 }
 
+
 .desktop {
   display: none !important;
 }
