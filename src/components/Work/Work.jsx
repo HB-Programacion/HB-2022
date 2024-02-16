@@ -24,7 +24,6 @@ const Work = () => {
   const [matchedImage, setMatchedImage] = useState(0);
   const [imageClasses, setImageClasses] = useState([]);
 
-
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const category = queryParams.get("category");
@@ -87,25 +86,25 @@ const Work = () => {
   };
 
   const getImageClass = (width) => {
-    console.log(width)
+    console.log(width);
     const smallImageWidth = 760;
     const largeImageWidth = 1450;
 
     if (width <= smallImageWidth) {
-      return 'small-image';
+      return "small-image";
     } else if (width <= largeImageWidth) {
-      return 'large-image';
+      return "large-image";
     }
 
-    return '';
+    return "";
   };
 
   const topScroll = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'instant'
+      behavior: "instant",
     });
-  }
+  };
 
   return (
     <>
@@ -141,38 +140,37 @@ const Work = () => {
         </div>
 
         <div className="box-work">
-       
           <div className="gallery__container-work">
-          <Masonry columnsCount={width > breakpoint ? 2 : 1}gutter="10px">
-
-
-
-            {filteredImages &&
-              filteredImages.map((type, index) => (
-                <div
-                  className={`gallery__items ${imageClasses[index] || 'small-image'}`}
-                  key={type.id}
-                  onClick={() => handleDataClick(type)}
-                >
-                  <img
-                    src={type.url}
-                    alt={type.name}
-                    className="gallery__img"
-                    onLoad={(e) => handleImageLoad(e, { index })}
-                    onClick={topScroll}
-                    style={{ cursor: 'pointer' }}
-                  />
-                  <h5 className="filter-title">{type.title}</h5>
-                  <p className="filter-subtitle">{type.description}</p>
-                </div>
-              ))}
-                </Masonry>
-
+            <Masonry columnsCount={width > breakpoint ? 2 : 1} gutter="30px">
+              {filteredImages &&
+                filteredImages.map((type, index) => (
+                  <div
+                    className={`gallery__items ${
+                      imageClasses[index] || "small-image"
+                    }`}
+                    key={type.id}
+                    onClick={() => handleDataClick(type)}
+                  >
+                    <img
+                      src={type.url}
+                      alt={type.name}
+                      className="gallery__img"
+                      onLoad={(e) => handleImageLoad(e, { index })}
+                      onClick={topScroll}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 className="filter-title">{type.title}</h5>
+                    <p className="filter-subtitle">{type.description}</p>
+                  </div>
+                ))}
+            </Masonry>
           </div>
         </div>
         <div className="box-work">
           <p className="p-gray text-center parrafo container__text">
-          We create brand launch campaigns, gadgets, signage, websites, digital assets and much more.  All of this happens in our in-house production studios.{" "}
+            We create brand launch campaigns, gadgets, signage, websites,
+            digital assets and much more. All of this happens in our in-house
+            production studios.{" "}
           </p>
         </div>
         <div className="button__load-work">
@@ -190,21 +188,27 @@ const Work = () => {
           </p>
           {width > breakpoint ? (
             <div className="gallery__container-img">
-            <div className="gallery__item">
-              <img src={bulevard} alt="bulevard" className="single-image" />
-              <h5 className="filter-title-item">Hendrick’s OOH Asia Bulevard</h5>
+              <div className="gallery__item">
+                <img src={bulevard} alt="bulevard" className="single-image" />
+                <h5 className="filter-title-item">
+                  Hendrick’s OOH Asia Bulevard
+                </h5>
+              </div>
+              <div className="gallery__item">
+                <img src={jokr1} alt="jokr1" className="single-image" />
+                <h5 className="filter-title-item">
+                  JOKR Christmas Illustrations
+                </h5>
+              </div>
+              <div className="gallery__item">
+                <img src={centria} alt="centria" className="single-image" />
+                <h5 className="filter-title-item">Centria Rebranding</h5>
+              </div>
             </div>
-            <div className="gallery__item">
-              <img src={jokr1} alt="jokr1" className="single-image" />
-              <h5 className="filter-title-item">JOKR Christmas Illustrations</h5>
-            </div>
-            <div className="gallery__item">
-              <img src={centria} alt="centria" className="single-image" />
-              <h5 className="filter-title-item">Centria Rebranding</h5>
-            </div>
-          </div>
           ) : (
-            <div className="box-slider-component-work"><SliderComponentWork /></div>
+            <div className="box-slider-component-work">
+              <SliderComponentWork />
+            </div>
           )}
 
           {/* <div className="button__load">

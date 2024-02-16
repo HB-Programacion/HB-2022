@@ -16,13 +16,13 @@
   left: 0;
   background: #9340f3;
   transition: 0.3s ease-in-out;
-  opacity: 1;
+  visibility: visible;
   overflow-y: scroll;
   top: 0;
 }
 
 .drop-menu-off {
-  opacity: 0;
+  visibility: hidden;
   left: -100%;
 }
 .container-fullview {

@@ -3,7 +3,7 @@
 
 #slideshow {
   margin: 0 auto;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   height: 35rem;
   width: 100%;
   box-sizing: border-box;
@@ -139,6 +139,7 @@
 
 #slideshow {
     height: 28rem;
+    
 }
     .entire-content {
         width: 180px;
