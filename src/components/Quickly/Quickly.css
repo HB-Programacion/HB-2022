@@ -112,7 +112,13 @@
 .gif-hb img {
   margin: 3rem;
 }
-
+.gif-thankYou img{
+  margin: 1rem auto;
+  display: block;
+}
+.thanYouGif{
+  width: 10rem;
+}
 .containerInterna img {
   width: 100%;
 }

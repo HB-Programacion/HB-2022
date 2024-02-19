@@ -18,6 +18,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import quicklys from "../../assets/work/quicklys.svg";
 import ReactModal from "react-modal";
 import hb from "../../assets/quickly/hb-back.svg";
+import thankYou from "../../assets/quickly/thanks for watching_GIF.gif";
 import arrowBtnBlack from "../../assets/arrow-btn-black.svg";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
@@ -217,9 +218,9 @@ const Quickly = () => {
                 __html: selectedImage?.internaContent,
               }}
             ></div>
-            {/* <div className="gif-hb">
-              <img src={hb} alt="union" />
-            </div> */}
+            <div className="gif-thankYou">
+              <img src={thankYou} alt="union" className="thanYouGif" />
+            </div>
           </div>
         </div>
         <div className="similarCategory">
