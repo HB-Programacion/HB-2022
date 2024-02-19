@@ -133,7 +133,7 @@ const Quickly = () => {
                         ref={(ref) => updateVideoRef(type.id, ref)}
                         className="gallery__img"
                         controls={false}
-                        autoPlay={false}
+                        autoPlay={/iPad|iPhone|iPod/.test(navigator.userAgent)}
                         muted
                         playsInline
                         loop={true}
