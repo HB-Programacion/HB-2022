@@ -19,7 +19,7 @@
 .filter-title-quickly {
   color: #8e8e8e;
   font-family: "nehue-has55";
-  font-size: 16px;
+  font-size: .8rem;
   margin: 1rem 0;
   margin-top: 0.5rem;
 }
@@ -130,7 +130,7 @@
 }
 .all-work{
   font-family: "neue-haas-grotesk-display";
-  font-size: 25px;
+  font-size: 1rem;
   color: #fff;
   text-decoration: underline;
 
@@ -241,5 +241,11 @@
     width: 65%;
     padding: 2rem 0 2rem 0;
     margin: 0rem auto;
+  }
+  .all-work{
+    font-size: 25px;
+  }
+  .filter-title-quickly{
+    font-size: 1.5rem;
   }
 }

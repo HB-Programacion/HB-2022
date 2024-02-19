@@ -32,7 +32,7 @@ const Header = () => {
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
-            size={22}
+            size={26}
             color={`${isOpen ? "#000" : "#fff"}`}
           >
             <img src={burguerHB} alt="Burguer" />

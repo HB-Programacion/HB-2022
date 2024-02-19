@@ -1,5 +1,5 @@
 .box-contact {
-  padding: 4rem 0rem;
+  padding: 10rem 0rem;
   position: relative;
 }
 .title-contact-desktop {
@@ -47,5 +47,8 @@ z-index: 9;
   }
   .title-contact-mobile1{
     z-index: 9;
+  }
+  .box-contact {
+    padding: 6rem 0;
   }
 }

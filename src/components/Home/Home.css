@@ -69,7 +69,7 @@
 
 .container-img-home img{
   width: 70%;
-  margin: 2.5rem auto;
+  margin: 8.5rem auto;
   display: block;
 }
 
@@ -347,7 +347,9 @@
     flex-wrap: wrap;
     margin: 4rem auto;
   }
-
+  .container-img-home img{
+    margin: 3.5rem auto;
+  }
   .buttons__style button{
     font-size: 20px;
   }

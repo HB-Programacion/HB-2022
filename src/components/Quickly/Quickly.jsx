@@ -230,7 +230,7 @@ const Quickly = () => {
               <p className="all-work">View all</p>
             </a>
           </div>
-          <Masonry columnsCount={width > breakpoint ? 3 : 2} gutter="10px">
+          <Masonry columnsCount={width > breakpoint ? 3 : 2} gutter="8px">
             {filteredImages &&
               filteredImages.map((type) => (
                 <div className="" key={type.id}>
