@@ -56,7 +56,7 @@
 }
 
 .img1 {
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .text-acreative{
@@ -251,7 +251,7 @@
   }
 
   .img1{
-    margin-top: 12rem;
+    margin-top: 5rem;
   }
  
   .title-about{
@@ -261,6 +261,8 @@
   }
   .text-mutual{
     margin: 0rem auto;
+    font-size: 5.5rem;
+    line-height: 6rem;
   }
   .subtitle-about{
     font-size: 2.2rem;
@@ -281,6 +283,7 @@
   }
   .box-wwb-tabs{
     font-size: 2.5rem;
+    padding: 4rem 15rem;
   }
 
   .title-tab{
