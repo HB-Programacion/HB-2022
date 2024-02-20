@@ -37,7 +37,9 @@ import people10 from "../../assets/about/people/Team_10.gif";
 import arrowDown from "../../assets/about/arrowDown2.svg";
 import download from "../../assets/about/download.svg";
 
+
 const About = () => {
+
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [

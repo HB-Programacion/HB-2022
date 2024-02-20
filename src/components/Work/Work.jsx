@@ -16,7 +16,15 @@ import jokr1 from "../../assets/work/jokr1.svg";
 import centria from "../../assets/work/centria.svg";
 import SliderComponentWork from "./sliderComponentWork/SliderComponentWork";
 
+import { getImageUrl } from "../../services/s3services";
+
+
 const Work = () => {
+
+  const workCentria = getImageUrl("workCentria");
+  const workVendimia = getImageUrl("workVendimia");
+  const workBetter = getImageUrl("workBetter");
+
   const [filteredImages, setFilteredImages] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
@@ -189,20 +197,20 @@ const Work = () => {
           {width > breakpoint ? (
             <div className="gallery__container-img">
               <div className="gallery__item">
-                <img src={bulevard} alt="bulevard" className="single-image" />
+                <img src={workCentria} alt="bulevard" className="single-image" />
                 <h5 className="filter-title-item">
-                  Hendrick’s OOH Asia Bulevard
+                  Centria Rebranding
                 </h5>
               </div>
               <div className="gallery__item">
-                <img src={jokr1} alt="jokr1" className="single-image" />
+                <img src={workVendimia} alt="jokr1" className="single-image" />
                 <h5 className="filter-title-item">
-                  JOKR Christmas Illustrations
+                  Vendimia Pisco Sarcay
                 </h5>
               </div>
               <div className="gallery__item">
-                <img src={centria} alt="centria" className="single-image" />
-                <h5 className="filter-title-item">Centria Rebranding</h5>
+                <img src={workBetter} alt="centria" className="single-image" />
+                <h5 className="filter-title-item">Betterfly Event</h5>
               </div>
             </div>
           ) : (

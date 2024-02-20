@@ -25,6 +25,11 @@ export const getImagesFromS3 = async () => {
    //CONTACT
    imageUrls.contactGif = 'https://webhb.s3.us-east-2.amazonaws.com/Contact/contact.gif'
 
+   //WORK
+   imageUrls.workCentria = 'https://webhb.s3.us-east-2.amazonaws.com/Work/quickly-3-colum/centriaimg.png'
+   imageUrls.workVendimia= 'https://webhb.s3.us-east-2.amazonaws.com/Work/quickly-3-colum/vendimia.png'
+   imageUrls.workBetter= 'https://webhb.s3.us-east-2.amazonaws.com/Work/quickly-3-colum/betterflyEvent.png'
+
 
    return imageUrls;
 };
