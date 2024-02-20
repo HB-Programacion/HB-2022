@@ -91,8 +91,8 @@ const WorkDetails = () => {
       <div className=" bg-black">
         <div className="box-workDetails">
           { width > breakpoint ?
-            <img src={titleDesk} alt="img"/> :
-            <img src={titleMobile} alt="img"/>
+            <img src={titleDesk} alt="img" className="w-100"/> :
+            <img src={titleMobile} alt="img" className="w-100"/>
           }
           <p className="subtitle-project">{subtitle.toUpperCase()}</p>
           <div className="box-project-detail">
@@ -142,7 +142,7 @@ const WorkDetails = () => {
             )}
             { text2 && (
               <div className="box-workDetails">
-                <p className="p-white container-parrafo">{text2}</p>
+                <p className="box-workDetails-description">{text2}</p>
               </div>
             )}
         </div>
@@ -160,7 +160,7 @@ const WorkDetails = () => {
           )}
           { text3 && (
             <div className="box-workDetails">
-              <p className="p-white container-parrafo">{text3}</p>
+              <p className="box-workDetails-description">{text3}</p>
             </div>
           )}
           { banner4 && (
@@ -177,7 +177,7 @@ const WorkDetails = () => {
           )}
           { text4 && (
             <div className="box-workDetails">
-              <p className="p-white">{text4}</p>
+              <p className="box-workDetails-description">{text4}</p>
             </div>
           )}
           { banner5 && (
@@ -194,7 +194,7 @@ const WorkDetails = () => {
           )}
           {text5 && (
             <div className="box-workDetails">
-              <p className="p-white container-parrafo">{text5}</p>
+              <p className="box-workDetails-description">{text5}</p>
             </div>
           )}
           {banner6 && (
@@ -211,7 +211,7 @@ const WorkDetails = () => {
           )}
           {text6 && (
             <div className="box-workDetails">
-              <p className="p-white container-parrafo">{text6}</p>
+              <p className="box-workDetails-description">{text6}</p>
             </div>
           )}
           {banner7 && (
@@ -228,7 +228,7 @@ const WorkDetails = () => {
           )}
           { text7 && (
             <div className="box-workDetails">
-              <p className="p-white container-parrafo">{text7}</p>
+              <p className="box-workDetails-description">{text7}</p>
             </div>
           )}
           { banner8 && (
@@ -245,7 +245,7 @@ const WorkDetails = () => {
           )}
           { text8 && (
             <div className="box-workDetails">
-              <p className="text-gray-poject text-left">{text8}</p>
+              <p className="box-workDetails-description">{text8}</p>
             </div>
           )}
           { banner9 && (
@@ -262,11 +262,11 @@ const WorkDetails = () => {
           )}
           { text9 && (
               <div className="box-workDetails">
-                <p className="text-gray-poject text-left">{text9}</p>
+                <p className="box-workDetails-description">{text9}</p>
               </div>
             )
           }
-        <img src={footer} alt="img"/>
+        <img src={footer} alt="img" className="w-100"/>
       </div>
       <div className="bg-black">
         <img src={letterNext} className="letter-next" alt="letterNext"/>

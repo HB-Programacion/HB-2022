@@ -66,7 +66,7 @@ const ServiceView = () => {
           <SliderComponent />
         </div>
         <div className="box-services">
-          <p className="text-gray text-center">
+          <p className="text-gray text-center text-slider-services">
             From brainstorm to brilliance. Our services aren't just about
             deliverables; they're about the journey of turning visions into
             brand realities. Explore, engage, and see how we transform ideas in

@@ -127,7 +127,7 @@
   text-align: center;
   color: #fff;
   font-family: "neue-haas-grotesk-display";
-  font-size: 35px;
+  font-size:55px;
   font-style: normal;
   font-weight: 450;
   line-height: normal;
@@ -216,7 +216,7 @@
   display: flex;
   justify-content: space-between;
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 1400px) {
