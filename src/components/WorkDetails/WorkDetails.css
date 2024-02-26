@@ -1,24 +1,23 @@
-.subtitle-project{
-  color:#8E8E8E;
+.subtitle-project {
+  color: #8e8e8e;
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: .73rem;
+  font-size: 0.73rem;
   text-align: center;
 }
 
-.box-workDetails{
+.box-workDetails {
   padding: 4rem 1rem;
-  
 }
-.box-workDetails-description{
-  color: #8E8E8E;
+.box-workDetails-description {
+  color: #8e8e8e;
   font-size: 1.8rem;
   line-height: 2.2rem;
   width: 70%;
   display: block;
   margin: 3rem auto;
 }
-.box-workDetails-description-rigth{
-  color: #8E8E8E;
+.box-workDetails-description-rigth {
+  color: #8e8e8e;
   font-size: 1.8rem;
   line-height: 2.2rem;
   width: 60%;
@@ -28,8 +27,8 @@
   float: right;
 }
 
-.box-workDetails-description-left{
-  color: #8E8E8E;
+.box-workDetails-description-left {
+  color: #8e8e8e;
   font-size: 1.8rem;
   line-height: 2.2rem;
   width: 60%;
@@ -39,35 +38,35 @@
   float: left;
 }
 
-.box-project-detail{
+.box-project-detail {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 2rem auto;
 }
 
-.project-detail-item{
+.project-detail-item {
   border: 1px solid #fff;
   border-radius: 50px;
   color: #fff;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1rem;
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
-.box-img-details{
+.box-img-details {
   margin: 4rem auto;
 }
 
-.text-challenge{
+.text-challenge {
   color: #fff;
   font-family: "nehue-has45";
   font-size: 2rem;
   text-align: center;
   margin-top: 4rem;
 }
-.description-challenge{
-  color: #8E8E8E;
+.description-challenge {
+  color: #8e8e8e;
   font-family: "nehue-has55";
   font-size: 1.8rem;
   text-align: center;
@@ -75,32 +74,32 @@
   margin-bottom: 4rem;
 }
 
-.gif-80{
+.gif-80 {
   width: 80%;
   margin: 1rem auto;
   display: block;
 }
-.gif-70{
+.gif-70 {
   width: 70%;
   margin: 2rem auto;
   display: block;
 }
-.gif-90{
+.gif-90 {
   width: 90%;
   margin: 1rem auto;
   display: block;
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
 
-.text-left{
-  text-align: left!important;
+.text-left {
+  text-align: left !important;
 }
 
-.text-gray-poject{
-  color: #8E8E8E;
+.text-gray-poject {
+  color: #8e8e8e;
   font-size: 1.5rem;
   font-family: "nehue-has55";
   line-height: 2.5rem;
@@ -108,7 +107,7 @@
   text-align: center;
 }
 
-.letter-next{
+.letter-next {
   width: 60%;
   display: block;
   margin: 0 auto;
@@ -116,13 +115,13 @@
   padding: 5rem 0;
 }
 
-.nextButton{
+.nextButton {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.img-next-project{
+.img-next-project {
   width: 40%;
   position: relative;
   top: -10rem;
@@ -131,7 +130,7 @@
   filter: brightness(0.5);
 }
 
-.btn-title-next{
+.btn-title-next {
   color: #fff;
   position: absolute;
   left: 50%;
@@ -143,25 +142,66 @@
 }
 
 @media (min-width: 1200px) {
-  .box-workDetails{
+  .box-workDetails {
     text-align: center;
   }
-  .box-project-detail{
+  .box-project-detail {
     justify-content: center;
   }
-  .project-detail-item{
+  .project-detail-item {
     margin: auto 0.5rem;
   }
-.box-title-work-details{
-  padding: 6rem 0rem 5rem 0;
+  .box-title-work-details {
+    padding: 6rem 0rem 5rem 0;
+  }
+  .video3 {
+    padding: 1rem 0;
+  }
+  .video4 {
+    padding: 1rem 0 0 0;
+  }
+  .video6 {
+    padding: 1rem 0 0 0;
+  }
 }
-.video3{
-  padding: 2rem 0;
-}
-.video4{
-  padding: 2rem 0 0 0;
-}
-.video6{
-  padding: 2rem 0 0 0;
-}
+
+@media (max-width: 680px) {
+  .text-challenge {
+    font-size: 1.8rem;
+  }
+
+  .description-challenge {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .box-workDetails-description-rigth {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 90%;
+    margin: 0rem 1rem 3rem 1rem;
+  }
+  .box-workDetails-description-left{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 90%;
+    margin: 0rem 1rem 3rem 1rem;
+  }
+  .box-workDetails-description{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .letter-next{
+    width: 80%;
+  }
+  .img-next-project{
+    width: 50%;
+    top: -7rem;
+  }
+  .btn-title-next{
+    font-size: 2rem;
+    top: -30%;
+  }
 }
