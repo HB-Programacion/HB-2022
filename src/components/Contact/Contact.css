@@ -44,6 +44,9 @@ z-index: 9;
     height: 70%;
     top: -1rem;
     z-index: 8;
+    margin: 0 auto;
+    display: block;
+    left: 0rem;
   }
   .title-contact-mobile1{
     z-index: 9;
@@ -51,4 +54,5 @@ z-index: 9;
   .box-contact {
     padding: 6rem 0;
   }
+
 }
