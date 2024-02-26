@@ -214,7 +214,7 @@ const About = () => {
           </div>
         </div>
         <img src={img2} className="w-100 img1 mobile" />
-        <img src={img2D} className="w-100 img1 desktop" />
+        <img src={img2D} className="w-100 img2 desktop" />
         <div className="box-about ">
           {/* <img src={makers} className="mop" /> */}
           <h2 className="titleHb-white">Meet THE MAKERS</h2>

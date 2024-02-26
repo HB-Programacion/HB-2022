@@ -175,14 +175,14 @@ const Work = () => {
           </div>
         </div>
         <div className="box-work">
-          <p className="p-gray text-center parrafo container__text">
+          <p className="p-gray text-center parrafo-work">
             We create brand launch campaigns, gadgets, signage, websites,
             digital assets and much more. All of this happens in our in-house
             production studios.{" "}
           </p>
         </div>
         <div className="button__load-work">
-          <button onClick={handleLoadImage}>
+          <button onClick={handleLoadImage} >
             LOAD MORE <img src={arrowbtnBlack} alt="arrow-right" />
           </button>
         </div>

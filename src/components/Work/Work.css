@@ -68,6 +68,7 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .button__load-work button {
@@ -101,6 +102,12 @@
         font-size: 1.75rem !important;
     }
 } */
+
+.parrafo-work{
+  width: 65%;
+  padding: 0rem 0 2rem 0;
+  margin: 0 auto;
+}
 
 @media (min-width: 768px) {
   .box-work-w {
@@ -139,7 +146,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin: 2rem 1rem;
+    margin: 10rem 1rem;
   }
   .single-image {
     width: 100%;
@@ -158,4 +165,5 @@
   .filter-subtitle {
     font-size: 13px;
   }
+
 }

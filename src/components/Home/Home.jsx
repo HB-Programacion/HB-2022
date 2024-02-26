@@ -32,7 +32,7 @@ const Home = () => {
   const [filteredImages, setFilteredImages] = useState(null);
   const ref = useRef(null);
 
-  const hnkD = getImageUrl("hnkD");
+  const hnkD =  getImageUrl("hnkD");
   const rappiD = getImageUrl("rappiD");
   const img2 = getImageUrl("img2");
   const img2D = getImageUrl("img2D");
@@ -49,10 +49,8 @@ const Home = () => {
   const arrowbtn = getImageUrl("arrowbtn");
   const title = getImageUrl("title");
   const titleD = getImageUrl("titleD");
+  
 
-  useEffect(() => {
-    setFilteredImages(getImagesHome());
-  }, []);
 
   const handleImagesHome = (e) => {
     e.preventDefault();
@@ -102,6 +100,7 @@ const Home = () => {
             <div className="items-img-home">
               <img src={hnk} className="w-100 mobile" alt="hnk" />
               <img src={hnkD} className="w-100 desktop" alt="hnkD" />
+      
             </div>
             <div>
               <img src={rappi} className="w-100 mobile" alt="rappi" />
@@ -121,10 +120,10 @@ const Home = () => {
         </div>
         <div className="bg-black">
           <div className="box-btn">
-            <Link to="/work" className="btn-white">
+            <a href="/work" className="btn-white">
               EXPLORE MORE
               <img src={union} alt="arrow-right" className="arrow-black" />
-            </Link>
+            </a>
           </div>
         </div>
         {/* </div> */}

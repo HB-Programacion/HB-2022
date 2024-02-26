@@ -46,10 +46,6 @@ const Contact = () => {
       <div className="bg-black">
         <div className="fondo-header"></div>
         <div className="box-contact">
-
-         
-
-
           <div className="box-title-contact">
             <img src={titleD} className="title-contact-desktop1 desktop"></img>
             <img src={titleM} className="title-contact-mobile1 mobile"></img>

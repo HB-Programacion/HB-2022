@@ -333,6 +333,9 @@
     margin: 2rem auto;
     margin-bottom: 8rem;
   }
+  .container__buttons div{
+    margin: 0rem .2rem;
+  }
   .button__load button{
     font-size: 40px;
     padding: 14px 28px;

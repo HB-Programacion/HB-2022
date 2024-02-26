@@ -15,7 +15,6 @@ const WorkDetails = () => {
   const matchingWorkDetail = allDataWork[currentIndex - 1];
   const nextMatchingWorkDetail = allDataWork[currentIndex];
 
-
   const navigate = useNavigate();
 
   const {
@@ -43,7 +42,7 @@ const WorkDetails = () => {
     text7,
     text8,
     text9,
-    footer
+    footer,
   } = matchingWorkDetail.workDetails;
 
   const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
@@ -51,7 +50,7 @@ const WorkDetails = () => {
   const handleNextButtonClick = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'instant'
+      behavior: "instant",
     });
 
     if (currentIndex < allDataWork.length - 1) {
@@ -90,189 +89,200 @@ const WorkDetails = () => {
       </div>
       <div className=" bg-black">
         <div className="box-workDetails">
-          { width > breakpoint ?
-            <img src={titleDesk} alt="img" className="w-100"/> :
-            <img src={titleMobile} alt="img" className="w-100"/>
-          }
-          <p className="subtitle-project">{subtitle.toUpperCase()}</p>
-          <div className="box-project-detail">
-            {tabs.map((tab, index) => (
-              <div key={index} className="project-detail-item">
-                {tab}
-              </div>
-            ))}
+          <div className="box-title-work-details">
+            {width > breakpoint ? (
+              <img src={titleDesk} alt="img" className="w-100" />
+            ) : (
+              <img src={titleMobile} alt="img" className="w-100" />
+            )}
+            <p className="subtitle-project">{subtitle.toUpperCase()}</p>
+            <div className="box-project-detail">
+              {tabs.map((tab, index) => (
+                <div key={index} className="project-detail-item">
+                  {tab}
+                </div>
+              ))}
+            </div>
+            </div>
+            <div className="box-img-details">
+              {banner1 && (
+                <video
+                  className="w-100"
+                  controls={false}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop={true}
+                >
+                  <source src={banner1} type="video/mp4" />
+                </video>
+              )}
+              {descriptionChallenge && (
+                <>
+                  <h5 className="text-challenge">CHALLENGE</h5>
+                  <p className="description-challenge container__challenge">
+                    {descriptionChallenge}
+                  </p>
+                </>
+              )}
+              {decriptionSolution && (
+                <>
+                  <h5 className="text-challenge">SOLUTION</h5>
+                  <p className="description-challenge container__challenge">
+                    {decriptionSolution}
+                  </p>
+                </>
+              )}
+        
           </div>
-          <div className="box-img-details">
-            { banner1 && (
-              <video
-                className="w-100"
-                controls={false}
-                autoPlay
-                muted
-                playsInline
-                loop={true}
-              >
-                <source src={banner1} type="video/mp4" />
-              </video>
-            )}
-            { descriptionChallenge && (
-              <>
-                <h5 className="text-challenge">CHALLENGE</h5>
-                <p className="description-challenge container__challenge">{descriptionChallenge}</p>
-              </>
-            )}
-            { decriptionSolution && (
-              <>
-                <h5 className="text-challenge">SOLUTION</h5>
-                <p className="description-challenge container__challenge">{decriptionSolution}</p>
-              </>
-            )}
-          </div>
-            { banner2 && (
-              <video
-                className="w-100"
-                controls={false}
-                autoPlay
-                muted
-                playsInline
-                loop={true}
-              >
-                <source src={banner2} type="video/mp4" />
-              </video>
-            )}
-            { text2 && (
-              <div className="box-workDetails">
-                <p className="box-workDetails-description">{text2}</p>
-              </div>
-            )}
+          {banner2 && (
+            <video
+              className="w-100"
+              controls={false}
+              autoPlay
+              muted
+              playsInline
+              loop={true}
+            >
+              <source src={banner2} type="video/mp4" />
+            </video>
+          )}
+          {text2 && (
+            <div className="box-workDetails">
+              <p className="box-workDetails-description">{text2}</p>
+            </div>
+          )}
         </div>
-          { banner3 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner3} type="video/mp4" />
-            </video>
-          )}
-          { text3 && (
-            <div className="box-workDetails">
-              <p className="box-workDetails-description">{text3}</p>
-            </div>
-          )}
-          { banner4 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner4} type="video/mp4" />
-            </video>
-          )}
-          { text4 && (
-            <div className="box-workDetails">
-              <p className="box-workDetails-description">{text4}</p>
-            </div>
-          )}
-          { banner5 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner5} type="video/mp4" />
-            </video>
-          )}
-          {text5 && (
-            <div className="box-workDetails">
-              <p className="box-workDetails-description">{text5}</p>
-            </div>
-          )}
-          {banner6 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner6} type="video/mp4" />
-            </video>
-          )}
-          {text6 && (
-            <div className="box-workDetails">
-              <p className="box-workDetails-description">{text6}</p>
-            </div>
-          )}
-          {banner7 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner7} type="video/mp4" />
-            </video>
-          )}
-          { text7 && (
-            <div className="box-workDetails">
-              <p className="box-workDetails-description">{text7}</p>
-            </div>
-          )}
-          { banner8 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner8} type="video/mp4" />
-            </video>
-          )}
-          { text8 && (
-            <div className="box-workDetails">
-              <p className="box-workDetails-description">{text8}</p>
-            </div>
-          )}
-          { banner9 && (
-            <video
-              className="w-100"
-              controls={false}
-              autoPlay
-              muted
-              playsInline
-              loop={true}
-            >
-              <source src={banner9} type="video/mp4" />
-            </video>
-          )}
-          { text9 && (
-              <div className="box-workDetails">
-                <p className="box-workDetails-description">{text9}</p>
-              </div>
-            )
-          }
-        <img src={footer} alt="img" className="w-100"/>
+        {banner3 && (
+          <video
+            className="w-100 video3"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner3} type="video/mp4" />
+          </video>
+        )}
+        {text3 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description">{text3}</p>
+          </div>
+        )}
+        {banner4 && (
+          <video
+            className="w-100 video4"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner4} type="video/mp4" />
+          </video>
+        )}
+        {text4 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description-rigth">{text4}</p>
+          </div>
+        )}
+        {banner5 && (
+          <video
+            className="w-100 video4"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner5} type="video/mp4" />
+          </video>
+        )}
+        {text5 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description">{text5}</p>
+          </div>
+        )}
+        {banner6 && (
+          <video
+            className="w-100 video6"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner6} type="video/mp4" />
+          </video>
+        )}
+        {text6 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description-left">{text6}</p>
+          </div>
+        )}
+        {banner7 && (
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner7} type="video/mp4" />
+          </video>
+        )}
+        {text7 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description">{text7}</p>
+          </div>
+        )}
+        {banner8 && (
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner8} type="video/mp4" />
+          </video>
+        )}
+        {text8 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description">{text8}</p>
+          </div>
+        )}
+        {banner9 && (
+          <video
+            className="w-100"
+            controls={false}
+            autoPlay
+            muted
+            playsInline
+            loop={true}
+          >
+            <source src={banner9} type="video/mp4" />
+          </video>
+        )}
+        {text9 && (
+          <div className="box-workDetails">
+            <p className="box-workDetails-description">{text9}</p>
+          </div>
+        )}
+        <img src={footer} alt="img" className="w-100" />
       </div>
       <div className="bg-black">
-        <img src={letterNext} className="letter-next" alt="letterNext"/>
+        <img src={letterNext} className="letter-next" alt="letterNext" />
         <div className="nextButton">
-          {imageNext && <img src={imageNext} alt="Imagen" className="img-next-project" />}
-          <div onClick={handleNextButtonClick} className="btn-title-next">{textNext}</div>
+          {imageNext && (
+            <img src={imageNext} alt="Imagen" className="img-next-project" />
+          )}
+          <div onClick={handleNextButtonClick} className="btn-title-next">
+            {textNext}
+          </div>
         </div>
       </div>
     </>

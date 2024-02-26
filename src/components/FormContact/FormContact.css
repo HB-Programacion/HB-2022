@@ -12,7 +12,7 @@
 .text-contact {
   color: #ffffff;
   font-family: neue-haas-grotesk-display, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 2rem 0rem;
 }
 .inputContainer {
@@ -63,11 +63,11 @@
 }
 
 .inputContainer .error{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #FF4040;
 }
 
 .inputContainer .error-message{
-  color: red;
+  color: #FF4040;
 }
 
 .checkContainer {
@@ -166,8 +166,8 @@
 }
 
 .button__load-send button {
-  font-size: 26px;
-  padding: 6px 20px;
+  font-size: 40px;
+  padding: 14px 28px;
   border-radius: 50px;
   border: 1px solid #111;
   margin: auto 5px;
@@ -180,16 +180,16 @@
 }
 
 .selectContainer .error{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #FF4040;
 }
 
 .error-message{
-  color: red;
+  color: #FF4040;
   text-align: start;
 }
 
 .error-message-select{
-  color: red;
+  color: #FF4040;
   text-align: start;
   margin: 0px 0px 30px 18px;
 }
@@ -206,17 +206,17 @@
     padding-bottom: 5rem;
   }
   .text-contact {
-    padding: 10rem 6rem;
+    padding: 1rem 6rem;
     width: 36%;
     position: absolute;
-    font-size: 2.5rem;
-    top: 18%;
+    font-size: 2.3rem;
+    top: 35%;
   }
   .container-form {
     width: 50%;
     margin: 0 auto;
     position: relative;
-    top: 3rem;
+    top: 8rem;
   }
   .container-form .container-two {
     display: flex;
@@ -250,20 +250,20 @@
   }
 
   .selectContainer .error{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #FF4040;
   }
 
   .inputContainer .error{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #FF4040;
   }
 
   .error-message{
-    color: red;
+    color: #FF4040;
     text-align: start;
   }
 
   .error-message-select{
-    color: red;
+    color: #FF4040;
     text-align: start;
     margin: -28px 0px 35px 9px;
   }
