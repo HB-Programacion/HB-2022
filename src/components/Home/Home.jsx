@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import FormContact from "../FormContact/FormContact";
 import WeWorkWith from "../WeWorkWith/WeWorkWith";
 import { getImageUrl } from "../../services/s3services";
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
 const changeLanguage = (language) => {
   i18n.changeLanguage(language);
@@ -69,6 +70,9 @@ const Home = () => {
     window.scrollTo(0, 0);
   };
 
+  const { width } = useWindowDimensions();
+  const breakpoint = 1200;
+
   return (
     <>
       <div className="box-video-background">
@@ -98,21 +102,69 @@ const Home = () => {
           <img src={workParallax} className="word" alt="work" />
           <div className="container-img-home">
             <div className="items-img-home">
-              <img src={hnk} className="w-100 mobile" alt="hnk" />
-              <img src={hnkD} className="w-100 desktop" alt="hnkD" />
-      
+              {/* <img src={hnk} className="w-100 mobile" alt="hnk" /> */}
+              {/* <img src={hnkD} className="w-100 desktop" alt="hnkD" /> */}
+              <video
+                // ref={(ref) => updateVideoRef(type.id, ref)}
+                className={`w-100 ${ width < breakpoint ? 'mobile' : 'desktop'}`}
+                controls={false}
+                autoPlay={true}
+                muted
+                playsInline
+                loop={true}
+                style={{ cursor: 'pointer' }}
+              >
+                <source src={"https://webhb.s3.us-east-2.amazonaws.com/Home/Portada/Portada_Heineken+(1).mp4"} type="video/mp4" />
+              </video>
+
             </div>
             <div>
-              <img src={rappi} className="w-100 mobile" alt="rappi" />
-              <img src={rappiD} className="w-100 desktop" alt="rappiD" />
+              {/* <img src={rappi} className="w-100 mobile" alt="rappi" />
+              <img src={rappiD} className="w-100 desktop" alt="rappiD" /> */}
+              <video
+                // ref={(ref) => updateVideoRef(type.id, ref)}
+                className={`w-100 ${ width < breakpoint ? 'mobile' : 'desktop'}`}
+                controls={false}
+                autoPlay={true}
+                muted
+                playsInline
+                loop={true}
+                style={{ cursor: 'pointer' }}
+              >
+                <source src={"https://webhb.s3.us-east-2.amazonaws.com/Home/Portada/Portada_Rappi.mp4"} type="video/mp4" />
+              </video>
             </div>
             <div>
-              <img src={umana} className="w-100 mobile" alt="umana" />
-              <img src={umanaD} className="w-100 desktop" alt="umanaD" />
+              {/* <img src={umana} className="w-100 mobile" alt="umana" />
+              <img src={umanaD} className="w-100 desktop" alt="umanaD" /> */}
+              <video
+                // ref={(ref) => updateVideoRef(type.id, ref)}
+                className={`w-100 ${ width < breakpoint ? 'mobile' : 'desktop'}`}
+                controls={false}
+                autoPlay={true}
+                muted
+                playsInline
+                loop={true}
+                style={{ cursor: 'pointer' }}
+              >
+                <source src={"https://webhb.s3.us-east-2.amazonaws.com/Home/Portada/Portada_Umana.mp4"} type="video/mp4" />
+              </video>
             </div>
             <div>
-              <img src={teclab} className="w-100 mobile" alt="teclab" />
-              <img src={teclabD} className="w-100 desktop" alt="teclabD" />
+              {/* <img src={teclab} className="w-100 mobile" alt="teclab" />
+              <img src={teclabD} className="w-100 desktop" alt="teclabD" /> */}
+              <video
+                // ref={(ref) => updateVideoRef(type.id, ref)}
+                className={`w-100 ${ width < breakpoint ? 'mobile' : 'desktop'}`}
+                controls={false}
+                autoPlay={true}
+                muted
+                playsInline
+                loop={true}
+                style={{ cursor: 'pointer' }}
+              >
+                <source src={"https://webhb.s3.us-east-2.amazonaws.com/Home/Portada/Portada_Teclab.mp4"} type="video/mp4" />
+              </video>
             </div>
           </div>
 

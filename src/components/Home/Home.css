@@ -73,6 +73,12 @@
   display: block;
 }
 
+.container-img-home video{
+  width: 85%;
+  margin: 2.5rem auto;
+  display: block;
+}
+
 .button__load img {
   margin-left: 10px;
   padding: auto;

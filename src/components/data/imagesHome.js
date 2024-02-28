@@ -129,50 +129,50 @@ export const imagesHome = [
     href: "./heinekenFest",
     workDetails: {
       videoPrincipal:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_Principal.mp4",
       titleDesk:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/title-umana.png",
       titleMobile:
       "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
         "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
-      tabs: ["BRANDING", "ILLUSTRATION"],
+      tabs: ["BRANDING", "CONTENT", "ILLUSTRATION"],
       banner1:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_1.mp4",
       descriptionChallenge:
-        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
+        "Umana is a progressive architecture and design studio that prioritizes people-centered design principles. The challenge lay in effectively translating their philosophy, and design approach into a visually cohesive and engaging brand identity that resonated with their target audience while maintaining a focus on people and their interactions within spaces.",
       decriptionSolution:
-        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+        "Umana's branding strategy revolves around creating a warm, approachable, and people-centered brand identity. By integrating elements such as heat cameras, a dynamic gradient, a distinctive logo, and friendly characters, Umana successfully communicates its unique philosophy and design approach, ensuring a welcoming experience for all stakeholders.",
       banner2:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_2.mp4",
       text2:
-        "",
+        "Our concept for Umana is based on the way that heat cameras capture the movement and behavior of people in spaces, which has allowed us to show their design approach that prioritize functionality and human interaction.",
       banner3:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_3.mp4",
       text3:
       "",
       banner4:
-      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_4.mp4",
       text4:
-        "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
+        "",
       banner5:
-      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_5.mp4",
       text5:
       "",
       banner6:
-      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_6.mp4",
       text6:
-      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      "",
       banner7:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_7.mp4",
       text7:
-        "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      banner8:"",
+        "The colors are welcoming, and the gradient helps to create a sense of movement and energy that reflects Umana's focus on people and their movements within a space.",
+      banner8:"https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_8.mp4",
       text8:"",
-      banner9:"",
-      text9:"",
+      banner9:"https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Banner_9.mp4",
+      text9:"The logo features a block from which all the letters emerge, symbolizing Umana's focus on creating spaces that work for people, rather than spaces that people have to adapt to. This logo is both simple and memorable, making it instantly recognizable.",
       footer:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Cierre.jpg",
       textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
@@ -427,50 +427,51 @@ export const imagesHome = [
     href: "./yummysuperapp",
     workDetails: {
       videoPrincipal:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/_Banner+principal/Teclab_WebHb+Desktop.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_Principal.mp4",
       titleDesk:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/title-rappi.png",
       titleMobile:
       "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/titleDesk.png",
       subtitle:
-        "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
-      tabs: ["BRANDING", "ILLUSTRATION"],
+        "Event Identity / Event Concept / Event Production / Welcome Kit / Illustration / Animation / Visuals",
+      tabs: ["BRANDING", "ILLUSTRATION", "EVENT"],
       banner1:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+1/Banner+1920x858.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_1.mp4",
       descriptionChallenge:
-        "Teclab, a construction services company, come to us to share their vision of revitalizing their identity and bringing it into the modern era, so we embarked on a transformative journey to unleash the full potential of the Teclab brand..",
+        "Rappi asked us to think in an event concept for the Turbo Fresh platform launch, the event was an activation with a spinning class that revealed “The Secret Routine” of the brand's delivery riders. We were involved in the whole project from concept, key visual, kits and production.",
       decriptionSolution:
-        "Guided by their vision, we crafted a refreshed logo and iconography, incorporating the essence of Teclab’s rich heritage while infusing it with a contemporary touch. Drawing inspiration from the strength and durability found in engineering and architecture, we employed angled elements that resonate with stability and resilience.",
+        "For the “Secret Routine” at the launch of Rappi's Turbo Fresh platform, we developed the key visual and the whole concept around a loose and dynamic illustrations style that somehow represented the speed of the service to arrive in 10 minutes . The illustrations were animated and used to integrate them into the venue's stage, to ensure a seamless and immersive experience for the participants.",
       banner2:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+2/Teclab_1920x694.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_2.mp4",
       text2:
         "",
       banner3:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+3/contruccio%CC%81n+logo_1920x1071.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_3.mp4",
       text3:
       "",
       banner4:
-      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+4/animacion+tipografia_1920x892.mp4",
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_4.mp4",
       text4:
         "Embracing the layers and composition of flooring materials, we created dynamic patterns that span various applications. ",
       banner5:
-      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+5/mockup+Teclab_1920x848.mp4",
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_5.mp4",
       text5:
       "",
       banner6:
-      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
+      "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_6.mp4",
       text6:
       "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
       banner7:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_7.mp4",
       text7:
         "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
-      banner8:"",
-      text8:"",
+      banner8:
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_8.mp4",
+      text8:"Lorem ipsum dolor sit amet consectetur. Suspendisse vivamus diam ridiculus cursus malesuada arcu. Vel eu porttitor dui mollis habitant. Nisl gravida morbi fringilla proin et velit ullamcorper sit. Egestas pretium ut mattis purus volutpat consectetur. Nibh fringilla integer quis euismod sapien feugiat. A lorem sem amet tempor.",
       banner9:"",
       text9:"",
       footer:
-        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/rappi/Rappi_Banner_Cierre.jpg",
       textNext: "YUMMY",
       imageNext:
         "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
@@ -604,7 +605,7 @@ export const imagesQuickly = [
     type: "content",
     title: "Back to the poster",
     imageUrl: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Quickly-detalle/back2.png",
-    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/Back2poster/Quickly_Back2Poster_1+(1).mp4",
+    url: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/Back2poster/Quickly_Back2Poster_1+(2).mp4",
     urlInterno1: "https://webhb.s3.us-east-2.amazonaws.com/Quickly/Casos/Back2poster/Quickly_Back2Poster_1+(1).mp4",
     urlInterno2: "./imagesQuicklyInterna/solitoInterna2.png",
     urlInterno3: "",

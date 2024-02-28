@@ -175,6 +175,7 @@ const Quickly = () => {
       <Modal
         open={selectedImage !== null}
         onClose={closeModal}
+        onOpen={() => window.scrollTo(0, 0)}
         style={{
           textAlign: "center",
         }}
