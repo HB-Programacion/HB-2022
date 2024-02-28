@@ -70,6 +70,28 @@
   color: #FF4040;
 }
 
+.cont-success-message{
+  display: flex;
+  place-content: center;
+}
+
+.cont-success-message .arrow-success{
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+.cont-success-message .success-message{
+  margin-left: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 125%;
+  letter-spacing: -0.8px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+
 .checkContainer {
   display: flex;
   color: #ffffff;
@@ -162,7 +184,7 @@
   text-align: center;
   position: relative;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .button__load-send button {

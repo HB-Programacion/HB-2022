@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "../Modal/Modal";
 import "./FormContact.css";
 import { useTranslation } from "react-i18next";
-import unionBtn from "../../assets/home/union.svg";
+import { getImageUrl } from "../../services/s3services";
 
 
 const FormContact = () => {
@@ -25,9 +25,12 @@ const FormContact = () => {
     service: "",
   };
 
+  const successContact =  getImageUrl("successContact");
+
   const [checkPrivacy, setCheckPrivacy] = useState(false);
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -65,6 +68,7 @@ const FormContact = () => {
         console.log("Formulario enviado:", values);
         setValues(initialState);
         setCheckPrivacy(true);
+        setSuccess(true)
       } catch (error) {
         console.error("Error al enviar el formulario:", error);
       }
@@ -193,9 +197,16 @@ const FormContact = () => {
         <div className="button__load-send">
           <button onClick="" type="submit">
             {t("contact-form.send")}
-            <img src={unionBtn} alt="arrow-right" className="w-100 arrow-black" />
+            {/* <img src={unionBtn} alt="arrow-right" className="w-100 arrow-black" /> */}
           </button>
         </div>
+        { !success && (
+          <div className="cont-success-message">
+            <img src={successContact} alt="arrow-right" className="w-100 arrow-success" />
+            <p className="success-message">Thank You! We recieve your form</p>
+          </div>
+        )
+        }
       </form>
     </div>
   );
