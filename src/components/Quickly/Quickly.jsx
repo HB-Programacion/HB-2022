@@ -74,7 +74,15 @@ const Quickly = () => {
   };
 
   const openModal = (image) => {
-    setSelectedImage(image);
+      setSelectedImage(image);
+  };
+
+  const openModalInterno = (image) => {
+    setSelectedImage(null);
+
+    setTimeout(() => {
+      setSelectedImage(image);
+    }, 500);
   };
 
   const closeModal = () => {
@@ -83,6 +91,10 @@ const Quickly = () => {
 
   const { width } = useWindowDimensions();
   const breakpoint = 1200;
+
+  const onModalOpened = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -236,11 +248,12 @@ const Quickly = () => {
             {filteredImages &&
               filteredImages.map((type) => (
                 <div className="" key={type.id}>
-                  <a onClick={() => openModal(type)}>
+                  <a onClick={() => openModalInterno(type)}>
                     <img
                       src={type.imageUrl}
                       alt={type.name}
                       className="gallery__img"
+                      style={{ cursor: 'pointer' }}
                     />
                   </a>
                   <h5 className="filter-title-quickly">{type.title}</h5>

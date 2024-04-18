@@ -53,14 +53,15 @@ const WorkDetails = () => {
       behavior: "instant",
     });
 
-    if (currentIndex < allDataWork.length - 1) {
-      console.log("lenght", allDataWork.length);
-      setCurrentIndex(currentIndex + 1);
-      console.log("final ok", currentIndex + 1);
-    } else {
-      console.log("final");
-      setCurrentIndex(0);
-    }
+    navigate(`/workDetails/${currentIndex+1}`);
+    // if (currentIndex < allDataWork.length - 1) {
+    //   console.log("lenght", allDataWork.length);
+    //   setCurrentIndex(currentIndex + 1);
+    //   console.log("final ok", currentIndex + 1);
+    // } else {
+    //   console.log("final");
+    //   setCurrentIndex(0);
+    // }
   };
 
   useEffect(() => {

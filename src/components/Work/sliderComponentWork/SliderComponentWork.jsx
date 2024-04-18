@@ -7,24 +7,29 @@ import slider3 from "../../../assets/work/slider3.png";
 import './SliderComponentWork.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { getImageUrl } from "../../../services/s3services";
 
 const SliderComponentWork = () => {
+
+  const workCentria = getImageUrl("workCentria");
+  const workVendimia = getImageUrl("workVendimia");
+  const workBetter = getImageUrl("workBetter");
 
   const slider = [
     {
       id: 1,
-      content: slider1,
-      text: "HENDRICK'S OOH ASIA BULEVARD"
+      content: workCentria,
+      text: "Centria Rebranding"
     },
     {
       id: 12,
-      content: slider2,
-      text: "JOKR Christmas Illustrations"
+      content: workVendimia,
+      text: "Vendimia Pisco Sarcay"
     },
     {
       id: 3,
-      content: slider3,
-      text: "CentrIA REBRANDING"
+      content: workBetter,
+      text: "Betterfly Event"
     },
   ]
 

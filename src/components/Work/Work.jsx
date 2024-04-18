@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { buttons, imagesHome } from "../data/imagesHome";
-import { getImagesHome, filterHomeType } from "../services/servicesFilter";
+import { getImagesHome, filterHomeType, getImagesQuickly } from "../services/servicesFilter";
 import arrowbtnBlack from "../../assets/arrow-btn-black.svg";
 import arrowbtn from "../../assets/arrow-btn.svg";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import WorkDetails from "../WorkDetails/WorkDetails";
 import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
 
@@ -17,6 +17,11 @@ import centria from "../../assets/work/centria.svg";
 import SliderComponentWork from "./sliderComponentWork/SliderComponentWork";
 
 import { getImageUrl } from "../../services/s3services";
+import Quickly from "../Quickly/Quickly";
+import Modal from "react-responsive-modal";
+
+import hb from "../../assets/quickly/hb-back.svg";
+import thankYou from "../../assets/quickly/thanks for watching_GIF.gif";
 
 
 const Work = () => {
@@ -26,11 +31,14 @@ const Work = () => {
   const workBetter = getImageUrl("workBetter");
 
   const [filteredImages, setFilteredImages] = useState(null);
+  const [filteredQuiclys, setFilteredQuiclys] = useState(null);
   const [loadMoreImage, setLoadMoreImage] = useState(null);
   const [activeButton, setActiveButton] = useState(null);
   const [dataInterna, setDataInterna] = useState(null);
   const [matchedImage, setMatchedImage] = useState(0);
   const [imageClasses, setImageClasses] = useState([]);
+  const [quiclyId, setQuiclyId] = useState(false)
+  const [indexQuicly, setIndexQuicly] = useState(null);
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -94,7 +102,6 @@ const Work = () => {
   };
 
   const getImageClass = (width) => {
-    console.log(width);
     const smallImageWidth = 760;
     const largeImageWidth = 1450;
 
@@ -113,6 +120,16 @@ const Work = () => {
       behavior: "instant",
     });
   };
+
+  const closeModal = () => {
+    setQuiclyId(false)
+  };
+
+  const handleQuicly = (index) => {
+    setFilteredQuiclys(getImagesQuickly());
+    setIndexQuicly(index)
+    setQuiclyId(true)
+  }
 
   return (
     <>
@@ -196,21 +213,29 @@ const Work = () => {
           </p>
           {width > breakpoint ? (
             <div className="gallery__container-img">
-              <div className="gallery__item">
-                <img src={workCentria} alt="bulevard" className="single-image" />
+              <div className="gallery__item" onClick={() => handleQuicly(0) }>
+                <Link>
+                  <img src={workCentria} alt="bulevard" className="single-image" />
+                </Link>
                 <h5 className="filter-title-item">
                   Centria Rebranding
                 </h5>
               </div>
-              <div className="gallery__item">
-                <img src={workVendimia} alt="jokr1" className="single-image" />
+              <div className="gallery__item" onClick={() => handleQuicly(1) }>
+                <Link>
+                  <img src={workVendimia} alt="jokr1" className="single-image" />
+                </Link>
                 <h5 className="filter-title-item">
                   Vendimia Pisco Sarcay
                 </h5>
               </div>
-              <div className="gallery__item">
-                <img src={workBetter} alt="centria" className="single-image" />
-                <h5 className="filter-title-item">Betterfly Event</h5>
+              <div className="gallery__item" onClick={() => handleQuicly(2) }>
+                <Link>
+                  <img src={workBetter} alt="centria" className="single-image" />
+                </Link>
+                <h5 className="filter-title-item">
+                  Betterfly Event
+                </h5>
               </div>
             </div>
           ) : (
@@ -228,6 +253,86 @@ const Work = () => {
           {dataInterna && <WorkDetails />}
         </div>
       </div>
+      { quiclyId && (
+          <Modal
+          open={quiclyId}
+          onClose={closeModal}
+          onOpen={() => window.scrollTo(0, 0)}
+          style={{
+            textAlign: "center",
+          }}
+        >
+          {/* Contenido personalizado del modal */}
+          <div className="container-internaQuickly">
+            <div className="topInternaButton">
+              <div className="topInternaButton-left">
+                <img src={hb} alt="union" />
+                <div className="topInternaText-container">
+                  <div className="topInternaText-title">
+                    {filteredQuiclys[indexQuicly]?.titleInterTop}
+                  </div>
+                  <div className="topInternaText-subtitle">
+                    {filteredQuiclys[indexQuicly]?.subtitleInterTop}
+                  </div>
+                </div>
+              </div>
+              <div className="category-interna">{filteredQuiclys[indexQuicly]?.category}</div>
+            </div>
+            <div className="topInternaText">
+              <div className="imgInternaTop">
+                {/* <img
+                  src={selectedImage?.urlInterno1}
+                  alt={selectedImage?.title}
+                /> */}
+                <video
+                  className="w-100"
+                  controls={false}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop={true}
+                >
+                  <source src={filteredQuiclys[indexQuicly]?.urlInterno1} type="video/mp4" />
+                </video>
+              </div>
+              <div
+                className="topInterna-content"
+                dangerouslySetInnerHTML={{
+                  __html: filteredQuiclys[0]?.internaContent,
+                }}
+              ></div>
+              <div className="gif-thankYou">
+                <img src={thankYou} alt="union" className="thanYouGif" />
+              </div>
+            </div>
+          </div>
+          <div className="similarCategory">
+            <div className="textCategorySimilar">You might like</div>
+            <div className="box-quicklyst-a">
+              <p>More about campaign</p>
+              <a href="/quickly">
+                <p className="all-work">View all</p>
+              </a>
+            </div>
+            {/* <Masonry columnsCount={width > breakpoint ? 3 : 2} gutter="8px">
+              {filteredImages &&
+                filteredImages.map((type) => (
+                  <div className="" key={type.id}>
+                    <a onClick={() => openModal(type)}>
+                      <img
+                        src={type.imageUrl}
+                        alt={type.name}
+                        className="gallery__img"
+                      />
+                    </a>
+                    <h5 className="filter-title-quickly">{type.title}</h5>
+                  </div>
+                ))
+              }
+            </Masonry> */}
+          </div>
+        </Modal>
+      )}
     </>
   );
 };

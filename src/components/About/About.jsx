@@ -39,7 +39,6 @@ import download from "../../assets/about/download.svg";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState(0);
-
   const tabs = [
     {
       title: "BEYOND",
