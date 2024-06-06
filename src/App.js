@@ -49,7 +49,7 @@ function App() {
               <Route  path="/" element={<Home />} />
               <Route  path="/about" element={<About />} />
               <Route  path="/work" element={<Work />} />
-              <Route  path="/workDetails/:id" element={<WorkDetails/>} />
+              <Route  path="/work/:id" element={<WorkDetails/>} />
               <Route  path="/quickly" element={<Quickly />} />
               {/* <Route  path="/heinekenFest" element={<HeinekenFest />} />*/}
               <Route path="/services" element={<ServiceView/>}/>

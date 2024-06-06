@@ -45,7 +45,8 @@ const WorkDetails = () => {
     footer,
   } = matchingWorkDetail.workDetails;
 
-  const { imageNext, textNext } = nextMatchingWorkDetail.workDetails;
+
+  const { imageNext, textNext, textNextCategorie } = nextMatchingWorkDetail.workDetails;
 
   const handleNextButtonClick = () => {
     window.scrollTo({
@@ -53,7 +54,7 @@ const WorkDetails = () => {
       behavior: "instant",
     });
 
-    navigate(`/workDetails/${currentIndex+1}`);
+    navigate(`/work/${currentIndex+1}`);
     // if (currentIndex < allDataWork.length - 1) {
     //   console.log("lenght", allDataWork.length);
     //   setCurrentIndex(currentIndex + 1);
@@ -66,7 +67,7 @@ const WorkDetails = () => {
 
   useEffect(() => {
     const updatedMatchingWorkDetail = allDataWork[currentIndex];
-    navigate(`/workDetails/${matchingWorkDetail.id}`);
+    navigate(`/work/${matchingWorkDetail.id}`);
   }, []);
 
   const { width } = useWindowDimensions();
@@ -281,8 +282,11 @@ const WorkDetails = () => {
           {imageNext && (
             <img src={imageNext} alt="Imagen" className="img-next-project" />
           )}
-          <div onClick={handleNextButtonClick} className="btn-title-next">
+          <div onClick={handleNextButtonClick} className="btn-title-next" style={{ marginTop: '-5rem', cursor: 'pointer'  }} >
             {textNext}
+          </div>
+          <div onClick={handleNextButtonClick} className="btn-title-next" style={{ cursor: 'pointer'  }}>
+            {textNextCategorie}
           </div>
         </div>
       </div>

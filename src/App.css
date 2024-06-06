@@ -296,6 +296,10 @@ video::-webkit-media-controls-pausebutton {
 .gallery__img {
   width: 100%;
 }
+.gallery__img-quickly {
+  width: 100%;
+  max-height: 10.5rem;
+}
 .box-titleHb{
   padding: 0rem 1rem;
 }

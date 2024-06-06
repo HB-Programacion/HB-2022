@@ -252,7 +252,7 @@ const Quickly = () => {
                     <img
                       src={type.imageUrl}
                       alt={type.name}
-                      className="gallery__img"
+                      className="gallery__img-quickly"
                       style={{ cursor: 'pointer' }}
                     />
                   </a>

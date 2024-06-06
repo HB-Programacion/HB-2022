@@ -77,7 +77,9 @@ const Work = () => {
   };
 
   const handleDataClick = (type) => {
+    console.log(type)
     const index = imagesHome.findIndex((image) => image.id === type.id);
+    console.log(index)
 
     if (index !== -1 && index < imagesHome.length - 1) {
       const matchedImage = imagesHome[index];
@@ -86,7 +88,7 @@ const Work = () => {
       localStorage.setItem("work-details", JSON.stringify(filteredImages));
       localStorage.setItem("work-specific", JSON.stringify(matchedImage.id));
 
-      navigate(`/workDetails/${matchedImage.id}`);
+      navigate(`/work/${matchedImage.id}`);
     }
   };
 

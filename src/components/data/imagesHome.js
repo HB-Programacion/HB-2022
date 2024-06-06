@@ -3,7 +3,7 @@ export const imagesHome = [
     id: 1,
     type: "content",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-hnk.png",
-    name: "HEINEKEN FEST",
+    name: "heineken",
     title: "HEINEKEN FEST",
     description:
       "EVENT CONCEPT / EVENT BRANDING / EVENT PRODUCTION / WELCOME KIT / ANIMATIONS / 3D VISUALS",
@@ -63,7 +63,7 @@ export const imagesHome = [
     id: 2,
     type: "trade",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-yummi.png",
-    name: "YUMMY SUPER APP",
+    name: "yummy",
     title: "YUMMY SUPER APP",
     description:
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION",
@@ -123,7 +123,7 @@ export const imagesHome = [
     id: 3,
     type: "branding",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-umana.png",
-    name: "UMANA",
+    name: "umana",
     title: "UMANA",
     description: "Brand Concept / Brand Development / Illustrations / Art Direction / Motion Graphics",
     href: "./heinekenFest",
@@ -175,14 +175,14 @@ export const imagesHome = [
         "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/Umana_Cierre.jpg",
       textNext: "YUMMY",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/nextTeclab.jpg",
     },
   },
   {
     id: 4,
     type: "branding",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-teclab.png",
-    name: "TECLAB",
+    name: "teclab",
     title: "TECLAB",
     description:
       "BRANDING / CREATIVITY / CONCEPT / GUIDELINES / ILlUSTRATION / ANIMATION",
@@ -233,16 +233,17 @@ export const imagesHome = [
       text9:"",
       footer:
         "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Footer/image+4.jpg",
-      textNext: "YUMMY",
+      textNext: "TECLAB",
+      textNextCategorie: "BRANDING",
       imageNext:
-        "https://web-hb-logo-marcas.s3.us-east-2.amazonaws.com/work-view+/hnk-img1.png",
+        "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/umana/nextTeclab.jpg",
     },
   },
   {
     id: 5,
     type: "trade",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-labico.png",
-    name: "LA BICOLOR",
+    name: "labicolor",
     title: "LA BICOLOR",
     description:
       "CREATIVITY / CONCEPT / BRANDING / GUIDELINES / PRODUCTION / CONTENT / ILlUSTRATION / ANIMATION",
@@ -302,7 +303,7 @@ export const imagesHome = [
     id: 6,
     type: "content",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-petco.png",
-    name: "PETCO",
+    name: "petco",
     title: "PETCO",
     description: "BRANDING / CREATIVITY / CONCEPT / GUIDELINES / ILlUSTRATION / ANIMATION ",
     href: "./yummysuperapp",
@@ -361,7 +362,7 @@ export const imagesHome = [
     id: 7,
     type: "campaign",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-jokr.png",
-    name: "JOKR Verano 23’",
+    name: "jokr",
     title: "JOKR Verano 23’",
     description: "BRANDING / CONCEPT / CONTENT",
     href: "./yummysuperapp",
@@ -420,7 +421,7 @@ export const imagesHome = [
     id: 8,
     type: "illustration",
     url: "https://webhb.s3.us-east-2.amazonaws.com/Work/Casos/work-rappi.png",
-    name: "contenido 8",
+    name: "rappi",
     title: "RAPPI + SÍCLO",
     description:
       "Event Identity / Event Concept / Event Production / Welcome Kit / Illustration / Animation / Visuals",
