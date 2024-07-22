@@ -157,14 +157,12 @@ const About = () => {
             </h6>
             <h3 className="title-about align-start">Mixed Mentality</h3>
             <h6 className="subtitle-about align-start">
-              An integrated, interdisciplinary approach lies at the heart of our
-              philosophy. Recognizing that the most compelling brands are built
-              from their core offerings, we champion a foundation that fosters a
-              distinct identity and potent marketing. Beyond mere external
-              perceptions, it's a matter of orchestrating an ecosystem where
-              product, brand, and communication harmonize effortlessly. In this
-              fusion, brands are poised to resonate profoundly, accelerate
-              growth, and command attention.
+              An integrated, interdisciplinary approach lies at the heart of our philosophy.
+              Recognizing that the most compelling brands are built from their core offerings,
+              we support a foundation that fosters a distinct identity and potent marketing.
+              Beyond mere external perceptions, it's a matter of orchestrating an ecosystem where
+              product, brand, and communication harmonize effortlessly. In this fusion, brands are
+              poised to resonate profoundly, accelerate growth, and command attention.
             </h6>
           </div>
         </div>
@@ -251,10 +249,10 @@ const About = () => {
           <h2 className="titleHb-black">Intrinsic Ideology</h2>
 
           <p className="wwb-textdown">
-            Henri Barrett is more than just an agency; it's a movement, a
-            mindset. We're here to change narratives, elevate brands, and make a
-            lasting imprint in the world of design and creativity. Dive into our
-            guiding principles, the essence of what makes us Henri Barrett.
+            Henri Barrett is more than just an agency; it's a movement, a mindset.
+            We're here to change narratives, elevate brands, and make a lasting imprint
+            in the world of ideas and creativity. Dive into our guiding principles,
+            the essence of what makes us Henri Barrett.
           </p>
           <div className="box-wwb-numbers">
             <div className="box-wwb-tabs">

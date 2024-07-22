@@ -222,11 +222,11 @@ export const imagesHome = [
       banner6:
       "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+6/Ilustraciones+Loop_1920x1080.mp4",
       text6:
-      "Artistic, black and white patterns constitute the playful basic layer for other brand elements s",
+      "The illustration system allowed us to achieve a balance between professional codes and a more functional aesthetic.",
       banner7:
         "https://webhb.s3.us-east-2.amazonaws.com/Work/Work-detalles/teclab/Banner+7/reduce+size+web+teclab.mp4",
       text7:
-        "Artistic, black and white patterns constitute the playful basic layer for other brand elements such as pictures, videos and headlines. They refer to an important step in every chocolatier’s process: hot tempering of the chocolate.",
+        "The illustration system allowed us to achieve a balance between professional codes and a more functional aesthetic.",
       banner8:"",
       text8:"",
       banner9:"",
@@ -572,10 +572,10 @@ export const imagesQuickly = [
     titleInterTop: "HENRI BARRETT",
     subtitleInterTop: "Vendimia Pisco Sarcay",
     internaContent: `<div>
-                      <p>This social housing project is all about making dreams come true for lower-income families. Our aim? To  make home ownership feel achievable, welcoming, and full of heart. We used simple designs and friendly animated illustrations to bring these family values to life and connect with the target.</p>
-                      <p>The homes in the “Piura del Campo” urbanization will form a small city. Thousands of homes will expand in the territory, it is a new space to consolidate a life. The urbanization not only represents a physical space, but a space to create community. Where you can plan the rest of your life.</p>
-                      <p>To capture this idea we created the concept "WE BUILD THE FUTURE TOGETHER" which allowed us to empathize with the desires and emotions of our audience. We gave life to this concept through a simple, colorful design, full of life and joy that has a daring look, totally different from what other construction companies in the country use.</p>
-                    </div>`,
+                      <p>La vendimia is a festival normally associated with wine, but in Peru, it celebrates the grape harvest for the production of pisco. In this context, Sarcay, a premium pisco brand, is known for organizing the most iconic party of the season, attended by various celebrities and influencers.
+                      The challenge was to create a concept that could maintain the event's hype among new generations. For this, we were inspired by the Garden of Eden, the original sin, and the magical cosmology of the Sarcay Valley.
+                      'Let's Fall into Temptation' is an invitation to enjoy life's pleasures, to forget the consequences, and to indulge.</p>
+                      </div>`,
   },
   {
     id: 3,
@@ -594,10 +594,9 @@ export const imagesQuickly = [
     titleInterTop: "HENRI BARRETT",
     subtitleInterTop: "Betterfly",
     internaContent: `<div>
-                      <p>This social housing project is all about making dreams come true for lower-income families. 
-                      Our aim? To  make home ownership feel achievable, welcoming, and full of heart. We used simple designs and friendly animated illustrations to bring these family values to life and connect with the target.</p>
-                      <p>The homes in the “Piura del Campo” urbanization will form a small city. Thousands of homes will expand in the territory, it is a new space to consolidate a life. The urbanization not only represents a physical space, but a space to create community. Where you can plan the rest of your life.</p>
-                      <p>To capture this idea we created the concept "WE BUILD THE FUTURE TOGETHER" which allowed us to empathize with the desires and emotions of our audience. We gave life to this concept through a simple, colorful design, full of life and joy that has a daring look, totally different from what other construction companies in the country use.</p>
+                      <p>Work-related stress and burnout are just two of the conditions that decrease team productivity. With this in mind, Betterfly offers a constant recognition system to keep your team motivated.</p>
+                      <p>The challenge was to turn the concept into an interactive and high-impact experience that not only connects with HR directors of leading companies in Peru but also stands out from competing brands.
+                      We designed an experience where you could punch through various pains encountered in offices. We created a boxing ring with a punching bag connected to screens. By hitting the bag, you could see stress and burnout being destroyed on the screens. Super cool.</p>
                     </div>`,
   },
   {

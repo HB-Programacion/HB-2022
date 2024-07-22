@@ -177,12 +177,12 @@ const Quickly = () => {
             </Masonry>
           </div>
         </div>
-        <div className="box-btn">
+        {/* <div className="box-btn">
           <Link to="/work" className="btn-white">
             LOAD MORE
             <img src={unionBtn} alt="arrow-right" className="arrow-black" />
           </Link>
-        </div>
+        </div> */}
       </div>
       <Modal
         open={selectedImage !== null}
