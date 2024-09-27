@@ -1,0 +1,342 @@
+import React, { useEffect, useState } from "react";
+import { buttons, imagesHome } from "../data/imagesHome";
+import { getImagesHome, filterHomeType, getImagesQuickly } from "../services/servicesFilter";
+import arrowbtnBlack from "../../assets/arrow-btn-black.svg";
+import arrowbtn from "../../assets/arrow-btn.svg";
+import { useNavigate, useLocation, Link } from "react-router-dom";
+import WorkDetails from "../WorkDetails/WorkDetails";
+import { useWindowDimensions } from "../CustomHooks/UseWindowDimensions/UseWindowDimensions";
+
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import "./Work.css";
+
+import fw from "../../assets/work/7.Work.gif";
+import bulevard from "../../assets/work/bulevard.svg";
+import jokr1 from "../../assets/work/jokr1.svg";
+import centria from "../../assets/work/centria.svg";
+import SliderComponentWork from "./sliderComponentWork/SliderComponentWork";
+
+import { getImageUrl } from "../../services/s3services";
+import Quickly from "../Quickly/Quickly";
+import Modal from "react-responsive-modal";
+
+import hb from "../../assets/quickly/hb-back.svg";
+import thankYou from "../../assets/quickly/thanks for watching_GIF.gif";
+
+
+const Work = () => {
+
+  const workCentria = getImageUrl("workCentria");
+  const workVendimia = getImageUrl("workVendimia");
+  const workBetter = getImageUrl("workBetter");
+
+  const [filteredImages, setFilteredImages] = useState(null);
+  const [filteredQuiclys, setFilteredQuiclys] = useState(null);
+  const [loadMoreImage, setLoadMoreImage] = useState(null);
+  const [activeButton, setActiveButton] = useState(null);
+  const [dataInterna, setDataInterna] = useState(null);
+  const [matchedImage, setMatchedImage] = useState(0);
+  const [imageClasses, setImageClasses] = useState([]);
+  const [quiclyId, setQuiclyId] = useState(false)
+  const [indexQuicly, setIndexQuicly] = useState(null);
+
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const category = queryParams.get("category");
+  const filteredByCategory = filterHomeType(category);
+
+  useEffect(() => {
+    setFilteredImages(
+      filteredByCategory.length === 0
+        ? getImagesHome()
+        : filterHomeType(filteredByCategory[0].type)
+    );
+    setActiveButton(
+      filteredByCategory.length === 0 ? "all" : filteredByCategory[0].type
+    );
+  }, []);
+
+  const navigate = useNavigate();
+
+  const handleImagesHome = (e) => {
+    e.preventDefault();
+    let typeImagesHome = e.target.value;
+
+    setActiveButton(typeImagesHome);
+
+    typeImagesHome !== "all"
+      ? setFilteredImages(filterHomeType(typeImagesHome))
+      : setFilteredImages(getImagesHome());
+
+    queryParams.delete("category");
+    navigate(`?${queryParams.toString()}`, { replace: true });
+  };
+
+  const handleLoadImage = () => {
+    setLoadMoreImage(getImagesHome());
+  };
+
+  const handleDataClick = (type) => {
+    console.log(type)
+    const index = imagesHome.findIndex((image) => image.id === type.id);
+    console.log(index)
+
+    if (index !== -1 && index < imagesHome.length - 1) {
+      const matchedImage = imagesHome[index];
+      setMatchedImage(matchedImage);
+
+      localStorage.setItem("work-details", JSON.stringify(filteredImages));
+      localStorage.setItem("work-specific", JSON.stringify(matchedImage.id));
+
+      navigate(`/work/${matchedImage.id}`);
+    }
+  };
+
+  const { width } = useWindowDimensions();
+  const breakpoint = 576;
+
+  const handleImageLoad = (event, image) => {
+    const width = event.target.naturalWidth;
+    const newClasses = [...imageClasses];
+
+    newClasses[image.index] = getImageClass(width);
+    setImageClasses(newClasses);
+  };
+
+  const getImageClass = (width) => {
+    const smallImageWidth = 760;
+    const largeImageWidth = 1450;
+
+    if (width <= smallImageWidth) {
+      return "small-image";
+    } else if (width <= largeImageWidth) {
+      return "large-image";
+    }
+
+    return "";
+  };
+
+  const topScroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  };
+
+  const closeModal = () => {
+    setQuiclyId(false)
+  };
+
+  const handleQuicly = (index) => {
+    setFilteredQuiclys(getImagesQuickly());
+    setIndexQuicly(index)
+    setQuiclyId(true)
+  }
+
+  return (
+    <>
+      <div className="fondo-header"> </div>
+      <div className="bg-black ">
+        <h2 className="titleHb-white container__text">
+          work & <span className="titleHb-white-italic">wonders</span>
+        </h2>
+
+        <p className="text-feature-work container__text">
+          Content, branding, events, trade marketing – we do it all. Choose a
+          category or take a tour through our work.
+        </p>
+        <div className="container__buttons">
+          {buttons &&
+            buttons.map((type, index) => (
+              <div className="buttons__style" key={index}>
+                <button
+                  key={index}
+                  value={type.value}
+                  onClick={handleImagesHome}
+                  style={{
+                    background:
+                      activeButton === type.value ? "#FF4040" : "none",
+                    color: activeButton === type.value ? "#000000" : "#ffffff",
+                    border: activeButton === type.value && "#000000",
+                  }}
+                >
+                  {type.name}
+                </button>
+              </div>
+            ))}
+        </div>
+
+        <div className="box-work">
+          <div className="gallery__container-work">
+            <Masonry columnsCount={width > breakpoint ? 2 : 1} gutter="30px">
+              {filteredImages &&
+                filteredImages.map((type, index) => (
+                  <div
+                    className={`gallery__items ${
+                      imageClasses[index] || "small-image"
+                    }`}
+                    key={type.id}
+                    onClick={() => handleDataClick(type)}
+                  >
+                    <img
+                      src={type.url}
+                      alt={type.name}
+                      className="gallery__img"
+                      onLoad={(e) => handleImageLoad(e, { index })}
+                      onClick={topScroll}
+                      style={{ cursor: "pointer" }}
+                    />
+                    <h5 className="filter-title">{type.title}</h5>
+                    <p className="filter-subtitle">{type.description}</p>
+                  </div>
+                ))}
+            </Masonry>
+          </div>
+        </div>
+        <div className="box-work">
+          <p className="p-gray text-center parrafo-work">
+            We create brand launch campaigns, gadgets, signage, websites,
+            digital assets and much more. All of this happens in our in-house
+            production studios.{" "}
+          </p>
+        </div>
+        <div className="button__load-work">
+          <button onClick={handleLoadImage} >
+            LOAD MORE <img src={arrowbtnBlack} alt="arrow-right" />
+          </button>
+        </div>
+
+        <div className="box-work-w bg-white">
+          <h2 className="titleHb-black">quicklys</h2>
+          <p className="p-black text-center  ">
+            A collection of projects we've whipped up in record time. They may
+            not have taken ages to conceive, but they radiate our commitment to
+            quality and creativity.{" "}
+          </p>
+          {width > breakpoint ? (
+            <div className="gallery__container-img">
+              <div className="gallery__item" onClick={() => handleQuicly(0) }>
+                <Link>
+                  <img src={workCentria} alt="bulevard" className="single-image" />
+                </Link>
+                <h5 className="filter-title-item">
+                  Centria Rebranding
+                </h5>
+              </div>
+              <div className="gallery__item" onClick={() => handleQuicly(1) }>
+                <Link>
+                  <img src={workVendimia} alt="jokr1" className="single-image" />
+                </Link>
+                <h5 className="filter-title-item">
+                  Vendimia Pisco Sarcay
+                </h5>
+              </div>
+              <div className="gallery__item" onClick={() => handleQuicly(2) }>
+                <Link>
+                  <img src={workBetter} alt="centria" className="single-image" />
+                </Link>
+                <h5 className="filter-title-item">
+                  Betterfly Event
+                </h5>
+              </div>
+            </div>
+          ) : (
+            <div className="box-slider-component-work">
+              <SliderComponentWork />
+            </div>
+          )}
+
+          {/* <div className="button__load">
+            <a href="/quickly" className="btn-black">
+              See all
+              <img src={arrowbtn} alt="arrow-right" />
+            </a>
+          </div> */}
+          {dataInterna && <WorkDetails />}
+        </div>
+      </div>
+      { quiclyId && (
+          <Modal
+          open={quiclyId}
+          onClose={closeModal}
+          onOpen={() => window.scrollTo(0, 0)}
+          style={{
+            textAlign: "center",
+          }}
+        >
+          {/* Contenido personalizado del modal */}
+          <div className="container-internaQuickly">
+            <div className="topInternaButton">
+              <div className="topInternaButton-left">
+                <img src={hb} alt="union" />
+                <div className="topInternaText-container">
+                  <div className="topInternaText-title">
+                    {filteredQuiclys[indexQuicly]?.titleInterTop}
+                  </div>
+                  <div className="topInternaText-subtitle">
+                    {filteredQuiclys[indexQuicly]?.subtitleInterTop}
+                  </div>
+                </div>
+              </div>
+              <div className="category-interna">{filteredQuiclys[indexQuicly]?.category}</div>
+            </div>
+            <div className="topInternaText">
+              <div className="imgInternaTop">
+                {/* <img
+                  src={selectedImage?.urlInterno1}
+                  alt={selectedImage?.title}
+                /> */}
+                <video
+                  className="w-100"
+                  controls={false}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop={true}
+                >
+                  <source src={filteredQuiclys[indexQuicly]?.urlInterno1} type="video/mp4" />
+                </video>
+              </div>
+              <div
+                className="topInterna-content"
+                dangerouslySetInnerHTML={{
+                  __html: filteredQuiclys[0]?.internaContent,
+                }}
+              ></div>
+              <div className="gif-thankYou">
+                <img src={thankYou} alt="union" className="thanYouGif" />
+              </div>
+            </div>
+          </div>
+          <div className="similarCategory">
+            <div className="textCategorySimilar">You might like</div>
+            <div className="box-quicklyst-a">
+              <p>More about campaign</p>
+              <a href="/quickly">
+                <p className="all-work">View all</p>
+              </a>
+            </div>
+            {/* <Masonry columnsCount={width > breakpoint ? 3 : 2} gutter="8px">
+              {filteredImages &&
+                filteredImages.map((type) => (
+                  <div className="" key={type.id}>
+                    <a onClick={() => openModal(type)}>
+                      <img
+                        src={type.imageUrl}
+                        alt={type.name}
+                        className="gallery__img"
+                      />
+                    </a>
+                    <h5 className="filter-title-quickly">{type.title}</h5>
+                  </div>
+                ))
+              }
+            </Masonry> */}
+          </div>
+        </Modal>
+      )}
+    </>
+  );
+};
+
+export default Work;

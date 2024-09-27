@@ -1,0 +1,82 @@
+.marqueeSlide {
+  overflow: hidden;
+  width: 100%;
+}
+
+.box-marqueeSlide{
+  margin: 5rem auto;
+}
+
+.marqueeSlide-content {
+  display: flex;
+  animation: scrolling 60s linear infinite;
+}
+
+.marqueeSlide-item {
+  flex: 0 0 auto;
+  margin: 0 0.5vw;
+}
+
+.marqueeSlide-item img {
+  display: block;
+  /* width: 100%;
+  /*   padding: 0 20px; */
+}
+
+.box-img-slide-people {
+  width: 16rem;
+  height: 23rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-l {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+.img-s {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-850vw);
+  }
+}
+
+.title-people {
+  color: #fff;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding:0 1rem;
+  margin-top: .5rem;
+}
+
+.descrption-people {
+  color: #fff;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: .7rem;
+  margin: 0;
+  padding:0 1rem;
+}
+
+
+.box-title-s{
+  margin-top: -3.2rem;
+  padding: 1.1rem ;
+}
+
+@media (min-width: 1200px) {
+  .marqueeSlide-content {
+    display: flex;
+    animation: scrolling 200s linear infinite;
+  }
+}

@@ -1,0 +1,132 @@
+.modal-response {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-response__container {
+  transition: all 0.6s;
+  position: absolute;
+  width: 600px;
+  max-width: 80%;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 26px;
+  border-radius: 16px;
+}
+
+.modal-response__container--submit {
+  transition: all 0.6s;
+  position: absolute;
+  width: 500px;
+  max-width: 80%;
+  height: 353px;
+  box-sizing: border-box;
+  background-color: #fff;
+  /* top: calc(50vw - 50%);
+	left: calc(100vh - 50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 26px;
+  border-radius: 16px;
+}
+
+.modal-response__title {
+  color: #ac0200;
+  font-size: 24px;
+  margin: 0px 0 0px 0;
+  font-family: "termina-bold";
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-response__subtitle1 {
+  color: #898989;
+  font-size: 20px;
+  font-family: "PTsans-bold";
+  width: 439px;
+  max-width: 100%;
+  letter-spacing: -0.0146rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.modal-response__warning-cont {
+  display: flex;
+  background-color: rgba(212, 2, 0, 0.2);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+
+.modal-response__subtitle-cont {
+  display: block;
+}
+.modal-response__subtitle2 {
+  color: #640a05;
+  font-size: 16px;
+  font-family: "PTsans-regular";
+  width: 20rem;
+  max-width: 100%;
+  letter-spacing: -0.0146rem;
+  text-align: start;
+  margin: 0.5rem 2rem;
+}
+.modal-response__subtitle3 {
+  color: #640a05;
+  font-size: 14px;
+  font-family: "PTsans-regular";
+  width: 20rem;
+  max-width: 100%;
+  letter-spacing: -0.0146rem;
+  text-align: start;
+  margin-left: 2rem;
+}
+.modal-response__close {
+  position: absolute;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  right: 26px;
+  top: 25px;
+  border-radius: 8px;
+  display: flex;
+}
+
+.logo-modal {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+    .modal-response__warning-cont {
+      width: 80%;
+    }
+  
+    .modal-response__subtitle-cont{
+      width: 80%;
+    }
+    .modal-response__subtitle2{
+      margin: 0.5rem 1rem;
+      font-size: 14px;
+    }
+    .modal-response__subtitle1{
+        font-size: 17px;
+    }
+    .logo-modal{
+        width: 12%;
+    }
+  }

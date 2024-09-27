@@ -1,0 +1,212 @@
+.title-services {
+  padding: 3rem 0rem;
+}
+
+.box-services {
+  padding: 4rem 1rem;
+}
+
+.text-gray {
+  color: #8e8e8e;
+  font-family: "nehue-has55";
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.letsTalk {
+  position: relative;
+  top: 3rem;
+}
+.text-lets-talk {
+  padding: 3rem 0 0 0;
+}
+
+.box-btn-filter-services {
+  padding: 3rem 0.5rem;
+  padding-bottom: 0;
+}
+
+.btn-filter-services {
+  display: flex;
+  background-color: transparent;
+  font-family: "nehue-has55";
+  font-size: 2.5rem;
+  border: 0px none;
+}
+
+.btn-icon-services {
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+
+.description-filter-services {
+  font-family: "nehue-has45";
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.subtitle-filter-services {
+  font-family: "nehue-has55";
+  color: #8e8e8e;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-right: 1rem;
+}
+
+.box-subtitle-img {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.icon-services {
+  width: 30%;
+  height: 30%;
+  margin: 1.5rem 0rem;
+}
+.container-sliderComponent {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.btn-white-btn {
+  width: 65%;
+  background-color: #fff;
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  margin: 100px 5px;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn-white-new {
+  background-color: #fff;
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  margin: auto 5px;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button__load-services {
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.button__load-services button {
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #111;
+  margin: auto 5px;
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.button__load-services img {
+  width: 11%;
+  margin-left: 5px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .box-services {
+    padding: 2rem 10rem;
+  }
+  .box-btn-filter-services {
+    width: 50%;
+    padding-left: 12rem;
+  }
+  .box-description-tabs {
+    width: 50%;
+  }
+  .box-services-tabs {
+    padding: 0rem 3rem;
+  }
+
+  .box-tabs-services {
+    display: flex;
+    padding: 0rem 2rem;
+  }
+
+  .box-subtitle-img {
+    justify-content: left;
+  }
+
+  .btn-filter-services {
+    font-size: 5rem;
+  }
+  .groupServicesD {
+    margin: 4rem auto;
+    display: block;
+  }
+  .box-lets-talk {
+    display: flex;
+    align-items: end;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .title-lets-talk {
+    font-size: 6rem;
+    width: 50%;
+    margin-bottom: 0rem;
+  }
+
+  .text-lets-talk {
+    width: 50%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .text-slider-services{
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 1199px) {
+  .description-filter-services {
+    padding: 1.5rem;
+   }
+}
+@media (max-width: 680px) {
+  .css-1fzpoyk img {
+    width: 90%;
+  }
+  .container-sliderComponent {
+    width: 100%;
+  }
+  .description-filter-services {
+   padding: 1.5rem;
+   font-size: 1.4rem;
+   line-height: 2rem;
+  }
+  .text-lets-talk {
+    padding: 0rem 1rem 0;
+  }
+  .box-subtitle-img{
+    padding: 1.5rem;
+  }
+  .btn-filter-services{
+    font-size: 2.2rem;
+  }
+}
+

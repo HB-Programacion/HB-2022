@@ -1,0 +1,257 @@
+.box-quicklys {
+  padding: 0 1rem;
+}
+
+.fw-title {
+  display: block;
+  margin: 0rem auto;
+  padding: 3rem 0;
+  width: 85%;
+}
+
+/* .text-feature-work{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    color: #8E8E8E;
+    font-size: 1.5rem;
+    text-align: center;
+} */
+
+.filter-title-quickly {
+  color: #8e8e8e;
+  font-family: "nehue-has55";
+  font-size: .8rem;
+  margin: 1rem 0;
+  margin-top: 0.5rem;
+}
+/* .filter-subtitle {
+  color: #8e8e8e;
+  font-family: "nehue-has55";
+  font-size: 13px;
+} */
+
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+}
+
+.p-white {
+  color: #fff;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.4rem;
+  margin: 2rem auto;
+  width: 90%;
+  line-height: 2.2rem;
+}
+
+.topInternaButton {
+  /* padding: 4rem 2rem 1rem; */
+  padding-bottom: 2rem;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem auto 0 0;
+}
+
+/* .topInternaText-container {
+  /* margin: 0rem 1rem 2.5rem; 
+} */
+
+.topInternaText-container .topInternaText-title {
+  color: #111111;
+  font-family: "neue-haas-grotesk-display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: -0.6px;
+}
+
+.topInternaText-container .topInternaText-subtitle {
+  color: #111111;
+  font-family: "neue-haas-grotesk-display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 125%;
+  letter-spacing: -0.4px;
+}
+
+.imgInternaTop {
+  text-align: center;
+}
+
+.topInternaButton .category-interna {
+  background-color: #111111;
+  align-self: center;
+  padding: 7px 15px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: "neue-haas-grotesk-display";
+  font-size: 20px;
+}
+
+.topInterna-content {
+  margin: 1rem 0;
+  color: #111111;
+  font-family: "neue-haas-grotesk-display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 125%;
+  letter-spacing: -0.5px;
+}
+
+.gif-hb {
+  text-align: center;
+}
+
+.gif-hb img {
+  margin: 3rem;
+}
+.gif-thankYou img{
+  margin: 1rem auto;
+  display: block;
+}
+.thanYouGif{
+  width: 10rem;
+}
+.containerInterna img {
+  width: 100%;
+}
+
+.textCategorySimilar {
+  text-align: center;
+  color: #fff;
+  font-family: "neue-haas-grotesk-display";
+  font-size:55px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  letter-spacing: -0.7px;
+  padding: 2rem 0rem;
+}
+.all-work{
+  font-family: "neue-haas-grotesk-display";
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: underline;
+
+}
+
+.more-about-campaign{
+  font-family: "neue-haas-grotesk-display";
+  font-size: 20px;
+  color: #fff;
+  
+}
+.back-button {
+  display: flex;
+  left: 10px;
+  background-color: #ffffff8c;
+  align-items: center;
+  padding: 5px 16px;
+  border-radius: 25px;
+  border: none;
+}
+
+.container-internaQuickly {
+  border-radius: 25px;
+  padding: 2rem 1rem;
+}
+
+.similarCategory {
+  margin: 0rem auto;
+  padding: 0 1rem;
+  background-color: #111;
+}
+
+.button__load-quickly {
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.button__load-quickly button {
+  font-size: 26px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 1px solid #111;
+  margin: auto 5px;
+  background-color: #fff;
+  color: #111;
+  cursor: pointer;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.button__load-quickly img {
+  width: 11%;
+  margin-left: 5px;
+}
+
+.react-responsive-modal-modal {
+  border-radius: 15px;
+  margin: 0.5rem;
+
+  padding: 0rem;
+  max-width: 100%;
+}
+
+.react-responsive-modal-root {
+  z-index: 99999;
+}
+
+.topInternaText-container {
+  margin: 0rem;
+}
+
+.box-quicklyst-a {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1400px) {
+  .topInternaText {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  /* .container-internaQuickly{
+        padding: 2rem 1rem;
+    } */
+  .topInternaButton {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 2rem;
+  }
+  .topInternaButton-left {
+    display: flex;
+  }
+  .topInternaText-container {
+    margin-left: 1rem;
+  }
+
+  .box-quicklys {
+    padding: 0rem 4rem;
+  }
+  .container__challenge {
+    width: 65%;
+    padding: 2rem 0 2rem 0;
+    margin: 0rem auto;
+  }
+  .all-work{
+    font-size: 1.2rem;
+  }
+  .filter-title-quickly{
+    font-size: 1.5rem;
+  }
+}
